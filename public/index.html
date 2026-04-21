@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>新游观察看板</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <div class="kicker">产品分析报告</div>
+      <h1>新游观察看板</h1>
+    </div>
+    <button class="icon-btn" id="adminButton" title="后台编辑" aria-label="后台编辑">⚙</button>
+  </header>
+
+  <main class="shell">
+    <section class="filters" aria-label="筛选">
+      <label>
+        <span>时间</span>
+        <select id="periodFilter"></select>
+      </label>
+      <label>
+        <span>状态</span>
+        <select id="statusFilter"></select>
+      </label>
+      <label class="search">
+        <span>搜索</span>
+        <input id="searchInput" type="search" placeholder="产品 / 赛道 / 发行">
+      </label>
+    </section>
+
+    <section id="boardRoot" class="board-root"></section>
+  </main>
+
+  <dialog id="loginDialog" class="modal">
+    <form method="dialog" class="login-card" id="loginForm">
+      <h2>后台登录</h2>
+      <input id="passwordInput" type="password" autocomplete="current-password" placeholder="管理员密码">
+      <div class="modal-actions">
+        <button class="ghost" value="cancel">取消</button>
+        <button class="primary" id="loginSubmit" value="default">进入</button>
+      </div>
+      <p id="loginMessage" class="message"></p>
+    </form>
+  </dialog>
+
+  <aside id="adminPanel" class="admin-panel" aria-hidden="true">
+    <div class="admin-head">
+      <div>
+        <span class="kicker">Admin</span>
+        <h2>编辑看板</h2>
+      </div>
+      <button class="icon-btn" id="closeAdmin" title="关闭" aria-label="关闭">×</button>
+    </div>
+
+    <div class="admin-body">
+      <section class="editor-block">
+        <div class="inline-title">
+          <h3>看板</h3>
+          <button class="small" id="newBoardButton">新建</button>
+        </div>
+        <label>选择看板<select id="boardSelect"></select></label>
+        <label>标题<input id="boardTitle"></label>
+        <label>周期<input id="boardPeriod" placeholder="2026年4月第3周"></label>
+        <label>日期<input id="boardDate" type="date"></label>
+        <label>摘要<textarea id="boardSummary" rows="4"></textarea></label>
+        <label>指标<input id="boardMetrics" placeholder="用 / 分隔，例如 收录24款 / 畅销5款"></label>
+      </section>
+
+      <section class="editor-block">
+        <div class="inline-title">
+          <h3>产品</h3>
+          <button class="small" id="newProductButton">新增产品</button>
+        </div>
+        <label>选择产品<select id="productSelect"></select></label>
+        <div class="grid-2">
+          <label>名称<input id="productName"></label>
+          <label>赛道<input id="productGenre"></label>
+          <label>状态<input id="productStatus" placeholder="畅销 / 将测 / 测试"></label>
+          <label>排序<input id="productRank" type="number" min="0"></label>
+        </div>
+        <div class="grid-2">
+          <label>研发<input id="productDeveloper"></label>
+          <label>发行<input id="productPublisher"></label>
+        </div>
+        <label>公开节点<input id="productNode"></label>
+        <label>趋势判断<textarea id="productJudgement" rows="3"></textarea></label>
+        <label class="checkline"><input id="productFocus" type="checkbox"> 重点关注</label>
+
+        <div class="asset-row">
+          <label class="file-label">图标 / 封面<input id="coverInput" type="file" accept="image/*"></label>
+          <button class="small danger" id="removeProductButton">删除产品</button>
+        </div>
+        <div id="coverPreview" class="preview"></div>
+
+        <label class="file-label wide">追加游戏截图<input id="screensInput" type="file" accept="image/*" multiple></label>
+        <div id="screensPreview" class="screenshot-strip"></div>
+      </section>
+    </div>
+
+    <div class="admin-actions">
+      <button class="danger ghost" id="deleteBoardButton">删除看板</button>
+      <button class="primary" id="saveButton">保存更新</button>
+    </div>
+  </aside>
+
+  <script src="/app.js"></script>
+</body>
+</html>

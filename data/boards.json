@@ -1,0 +1,68 @@
+{
+  "boards": [
+    {
+      "id": "2026-apr-week3",
+      "title": "4月第3周新游",
+      "period": "2026年4月第3周",
+      "date": "2026-04-15",
+      "summary": "本周最值得看的不是单一赛道切换，而是几条不同路径同时给出清晰样本：轻机制小游戏继续抬升，三国轻国战买量验证，开放世界持续承接头部关注，模拟经营延续内容型新品热度。",
+      "metrics": ["收录产品24款", "畅销5款", "将上线1款", "将测6款", "测试12款", "重点产品6款"],
+      "trends": [
+        {
+          "title": "轻机制小游戏继续抬升",
+          "body": "以轻规则、高反馈、短循环为核心，适合做买量效率与留存的第一轮观察。"
+        },
+        {
+          "title": "开放世界承接头部关注",
+          "body": "关注点会从预约与话题，切到内容密度、战斗体验和版本更新能力。"
+        }
+      ],
+      "products": [
+        {
+          "id": "liuliu-heroes",
+          "name": "六六英雄",
+          "genre": "骰子肉鸽",
+          "status": "畅销",
+          "rank": 1,
+          "focus": true,
+          "developer": "北京壹多",
+          "publisher": "海外发行 / 国内发行",
+          "publicNode": "微信小游戏畅销 Top50",
+          "judgement": "轻机制样本，核心观察局内深度、重复体验和长期付费承接。",
+          "cover": "",
+          "screenshots": []
+        },
+        {
+          "id": "three-kingdoms",
+          "name": "三国：天下归心",
+          "genre": "三国轻国战",
+          "status": "测试",
+          "rank": 2,
+          "focus": true,
+          "developer": "未披露",
+          "publisher": "未披露",
+          "publicNode": "买量验证期",
+          "judgement": "看题材认知、国战表达和轻量化策略是否能跑出新用户效率。",
+          "cover": "",
+          "screenshots": []
+        },
+        {
+          "id": "honor-world",
+          "name": "王者荣耀世界",
+          "genre": "开放世界 / ACT",
+          "status": "将测",
+          "rank": 3,
+          "focus": true,
+          "developer": "腾讯",
+          "publisher": "腾讯",
+          "publicNode": "持续高关注",
+          "judgement": "头部 IP 的开放世界表达，重点看战斗体验、内容密度与发布节奏。",
+          "cover": "",
+          "screenshots": []
+        }
+      ],
+      "createdAt": "2026-04-21T00:00:00.000Z",
+      "updatedAt": "2026-04-21T00:00:00.000Z"
+    }
+  ]
+}
