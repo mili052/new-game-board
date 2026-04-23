@@ -3,7 +3,8 @@ const state = {
   selectedBoardId: "",
   selectedProductId: "",
   token: localStorage.getItem("ngbToken") || "",
-  draftProduct: null
+  draftProduct: null,
+  aiImageUrl: ""
 };
 
 const $ = selector => document.querySelector(selector);
@@ -221,6 +222,42 @@ function collectAdminDraft() {
   };
 }
 
+function setAiMessage(message, isError = false) {
+  const target = $("#aiMessage");
+  if (!target) return;
+  target.textContent = message;
+  target.classList.toggle("error", Boolean(isError));
+}
+
+function applyAiDraft(draft) {
+  const board = currentBoard();
+  if (!board) return null;
+
+  const product = {
+    id: uid("product"),
+    name: draft.name || "未命名产品",
+    genre: draft.genre || "",
+    status: draft.status || "待确认",
+    rank: (board.products || []).length + 1,
+    focus: Boolean(draft.focus),
+    developer: draft.developer || "待确认",
+    publisher: draft.publisher || "待确认",
+    publicNode: draft.publicNode || "",
+    judgement: draft.judgement || "",
+    cover: state.aiImageUrl || "",
+    screenshots: state.aiImageUrl ? [state.aiImageUrl] : [],
+    tags: draft.tags || [],
+    needsReview: draft.needsReview || [],
+    sourceText: draft.sourceText || $("#aiInput").value.trim(),
+    reviewState: "待人工确认"
+  };
+
+  board.products = [...(board.products || []), product];
+  state.selectedProductId = product.id;
+  fillProduct();
+  return product;
+}
+
 async function uploadFile(file) {
   return new Promise((resolve, reject) => {
     const reader = new FileReader();
@@ -331,6 +368,44 @@ function wireEvents() {
     board.products = [...(board.products || []), product];
     state.selectedProductId = product.id;
     fillProduct();
+  });
+
+  $("#aiImageInput").addEventListener("change", async event => {
+    const file = event.target.files[0];
+    if (!file) return;
+    try {
+      setAiMessage("正在上传图片...");
+      state.aiImageUrl = await uploadFile(file);
+      $("#aiImagePreview").innerHTML = `<img src="${escapeHtml(state.aiImageUrl)}" alt="AI录入图片">`;
+      setAiMessage("图片已上传，点击 AI整理 生成草稿。");
+    } catch (error) {
+      setAiMessage(error.message, true);
+    }
+  });
+
+  $("#aiParseButton").addEventListener("click", async () => {
+    const text = $("#aiInput").value.trim();
+    if (!currentBoard()) {
+      setAiMessage("请先新建或选择一个看板。", true);
+      return;
+    }
+    if (!text) {
+      setAiMessage("请先粘贴一段新游信息。", true);
+      return;
+    }
+
+    try {
+      $("#aiParseButton").disabled = true;
+      setAiMessage("AI 正在整理草稿...");
+      const data = await api("/api/ai/parse", { method: "POST", body: JSON.stringify({ text }) });
+      const product = applyAiDraft(data.draft || {});
+      const review = (data.draft?.needsReview || []).join("；");
+      setAiMessage(product ? `已生成《${product.name}》草稿。请检查字段，确认后点击“保存更新”。${review ? ` 待确认：${review}` : ""}` : "生成失败", !product);
+    } catch (error) {
+      setAiMessage(error.message, true);
+    } finally {
+      $("#aiParseButton").disabled = false;
+    }
   });
 
   $("#removeProductButton").addEventListener("click", () => {

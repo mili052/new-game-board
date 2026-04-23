@@ -36,10 +36,22 @@ npm start
 ```text
 ADMIN_PASSWORD=你的后台登录密码
 ADMIN_TOKEN_SECRET=随便生成一串很长的随机字符
+OPENAI_API_KEY=你的 OpenAI API Key（用于后台 AI 整理）
+OPENAI_MODEL=gpt-5-mini
 SUPABASE_URL=你的 Supabase Project URL
 SUPABASE_SERVICE_ROLE_KEY=你的 Supabase service_role key
 SUPABASE_BUCKET=game-assets
 ```
+
+## 后台 AI 快速录入
+
+后台登录后，可以在“AI 快速录入”里直接粘贴新游信息，也可以上传一张截图/图片。
+
+- 点击 `AI整理` 后，系统会生成一条产品草稿并填入产品表单。
+- AI 不知道的信息会标记为“待确认”，不会直接发布。
+- 你检查字段后，点击 `保存更新` 才会写入看板。
+- 未配置 `OPENAI_API_KEY` 时，会使用本地简易规则生成草稿，适合先验证录入流程。
+- 第一版图片不强制必填；没有图片时前台会显示占位图。
 
 ## GitHub + Vercel 部署
 

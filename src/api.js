@@ -1,5 +1,6 @@
 const crypto = require("crypto");
 const { listBoards, createBoard, updateBoard, deleteBoard, uploadImage } = require("./storage");
+const { parseGameDraft } = require("./ai");
 
 const adminPassword = process.env.ADMIN_PASSWORD || "change-me-newgame";
 const tokenSecret = process.env.ADMIN_TOKEN_SECRET || adminPassword;
@@ -110,6 +111,12 @@ async function handleApi(req, res) {
     if (req.method === "POST" && url.pathname === "/api/upload") {
       const body = await readBody(req);
       send(res, 201, { url: await uploadImage(body.dataUrl) });
+      return;
+    }
+
+    if (req.method === "POST" && url.pathname === "/api/ai/parse") {
+      const body = await readBody(req);
+      send(res, 200, { draft: await parseGameDraft(body.text) });
       return;
     }
 

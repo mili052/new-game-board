@@ -71,6 +71,17 @@
 
       <section class="editor-block">
         <div class="inline-title">
+          <h3>AI 快速录入</h3>
+          <button class="small" id="aiParseButton" type="button">AI整理</button>
+        </div>
+        <label>粘贴新游信息<textarea id="aiInput" rows="7" placeholder="把公众号、群聊、商店页、表格里的新游信息直接粘贴到这里。AI 会生成草稿，发布前仍需你确认。"></textarea></label>
+        <label class="file-label wide">兼容上传截图 / 图片<input id="aiImageInput" type="file" accept="image/*"></label>
+        <div id="aiImagePreview" class="preview"></div>
+        <p id="aiMessage" class="message neutral"></p>
+      </section>
+
+      <section class="editor-block">
+        <div class="inline-title">
           <h3>产品</h3>
           <button class="small" id="newProductButton">新增产品</button>
         </div>

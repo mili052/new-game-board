@@ -23,6 +23,7 @@ body {
 
 button, input, select, textarea { font: inherit; }
 button { cursor: pointer; }
+button:disabled { cursor: wait; opacity: .64; }
 
 .topbar {
   width: 1560px;
@@ -172,6 +173,8 @@ input:focus, select:focus, textarea:focus { border-color: var(--blue); box-shado
 .login-card h2 { margin: 0 0 16px; }
 .modal-actions { display: flex; justify-content: flex-end; gap: 10px; margin-top: 14px; }
 .message { min-height: 18px; margin: 12px 0 0; color: #c53434; font-size: 13px; }
+.message.neutral { color: var(--muted); line-height: 1.55; }
+.message.error { color: #c53434; }
 
 .admin-panel {
   position: fixed;
