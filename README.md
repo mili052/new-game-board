@@ -1,6 +1,6 @@
-# 新游观察看板
+# 新游产品库
 
-这是一个可部署到 GitHub + Vercel + Supabase 的新游看板。
+这是一个可部署到 GitHub Pages / Vercel / Supabase 的新游产品库前台。
 
 - 公开页：任何人都能访问和按时间筛选
 - 后台：右上角齿轮登录，仅管理员可新增/编辑看板、产品、截图
@@ -17,6 +17,104 @@ npm start
 ```
 
 打开：http://localhost:4173
+
+## 飞书多维表格同步
+
+项目已经补好第一版飞书同步脚本，目标是把飞书多维表格中的“可发布”记录同步成前台使用的 `data/boards.json`。
+
+### 飞书侧需要准备
+
+你需要在飞书开放平台创建一个**自建应用**，并准备：
+
+- `App ID`
+- `App Secret`
+- 多维表格 `app_token`
+- 数据表 `table_id`
+- 可选的 `view_id`
+
+推荐飞书字段名和你现在用的一致：
+
+- `游戏名`
+- `品类`
+- `题材`
+- `研发`
+- `发行`
+- `原始粘贴内容`
+- `图片/截图`
+- `状态`
+- `平台`
+- `月份`
+- `是否重点`
+- `来源链接`
+- `发布状态`
+- `关注理由`
+- `趋势判断`
+- `创建时间`
+
+同步脚本默认只会拉取：
+
+```text
+发布状态 = 可发布
+```
+
+### 本地手动同步
+
+先设置环境变量：
+
+```powershell
+$env:FEISHU_APP_ID="你的 App ID"
+$env:FEISHU_APP_SECRET="你的 App Secret"
+$env:FEISHU_BITABLE_APP_TOKEN="你的多维表格 app_token"
+$env:FEISHU_TABLE_ID="你的 table_id"
+$env:FEISHU_VIEW_ID="可选"
+$env:FEISHU_PUBLISH_VALUE="可发布"
+```
+
+然后执行：
+
+```powershell
+npm run sync:feishu
+```
+
+执行成功后，会自动更新：
+
+```text
+data/boards.json
+```
+
+### GitHub 自动同步
+
+仓库已经加好工作流：
+
+```text
+.github/workflows/sync-feishu.yml
+```
+
+你只需要去 GitHub 仓库里配置这些 Secrets：
+
+- `FEISHU_APP_ID`
+- `FEISHU_APP_SECRET`
+- `FEISHU_BITABLE_APP_TOKEN`
+- `FEISHU_TABLE_ID`
+- `FEISHU_VIEW_ID`（可选）
+- `FEISHU_PUBLISH_VALUE`（可选，默认 `可发布`）
+
+配置位置：
+
+```text
+Settings
+→ Secrets and variables
+→ Actions
+```
+
+配置完成后，你可以在：
+
+```text
+Actions
+→ Sync Feishu Data
+```
+
+里手动运行，也可以等它每 6 小时自动同步一次。
 
 ## Supabase 准备
 
