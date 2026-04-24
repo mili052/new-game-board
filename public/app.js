@@ -113,10 +113,21 @@ function groupProductsByCategory(products) {
   return [...groups.entries()].map(([category, items]) => ({ category, items }));
 }
 
+function screenshotGallery(product, className = "screenshots") {
+  const shots = product.screenshots || [];
+  if (!shots.length) return "";
+  return `
+    <div class="${className}">
+      ${shots.map((src, index) => `
+        <a class="shot-link" href="${escapeHtml(src)}" target="_blank" rel="noreferrer" aria-label="${escapeHtml(product.name)} 截图 ${index + 1}">
+          <img src="${escapeHtml(src)}" alt="${escapeHtml(product.name)} 截图 ${index + 1}">
+        </a>
+      `).join("")}
+    </div>
+  `;
+}
+
 function productCard(product, boardId, lead = false) {
-  const screenshots = (product.screenshots || [])
-    .map(src => `<img src="${escapeHtml(src)}" alt="${escapeHtml(product.name)} 截图">`)
-    .join("");
   const poster = product.cover || product.screenshots?.[0] || "";
   const tags = [product.genre, product.topic, product.platform].filter(Boolean);
   const summary = product.reason || product.judgement || product.publicNode || "持续观察中。";
@@ -145,7 +156,7 @@ function productCard(product, boardId, lead = false) {
       </div>
       <p class="summary">${escapeHtml(summary)}</p>
       ${product.reason ? `<div class="copybox compact"><span>关注理由</span><p>${escapeHtml(product.reason)}</p></div>` : ""}
-      ${screenshots ? `<div class="screenshots">${screenshots}</div>` : ""}
+      ${screenshotGallery(product)}
     </article>
   `;
 }
@@ -205,12 +216,13 @@ function renderBoard() {
 
   root.innerHTML = boards.map(board => {
     const products = filteredProducts(board);
+    const rankingProducts = products.filter(product => isRankingStatus(product.status));
     const categories = groupProductsByCategory(products);
-    const rankingCount = products.filter(product => isRankingStatus(product.status)).length;
+    const rankingCount = rankingProducts.length;
     const focusCount = products.filter(product => product.focus).length;
     const metrics = [...(board.metrics || [])];
 
-    if (rankingCount && !metrics.some(metric => /(上榜|畅销)/.test(metric))) {
+    if (rankingCount && !metrics.some(metric => /(上榜|畅销|榜单)/.test(metric))) {
       metrics.push(`上榜产品${rankingCount}款`);
     }
     if (!metrics.some(metric => /重点/.test(metric))) {
@@ -224,10 +236,21 @@ function renderBoard() {
             <span class="kicker">${escapeHtml(board.period || "新游报告")}</span>
           </div>
           <h2>${escapeHtml(board.title)}</h2>
-          <p>${escapeHtml(board.summary || "按品类整理的新品游戏库，支持持续录入、筛选和公开展示。")}</p>
+          <p>${escapeHtml(board.summary || "按品类整理的新游产品库，支持持续录入、筛选和公开展示。")}</p>
         </div>
         <div class="metric-row metric-grid">${metrics.map(metric => `<span class="metric">${escapeHtml(metric)}</span>`).join("")}</div>
       </section>
+      ${rankingProducts.length ? `
+        <section class="section">
+          <div class="section-head">
+            <div>
+              <h3>新上榜专区</h3>
+              <div class="sub">自动收录状态中包含上榜、畅销、榜单等关键词的产品</div>
+            </div>
+          </div>
+          <div class="cards-grid ranking-grid">${rankingProducts.map(product => productCard(product, board.id)).join("")}</div>
+        </section>
+      ` : ""}
       <section class="section">
         <div class="section-head">
           <div>
@@ -278,9 +301,7 @@ function syncAdminAvailability() {
 
 function fillAdmin() {
   const board = currentBoard();
-  $("#boardSelect").innerHTML = state.boards
-    .map(item => `<option value="${escapeHtml(item.id)}">${escapeHtml(item.period || item.title)}</option>`)
-    .join("");
+  $("#boardSelect").innerHTML = state.boards.map(item => `<option value="${escapeHtml(item.id)}">${escapeHtml(item.period || item.title)}</option>`).join("");
   if (!board) return;
   $("#boardSelect").value = board.id;
   $("#boardTitle").value = board.title || "";
@@ -295,20 +316,15 @@ function fillProduct() {
   const board = currentBoard();
   const products = board?.products || [];
   if (!state.selectedProductId && products[0]) state.selectedProductId = products[0].id;
-  $("#productSelect").innerHTML = products
-    .map(product => `<option value="${escapeHtml(product.id)}">${escapeHtml(product.name || "未命名产品")}</option>`)
-    .join("");
-
+  $("#productSelect").innerHTML = products.map(product => `<option value="${escapeHtml(product.id)}">${escapeHtml(product.name || "未命名产品")}</option>`).join("");
   const product = currentProduct();
   if (!product) {
-    ["productName", "productGenre", "productStatus", "productRank", "productDeveloper", "productPublisher", "productNode", "productJudgement"]
-      .forEach(id => { $(`#${id}`).value = ""; });
+    ["productName", "productGenre", "productStatus", "productRank", "productDeveloper", "productPublisher", "productNode", "productJudgement"].forEach(id => { $(`#${id}`).value = ""; });
     $("#productFocus").checked = false;
     $("#coverPreview").innerHTML = "";
     $("#screensPreview").innerHTML = "";
     return;
   }
-
   state.selectedProductId = product.id;
   $("#productSelect").value = product.id;
   $("#productName").value = product.name || "";
@@ -345,7 +361,6 @@ function collectAdminDraft() {
       focus: $("#productFocus").checked
     };
   }
-
   return {
     ...board,
     title: $("#boardTitle").value.trim() || "未命名看板",
@@ -395,7 +410,7 @@ function openProductDetail(boardId, productId) {
     ${product.reason ? `<section class="detail-section"><h4>关注理由</h4><p>${escapeHtml(product.reason)}</p></section>` : ""}
     ${product.judgement ? `<section class="detail-section"><h4>趋势判断</h4><p>${escapeHtml(product.judgement)}</p></section>` : ""}
     ${product.sourceText ? `<section class="detail-section"><h4>原始内容</h4><p>${escapeHtml(product.sourceText)}</p></section>` : ""}
-    ${(product.screenshots || []).length ? `<section class="detail-section"><h4>截图</h4><div class="screenshots detail-screens">${product.screenshots.map(src => `<img src="${escapeHtml(src)}" alt="${escapeHtml(product.name)} 截图">`).join("")}</div></section>` : ""}
+    ${screenshotGallery(product, "screenshots detail-screens")}
   `;
   $("#detailDialog").showModal();
 }
@@ -478,27 +493,22 @@ function openAdmin() {
 
 function wireEvents() {
   $("#adminButton").addEventListener("click", openAdmin);
-
   $("#closeAdmin").addEventListener("click", () => {
     $("#adminPanel").classList.remove("open");
     $("#adminPanel").setAttribute("aria-hidden", "true");
   });
-
   $("#closeDetail").addEventListener("click", () => $("#detailDialog").close());
   $("#detailDialog").addEventListener("click", event => {
     if (event.target === $("#detailDialog")) $("#detailDialog").close();
   });
-
   $("#periodFilter").addEventListener("change", renderBoard);
   $("#statusFilter").addEventListener("change", renderBoard);
   $("#searchInput").addEventListener("input", renderBoard);
-
   $("#boardRoot").addEventListener("click", event => {
     const card = event.target.closest("[data-open-product]");
     if (!card) return;
     openProductDetail(card.dataset.openBoard, card.dataset.openProduct);
   });
-
   $("#boardRoot").addEventListener("keydown", event => {
     const card = event.target.closest("[data-open-product]");
     if (!card) return;
@@ -525,7 +535,6 @@ function wireEvents() {
     state.selectedProductId = "";
     fillAdmin();
   });
-
   $("#productSelect").addEventListener("change", event => {
     state.selectedProductId = event.target.value;
     fillProduct();
