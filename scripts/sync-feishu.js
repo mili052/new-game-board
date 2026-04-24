@@ -5,33 +5,78 @@ const root = path.join(__dirname, "..");
 const dataFile = path.join(root, "data", "boards.json");
 const assetDir = path.join(root, "public", "feishu-assets");
 
+const C = {
+  gameName: "\u6e38\u620f\u540d",
+  aiGameName: "AI: \u6e38\u620f\u540d",
+  name: "\u540d\u79f0",
+  genre: "\u54c1\u7c7b",
+  type: "\u7c7b\u578b",
+  topic: "\u9898\u6750",
+  developer: "\u7814\u53d1",
+  develop: "\u5f00\u53d1",
+  publisher: "\u53d1\u884c",
+  sourceText: "\u539f\u59cb\u7c98\u8d34\u5185\u5bb9",
+  rawText: "\u539f\u59cb\u5185\u5bb9",
+  icon: "\u6e38\u620ficon",
+  iconCap: "\u6e38\u620fIcon",
+  screenshots: "\u56fe\u7247/\u622a\u56fe",
+  image: "\u56fe\u7247",
+  screenshot: "\u622a\u56fe",
+  status: "\u72b6\u6001",
+  platform: "\u5e73\u53f0",
+  month: "\u6708\u4efd",
+  focus: "\u662f\u5426\u91cd\u70b9",
+  focusShort: "\u91cd\u70b9",
+  sourceUrl: "\u6765\u6e90\u94fe\u63a5",
+  link: "\u94fe\u63a5",
+  releaseStatus: "\u53d1\u5e03\u72b6\u6001",
+  reason: "\u5173\u6ce8\u7406\u7531",
+  judgement: "\u8d8b\u52bf\u5224\u65ad",
+  createdAt: "\u521b\u5efa\u65f6\u95f4",
+  updatedAt: "\u66f4\u65b0\u65f6\u95f4",
+  testTime: "\u6d4b\u8bd5\u65f6\u95f4",
+  publicNode: "\u516c\u5f00\u8282\u70b9",
+  node: "\u8282\u70b9",
+  yes: "\u662f",
+  keyProduct: "\u91cd\u70b9",
+  monthSuffix: "\u6708",
+  yearSuffix: "\u5e74",
+  unpublished: "\u5f85\u786e\u8ba4",
+  unnamed: "\u672a\u547d\u540d\u4ea7\u54c1",
+  unpublishedBoardMonth: "\u672a\u5206\u6708",
+  publishValue: "\u53ef\u53d1\u5e03",
+  siteTitle: "\u65b0\u6e38\u4ea7\u54c1\u5e93",
+  statusFallback: "\u5f85\u786e\u8ba4",
+  summary: "\u6536\u5f55\u7684\u65b0\u6e38\u4ea7\u54c1\u5217\u8868\uff0c\u652f\u6301\u6301\u7eed\u5f55\u5165\u3001\u7b5b\u9009\u548c\u5bf9\u5916\u5c55\u793a\u3002"
+};
+
 const FIELD_ALIASES = {
-  name: ["游戏名", "AI: 游戏名", "名称"],
-  genre: ["品类", "类型"],
-  topic: ["题材"],
-  developer: ["研发", "开发"],
-  publisher: ["发行"],
-  sourceText: ["原始粘贴内容", "原始内容"],
-  icon: ["游戏icon", "游戏Icon", "icon", "Icon", "ICON"],
-  screenshots: ["图片/截图", "图片", "截图"],
-  status: ["状态"],
-  platform: ["平台"],
-  month: ["月份"],
-  focus: ["是否重点", "重点"],
-  sourceUrl: ["来源链接", "链接"],
-  releaseStatus: ["发布状态"],
-  reason: ["关注理由"],
-  judgement: ["趋势判断"],
-  createdAt: ["创建时间", "更新时间"],
-  testTime: ["测试时间"],
-  publicNode: ["公开节点", "节点"]
+  name: [C.gameName, C.aiGameName, C.name],
+  genre: [C.genre, C.type],
+  topic: [C.topic],
+  developer: [C.developer, C.develop],
+  publisher: [C.publisher],
+  sourceText: [C.sourceText, C.rawText],
+  icon: [C.icon, C.iconCap, "icon", "Icon", "ICON"],
+  screenshots: [C.screenshots, C.image, C.screenshot],
+  status: [C.status],
+  platform: [C.platform],
+  month: [C.month],
+  focus: [C.focus, C.focusShort],
+  sourceUrl: [C.sourceUrl, C.link],
+  releaseStatus: [C.releaseStatus],
+  reason: [C.reason],
+  judgement: [C.judgement],
+  createdAt: [C.createdAt, C.updatedAt],
+  testTime: [C.testTime],
+  publicNode: [C.publicNode, C.node]
 };
 
 const assetCache = new Map();
 
 function required(name) {
   const value = process.env[name];
-  if (!value) throw new Error(`缺少环境变量 ${name}`);
+  if (!value) throw new Error(`Missing env: ${name}`);
   return value;
 }
 
@@ -105,7 +150,7 @@ function toArrayText(value) {
 
 function toBool(value) {
   const text = toText(value).toLowerCase();
-  return ["是", "true", "1", "yes", "重点"].includes(text);
+  return [C.yes, "true", "1", "yes", C.keyProduct].map(item => item.toLowerCase()).includes(text);
 }
 
 function parseDateValue(value) {
@@ -144,15 +189,15 @@ function normalizeMonth(monthValue, testTimeValue, createdAtValue) {
 
   const date = parseDateValue(testTimeValue) || parseDateValue(createdAtValue);
   if (!date) return "";
-  return `${date.getMonth() + 1}月`;
+  return `${date.getMonth() + 1}${C.monthSuffix}`;
 }
 
 function monthLabel(monthKey) {
   const text = toText(monthKey);
-  if (!text) return "未分月";
+  if (!text) return C.unpublishedBoardMonth;
   if (/^\d{4}-\d{2}$/.test(text)) {
     const [year, month] = text.split("-");
-    return `${year}年${Number(month)}月`;
+    return `${year}${C.yearSuffix}${Number(month)}${C.monthSuffix}`;
   }
   return text;
 }
@@ -181,6 +226,7 @@ function normalizeAttachments(value) {
   return value
     .map(item => {
       if (!item || typeof item !== "object") return null;
+
       const sourceUrl =
         item.tmp_url ||
         item.url ||
@@ -189,11 +235,7 @@ function normalizeAttachments(value) {
         item.link ||
         "";
 
-      let fileToken =
-        item.file_token ||
-        item.token ||
-        item.fileToken ||
-        "";
+      let fileToken = item.file_token || item.token || item.fileToken || "";
 
       if (!fileToken && sourceUrl) {
         try {
@@ -224,7 +266,7 @@ async function getTenantAccessToken() {
 
   const data = await response.json().catch(() => ({}));
   if (!response.ok || data.code !== 0 || !data.tenant_access_token) {
-    throw new Error(`获取飞书 tenant_access_token 失败：${data.msg || response.statusText}`);
+    throw new Error(`Failed to get tenant token: ${data.msg || response.statusText}`);
   }
 
   return data.tenant_access_token;
@@ -254,7 +296,7 @@ async function listRecords(token) {
 
     const data = await response.json().catch(() => ({}));
     if (!response.ok || data.code !== 0) {
-      throw new Error(`读取飞书多维表格失败：${data.msg || response.statusText}`);
+      throw new Error(`Failed to list records: ${data.msg || response.statusText}`);
     }
 
     items.push(...(data.data?.items || []));
@@ -276,15 +318,10 @@ async function resolveTempDownloadUrl(sourceUrl, token) {
 
   const data = await response.json().catch(() => ({}));
   if (!response.ok || data.code !== 0) {
-    throw new Error(`获取飞书临时下载地址失败：${data.msg || response.statusText}`);
+    throw new Error(`Failed to resolve temp url: ${data.msg || response.statusText}`);
   }
 
-  const list =
-    data.data?.tmp_download_urls ||
-    data.data?.download_urls ||
-    data.data?.urls ||
-    [];
-
+  const list = data.data?.tmp_download_urls || data.data?.download_urls || data.data?.urls || [];
   const first = Array.isArray(list) ? list[0] : null;
   return first?.tmp_download_url || first?.download_url || first?.url || "";
 }
@@ -321,7 +358,7 @@ async function downloadAttachment(attachment, token, stem) {
 
   const response = await fetch(finalUrl);
   if (!response.ok) {
-    console.warn(`下载附件失败：${response.status} ${response.statusText}`);
+    console.warn(`Attachment download failed: ${response.status} ${response.statusText}`);
     return "";
   }
 
@@ -362,7 +399,7 @@ async function normalizeProduct(record, token) {
 
   return {
     id: record.record_id,
-    name: toText(pick(fields, "name")) || "未命名产品",
+    name: toText(pick(fields, "name")) || C.unnamed,
     genre: toArrayText(pick(fields, "genre")).join(" / "),
     topic: toArrayText(pick(fields, "topic")).join(" / "),
     platform: toArrayText(pick(fields, "platform")).join(" / "),
@@ -372,7 +409,7 @@ async function normalizeProduct(record, token) {
     icon,
     screenshots,
     cover: icon || screenshots[0] || "",
-    status: toText(pick(fields, "status")) || "待确认",
+    status: toText(pick(fields, "status")) || C.statusFallback,
     month: normalizeMonth(pick(fields, "month"), testTimeValue, createdAtValue),
     focus: toBool(pick(fields, "focus")),
     sourceUrl: toText(pick(fields, "sourceUrl")),
@@ -389,10 +426,10 @@ function buildMetrics(products) {
   const statuses = [...new Set(products.map(item => item.status).filter(Boolean))];
 
   return [
-    `收录产品${products.length}款`,
-    `${statuses.join(" / ") || "待确认"}`,
-    `${platforms.size}个平台`,
-    `重点产品${products.filter(item => item.focus).length}款`
+    `\u6536\u5f55\u4ea7\u54c1${products.length}\u6b3e`,
+    `${statuses.join(" / ") || C.statusFallback}`,
+    `${platforms.size}\u4e2a\u5e73\u53f0`,
+    `\u91cd\u70b9\u4ea7\u54c1${products.filter(item => item.focus).length}\u6b3e`
   ];
 }
 
@@ -400,7 +437,7 @@ function buildBoards(products) {
   const groups = new Map();
 
   for (const product of products) {
-    const key = product.month || "未分月";
+    const key = product.month || C.unpublishedBoardMonth;
     if (!groups.has(key)) groups.set(key, []);
     groups.get(key).push(product);
   }
@@ -412,10 +449,10 @@ function buildBoards(products) {
       const now = new Date().toISOString();
       return {
         id: sanitizeId(period),
-        title: `${period}${process.env.FEISHU_SITE_TITLE || "新游产品库"}`,
+        title: `${period}${process.env.FEISHU_SITE_TITLE || C.siteTitle}`,
         period,
         date: now.slice(0, 10),
-        summary: `${period}收录的新游产品列表，支持持续录入、筛选和对外展示。`,
+        summary: `${period}${C.summary}`,
         metrics: buildMetrics(items),
         trends: [],
         products: items
@@ -435,7 +472,7 @@ function writeBoards(boards) {
 async function main() {
   ensureAssetDir();
 
-  const publishValue = process.env.FEISHU_PUBLISH_VALUE || "可发布";
+  const publishValue = process.env.FEISHU_PUBLISH_VALUE || C.publishValue;
   const token = await getTenantAccessToken();
   const records = await listRecords(token);
 
