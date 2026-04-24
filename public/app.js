@@ -5,7 +5,6 @@ const state = {
   detailProductId: "",
   detailBoardId: "",
   token: localStorage.getItem("ngbToken") || "",
-  draftProduct: null,
   aiImageUrl: "",
   staticMode: false
 };
@@ -59,16 +58,16 @@ function escapeHtml(value) {
 }
 
 function currentBoard() {
-  return state.boards.find(board => board.id === state.selectedBoardId) || state.boards[0];
+  return state.boards.find(board => board.id === state.selectedBoardId) || state.boards[0] || null;
 }
 
 function currentProduct() {
   const board = currentBoard();
-  return board?.products.find(product => product.id === state.selectedProductId) || board?.products[0];
+  return board?.products.find(product => product.id === state.selectedProductId) || board?.products?.[0] || null;
 }
 
 function boardById(id) {
-  return state.boards.find(board => board.id === id);
+  return state.boards.find(board => board.id === id) || null;
 }
 
 function findProduct(boardId, productId) {
@@ -76,7 +75,7 @@ function findProduct(boardId, productId) {
 }
 
 function getInitial(name) {
-  return escapeHtml(String(name || "游").slice(0, 2));
+  return escapeHtml(String(name || "游戏").slice(0, 2));
 }
 
 function media(src, name, className = "cover") {
@@ -84,13 +83,48 @@ function media(src, name, className = "cover") {
   return `<div class="${className} placeholder"><span>${getInitial(name)}</span><small>待补图</small></div>`;
 }
 
+function splitTags(value) {
+  return String(value || "")
+    .split("/")
+    .map(item => item.trim())
+    .filter(Boolean);
+}
+
+function primaryCategory(product) {
+  return splitTags(product.genre)[0] || "未分类";
+}
+
+function isRankingStatus(status) {
+  return /(上榜|畅销|榜单|top)/i.test(String(status || ""));
+}
+
+function statusBadge(status) {
+  if (!status) return "";
+  return `<span class="badge${isRankingStatus(status) ? " spotlight" : ""}">${escapeHtml(status)}</span>`;
+}
+
+function groupProductsByCategory(products) {
+  const groups = new Map();
+  products.forEach(product => {
+    const category = primaryCategory(product);
+    if (!groups.has(category)) groups.set(category, []);
+    groups.get(category).push(product);
+  });
+  return [...groups.entries()].map(([category, items]) => ({ category, items }));
+}
+
 function productCard(product, boardId, lead = false) {
-  const screenshots = (product.screenshots || []).map(src => `<img src="${escapeHtml(src)}" alt="${escapeHtml(product.name)} 截图">`).join("");
+  const screenshots = (product.screenshots || [])
+    .map(src => `<img src="${escapeHtml(src)}" alt="${escapeHtml(product.name)} 截图">`)
+    .join("");
   const poster = product.cover || product.screenshots?.[0] || "";
   const tags = [product.genre, product.topic, product.platform].filter(Boolean);
   const summary = product.reason || product.judgement || product.publicNode || "持续观察中。";
+  const ranking = isRankingStatus(product.status);
+
   return `
-    <article class="${lead ? "lead-card" : "product-card"} product-entry" data-open-product="${escapeHtml(product.id)}" data-open-board="${escapeHtml(boardId)}" tabindex="0">
+    <article class="${lead ? "lead-card" : "product-card"} product-entry${ranking ? " status-featured" : ""}" data-open-product="${escapeHtml(product.id)}" data-open-board="${escapeHtml(boardId)}" tabindex="0">
+      ${ranking ? `<div class="status-ribbon">${escapeHtml(product.status)}</div>` : ""}
       ${lead ? `<div class="rank">#${escapeHtml(product.rank || "")}</div>` : ""}
       <div class="product-top">
         <div class="cover-shell">${media(poster, product.name)}</div>
@@ -100,12 +134,12 @@ function productCard(product, boardId, lead = false) {
         </div>
       </div>
       <div class="badges">
-        ${product.status ? `<span class="badge">${escapeHtml(product.status)}</span>` : ""}
+        ${statusBadge(product.status)}
         ${product.focus ? `<span class="badge focus">重点关注</span>` : ""}
       </div>
       <div class="info">
-        <b>研发</b><div>${escapeHtml(product.developer || "未填写")}</div>
-        <b>发行</b><div>${escapeHtml(product.publisher || "未填写")}</div>
+        <b>研发</b><div>${escapeHtml(product.developer || "待补充")}</div>
+        <b>发行</b><div>${escapeHtml(product.publisher || "待补充")}</div>
         ${product.month ? `<b>月份</b><div>${escapeHtml(product.month)}</div>` : ""}
         ${product.sourceUrl ? `<b>来源</b><div><a class="source-link" href="${escapeHtml(product.sourceUrl)}" target="_blank" rel="noreferrer">查看原文</a></div>` : ""}
       </div>
@@ -133,9 +167,9 @@ function filteredProducts(board) {
         product.publisher,
         product.publicNode,
         product.reason,
-        product.judgement
-      ]
-        .some(value => String(value || "").toLowerCase().includes(q));
+        product.judgement,
+        product.status
+      ].some(value => String(value || "").toLowerCase().includes(q));
     });
 }
 
@@ -165,14 +199,24 @@ function renderBoard() {
     : state.boards;
 
   if (!boards.length) {
-    root.innerHTML = `<div class="empty">还没有看板。登录后台后可以先新建一周。</div>`;
+    root.innerHTML = `<div class="empty">还没有看板，登录后可以先新建一期。</div>`;
     return;
   }
 
   root.innerHTML = boards.map(board => {
     const products = filteredProducts(board);
-    const leads = products.filter(product => product.focus).slice(0, 6);
-    const normal = products.filter(product => !leads.includes(product));
+    const categories = groupProductsByCategory(products);
+    const rankingCount = products.filter(product => isRankingStatus(product.status)).length;
+    const focusCount = products.filter(product => product.focus).length;
+    const metrics = [...(board.metrics || [])];
+
+    if (rankingCount && !metrics.some(metric => /(上榜|畅销)/.test(metric))) {
+      metrics.push(`上榜产品${rankingCount}款`);
+    }
+    if (!metrics.some(metric => /重点/.test(metric))) {
+      metrics.push(`重点产品${focusCount}款`);
+    }
+
     return `
       <section class="hero library-hero">
         <div class="hero-copy library-copy">
@@ -180,27 +224,42 @@ function renderBoard() {
             <span class="kicker">${escapeHtml(board.period || "新游报告")}</span>
           </div>
           <h2>${escapeHtml(board.title)}</h2>
-          <p>${escapeHtml(board.summary)}</p>
+          <p>${escapeHtml(board.summary || "按品类整理的新品游戏库，支持持续录入、筛选和公开展示。")}</p>
         </div>
-        <div class="metric-row metric-grid">${(board.metrics || []).map(metric => `<span class="metric">${escapeHtml(metric)}</span>`).join("")}</div>
+        <div class="metric-row metric-grid">${metrics.map(metric => `<span class="metric">${escapeHtml(metric)}</span>`).join("")}</div>
       </section>
-      ${leads.length ? `
-        <section class="section">
-          <div class="section-head"><div><h3>重点产品</h3><div class="sub">优先观察顺序</div></div></div>
-          <div class="lead-grid">${leads.map(product => productCard(product, board.id, true)).join("")}</div>
-        </section>` : ""}
       <section class="section">
         <div class="section-head">
           <div>
             <h3>产品列表</h3>
-            <div class="sub">当前筛选 ${products.length} 款，点击卡片可查看完整资料</div>
+            <div class="sub">当前筛选 ${products.length} 款，按品类分组展示；上榜/畅销状态已高亮。</div>
           </div>
         </div>
-        ${products.length ? `<div class="cards-grid">${normal.concat(leads.filter(product => normal.length === 0 ? false : true)).map(product => productCard(product, board.id)).join("")}</div>` : `<div class="empty">当前筛选下没有产品。</div>`}
+        ${products.length ? `
+          <div class="category-stack">
+            ${categories.map(group => `
+              <section class="category-group">
+                <div class="category-head">
+                  <div>
+                    <h4>${escapeHtml(group.category)}</h4>
+                    <div class="sub">本类共 ${group.items.length} 款</div>
+                  </div>
+                  <span class="category-count">${group.items.length}</span>
+                </div>
+                <div class="cards-grid category-grid">${group.items.map(product => productCard(product, board.id)).join("")}</div>
+              </section>
+            `).join("")}
+          </div>
+        ` : `<div class="empty">当前筛选下没有产品。</div>`}
       </section>
       ${(board.trends || []).length ? `
         <section class="section">
-          <div class="section-head"><div><h3>趋势观察</h3><div class="sub">按本期报告维护</div></div></div>
+          <div class="section-head">
+            <div>
+              <h3>趋势观察</h3>
+              <div class="sub">按本期报告维护</div>
+            </div>
+          </div>
           <div class="trend-grid">${board.trends.map(trend => `<article class="trend-card"><b>${escapeHtml(trend.title)}</b><p>${escapeHtml(trend.body)}</p></article>`).join("")}</div>
         </section>` : ""}
     `;
@@ -219,7 +278,9 @@ function syncAdminAvailability() {
 
 function fillAdmin() {
   const board = currentBoard();
-  $("#boardSelect").innerHTML = state.boards.map(item => `<option value="${escapeHtml(item.id)}">${escapeHtml(item.period || item.title)}</option>`).join("");
+  $("#boardSelect").innerHTML = state.boards
+    .map(item => `<option value="${escapeHtml(item.id)}">${escapeHtml(item.period || item.title)}</option>`)
+    .join("");
   if (!board) return;
   $("#boardSelect").value = board.id;
   $("#boardTitle").value = board.title || "";
@@ -234,15 +295,20 @@ function fillProduct() {
   const board = currentBoard();
   const products = board?.products || [];
   if (!state.selectedProductId && products[0]) state.selectedProductId = products[0].id;
-  $("#productSelect").innerHTML = products.map(product => `<option value="${escapeHtml(product.id)}">${escapeHtml(product.name || "未命名产品")}</option>`).join("");
+  $("#productSelect").innerHTML = products
+    .map(product => `<option value="${escapeHtml(product.id)}">${escapeHtml(product.name || "未命名产品")}</option>`)
+    .join("");
+
   const product = currentProduct();
   if (!product) {
-    ["productName", "productGenre", "productStatus", "productRank", "productDeveloper", "productPublisher", "productNode", "productJudgement"].forEach(id => $(`#${id}`).value = "");
+    ["productName", "productGenre", "productStatus", "productRank", "productDeveloper", "productPublisher", "productNode", "productJudgement"]
+      .forEach(id => { $(`#${id}`).value = ""; });
     $("#productFocus").checked = false;
     $("#coverPreview").innerHTML = "";
     $("#screensPreview").innerHTML = "";
     return;
   }
+
   state.selectedProductId = product.id;
   $("#productSelect").value = product.id;
   $("#productName").value = product.name || "";
@@ -279,6 +345,7 @@ function collectAdminDraft() {
       focus: $("#productFocus").checked
     };
   }
+
   return {
     ...board,
     title: $("#boardTitle").value.trim() || "未命名看板",
@@ -309,7 +376,7 @@ function openProductDetail(boardId, productId) {
       <div class="detail-media">${media(poster, product.name, "detail-cover")}</div>
       <div class="detail-copy">
         <div class="badges">
-          ${product.status ? `<span class="badge">${escapeHtml(product.status)}</span>` : ""}
+          ${statusBadge(product.status)}
           ${product.focus ? `<span class="badge focus">重点关注</span>` : ""}
         </div>
         <h3>${escapeHtml(product.name)}</h3>
@@ -320,8 +387,8 @@ function openProductDetail(boardId, productId) {
       </div>
     </section>
     <section class="detail-grid">
-      <div class="detail-box"><span>研发</span><strong>${escapeHtml(product.developer || "未填写")}</strong></div>
-      <div class="detail-box"><span>发行</span><strong>${escapeHtml(product.publisher || "未填写")}</strong></div>
+      <div class="detail-box"><span>研发</span><strong>${escapeHtml(product.developer || "待补充")}</strong></div>
+      <div class="detail-box"><span>发行</span><strong>${escapeHtml(product.publisher || "待补充")}</strong></div>
       <div class="detail-box"><span>公开节点</span><strong>${escapeHtml(product.publicNode || "待补充")}</strong></div>
       <div class="detail-box"><span>来源</span><strong>${product.sourceUrl ? `<a class="source-link" href="${escapeHtml(product.sourceUrl)}" target="_blank" rel="noreferrer">查看原文</a>` : "暂无"}</strong></div>
     </section>
@@ -411,22 +478,27 @@ function openAdmin() {
 
 function wireEvents() {
   $("#adminButton").addEventListener("click", openAdmin);
+
   $("#closeAdmin").addEventListener("click", () => {
     $("#adminPanel").classList.remove("open");
     $("#adminPanel").setAttribute("aria-hidden", "true");
   });
+
   $("#closeDetail").addEventListener("click", () => $("#detailDialog").close());
   $("#detailDialog").addEventListener("click", event => {
     if (event.target === $("#detailDialog")) $("#detailDialog").close();
   });
+
   $("#periodFilter").addEventListener("change", renderBoard);
   $("#statusFilter").addEventListener("change", renderBoard);
   $("#searchInput").addEventListener("input", renderBoard);
+
   $("#boardRoot").addEventListener("click", event => {
     const card = event.target.closest("[data-open-product]");
     if (!card) return;
     openProductDetail(card.dataset.openBoard, card.dataset.openProduct);
   });
+
   $("#boardRoot").addEventListener("keydown", event => {
     const card = event.target.closest("[data-open-product]");
     if (!card) return;
@@ -453,6 +525,7 @@ function wireEvents() {
     state.selectedProductId = "";
     fillAdmin();
   });
+
   $("#productSelect").addEventListener("change", event => {
     state.selectedProductId = event.target.value;
     fillProduct();
@@ -529,7 +602,7 @@ function wireEvents() {
       setAiMessage("AI 正在整理草稿...");
       const data = await api("/api/ai/parse", { method: "POST", body: JSON.stringify({ text }) });
       const product = applyAiDraft(data.draft || {});
-      const review = (data.draft?.needsReview || []).join("；");
+      const review = (data.draft?.needsReview || []).join("、");
       setAiMessage(product ? `已生成《${product.name}》草稿。请检查字段，确认后点击“保存更新”。${review ? ` 待确认：${review}` : ""}` : "生成失败", !product);
     } catch (error) {
       setAiMessage(error.message, true);
@@ -586,7 +659,7 @@ function wireEvents() {
 
   $("#deleteBoardButton").addEventListener("click", async () => {
     const board = currentBoard();
-    if (!board || !confirm(`删除「${board.title}」？`)) return;
+    if (!board || !confirm(`删除《${board.title}》？`)) return;
     await api(`/api/boards/${board.id}`, { method: "DELETE" });
     state.boards = state.boards.filter(item => item.id !== board.id);
     state.selectedBoardId = state.boards[0]?.id || "";
