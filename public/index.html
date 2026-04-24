@@ -34,6 +34,19 @@
     <section id="boardRoot" class="board-root"></section>
   </main>
 
+  <dialog id="detailDialog" class="detail-modal">
+    <div class="detail-card">
+      <div class="detail-head">
+        <div>
+          <div class="kicker">产品详情</div>
+          <h2 id="detailTitle">游戏详情</h2>
+        </div>
+        <button class="icon-btn" id="closeDetail" title="关闭" aria-label="关闭">×</button>
+      </div>
+      <div id="detailBody" class="detail-body"></div>
+    </div>
+  </dialog>
+
   <dialog id="loginDialog" class="modal">
     <form method="dialog" class="login-card" id="loginForm">
       <h2>后台登录</h2>

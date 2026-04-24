@@ -2,6 +2,8 @@ const state = {
   boards: [],
   selectedBoardId: "",
   selectedProductId: "",
+  detailProductId: "",
+  detailBoardId: "",
   token: localStorage.getItem("ngbToken") || "",
   draftProduct: null,
   aiImageUrl: "",
@@ -65,39 +67,33 @@ function currentProduct() {
   return board?.products.find(product => product.id === state.selectedProductId) || board?.products[0];
 }
 
+function boardById(id) {
+  return state.boards.find(board => board.id === id);
+}
+
+function findProduct(boardId, productId) {
+  return boardById(boardId)?.products?.find(product => product.id === productId) || null;
+}
+
 function getInitial(name) {
-  return escapeHtml(String(name || "游").slice(0, 1));
-}
-
-function colorSeed(value) {
-  const text = String(value || "");
-  let hash = 0;
-  for (let i = 0; i < text.length; i += 1) hash = ((hash << 5) - hash) + text.charCodeAt(i);
-  return Math.abs(hash) % 360;
-}
-
-function iconStyle(product) {
-  const hue = colorSeed(`${product.name}-${product.genre}-${product.topic}`);
-  return `--icon-a:hsl(${hue} 78% 58%);--icon-b:hsl(${(hue + 42) % 360} 72% 68%);`;
+  return escapeHtml(String(name || "游").slice(0, 2));
 }
 
 function media(src, name, className = "cover") {
   if (src) return `<img class="${className}" src="${escapeHtml(src)}" alt="${escapeHtml(name)}">`;
-  return `<div class="${className} placeholder">${getInitial(name)}</div>`;
+  return `<div class="${className} placeholder"><span>${getInitial(name)}</span><small>待补图</small></div>`;
 }
 
-function productCard(product, lead = false) {
+function productCard(product, boardId, lead = false) {
   const screenshots = (product.screenshots || []).map(src => `<img src="${escapeHtml(src)}" alt="${escapeHtml(product.name)} 截图">`).join("");
   const poster = product.cover || product.screenshots?.[0] || "";
   const tags = [product.genre, product.topic, product.platform].filter(Boolean);
   const summary = product.reason || product.judgement || product.publicNode || "持续观察中。";
   return `
-    <article class="${lead ? "lead-card" : "product-card"}">
+    <article class="${lead ? "lead-card" : "product-card"} product-entry" data-open-product="${escapeHtml(product.id)}" data-open-board="${escapeHtml(boardId)}" tabindex="0">
       ${lead ? `<div class="rank">#${escapeHtml(product.rank || "")}</div>` : ""}
       <div class="product-top">
-        <div class="cover-shell" style="${iconStyle(product)}">
-          ${media(poster, product.name)}
-        </div>
+        <div class="cover-shell">${media(poster, product.name)}</div>
         <div>
           <h4 class="product-name">${escapeHtml(product.name)}</h4>
           <div class="meta">${escapeHtml(tags.join(" / ") || "未分类")}</div>
@@ -115,9 +111,7 @@ function productCard(product, lead = false) {
         ${product.sourceUrl ? `<b>来源</b><div><a class="source-link" href="${escapeHtml(product.sourceUrl)}" target="_blank" rel="noreferrer">查看原文</a></div>` : ""}
       </div>
       <p class="summary">${escapeHtml(summary)}</p>
-      ${product.reason ? `<div class="copybox"><span>关注理由</span><p>${escapeHtml(product.reason)}</p></div>` : ""}
-      ${product.publicNode ? `<div class="copybox"><span>公开节点</span><p>${escapeHtml(product.publicNode)}</p></div>` : ""}
-      ${product.judgement ? `<div class="copybox"><span>趋势判断</span><p>${escapeHtml(product.judgement)}</p></div>` : ""}
+      ${product.reason ? `<div class="copybox compact"><span>关注理由</span><p>${escapeHtml(product.reason)}</p></div>` : ""}
       ${screenshots ? `<div class="screenshots">${screenshots}</div>` : ""}
     </article>
   `;
@@ -181,28 +175,36 @@ function renderBoard() {
     const leads = products.filter(product => product.focus).slice(0, 6);
     const normal = products.filter(product => !leads.includes(product));
     return `
-      <section class="hero">
-        <div class="hero-copy">
-          <span class="kicker">${escapeHtml(board.period || "新游报告")}</span>
+      <section class="hero library-hero">
+        <div class="hero-copy library-copy">
+          <div class="hero-eyebrow">
+            <span class="kicker">${escapeHtml(board.period || "新游报告")}</span>
+            <span class="hero-note">公开知识库样板</span>
+          </div>
           <h2>${escapeHtml(board.title)}</h2>
           <p>${escapeHtml(board.summary)}</p>
         </div>
-        <div class="metric-row">${(board.metrics || []).map(metric => `<span class="metric">${escapeHtml(metric)}</span>`).join("")}</div>
+        <div class="metric-row metric-grid">${(board.metrics || []).map(metric => `<span class="metric">${escapeHtml(metric)}</span>`).join("")}</div>
+      </section>
+      ${leads.length ? `
+        <section class="section">
+          <div class="section-head"><div><h3>重点产品</h3><div class="sub">优先观察顺序</div></div></div>
+          <div class="lead-grid">${leads.map(product => productCard(product, board.id, true)).join("")}</div>
+        </section>` : ""}
+      <section class="section">
+        <div class="section-head">
+          <div>
+            <h3>产品列表</h3>
+            <div class="sub">当前筛选 ${products.length} 款，点击卡片可查看完整资料</div>
+          </div>
+        </div>
+        ${products.length ? `<div class="cards-grid">${normal.concat(leads.filter(product => normal.length === 0 ? false : true)).map(product => productCard(product, board.id)).join("")}</div>` : `<div class="empty">当前筛选下没有产品。</div>`}
       </section>
       ${(board.trends || []).length ? `
         <section class="section">
           <div class="section-head"><div><h3>趋势观察</h3><div class="sub">按本期报告维护</div></div></div>
           <div class="trend-grid">${board.trends.map(trend => `<article class="trend-card"><b>${escapeHtml(trend.title)}</b><p>${escapeHtml(trend.body)}</p></article>`).join("")}</div>
         </section>` : ""}
-      ${leads.length ? `
-        <section class="section">
-          <div class="section-head"><div><h3>重点产品</h3><div class="sub">优先观察顺序</div></div></div>
-          <div class="lead-grid">${leads.map(product => productCard(product, true)).join("")}</div>
-        </section>` : ""}
-      <section class="section">
-        <div class="section-head"><div><h3>产品列表</h3><div class="sub">当前筛选 ${products.length} 款</div></div></div>
-        ${products.length ? `<div class="cards-grid">${normal.concat(leads.filter(product => normal.length === 0 ? false : true)).map(product => productCard(product)).join("")}</div>` : `<div class="empty">当前筛选下没有产品。</div>`}
-      </section>
     `;
   }).join("");
 }
@@ -297,6 +299,43 @@ function setAiMessage(message, isError = false) {
   target.classList.toggle("error", Boolean(isError));
 }
 
+function openProductDetail(boardId, productId) {
+  const product = findProduct(boardId, productId);
+  if (!product) return;
+  state.detailBoardId = boardId;
+  state.detailProductId = productId;
+  const poster = product.cover || product.screenshots?.[0] || "";
+  $("#detailTitle").textContent = product.name || "游戏详情";
+  $("#detailBody").innerHTML = `
+    <section class="detail-hero">
+      <div class="detail-media">${media(poster, product.name, "detail-cover")}</div>
+      <div class="detail-copy">
+        <div class="badges">
+          ${product.status ? `<span class="badge">${escapeHtml(product.status)}</span>` : ""}
+          ${product.releaseStatus ? `<span class="badge subtle">${escapeHtml(product.releaseStatus)}</span>` : ""}
+          ${product.focus ? `<span class="badge focus">重点关注</span>` : ""}
+        </div>
+        <h3>${escapeHtml(product.name)}</h3>
+        <p class="detail-summary">${escapeHtml(product.reason || product.judgement || product.publicNode || "持续观察中。")}</p>
+        <div class="detail-tags">
+          ${[product.genre, product.topic, product.platform, product.month].filter(Boolean).map(tag => `<span class="detail-tag">${escapeHtml(tag)}</span>`).join("")}
+        </div>
+      </div>
+    </section>
+    <section class="detail-grid">
+      <div class="detail-box"><span>研发</span><strong>${escapeHtml(product.developer || "未填写")}</strong></div>
+      <div class="detail-box"><span>发行</span><strong>${escapeHtml(product.publisher || "未填写")}</strong></div>
+      <div class="detail-box"><span>公开节点</span><strong>${escapeHtml(product.publicNode || "待补充")}</strong></div>
+      <div class="detail-box"><span>来源</span><strong>${product.sourceUrl ? `<a class="source-link" href="${escapeHtml(product.sourceUrl)}" target="_blank" rel="noreferrer">查看原文</a>` : "暂无"}</strong></div>
+    </section>
+    ${product.reason ? `<section class="detail-section"><h4>关注理由</h4><p>${escapeHtml(product.reason)}</p></section>` : ""}
+    ${product.judgement ? `<section class="detail-section"><h4>趋势判断</h4><p>${escapeHtml(product.judgement)}</p></section>` : ""}
+    ${product.sourceText ? `<section class="detail-section"><h4>原始内容</h4><p>${escapeHtml(product.sourceText)}</p></section>` : ""}
+    ${(product.screenshots || []).length ? `<section class="detail-section"><h4>截图</h4><div class="screenshots detail-screens">${product.screenshots.map(src => `<img src="${escapeHtml(src)}" alt="${escapeHtml(product.name)} 截图">`).join("")}</div></section>` : ""}
+  `;
+  $("#detailDialog").showModal();
+}
+
 function applyAiDraft(draft) {
   const board = currentBoard();
   if (!board) return null;
@@ -379,9 +418,25 @@ function wireEvents() {
     $("#adminPanel").classList.remove("open");
     $("#adminPanel").setAttribute("aria-hidden", "true");
   });
+  $("#closeDetail").addEventListener("click", () => $("#detailDialog").close());
+  $("#detailDialog").addEventListener("click", event => {
+    if (event.target === $("#detailDialog")) $("#detailDialog").close();
+  });
   $("#periodFilter").addEventListener("change", renderBoard);
   $("#statusFilter").addEventListener("change", renderBoard);
   $("#searchInput").addEventListener("input", renderBoard);
+  $("#boardRoot").addEventListener("click", event => {
+    const card = event.target.closest("[data-open-product]");
+    if (!card) return;
+    openProductDetail(card.dataset.openBoard, card.dataset.openProduct);
+  });
+  $("#boardRoot").addEventListener("keydown", event => {
+    const card = event.target.closest("[data-open-product]");
+    if (!card) return;
+    if (event.key !== "Enter" && event.key !== " ") return;
+    event.preventDefault();
+    openProductDetail(card.dataset.openBoard, card.dataset.openProduct);
+  });
 
   $("#loginForm").addEventListener("submit", async event => {
     event.preventDefault();
