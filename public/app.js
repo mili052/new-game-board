@@ -102,7 +102,6 @@ function productCard(product, boardId, lead = false) {
       <div class="badges">
         ${product.status ? `<span class="badge">${escapeHtml(product.status)}</span>` : ""}
         ${product.focus ? `<span class="badge focus">重点关注</span>` : ""}
-        ${product.releaseStatus ? `<span class="badge subtle">${escapeHtml(product.releaseStatus)}</span>` : ""}
       </div>
       <div class="info">
         <b>研发</b><div>${escapeHtml(product.developer || "未填写")}</div>
@@ -179,7 +178,6 @@ function renderBoard() {
         <div class="hero-copy library-copy">
           <div class="hero-eyebrow">
             <span class="kicker">${escapeHtml(board.period || "新游报告")}</span>
-            <span class="hero-note">公开知识库样板</span>
           </div>
           <h2>${escapeHtml(board.title)}</h2>
           <p>${escapeHtml(board.summary)}</p>
@@ -312,7 +310,6 @@ function openProductDetail(boardId, productId) {
       <div class="detail-copy">
         <div class="badges">
           ${product.status ? `<span class="badge">${escapeHtml(product.status)}</span>` : ""}
-          ${product.releaseStatus ? `<span class="badge subtle">${escapeHtml(product.releaseStatus)}</span>` : ""}
           ${product.focus ? `<span class="badge focus">重点关注</span>` : ""}
         </div>
         <h3>${escapeHtml(product.name)}</h3>
