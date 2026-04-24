@@ -8,8 +8,10 @@
 </head>
 <body>
   <header class="topbar">
-    <div>
+    <div class="brand-block">
+      <div class="brand-eyebrow">New Game Library</div>
       <h1>新游产品库</h1>
+      <p class="brand-sub">持续录入、筛选和公开展示的新游资料库，适合追踪新品测试、上榜和重点观察产品。</p>
     </div>
     <button class="icon-btn" id="adminButton" title="后台编辑" aria-label="后台编辑">⚙</button>
   </header>
@@ -30,21 +32,9 @@
       </label>
     </section>
 
+    <section id="productPage" class="product-page hidden"></section>
     <section id="boardRoot" class="board-root"></section>
   </main>
-
-  <dialog id="detailDialog" class="detail-modal">
-    <div class="detail-card">
-      <div class="detail-head">
-        <div>
-          <div class="kicker">产品详情</div>
-          <h2 id="detailTitle">游戏详情</h2>
-        </div>
-        <button class="icon-btn" id="closeDetail" title="关闭" aria-label="关闭">×</button>
-      </div>
-      <div id="detailBody" class="detail-body"></div>
-    </div>
-  </dialog>
 
   <dialog id="loginDialog" class="modal">
     <form method="dialog" class="login-card" id="loginForm">
