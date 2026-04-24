@@ -3,6 +3,7 @@ const path = require("path");
 
 const root = path.join(__dirname, "..");
 const dataFile = path.join(root, "data", "boards.json");
+const assetDir = path.join(root, "public", "feishu-assets");
 
 const FIELD_ALIASES = {
   name: ["游戏名", "AI: 游戏名", "名称"],
@@ -21,10 +22,12 @@ const FIELD_ALIASES = {
   releaseStatus: ["发布状态"],
   reason: ["关注理由"],
   judgement: ["趋势判断"],
-  createdAt: ["创建时间", "更新时间", "测试时间"],
+  createdAt: ["创建时间", "更新时间"],
   testTime: ["测试时间"],
-  publicNode: ["公开节点", "节点", "测试时间"]
+  publicNode: ["公开节点", "节点"]
 };
+
+const assetCache = new Map();
 
 function required(name) {
   const value = process.env[name];
@@ -34,6 +37,10 @@ function required(name) {
 
 function ensureDir(filepath) {
   fs.mkdirSync(path.dirname(filepath), { recursive: true });
+}
+
+function ensureAssetDir() {
+  fs.mkdirSync(assetDir, { recursive: true });
 }
 
 function sanitizeId(value) {
@@ -48,7 +55,7 @@ function sanitizeId(value) {
 function normalizeKey(value) {
   return String(value || "")
     .toLowerCase()
-    .replace(/[\s:/|_-]+/g, "");
+    .replace(/[\s:/|_\-]+/g, "");
 }
 
 function toText(value) {
@@ -79,6 +86,7 @@ function toText(value) {
 
 function toArrayText(value) {
   if (value == null) return [];
+
   if (Array.isArray(value)) {
     return value
       .flatMap(item => {
@@ -100,34 +108,58 @@ function toBool(value) {
   return ["是", "true", "1", "yes", "重点"].includes(text);
 }
 
-function collectHttpUrls(value, bucket = []) {
-  if (value == null) return bucket;
+function parseDateValue(value) {
+  if (value == null || value === "") return null;
 
-  if (typeof value === "string") {
-    if (/^https?:\/\//i.test(value)) bucket.push(value);
-    return bucket;
+  if (typeof value === "number") {
+    const date = new Date(value);
+    return Number.isNaN(date.getTime()) ? null : date;
   }
 
-  if (Array.isArray(value)) {
-    value.forEach(item => collectHttpUrls(item, bucket));
-    return bucket;
+  if (typeof value === "string") {
+    const text = value.trim();
+    if (!text) return null;
+
+    if (/^\d{13}$/.test(text) || /^\d{10}$/.test(text)) {
+      const num = Number(text);
+      const date = new Date(text.length === 10 ? num * 1000 : num);
+      return Number.isNaN(date.getTime()) ? null : date;
+    }
+
+    const normalized = text.replace(/\//g, "-");
+    const date = new Date(normalized);
+    return Number.isNaN(date.getTime()) ? null : date;
   }
 
   if (typeof value === "object") {
-    ["tmp_url", "url", "download_url", "preview_url", "link", "src"].forEach(key => {
-      if (value[key]) collectHttpUrls(value[key], bucket);
-    });
+    return parseDateValue(value.text || value.value || value.timestamp || value.time);
   }
 
-  return bucket;
+  return null;
 }
 
-function attachmentUrls(value) {
-  return [...new Set(collectHttpUrls(value).filter(Boolean))];
+function normalizeMonth(monthValue, testTimeValue, createdAtValue) {
+  const monthText = toText(monthValue);
+  if (monthText) return monthText;
+
+  const date = parseDateValue(testTimeValue) || parseDateValue(createdAtValue);
+  if (!date) return "";
+  return `${date.getMonth() + 1}月`;
+}
+
+function monthLabel(monthKey) {
+  const text = toText(monthKey);
+  if (!text) return "未分月";
+  if (/^\d{4}-\d{2}$/.test(text)) {
+    const [year, month] = text.split("-");
+    return `${year}年${Number(month)}月`;
+  }
+  return text;
 }
 
 function firstField(fields, aliases) {
   const entries = Object.entries(fields || {});
+
   for (const alias of aliases) {
     if (Object.prototype.hasOwnProperty.call(fields, alias)) return fields[alias];
 
@@ -141,6 +173,43 @@ function firstField(fields, aliases) {
 
 function pick(fields, key) {
   return firstField(fields, FIELD_ALIASES[key] || []);
+}
+
+function normalizeAttachments(value) {
+  if (!Array.isArray(value)) return [];
+
+  return value
+    .map(item => {
+      if (!item || typeof item !== "object") return null;
+      const sourceUrl =
+        item.tmp_url ||
+        item.url ||
+        item.download_url ||
+        item.preview_url ||
+        item.link ||
+        "";
+
+      let fileToken =
+        item.file_token ||
+        item.token ||
+        item.fileToken ||
+        "";
+
+      if (!fileToken && sourceUrl) {
+        try {
+          const parsed = new URL(sourceUrl);
+          fileToken = parsed.searchParams.get("file_tokens") || "";
+        } catch {}
+      }
+
+      return {
+        fileToken,
+        sourceUrl,
+        name: item.name || item.file_name || item.filename || "",
+        type: item.type || item.mime_type || item.mimeType || ""
+      };
+    })
+    .filter(Boolean);
 }
 
 async function getTenantAccessToken() {
@@ -198,30 +267,98 @@ async function listRecords(token) {
   return items;
 }
 
-function normalizeMonth(month, createdAt) {
-  const text = toText(month);
-  if (text) return text;
+async function resolveTempDownloadUrl(sourceUrl, token) {
+  const response = await fetch(sourceUrl, {
+    headers: {
+      Authorization: `Bearer ${token}`
+    }
+  });
 
-  const date = createdAt ? new Date(createdAt) : new Date();
-  if (Number.isNaN(date.getTime())) return "";
-  return `${date.getMonth() + 1}月`;
-}
-
-function monthLabel(monthKey) {
-  const text = toText(monthKey);
-  if (!text) return "未分月";
-  if (/^\d{4}-\d{2}$/.test(text)) {
-    const [year, month] = text.split("-");
-    return `${year}年${Number(month)}月`;
+  const data = await response.json().catch(() => ({}));
+  if (!response.ok || data.code !== 0) {
+    throw new Error(`获取飞书临时下载地址失败：${data.msg || response.statusText}`);
   }
-  return text;
+
+  const list =
+    data.data?.tmp_download_urls ||
+    data.data?.download_urls ||
+    data.data?.urls ||
+    [];
+
+  const first = Array.isArray(list) ? list[0] : null;
+  return first?.tmp_download_url || first?.download_url || first?.url || "";
 }
 
-function normalizeProduct(record) {
+function extensionFromType(contentType = "", fallbackName = "") {
+  const extByType = {
+    "image/jpeg": ".jpg",
+    "image/png": ".png",
+    "image/webp": ".webp",
+    "image/gif": ".gif"
+  };
+
+  if (extByType[contentType]) return extByType[contentType];
+
+  const ext = path.extname(fallbackName || "");
+  if (ext) return ext;
+
+  return ".jpg";
+}
+
+async function downloadAttachment(attachment, token, stem) {
+  const cacheKey = attachment.fileToken || attachment.sourceUrl || stem;
+  if (assetCache.has(cacheKey)) return assetCache.get(cacheKey);
+
+  let finalUrl = "";
+
+  if (attachment.sourceUrl && attachment.sourceUrl.includes("batch_get_tmp_download_url")) {
+    finalUrl = await resolveTempDownloadUrl(attachment.sourceUrl, token);
+  } else if (/^https?:\/\//i.test(attachment.sourceUrl || "")) {
+    finalUrl = attachment.sourceUrl;
+  }
+
+  if (!finalUrl) return "";
+
+  const response = await fetch(finalUrl);
+  if (!response.ok) {
+    console.warn(`下载附件失败：${response.status} ${response.statusText}`);
+    return "";
+  }
+
+  const arrayBuffer = await response.arrayBuffer();
+  const buffer = Buffer.from(arrayBuffer);
+  const ext = extensionFromType(response.headers.get("content-type") || attachment.type || "", attachment.name);
+  const fileName = `${stem}${ext}`;
+  const fullPath = path.join(assetDir, fileName);
+
+  ensureDir(fullPath);
+  fs.writeFileSync(fullPath, buffer);
+
+  const publicPath = `feishu-assets/${fileName}`;
+  assetCache.set(cacheKey, publicPath);
+  return publicPath;
+}
+
+async function normalizeProduct(record, token) {
   const fields = record.fields || {};
-  const iconUrls = attachmentUrls(pick(fields, "icon"));
-  const screenshotUrls = attachmentUrls(pick(fields, "screenshots"));
-  const createdAt = toText(pick(fields, "createdAt"));
+  const iconAttachments = normalizeAttachments(pick(fields, "icon"));
+  const screenshotAttachments = normalizeAttachments(pick(fields, "screenshots"));
+  const createdAtValue = pick(fields, "createdAt");
+  const testTimeValue = pick(fields, "testTime");
+
+  const icon = iconAttachments[0]
+    ? await downloadAttachment(iconAttachments[0], token, `${record.record_id}-icon-1`)
+    : "";
+
+  const screenshots = [];
+  for (let index = 0; index < screenshotAttachments.length; index += 1) {
+    const asset = await downloadAttachment(
+      screenshotAttachments[index],
+      token,
+      `${record.record_id}-shot-${index + 1}`
+    );
+    if (asset) screenshots.push(asset);
+  }
 
   return {
     id: record.record_id,
@@ -232,31 +369,30 @@ function normalizeProduct(record) {
     developer: toText(pick(fields, "developer")),
     publisher: toText(pick(fields, "publisher")),
     sourceText: toText(pick(fields, "sourceText")),
-    icon: iconUrls[0] || "",
-    screenshots: screenshotUrls,
-    cover: iconUrls[0] || screenshotUrls[0] || "",
+    icon,
+    screenshots,
+    cover: icon || screenshots[0] || "",
     status: toText(pick(fields, "status")) || "待确认",
-    month: normalizeMonth(pick(fields, "month"), createdAt),
+    month: normalizeMonth(pick(fields, "month"), testTimeValue, createdAtValue),
     focus: toBool(pick(fields, "focus")),
     sourceUrl: toText(pick(fields, "sourceUrl")),
     releaseStatus: toText(pick(fields, "releaseStatus")),
     reason: toText(pick(fields, "reason")),
     judgement: toText(pick(fields, "judgement")),
-    publicNode: toText(pick(fields, "publicNode")),
-    createdAt: createdAt || new Date().toISOString()
+    publicNode: toText(pick(fields, "publicNode")) || toText(testTimeValue),
+    createdAt: toText(createdAtValue) || new Date().toISOString()
   };
 }
 
 function buildMetrics(products) {
-  const platformCount = new Set(products.map(item => item.platform).filter(Boolean)).size;
-  const focusCount = products.filter(item => item.focus).length;
+  const platforms = new Set(products.map(item => item.platform).filter(Boolean));
   const statuses = [...new Set(products.map(item => item.status).filter(Boolean))];
 
   return [
     `收录产品${products.length}款`,
     `${statuses.join(" / ") || "待确认"}`,
-    `${platformCount}个平台`,
-    `重点产品${focusCount}款`
+    `${platforms.size}个平台`,
+    `重点产品${products.filter(item => item.focus).length}款`
   ];
 }
 
@@ -273,12 +409,10 @@ function buildBoards(products) {
     .sort((a, b) => String(b[0]).localeCompare(String(a[0]), "zh-CN"))
     .map(([month, items]) => {
       const period = monthLabel(month);
-      const titlePrefix = process.env.FEISHU_SITE_TITLE || "新游产品库";
       const now = new Date().toISOString();
-
       return {
         id: sanitizeId(period),
-        title: `${period}${titlePrefix}`,
+        title: `${period}${process.env.FEISHU_SITE_TITLE || "新游产品库"}`,
         period,
         date: now.slice(0, 10),
         summary: `${period}收录的新游产品列表，支持持续录入、筛选和对外展示。`,
@@ -299,14 +433,20 @@ function writeBoards(boards) {
 }
 
 async function main() {
+  ensureAssetDir();
+
   const publishValue = process.env.FEISHU_PUBLISH_VALUE || "可发布";
   const token = await getTenantAccessToken();
   const records = await listRecords(token);
-  const products = records
-    .map(normalizeProduct)
-    .filter(item => !publishValue || item.releaseStatus === publishValue);
 
+  const normalized = [];
+  for (const record of records) {
+    normalized.push(await normalizeProduct(record, token));
+  }
+
+  const products = normalized.filter(item => !publishValue || item.releaseStatus === publishValue);
   const boards = buildBoards(products);
+
   writeBoards(boards);
   console.log(`Synced ${products.length} products from Feishu into ${boards.length} board(s).`);
 }
