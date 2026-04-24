@@ -4,15 +4,39 @@ const state = {
   selectedProductId: "",
   token: localStorage.getItem("ngbToken") || "",
   draftProduct: null,
-  aiImageUrl: ""
+  aiImageUrl: "",
+  staticMode: false
 };
 
 const $ = selector => document.querySelector(selector);
 
+function joinUrl(...parts) {
+  return parts
+    .filter(Boolean)
+    .map((part, index) => {
+      if (index === 0) return String(part).replace(/\/+$/, "");
+      return String(part).replace(/^\/+|\/+$/g, "");
+    })
+    .join("/");
+}
+
+function basePath() {
+  const path = window.location.pathname.replace(/\/index\.html$/, "");
+  return path.endsWith("/") ? path.slice(0, -1) : path;
+}
+
+async function loadStaticBoards() {
+  const response = await fetch(joinUrl(basePath(), "data", "boards.json"), { cache: "no-store" });
+  const data = await response.json().catch(() => ({}));
+  if (!response.ok) throw new Error("静态数据加载失败");
+  state.staticMode = true;
+  return data;
+}
+
 async function api(path, options = {}) {
   const headers = { "Content-Type": "application/json", ...(options.headers || {}) };
   if (state.token) headers.Authorization = `Bearer ${state.token}`;
-  const response = await fetch(path, { ...options, headers });
+  const response = await fetch(joinUrl(basePath(), path), { ...options, headers });
   const data = await response.json().catch(() => ({}));
   if (!response.ok) throw new Error(data.error || "请求失败");
   return data;
@@ -52,6 +76,7 @@ function media(src, name, className = "cover") {
 
 function productCard(product, lead = false) {
   const screenshots = (product.screenshots || []).map(src => `<img src="${escapeHtml(src)}" alt="${escapeHtml(product.name)} 截图">`).join("");
+  const tags = [product.genre, product.topic, product.platform].filter(Boolean);
   return `
     <article class="${lead ? "lead-card" : "product-card"}">
       ${lead ? `<div class="rank">#${escapeHtml(product.rank || "")}</div>` : ""}
@@ -59,17 +84,21 @@ function productCard(product, lead = false) {
         ${media(product.cover, product.name)}
         <div>
           <h4 class="product-name">${escapeHtml(product.name)}</h4>
-          <div class="meta">${escapeHtml(product.genre || "未分类")}</div>
+          <div class="meta">${escapeHtml(tags.join(" / ") || "未分类")}</div>
         </div>
       </div>
       <div class="badges">
         ${product.status ? `<span class="badge">${escapeHtml(product.status)}</span>` : ""}
         ${product.focus ? `<span class="badge focus">重点关注</span>` : ""}
+        ${product.releaseStatus ? `<span class="badge subtle">${escapeHtml(product.releaseStatus)}</span>` : ""}
       </div>
       <div class="info">
         <b>研发</b><div>${escapeHtml(product.developer || "未填写")}</div>
         <b>发行</b><div>${escapeHtml(product.publisher || "未填写")}</div>
+        ${product.month ? `<b>月份</b><div>${escapeHtml(product.month)}</div>` : ""}
+        ${product.sourceUrl ? `<b>来源</b><div><a class="source-link" href="${escapeHtml(product.sourceUrl)}" target="_blank" rel="noreferrer">查看原文</a></div>` : ""}
       </div>
+      ${product.reason ? `<div class="copybox"><span>关注理由</span><p>${escapeHtml(product.reason)}</p></div>` : ""}
       ${product.publicNode ? `<div class="copybox"><span>公开节点</span><p>${escapeHtml(product.publicNode)}</p></div>` : ""}
       ${product.judgement ? `<div class="copybox"><span>趋势判断</span><p>${escapeHtml(product.judgement)}</p></div>` : ""}
       ${screenshots ? `<div class="screenshots">${screenshots}</div>` : ""}
@@ -85,7 +114,17 @@ function filteredProducts(board) {
     .filter(product => !status || product.status === status)
     .filter(product => {
       if (!q) return true;
-      return [product.name, product.genre, product.developer, product.publisher, product.publicNode, product.judgement]
+      return [
+        product.name,
+        product.genre,
+        product.topic,
+        product.platform,
+        product.developer,
+        product.publisher,
+        product.publicNode,
+        product.reason,
+        product.judgement
+      ]
         .some(value => String(value || "").toLowerCase().includes(q));
     });
 }
@@ -147,6 +186,16 @@ function renderBoard() {
       </section>
     `;
   }).join("");
+}
+
+function syncAdminAvailability() {
+  const button = $("#adminButton");
+  if (!button) return;
+  if (state.staticMode) {
+    button.disabled = true;
+    button.title = "GitHub Pages 静态展示版不提供后台编辑";
+    button.setAttribute("aria-label", "GitHub Pages 静态展示版不提供后台编辑");
+  }
 }
 
 function fillAdmin() {
@@ -275,15 +324,25 @@ async function uploadFile(file) {
 }
 
 async function loadBoards() {
-  const data = await api("/api/boards");
+  let data;
+  try {
+    data = await api("/api/boards");
+  } catch (error) {
+    data = await loadStaticBoards();
+  }
   state.boards = data.boards || [];
   state.selectedBoardId = state.selectedBoardId || state.boards[0]?.id || "";
+  syncAdminAvailability();
   renderFilters();
   renderBoard();
   fillAdmin();
 }
 
 function openAdmin() {
+  if (state.staticMode) {
+    alert("当前是公开静态展示版。后台录入仍建议在飞书多维表格中完成。");
+    return;
+  }
   if (!state.token) {
     $("#loginMessage").textContent = "";
     $("#passwordInput").value = "";
