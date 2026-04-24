@@ -7,13 +7,65 @@
       "date": "2026-04-24",
       "summary": "4月收录的新游产品列表，支持持续录入、筛选和对外展示。",
       "metrics": [
-        "收录产品3款",
-        "测试",
-        "1个平台",
-        "重点产品0款"
+        "收录产品6款",
+        "测试 / 微小上榜 / IOS上榜",
+        "2个平台",
+        "重点产品2款"
       ],
       "trends": [],
       "products": [
+        {
+          "id": "rec27gFuTu5EEP",
+          "name": "精英防守",
+          "genre": "塔防",
+          "topic": "卡通",
+          "platform": "微小",
+          "developer": "成都开心加",
+          "publisher": "深圳大梦",
+          "sourceText": "深圳大梦代理产品-一直在APK测 第一次测是25年9月27 过了3个月12月19号开始在APK第二次投放买量测试 这次测试玩法改成出兵战斗了 蔚蓝like",
+          "icon": "feishu-assets/rec27gFuTu5EEP-icon-1.png",
+          "screenshots": [
+            "feishu-assets/rec27gFuTu5EEP-shot-1.png",
+            "feishu-assets/rec27gFuTu5EEP-shot-2.png",
+            "feishu-assets/rec27gFuTu5EEP-shot-3.png"
+          ],
+          "cover": "feishu-assets/rec27gFuTu5EEP-icon-1.png",
+          "status": "测试",
+          "month": "4月",
+          "focus": true,
+          "sourceUrl": "#小程序://精英防守/REQfswTGilhOMWq",
+          "releaseStatus": "可发布",
+          "reason": "我是大主公研发第二款塔防产品",
+          "judgement": "",
+          "publicNode": "1776960000000",
+          "createdAt": "1776997920000",
+          "rank": 1
+        },
+        {
+          "id": "rec27gFuTu5HvS",
+          "name": "掌上谈兵",
+          "genre": "卡牌",
+          "topic": "三国",
+          "platform": "微小",
+          "developer": "广州天纵",
+          "publisher": "广州天纵",
+          "sourceText": "三国大冒险马甲包，，头条将近600w日耗，单价40，付费单价1400，首日roi1.5%，腾讯130w，单价7，付费单价1500，首日roi2.5%",
+          "icon": "feishu-assets/rec27gFuTu5HvS-icon-1.png",
+          "screenshots": [
+            "feishu-assets/rec27gFuTu5HvS-shot-1.png"
+          ],
+          "cover": "feishu-assets/rec27gFuTu5HvS-icon-1.png",
+          "status": "微小上榜",
+          "month": "4月",
+          "focus": true,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "微信小游戏新上畅销榜游戏，4月24登上了微信小游戏畅销榜榜一",
+          "judgement": "",
+          "publicNode": "1776009600000",
+          "createdAt": "1776997920000",
+          "rank": 2
+        },
         {
           "id": "rec27gFuTu5oXb",
           "name": "三国：天命再临",
@@ -38,7 +90,7 @@
           "judgement": "",
           "publicNode": "1776873600000",
           "createdAt": "1776997920000",
-          "rank": 1
+          "rank": 3
         },
         {
           "id": "rec27gFuTu5sLA",
@@ -65,7 +117,33 @@
           "judgement": "",
           "publicNode": "1776355200000",
           "createdAt": "1776997920000",
-          "rank": 2
+          "rank": 4
+        },
+        {
+          "id": "recvhFJYzbESt9",
+          "name": "异环",
+          "genre": "开放世界",
+          "topic": "二次元",
+          "platform": "APP",
+          "developer": "苏州幻塔",
+          "publisher": "北京完美",
+          "sourceText": "4月23首发，现ios榜单排23",
+          "icon": "feishu-assets/recvhFJYzbESt9-icon-1.png",
+          "screenshots": [
+            "feishu-assets/recvhFJYzbESt9-shot-1.png",
+            "feishu-assets/recvhFJYzbESt9-shot-2.png"
+          ],
+          "cover": "feishu-assets/recvhFJYzbESt9-icon-1.png",
+          "status": "IOS上榜",
+          "month": "4月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "publicNode": "",
+          "createdAt": "1776998351000",
+          "rank": 5
         },
         {
           "id": "rec27gFuTu5BBW",
@@ -90,11 +168,11 @@
           "judgement": "",
           "publicNode": "1776787200000",
           "createdAt": "1776997920000",
-          "rank": 3
+          "rank": 6
         }
       ],
-      "createdAt": "2026-04-24T09:25:37.642Z",
-      "updatedAt": "2026-04-24T09:25:37.642Z"
+      "createdAt": "2026-04-24T09:58:28.262Z",
+      "updatedAt": "2026-04-24T09:58:28.262Z"
     }
   ]
 }
