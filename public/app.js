@@ -263,13 +263,13 @@ function renderBoard() {
             <div>
               <div class="hero-eyebrow">
                 <span class="kicker">${escapeHtml(board.period || "最新一批")}</span>
-                <span class="hero-note">飞书每小时自动同步一次；刚更新内容也可以手动触发同步</span>
+                <span class="hero-note">按品类浏览、按状态追踪、按节点观察</span>
               </div>
               <h2>${escapeHtml(board.title)}</h2>
             </div>
-            <a class="hero-link" href="https://github.com/mili052/new-game-board/actions/workflows/sync-feishu.yml" target="_blank" rel="noreferrer">同步记录</a>
+            <a class="hero-link" href="https://github.com/mili052/new-game-board/actions/workflows/sync-feishu.yml" target="_blank" rel="noreferrer">更新记录</a>
           </div>
-          <p>${escapeHtml(board.summary || "按品类整理的新游产品库，支持持续录入、筛选和对外展示。")}</p>
+          <p>${escapeHtml(board.summary || "按品类整理的新游产品库，方便浏览重点产品、上榜信号和阶段变化。")}</p>
         </div>
         <div class="metric-row metric-grid">${metrics.map(metric => `<span class="metric">${escapeHtml(metric)}</span>`).join("")}</div>
       </section>
