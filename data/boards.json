@@ -1,16 +1,16 @@
 {
   "boards": [
     {
-      "id": "nan-nan",
-      "title": "NaN-NaN新游产品库",
-      "period": "NaN-NaN",
+      "id": "4",
+      "title": "4月新游产品库",
+      "period": "4月",
       "date": "2026-04-24",
-      "summary": "NaN-NaN收录的新游产品列表，按当前飞书后台“可发布”记录同步生成，可用于公开检索和对外展示。",
+      "summary": "4月收录的新游产品列表，支持持续录入、筛选和对外展示。",
       "metrics": [
         "收录产品3款",
         "测试",
         "1个平台",
-        "0款重点关注"
+        "重点产品0款"
       ],
       "trends": [],
       "products": [
@@ -23,19 +23,20 @@
           "developer": "北辰星光",
           "publisher": "广州星辉",
           "sourceText": "三国题材名将Like，有仙气儿换皮，北辰研发，星辉定制",
+          "icon": "feishu-assets/rec27gFuTu5oXb-icon-1.png",
           "screenshots": [
-            "https://open.feishu.cn/open-apis/drive/v1/medias/batch_get_tmp_download_url?file_tokens=PeowbNkChoo7MtxOc26ckTnxnzf&extra=%7B%22bitablePerm%22%3A%7B%22tableId%22%3A%22tblG8Pdq8h5vBM4s%22%2C%22rev%22%3A155%7D%7D",
-            "https://open.feishu.cn/open-apis/drive/v1/medias/batch_get_tmp_download_url?file_tokens=AY4gbXr4AoBGJWx14Pec3J4Wncf&extra=%7B%22bitablePerm%22%3A%7B%22tableId%22%3A%22tblG8Pdq8h5vBM4s%22%2C%22rev%22%3A155%7D%7D"
+            "feishu-assets/rec27gFuTu5oXb-shot-1.png",
+            "feishu-assets/rec27gFuTu5oXb-shot-2.png"
           ],
-          "cover": "https://open.feishu.cn/open-apis/drive/v1/medias/batch_get_tmp_download_url?file_tokens=PeowbNkChoo7MtxOc26ckTnxnzf&extra=%7B%22bitablePerm%22%3A%7B%22tableId%22%3A%22tblG8Pdq8h5vBM4s%22%2C%22rev%22%3A155%7D%7D",
+          "cover": "feishu-assets/rec27gFuTu5oXb-icon-1.png",
           "status": "测试",
-          "month": "NaN-NaN",
+          "month": "4月",
           "focus": false,
           "sourceUrl": "https://weixin110.qq.com/cgi-bin/mmspamsupport-bin/newredirectconfirmcgi?click=2583ac85e07b17cab8c3ad954b1fbaef&bankey=79089ae6052f9a267e3f273676e69f7d&midpagecode=e2faa0ee03e19e6efecf869b7f9ca05252997675a2df523a2ee31e12029edf78e05289b97bdf0666630e8eb48e326193&bancode=6f70040ca0a260ceee5f87dd7ae4d13ac71b80f8e73169e9a2988f3a6b1a8fa13adf0dbbf25b5c8277d26f7ff325b62c800484773810d07f077727e77418cc54738f2b456a94d4cfa71bcde808cba68e5cb95664158e70b5c75c95e2ffe6709f6638cb11ec1731437f50732506ef2e40a78da59ccc4580e9130385f5fb8dd52977558751c6eed563e3578d2b11edc8c0078c14456d5784dc8412c2e35218e416aaf1a0dcb9d11efa340db4091417cdc9",
           "releaseStatus": "可发布",
           "reason": "4月23日第一次在APP信息流买量测",
           "judgement": "",
-          "publicNode": "4月23日第一次在APP信息流买量测",
+          "publicNode": "1776873600000",
           "createdAt": "1776997920000",
           "rank": 1
         },
@@ -48,20 +49,21 @@
           "developer": "深圳巽游",
           "publisher": "腾讯视频",
           "sourceText": "进击荣誉迭代产品，仙侠题材塔防，用的蜀山的版号，先测，巽游给腾讯视频发渠道，广州八五后找巽游定制的进击荣誉Like",
+          "icon": "feishu-assets/rec27gFuTu5sLA-icon-1.png",
           "screenshots": [
-            "https://open.feishu.cn/open-apis/drive/v1/medias/batch_get_tmp_download_url?file_tokens=ZrzGbPFHooRPnUxNdTAcj85anxg&extra=%7B%22bitablePerm%22%3A%7B%22tableId%22%3A%22tblG8Pdq8h5vBM4s%22%2C%22rev%22%3A155%7D%7D",
-            "https://open.feishu.cn/open-apis/drive/v1/medias/batch_get_tmp_download_url?file_tokens=H2RTbRdVAoTN9jx4LPYcgRRQnRd&extra=%7B%22bitablePerm%22%3A%7B%22tableId%22%3A%22tblG8Pdq8h5vBM4s%22%2C%22rev%22%3A155%7D%7D",
-            "https://open.feishu.cn/open-apis/drive/v1/medias/batch_get_tmp_download_url?file_tokens=EQO4bD3D5oNSVsx66eKczD3Dngh&extra=%7B%22bitablePerm%22%3A%7B%22tableId%22%3A%22tblG8Pdq8h5vBM4s%22%2C%22rev%22%3A155%7D%7D"
+            "feishu-assets/rec27gFuTu5sLA-shot-1.png",
+            "feishu-assets/rec27gFuTu5sLA-shot-2.png",
+            "feishu-assets/rec27gFuTu5sLA-shot-3.png"
           ],
-          "cover": "https://open.feishu.cn/open-apis/drive/v1/medias/batch_get_tmp_download_url?file_tokens=ZrzGbPFHooRPnUxNdTAcj85anxg&extra=%7B%22bitablePerm%22%3A%7B%22tableId%22%3A%22tblG8Pdq8h5vBM4s%22%2C%22rev%22%3A155%7D%7D",
+          "cover": "feishu-assets/rec27gFuTu5sLA-icon-1.png",
           "status": "测试",
-          "month": "NaN-NaN",
+          "month": "4月",
           "focus": false,
           "sourceUrl": "https://weixin110.qq.com/cgi-bin/mmspamsupport-bin/newredirectconfirmcgi?click=2583ac85e07b17cab8c3ad954b1fbaef&bankey=a05a2b85f5bf245a99342177e26eba77&midpagecode=e2faa0ee03e19e6efecf869b7f9ca05252997675a2df523a2ee31e12029edf78e05289b97bdf0666630e8eb48e326193&bancode=ed64f41a7b84fe7f14b19843a8a513cc8b2527604a118bf49a77ac118fb0582da86f4b398a4f21d31f91d0842ae139a7e922f7cc6a06559d08c8da14d3001950b5ad5bda99fb9739c3258089f649a66f",
           "releaseStatus": "可发布",
           "reason": "进击荣誉跟进过，4月17在信息流apk测试",
           "judgement": "",
-          "publicNode": "进击荣誉跟进过，4月17在信息流apk测试",
+          "publicNode": "1776355200000",
           "createdAt": "1776997920000",
           "rank": 2
         },
@@ -74,24 +76,25 @@
           "developer": "深圳那兹",
           "publisher": "深圳冰川",
           "sourceText": "这塔有点难-4月22日APK测试-深圳那兹研发，深圳冰川买量测试",
+          "icon": "feishu-assets/rec27gFuTu5BBW-icon-1.png",
           "screenshots": [
-            "https://open.feishu.cn/open-apis/drive/v1/medias/batch_get_tmp_download_url?file_tokens=WF0Ob1m8Go8jfRxWSncctc7Bnwf&extra=%7B%22bitablePerm%22%3A%7B%22tableId%22%3A%22tblG8Pdq8h5vBM4s%22%2C%22rev%22%3A155%7D%7D"
+            "feishu-assets/rec27gFuTu5BBW-shot-1.png"
           ],
-          "cover": "https://open.feishu.cn/open-apis/drive/v1/medias/batch_get_tmp_download_url?file_tokens=WF0Ob1m8Go8jfRxWSncctc7Bnwf&extra=%7B%22bitablePerm%22%3A%7B%22tableId%22%3A%22tblG8Pdq8h5vBM4s%22%2C%22rev%22%3A155%7D%7D",
+          "cover": "feishu-assets/rec27gFuTu5BBW-icon-1.png",
           "status": "测试",
-          "month": "NaN-NaN",
+          "month": "4月",
           "focus": false,
           "sourceUrl": "",
           "releaseStatus": "可发布",
           "reason": "横板塔防",
           "judgement": "",
-          "publicNode": "横板塔防",
+          "publicNode": "1776787200000",
           "createdAt": "1776997920000",
           "rank": 3
         }
       ],
-      "createdAt": "2026-04-24T07:50:30.427Z",
-      "updatedAt": "2026-04-24T07:50:30.427Z"
+      "createdAt": "2026-04-24T09:07:56.233Z",
+      "updatedAt": "2026-04-24T09:07:56.233Z"
     }
   ]
 }
