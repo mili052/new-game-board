@@ -39,7 +39,9 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git stash push --include-untracked -m "feishu-sync-temp"
           git pull --rebase origin main
+          git stash pop || true
           git add data/boards.json public/feishu-assets
           git commit -m "Sync Feishu data"
           git push
