@@ -69,6 +69,18 @@ function getInitial(name) {
   return escapeHtml(String(name || "游").slice(0, 1));
 }
 
+function colorSeed(value) {
+  const text = String(value || "");
+  let hash = 0;
+  for (let i = 0; i < text.length; i += 1) hash = ((hash << 5) - hash) + text.charCodeAt(i);
+  return Math.abs(hash) % 360;
+}
+
+function iconStyle(product) {
+  const hue = colorSeed(`${product.name}-${product.genre}-${product.topic}`);
+  return `--icon-a:hsl(${hue} 78% 58%);--icon-b:hsl(${(hue + 42) % 360} 72% 68%);`;
+}
+
 function media(src, name, className = "cover") {
   if (src) return `<img class="${className}" src="${escapeHtml(src)}" alt="${escapeHtml(name)}">`;
   return `<div class="${className} placeholder">${getInitial(name)}</div>`;
@@ -76,12 +88,16 @@ function media(src, name, className = "cover") {
 
 function productCard(product, lead = false) {
   const screenshots = (product.screenshots || []).map(src => `<img src="${escapeHtml(src)}" alt="${escapeHtml(product.name)} 截图">`).join("");
+  const poster = product.cover || product.screenshots?.[0] || "";
   const tags = [product.genre, product.topic, product.platform].filter(Boolean);
+  const summary = product.reason || product.judgement || product.publicNode || "持续观察中。";
   return `
     <article class="${lead ? "lead-card" : "product-card"}">
       ${lead ? `<div class="rank">#${escapeHtml(product.rank || "")}</div>` : ""}
       <div class="product-top">
-        ${media(product.cover, product.name)}
+        <div class="cover-shell" style="${iconStyle(product)}">
+          ${media(poster, product.name)}
+        </div>
         <div>
           <h4 class="product-name">${escapeHtml(product.name)}</h4>
           <div class="meta">${escapeHtml(tags.join(" / ") || "未分类")}</div>
@@ -98,6 +114,7 @@ function productCard(product, lead = false) {
         ${product.month ? `<b>月份</b><div>${escapeHtml(product.month)}</div>` : ""}
         ${product.sourceUrl ? `<b>来源</b><div><a class="source-link" href="${escapeHtml(product.sourceUrl)}" target="_blank" rel="noreferrer">查看原文</a></div>` : ""}
       </div>
+      <p class="summary">${escapeHtml(summary)}</p>
       ${product.reason ? `<div class="copybox"><span>关注理由</span><p>${escapeHtml(product.reason)}</p></div>` : ""}
       ${product.publicNode ? `<div class="copybox"><span>公开节点</span><p>${escapeHtml(product.publicNode)}</p></div>` : ""}
       ${product.judgement ? `<div class="copybox"><span>趋势判断</span><p>${escapeHtml(product.judgement)}</p></div>` : ""}
@@ -165,9 +182,11 @@ function renderBoard() {
     const normal = products.filter(product => !leads.includes(product));
     return `
       <section class="hero">
-        <span class="kicker">${escapeHtml(board.period || "新游报告")}</span>
-        <h2>${escapeHtml(board.title)}</h2>
-        <p>${escapeHtml(board.summary)}</p>
+        <div class="hero-copy">
+          <span class="kicker">${escapeHtml(board.period || "新游报告")}</span>
+          <h2>${escapeHtml(board.title)}</h2>
+          <p>${escapeHtml(board.summary)}</p>
+        </div>
         <div class="metric-row">${(board.metrics || []).map(metric => `<span class="metric">${escapeHtml(metric)}</span>`).join("")}</div>
       </section>
       ${(board.trends || []).length ? `
