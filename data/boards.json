@@ -171,8 +171,49 @@
           "rank": 6
         }
       ],
-      "createdAt": "2026-04-26T09:01:22.835Z",
-      "updatedAt": "2026-04-26T09:01:22.835Z"
+      "createdAt": "2026-04-26T10:44:57.003Z",
+      "updatedAt": "2026-04-26T10:44:57.003Z"
+    },
+    {
+      "id": "12",
+      "title": "12月新游产品库",
+      "period": "12月",
+      "date": "2026-04-26",
+      "summary": "12月收录的新游产品列表，支持持续录入、筛选和对外展示。",
+      "metrics": [
+        "收录产品1款",
+        "微小上榜",
+        "1个平台",
+        "重点产品0款"
+      ],
+      "trends": [],
+      "products": [
+        {
+          "id": "recvhT6Ir0OVyY",
+          "name": "爪爪大乱斗",
+          "genre": "自走棋",
+          "topic": "Q版",
+          "platform": "微小",
+          "developer": "杭州晗元",
+          "publisher": "37网游",
+          "sourceText": "25年12月20用研发主体先在信息流apk测试，爆炸奇兵换皮",
+          "icon": "",
+          "screenshots": [],
+          "cover": "",
+          "status": "微小上榜",
+          "month": "12月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "publicNode": "1766160000000",
+          "createdAt": "1777195860000",
+          "rank": 1
+        }
+      ],
+      "createdAt": "2026-04-26T10:44:57.004Z",
+      "updatedAt": "2026-04-26T10:44:57.004Z"
     }
   ]
 }
