@@ -7,14 +7,51 @@
       "date": "2026-04-27",
       "summary": "4月收录的新游产品列表，支持持续录入、筛选和对外展示。",
       "metrics": [
+<<<<<<< Updated upstream
         "收录产品7款",
         "微小上榜 / 测试 / IOS上榜",
         "2个平台",
         "重点产品2款"
+=======
+        "收录产品17款",
+        "微小上榜 / 测试 / IOS上榜 / 已上线 / 招募",
+        "4个平台",
+        "重点产品5款"
+>>>>>>> Stashed changes
       ],
       "trends": [],
       "products": [
         {
+<<<<<<< Updated upstream
+=======
+          "id": "recvhXuXUO8PS0",
+          "name": "边缘星球",
+          "genre": "模拟经营",
+          "topic": "科幻废土",
+          "platform": "APP",
+          "developer": "上海游斐",
+          "publisher": "上海游斐",
+          "sourceText": "科幻废土题材放置卡牌RPG，带基地经营与编队推关要素；上海游斐自研自发；24年4月首测，26年4月29日再次开启限量删档测试，目前仍未正式上线。项目拉得较久，现阶段更像持续打磨中的老盘，先看这轮测试后是否进入正式上线节奏。",
+          "icon": "feishu-assets/recvhXuXUO8PS0-icon-1.png",
+          "screenshots": [
+            "feishu-assets/recvhXuXUO8PS0-shot-1.png",
+            "feishu-assets/recvhXuXUO8PS0-shot-2.png",
+            "feishu-assets/recvhXuXUO8PS0-shot-3.png"
+          ],
+          "cover": "feishu-assets/recvhXuXUO8PS0-icon-1.png",
+          "status": "测试",
+          "month": "4月",
+          "focus": true,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "publicNode": "",
+          "createdAt": "1777260745000",
+          "rank": 1
+        },
+        {
+>>>>>>> Stashed changes
           "id": "rec27gFuTu5EEP",
           "name": "精英防守",
           "genre": "塔防",
@@ -37,6 +74,7 @@
           "releaseStatus": "可发布",
           "reason": "我是大主公研发第二款塔防产品",
           "judgement": "",
+<<<<<<< Updated upstream
           "firstTestTime": "",
           "finalTestTime": "",
           "publicTestTime": "",
@@ -44,6 +82,64 @@
           "publicNode": "",
           "createdAt": "1776997920000",
           "rank": 1
+=======
+          "publicNode": "",
+          "createdAt": "1776997920000",
+          "rank": 2
+        },
+        {
+          "id": "recvhFK21gMcbM",
+          "name": "乱涂彩世界",
+          "genre": "卡牌",
+          "topic": "二次元",
+          "platform": "APP",
+          "developer": "广州百田",
+          "publisher": "广州百田",
+          "sourceText": "4月28首发上线，仅APP上线",
+          "icon": "feishu-assets/recvhFK21gMcbM-icon-1.png",
+          "screenshots": [
+            "feishu-assets/recvhFK21gMcbM-shot-1.png",
+            "feishu-assets/recvhFK21gMcbM-shot-2.png",
+            "feishu-assets/recvhFK21gMcbM-shot-3.png"
+          ],
+          "cover": "feishu-assets/recvhFK21gMcbM-icon-1.png",
+          "status": "已上线",
+          "month": "4月",
+          "focus": true,
+          "sourceUrl": "乱涂彩世界 - 安卓官方下载 - TapTap",
+          "releaseStatus": "可发布",
+          "reason": "百田内部有个自下而上创意赛制立项机制：会不定期办创意大赛”，全员可提立项概念，先由十几人的跨部门评委会（制作人/美术/策划/发行负责人等）初筛出前八进答辩并排名，排名靠前且足够好方案，公司会考虑立项；《食物语》《乱涂彩世界》等项目就是从这个机制跑出来的",
+          "judgement": "",
+          "publicNode": "",
+          "createdAt": "1776998364000",
+          "rank": 3
+        },
+        {
+          "id": "recvhXoEx5s6Pc",
+          "name": "仙尘小径",
+          "genre": "二合",
+          "topic": "欧卡",
+          "platform": "抖小",
+          "developer": "波克上海",
+          "publisher": "波克上海",
+          "sourceText": "仙尘小径，欧卡风二合Merge产品，偏女性向装修/改造题材；波克上海自研，海外版本名为《Merge Restyle》，研发并非小游戏研发组而是slot团队；国内于2月4日在抖音小程序首测，3月20日开启第二次测试，之后持续买量至今，消息称五一准备大推，日消耗预计拉到100万。海外已有跑通样本、国内也在持续验证，现阶段可作为波克切入二合赛道的重点关注盘。",
+          "icon": "feishu-assets/recvhXoEx5s6Pc-icon-1.png",
+          "screenshots": [
+            "feishu-assets/recvhXoEx5s6Pc-shot-1.jpg",
+            "feishu-assets/recvhXoEx5s6Pc-shot-2.jpg"
+          ],
+          "cover": "feishu-assets/recvhXoEx5s6Pc-icon-1.png",
+          "status": "测试",
+          "month": "4月",
+          "focus": true,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "publicNode": "",
+          "createdAt": "1777259240000",
+          "rank": 4
+>>>>>>> Stashed changes
         },
         {
           "id": "rec27gFuTu5HvS",
@@ -53,7 +149,11 @@
           "platform": "微小",
           "developer": "广州天纵",
           "publisher": "广州天纵",
+<<<<<<< Updated upstream
           "sourceText": "",
+=======
+          "sourceText": "三国大冒险大概月流水3kw左右；\n数据：180天倍率30倍，付费7天留存55%，30天付费留存30%",
+>>>>>>> Stashed changes
           "icon": "feishu-assets/rec27gFuTu5HvS-icon-1.png",
           "screenshots": [
             "feishu-assets/rec27gFuTu5HvS-shot-1.png"
@@ -66,6 +166,7 @@
           "releaseStatus": "可发布",
           "reason": "4月第4周微小新上畅销榜游戏，4月24登上了微信小游戏畅销榜榜一\n三国大冒险马甲包，，头条将近600w日耗，单价40，付费单价1400，首日roi1.5%，腾讯130w，单价7，付费单价1500，首日roi2.5%",
           "judgement": "",
+<<<<<<< Updated upstream
           "firstTestTime": "",
           "finalTestTime": "",
           "publicTestTime": "",
@@ -73,6 +174,165 @@
           "publicNode": "",
           "createdAt": "1776997920000",
           "rank": 2
+=======
+          "publicNode": "",
+          "createdAt": "1776997920000",
+          "rank": 5
+        },
+        {
+          "id": "recvhXvRea7KwR",
+          "name": "出征吧！勇士",
+          "genre": "塔防",
+          "topic": "末日",
+          "platform": "微小 / APP",
+          "developer": "广州忆趣",
+          "publisher": "广州狮子",
+          "sourceText": "竖版末日丧尸题材肉鸽塔防，广州忆趣研发、广州狮子游戏发行；\nAPP版25年10月多轮测过，26年2月10日安卓上线（APP是研发自己发，负责人叫伟峰，iOS还没上），4月10日狮子测微小，4月22日上微小畅销第98。现排46名\n\n产品底层是在纯蔚蓝like框架上做了降维处理，取消局内金币、合成和技能购买，只需要根据局内肉鸽的单卡技能堆叠就能够进阶卡牌，实际就是在僵尸Like基础上加了一些机制，美术上蹭了多IP角色形象，大概率难跑很大，数据了解中；",
+          "icon": "feishu-assets/recvhXvRea7KwR-icon-1.png",
+          "screenshots": [
+            "feishu-assets/recvhXvRea7KwR-shot-1.png"
+          ],
+          "cover": "feishu-assets/recvhXvRea7KwR-icon-1.png",
+          "status": "微小上榜",
+          "month": "4月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "publicNode": "",
+          "createdAt": "1777260958000",
+          "rank": 6
+        },
+        {
+          "id": "recvhXu0IjHtCD",
+          "name": "代号：足球",
+          "genre": "模拟经营",
+          "topic": "Q版足球",
+          "platform": "APP",
+          "developer": "友谊时光",
+          "publisher": "友谊时光",
+          "sourceText": "像素风足球俱乐部经营+轻竞技产品，友谊时光自研，一食无忧工作室发行；3月25日首测，仅在渠道APP小范围测试，未买量测，4月28日在TapTap、好游快爆开启二测。产品方向偏轻度化足球题材切入，现阶段先看二测反馈和后续是否开始买量。",
+          "icon": "feishu-assets/recvhXu0IjHtCD-icon-1.png",
+          "screenshots": [
+            "feishu-assets/recvhXu0IjHtCD-shot-1.png",
+            "feishu-assets/recvhXu0IjHtCD-shot-2.png"
+          ],
+          "cover": "feishu-assets/recvhXu0IjHtCD-icon-1.png",
+          "status": "测试",
+          "month": "4月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "publicNode": "",
+          "createdAt": "1777260517000",
+          "rank": 7
+        },
+        {
+          "id": "recvhGKIYmwdQv",
+          "name": "地牢猎手6",
+          "genre": "MMORPG",
+          "topic": "西方魔幻",
+          "platform": "APP",
+          "developer": "成都双倍",
+          "publisher": "广州高图",
+          "sourceText": "西方魔幻暗黑风重度MMORPG，国内高图发行，成都双倍研发，3月11日国内首测；",
+          "icon": "feishu-assets/recvhGKIYmwdQv-icon-1.png",
+          "screenshots": [
+            "feishu-assets/recvhGKIYmwdQv-shot-1.png",
+            "feishu-assets/recvhGKIYmwdQv-shot-2.png"
+          ],
+          "cover": "feishu-assets/recvhGKIYmwdQv-icon-1.png",
+          "status": "测试",
+          "month": "4月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "publicNode": "",
+          "createdAt": "1777013305000",
+          "rank": 8
+        },
+        {
+          "id": "recvhFK8tttfoa",
+          "name": "怪物猎人：旅人",
+          "genre": "开放世界",
+          "topic": "狩猎冒险",
+          "platform": "APP",
+          "developer": "腾讯天美和CAPCOM",
+          "publisher": "腾讯",
+          "sourceText": "开放世界 / 共斗方向，腾讯天美和CAPCOM共研，先后经历预约开启、TGS试玩、25年11月限量保密首测，及25年末到26年初两期体验团资格招募与小规模验证，至26年4月开始公开测试资格招募并定档4月29日限量测试；整体节奏属于强IP、长周期、限量保密、逐步放量路径，先用核心玩家和体验团打磨产品，再向更大范围测试过渡。",
+          "icon": "feishu-assets/recvhFK8tttfoa-icon-1.png",
+          "screenshots": [
+            "feishu-assets/recvhFK8tttfoa-shot-1.png",
+            "feishu-assets/recvhFK8tttfoa-shot-2.png"
+          ],
+          "cover": "feishu-assets/recvhFK8tttfoa-icon-1.png",
+          "status": "测试",
+          "month": "4月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "publicNode": "",
+          "createdAt": "1776998389000",
+          "rank": 9
+        },
+        {
+          "id": "recvhXvKELIEIa",
+          "name": "集合！浆果镇",
+          "genre": "派对游戏",
+          "topic": "二次元生活模拟",
+          "platform": "APP",
+          "developer": "沐瞳广州",
+          "publisher": "朝夕光年",
+          "sourceText": "二次元生活模拟+社交RP产品，朝夕光年发行、Lumi Studio开发，TapTap当前9.2分/73评，口碑整体偏正，强项在Q萌美术、换装和轻社交副游氛围，短板在性能、单人内容深度与后续商业化担忧；广州的团队在做",
+          "icon": "feishu-assets/recvhXvKELIEIa-icon-1.png",
+          "screenshots": [
+            "feishu-assets/recvhXvKELIEIa-shot-1.png",
+            "feishu-assets/recvhXvKELIEIa-shot-2.png"
+          ],
+          "cover": "feishu-assets/recvhXvKELIEIa-icon-1.png",
+          "status": "招募",
+          "month": "4月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "publicNode": "",
+          "createdAt": "1777260933000",
+          "rank": 10
+        },
+        {
+          "id": "recvhXx9iQVE4p",
+          "name": "三国：百将牌",
+          "genre": "卡牌",
+          "topic": "三国",
+          "platform": "APP",
+          "developer": "杭州浮云",
+          "publisher": "B站",
+          "sourceText": "三国题材休闲竞技卡牌，B站发行、杭州浮云研发；2025年9月预约首曝，10月30日首轮限量测试，2026年3月18日删档复测，4月20日iOS先上线，上线当天进入iOS畅销总榜第165名，现已滑落至190名左右，4月22日安卓开启不删档计费测试，尚未正式上线。iOS端已有初步付费承接，当前更像分步验证双端表现的观察盘，后续重点看安卓上线后的留存和商业化持续性",
+          "icon": "feishu-assets/recvhXx9iQVE4p-icon-1.png",
+          "screenshots": [
+            "feishu-assets/recvhXx9iQVE4p-shot-1.png"
+          ],
+          "cover": "feishu-assets/recvhXx9iQVE4p-icon-1.png",
+          "status": "IOS上榜",
+          "month": "4月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "publicNode": "",
+          "createdAt": "1777261266000",
+          "rank": 11
+>>>>>>> Stashed changes
         },
         {
           "id": "rec27gFuTu5oXb",
@@ -96,6 +356,7 @@
           "releaseStatus": "可发布",
           "reason": "4月23日第一次在APP信息流买量测",
           "judgement": "",
+<<<<<<< Updated upstream
           "firstTestTime": "",
           "finalTestTime": "",
           "publicTestTime": "",
@@ -103,6 +364,11 @@
           "publicNode": "",
           "createdAt": "1776997920000",
           "rank": 3
+=======
+          "publicNode": "",
+          "createdAt": "1776997920000",
+          "rank": 12
+>>>>>>> Stashed changes
         },
         {
           "id": "rec27gFuTu5sLA",
@@ -127,6 +393,7 @@
           "releaseStatus": "可发布",
           "reason": "进击荣誉跟进过，4月17在信息流apk测试",
           "judgement": "",
+<<<<<<< Updated upstream
           "firstTestTime": "",
           "finalTestTime": "",
           "publicTestTime": "",
@@ -134,6 +401,11 @@
           "publicNode": "",
           "createdAt": "1776997920000",
           "rank": 4
+=======
+          "publicNode": "",
+          "createdAt": "1776997920000",
+          "rank": 13
+>>>>>>> Stashed changes
         },
         {
           "id": "recvhFJYzbESt9",
@@ -157,6 +429,7 @@
           "releaseStatus": "可发布",
           "reason": "",
           "judgement": "",
+<<<<<<< Updated upstream
           "firstTestTime": "",
           "finalTestTime": "",
           "publicTestTime": "",
@@ -164,6 +437,36 @@
           "publicNode": "",
           "createdAt": "1776998351000",
           "rank": 5
+=======
+          "publicNode": "",
+          "createdAt": "1776998351000",
+          "rank": 14
+        },
+        {
+          "id": "recvhXvKUQR4Dl",
+          "name": "远古灵域",
+          "genre": "MMORPG",
+          "topic": "修仙",
+          "platform": "微小",
+          "developer": "广州天纵",
+          "publisher": "广州天纵",
+          "sourceText": "新幻灵，磨了纪念，有做调整",
+          "icon": "feishu-assets/recvhXvKUQR4Dl-icon-1.png",
+          "screenshots": [
+            "feishu-assets/recvhXvKUQR4Dl-shot-1.png"
+          ],
+          "cover": "feishu-assets/recvhXvKUQR4Dl-icon-1.png",
+          "status": "微小上榜",
+          "month": "4月",
+          "focus": false,
+          "sourceUrl": "#小程序://远古灵域/Krm68p3MULvf3bi",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "publicNode": "",
+          "createdAt": "1777260934000",
+          "rank": 15
+>>>>>>> Stashed changes
         },
         {
           "id": "recvhT6Ir0OVyY",
@@ -174,9 +477,17 @@
           "developer": "杭州晗元",
           "publisher": "37网游",
           "sourceText": "25年12月20用研发主体先在信息流apk测试，爆炸奇兵换皮",
+<<<<<<< Updated upstream
           "icon": "",
           "screenshots": [],
           "cover": "",
+=======
+          "icon": "feishu-assets/recvhT6Ir0OVyY-icon-1.png",
+          "screenshots": [
+            "feishu-assets/recvhT6Ir0OVyY-shot-1.png"
+          ],
+          "cover": "feishu-assets/recvhT6Ir0OVyY-icon-1.png",
+>>>>>>> Stashed changes
           "status": "微小上榜",
           "month": "4月",
           "focus": false,
@@ -184,6 +495,7 @@
           "releaseStatus": "可发布",
           "reason": "",
           "judgement": "",
+<<<<<<< Updated upstream
           "firstTestTime": "2025-12-19",
           "finalTestTime": "",
           "publicTestTime": "",
@@ -191,6 +503,11 @@
           "publicNode": "",
           "createdAt": "1777195860000",
           "rank": 6
+=======
+          "publicNode": "",
+          "createdAt": "1777195860000",
+          "rank": 16
+>>>>>>> Stashed changes
         },
         {
           "id": "rec27gFuTu5BBW",
@@ -213,6 +530,7 @@
           "releaseStatus": "可发布",
           "reason": "横板塔防",
           "judgement": "",
+<<<<<<< Updated upstream
           "firstTestTime": "",
           "finalTestTime": "",
           "publicTestTime": "",
@@ -224,6 +542,15 @@
       ],
       "createdAt": "2026-04-27T02:46:26.675Z",
       "updatedAt": "2026-04-27T02:46:26.675Z"
+=======
+          "publicNode": "",
+          "createdAt": "1776997920000",
+          "rank": 17
+        }
+      ],
+      "createdAt": "2026-04-27T04:12:04.211Z",
+      "updatedAt": "2026-04-27T04:12:04.211Z"
+>>>>>>> Stashed changes
     }
   ]
 }
