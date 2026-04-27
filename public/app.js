@@ -130,7 +130,7 @@ function productCard(product, boardId) {
   const tags = [product.genre, product.topic, product.platform].filter(Boolean);
   const ranking = isRankingStatus(product.status);
   const shot = product.screenshots?.[0] || "";
-  const note = product.reason || product.judgement || product.publicNode || "持续观察中。";
+  const note = product.sourceText || product.publicNode || product.judgement || "持续观察中。";
 
   return `
     <article class="product-card product-entry${ranking ? " status-featured" : ""}" data-open-product="${escapeHtml(product.id)}" data-open-board="${escapeHtml(boardId)}" tabindex="0">
