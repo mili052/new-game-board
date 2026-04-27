@@ -7,23 +7,14 @@
       "date": "2026-04-27",
       "summary": "4月收录的新游产品列表，支持持续录入、筛选和对外展示。",
       "metrics": [
-<<<<<<< Updated upstream
-        "收录产品7款",
-        "微小上榜 / 测试 / IOS上榜",
-        "2个平台",
-        "重点产品2款"
-=======
         "收录产品17款",
-        "微小上榜 / 测试 / IOS上榜 / 已上线 / 招募",
+        "测试 / 微小上榜 / IOS上榜 / 已上线 / 招募",
         "4个平台",
         "重点产品5款"
->>>>>>> Stashed changes
       ],
       "trends": [],
       "products": [
         {
-<<<<<<< Updated upstream
-=======
           "id": "recvhXuXUO8PS0",
           "name": "边缘星球",
           "genre": "模拟经营",
@@ -46,12 +37,15 @@
           "releaseStatus": "可发布",
           "reason": "",
           "judgement": "",
+          "firstTestTime": "2024-04-11",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
           "publicNode": "",
           "createdAt": "1777260745000",
           "rank": 1
         },
         {
->>>>>>> Stashed changes
           "id": "rec27gFuTu5EEP",
           "name": "精英防守",
           "genre": "塔防",
@@ -74,15 +68,10 @@
           "releaseStatus": "可发布",
           "reason": "我是大主公研发第二款塔防产品",
           "judgement": "",
-<<<<<<< Updated upstream
-          "firstTestTime": "",
+          "firstTestTime": "2025-09-26",
           "finalTestTime": "",
           "publicTestTime": "",
           "launchTime": "",
-          "publicNode": "",
-          "createdAt": "1776997920000",
-          "rank": 1
-=======
           "publicNode": "",
           "createdAt": "1776997920000",
           "rank": 2
@@ -110,6 +99,10 @@
           "releaseStatus": "可发布",
           "reason": "百田内部有个自下而上创意赛制立项机制：会不定期办创意大赛”，全员可提立项概念，先由十几人的跨部门评委会（制作人/美术/策划/发行负责人等）初筛出前八进答辩并排名，排名靠前且足够好方案，公司会考虑立项；《食物语》《乱涂彩世界》等项目就是从这个机制跑出来的",
           "judgement": "",
+          "firstTestTime": "2025-06-09",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
           "publicNode": "",
           "createdAt": "1776998364000",
           "rank": 3
@@ -136,10 +129,13 @@
           "releaseStatus": "可发布",
           "reason": "",
           "judgement": "",
+          "firstTestTime": "2026-02-03",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
           "publicNode": "",
           "createdAt": "1777259240000",
           "rank": 4
->>>>>>> Stashed changes
         },
         {
           "id": "rec27gFuTu5HvS",
@@ -149,11 +145,7 @@
           "platform": "微小",
           "developer": "广州天纵",
           "publisher": "广州天纵",
-<<<<<<< Updated upstream
-          "sourceText": "",
-=======
           "sourceText": "三国大冒险大概月流水3kw左右；\n数据：180天倍率30倍，付费7天留存55%，30天付费留存30%",
->>>>>>> Stashed changes
           "icon": "feishu-assets/rec27gFuTu5HvS-icon-1.png",
           "screenshots": [
             "feishu-assets/rec27gFuTu5HvS-shot-1.png"
@@ -166,15 +158,10 @@
           "releaseStatus": "可发布",
           "reason": "4月第4周微小新上畅销榜游戏，4月24登上了微信小游戏畅销榜榜一\n三国大冒险马甲包，，头条将近600w日耗，单价40，付费单价1400，首日roi1.5%，腾讯130w，单价7，付费单价1500，首日roi2.5%",
           "judgement": "",
-<<<<<<< Updated upstream
           "firstTestTime": "",
           "finalTestTime": "",
           "publicTestTime": "",
           "launchTime": "",
-          "publicNode": "",
-          "createdAt": "1776997920000",
-          "rank": 2
-=======
           "publicNode": "",
           "createdAt": "1776997920000",
           "rank": 5
@@ -200,6 +187,10 @@
           "releaseStatus": "可发布",
           "reason": "",
           "judgement": "",
+          "firstTestTime": "2026-04-09",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
           "publicNode": "",
           "createdAt": "1777260958000",
           "rank": 6
@@ -226,6 +217,10 @@
           "releaseStatus": "可发布",
           "reason": "",
           "judgement": "",
+          "firstTestTime": "2026-03-24",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
           "publicNode": "",
           "createdAt": "1777260517000",
           "rank": 7
@@ -252,6 +247,10 @@
           "releaseStatus": "可发布",
           "reason": "",
           "judgement": "",
+          "firstTestTime": "2026-03-10",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
           "publicNode": "",
           "createdAt": "1777013305000",
           "rank": 8
@@ -278,6 +277,10 @@
           "releaseStatus": "可发布",
           "reason": "",
           "judgement": "",
+          "firstTestTime": "2025-10-31",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
           "publicNode": "",
           "createdAt": "1776998389000",
           "rank": 9
@@ -304,6 +307,10 @@
           "releaseStatus": "可发布",
           "reason": "",
           "judgement": "",
+          "firstTestTime": "",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
           "publicNode": "",
           "createdAt": "1777260933000",
           "rank": 10
@@ -329,10 +336,13 @@
           "releaseStatus": "可发布",
           "reason": "",
           "judgement": "",
+          "firstTestTime": "2025-08-31",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
           "publicNode": "",
           "createdAt": "1777261266000",
           "rank": 11
->>>>>>> Stashed changes
         },
         {
           "id": "rec27gFuTu5oXb",
@@ -356,19 +366,13 @@
           "releaseStatus": "可发布",
           "reason": "4月23日第一次在APP信息流买量测",
           "judgement": "",
-<<<<<<< Updated upstream
-          "firstTestTime": "",
+          "firstTestTime": "2026-04-22",
           "finalTestTime": "",
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
           "createdAt": "1776997920000",
-          "rank": 3
-=======
-          "publicNode": "",
-          "createdAt": "1776997920000",
           "rank": 12
->>>>>>> Stashed changes
         },
         {
           "id": "rec27gFuTu5sLA",
@@ -393,19 +397,13 @@
           "releaseStatus": "可发布",
           "reason": "进击荣誉跟进过，4月17在信息流apk测试",
           "judgement": "",
-<<<<<<< Updated upstream
-          "firstTestTime": "",
+          "firstTestTime": "2026-04-16",
           "finalTestTime": "",
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
           "createdAt": "1776997920000",
-          "rank": 4
-=======
-          "publicNode": "",
-          "createdAt": "1776997920000",
           "rank": 13
->>>>>>> Stashed changes
         },
         {
           "id": "recvhFJYzbESt9",
@@ -429,15 +427,10 @@
           "releaseStatus": "可发布",
           "reason": "",
           "judgement": "",
-<<<<<<< Updated upstream
-          "firstTestTime": "",
+          "firstTestTime": "2024-07-15",
           "finalTestTime": "",
           "publicTestTime": "",
           "launchTime": "",
-          "publicNode": "",
-          "createdAt": "1776998351000",
-          "rank": 5
-=======
           "publicNode": "",
           "createdAt": "1776998351000",
           "rank": 14
@@ -463,10 +456,13 @@
           "releaseStatus": "可发布",
           "reason": "",
           "judgement": "",
+          "firstTestTime": "2026-04-20",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
           "publicNode": "",
           "createdAt": "1777260934000",
           "rank": 15
->>>>>>> Stashed changes
         },
         {
           "id": "recvhT6Ir0OVyY",
@@ -477,17 +473,11 @@
           "developer": "杭州晗元",
           "publisher": "37网游",
           "sourceText": "25年12月20用研发主体先在信息流apk测试，爆炸奇兵换皮",
-<<<<<<< Updated upstream
-          "icon": "",
-          "screenshots": [],
-          "cover": "",
-=======
           "icon": "feishu-assets/recvhT6Ir0OVyY-icon-1.png",
           "screenshots": [
             "feishu-assets/recvhT6Ir0OVyY-shot-1.png"
           ],
           "cover": "feishu-assets/recvhT6Ir0OVyY-icon-1.png",
->>>>>>> Stashed changes
           "status": "微小上榜",
           "month": "4月",
           "focus": false,
@@ -495,19 +485,13 @@
           "releaseStatus": "可发布",
           "reason": "",
           "judgement": "",
-<<<<<<< Updated upstream
           "firstTestTime": "2025-12-19",
           "finalTestTime": "",
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
           "createdAt": "1777195860000",
-          "rank": 6
-=======
-          "publicNode": "",
-          "createdAt": "1777195860000",
           "rank": 16
->>>>>>> Stashed changes
         },
         {
           "id": "rec27gFuTu5BBW",
@@ -530,27 +514,17 @@
           "releaseStatus": "可发布",
           "reason": "横板塔防",
           "judgement": "",
-<<<<<<< Updated upstream
-          "firstTestTime": "",
+          "firstTestTime": "2026-04-21",
           "finalTestTime": "",
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
           "createdAt": "1776997920000",
-          "rank": 7
-        }
-      ],
-      "createdAt": "2026-04-27T02:46:26.675Z",
-      "updatedAt": "2026-04-27T02:46:26.675Z"
-=======
-          "publicNode": "",
-          "createdAt": "1776997920000",
           "rank": 17
         }
       ],
-      "createdAt": "2026-04-27T04:12:04.211Z",
-      "updatedAt": "2026-04-27T04:12:04.211Z"
->>>>>>> Stashed changes
+      "createdAt": "2026-04-27T05:02:29.241Z",
+      "updatedAt": "2026-04-27T05:02:29.241Z"
     }
   ]
 }
