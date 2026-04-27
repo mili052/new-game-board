@@ -199,6 +199,21 @@ function renderFilters() {
     .map(status => `<option value="${escapeHtml(status)}">${escapeHtml(status)}</option>`)
     .join("");
   statusFilter.value = statuses.includes(currentStatus) ? currentStatus : "";
+  syncReportLink();
+}
+
+function syncReportLink() {
+  const link = $("#reportLink");
+  if (!link) return;
+  const selected = $("#periodFilter")?.value;
+  const boardId =
+    selected && selected !== "all"
+      ? selected
+      : (state.boards[0]?.id || "");
+
+  link.href = boardId ? `./report.html?board=${encodeURIComponent(boardId)}` : "./report.html";
+  link.classList.toggle("disabled", !boardId);
+  link.setAttribute("aria-disabled", boardId ? "false" : "true");
 }
 
 function productUrl(boardId, productId) {
@@ -269,7 +284,6 @@ function renderBoard() {
               </div>
               <h2>${escapeHtml(board.title)}</h2>
             </div>
-            <a class="hero-link" href="https://github.com/mili052/new-game-board/actions/workflows/sync-feishu.yml" target="_blank" rel="noreferrer">更新记录</a>
           </div>
           <p>${escapeHtml(board.summary || "按品类整理的新游产品库，方便浏览重点产品、上榜信号和阶段变化。")}</p>
         </div>
@@ -405,6 +419,7 @@ function renderProductPage() {
 function renderApp() {
   const page = $("#productPage");
   const root = $("#boardRoot");
+  syncReportLink();
   if (renderProductPage()) return;
   page.classList.add("hidden");
   page.innerHTML = "";
