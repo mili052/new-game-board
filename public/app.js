@@ -130,6 +130,7 @@ function productCard(product, boardId) {
   const tags = [product.genre, product.topic, product.platform].filter(Boolean);
   const ranking = isRankingStatus(product.status);
   const shot = product.screenshots?.[0] || "";
+  const note = product.reason || product.judgement || product.publicNode || "持续观察中。";
 
   return `
     <article class="product-card product-entry${ranking ? " status-featured" : ""}" data-open-product="${escapeHtml(product.id)}" data-open-board="${escapeHtml(boardId)}" tabindex="0">
@@ -138,22 +139,27 @@ function productCard(product, boardId) {
         <div class="cover-shell">${media(poster, product.name)}</div>
         <div>
           <h4 class="product-name">${escapeHtml(product.name)}</h4>
-          <div class="meta">${escapeHtml(tags.join(" / ") || "???")}</div>
+          <div class="meta">${escapeHtml(tags.join(" / ") || "未分类")}</div>
         </div>
       </div>
       <div class="badges">
         ${statusBadge(product.status)}
-        ${product.focus ? `<span class="badge focus">????</span>` : ""}
+        ${product.focus ? `<span class="badge focus">重点关注</span>` : ""}
       </div>
-      <div class="info compact-info">
-        <b>??</b><div>${escapeHtml(product.developer || "???")}</div>
-        <b>??</b><div>${escapeHtml(product.publisher || "???")}</div>
-        ${product.month ? `<b>??</b><div>${escapeHtml(product.month)}</div>` : ""}
-        ${product.firstTestTime ? `<b>??</b><div>${escapeHtml(product.firstTestTime)}</div>` : ""}
+      <div class="card-main">
+        <div class="card-note">
+          <p>${escapeHtml(note)}</p>
+        </div>
+        <div class="info compact-info info-panel">
+          <b>研发</b><div>${escapeHtml(product.developer || "待补充")}</div>
+          <b>发行</b><div>${escapeHtml(product.publisher || "待补充")}</div>
+          ${product.month ? `<b>月份</b><div>${escapeHtml(product.month)}</div>` : ""}
+          ${product.firstTestTime ? `<b>首测</b><div>${escapeHtml(product.firstTestTime)}</div>` : ""}
+        </div>
       </div>
       <div class="card-footer">
-        ${product.focus ? `<span class="micro-note">????</span>` : `<span class="micro-note muted">??????</span>`}
-        ${shot ? `<a class="thumb-inline" href="${escapeHtml(shot)}" target="_blank" rel="noreferrer" aria-label="${escapeHtml(product.name)} ??"><img src="${escapeHtml(shot)}" alt="${escapeHtml(product.name)} ??"></a>` : ""}
+        ${product.focus ? `<span class="micro-note">重点关注</span>` : `<span class="micro-note muted">点击查看详情</span>`}
+        ${shot ? `<a class="thumb-inline" href="${escapeHtml(shot)}" target="_blank" rel="noreferrer" aria-label="${escapeHtml(product.name)} 截图"><img src="${escapeHtml(shot)}" alt="${escapeHtml(product.name)} 截图"></a>` : ""}
       </div>
     </article>
   `;

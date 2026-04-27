@@ -329,6 +329,33 @@ input:focus, select:focus, textarea:focus { border-color: var(--blue); box-shado
 .compact-info {
   grid-template-columns: 38px 1fr;
 }
+.card-main {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 170px;
+  gap: 12px;
+  align-items: start;
+}
+.card-note {
+  min-height: 72px;
+}
+.card-note p {
+  margin: 0;
+  color: #20324d;
+  font-size: 13px;
+  line-height: 1.65;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.info-panel {
+  margin-top: 0;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: #f8fbff;
+  border: 1px solid var(--line);
+}
 .source-link { color: var(--blue); text-decoration: none; font-weight: 800; }
 .source-link:hover { text-decoration: underline; }
 .card-footer {
@@ -632,6 +659,8 @@ input:focus, select:focus, textarea:focus { border-color: var(--blue); box-shado
   .product-top { grid-template-columns: 68px 1fr; }
   .cover-shell { width: 68px; border-radius: 16px; }
   .cover { border-radius: 16px; }
+  .card-main { grid-template-columns: 1fr; }
+  .card-note { min-height: auto; }
   .detail-page-hero,
   .detail-hero,
   .detail-grid { grid-template-columns: 1fr; }
