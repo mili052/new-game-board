@@ -7,9 +7,9 @@
       "date": "2026-04-27",
       "summary": "4月收录的新游产品列表，支持持续录入、筛选和对外展示。",
       "metrics": [
-        "收录产品17款",
+        "收录产品27款",
         "测试 / 微小上榜 / IOS上榜 / 已上线 / 招募",
-        "4个平台",
+        "6个平台",
         "重点产品5款"
       ],
       "trends": [],
@@ -43,6 +43,7 @@
           "launchTime": "",
           "publicNode": "",
           "createdAt": "1777260745000",
+          "updatedAt": "1777392000000",
           "rank": 1
         },
         {
@@ -53,7 +54,7 @@
           "platform": "微小",
           "developer": "成都开心加",
           "publisher": "深圳大梦",
-          "sourceText": "深圳大梦代理产品-一直在APK测 第一次测是25年9月27 过了3个月12月19号开始在APK第二次投放买量测试 这次测试玩法改成出兵战斗了 蔚蓝like",
+          "sourceText": "《精英防守》深圳大梦代理产品-一直在APK测 第一次测是25年9月27 过了3个月12月19号开始在APK第二次投放买量测试 这次测试玩法改成出兵战斗了 蔚蓝like",
           "icon": "feishu-assets/rec27gFuTu5EEP-icon-1.png",
           "screenshots": [
             "feishu-assets/rec27gFuTu5EEP-shot-1.png",
@@ -74,6 +75,7 @@
           "launchTime": "",
           "publicNode": "",
           "createdAt": "1776997920000",
+          "updatedAt": "1776960000000",
           "rank": 2
         },
         {
@@ -84,7 +86,7 @@
           "platform": "APP",
           "developer": "广州百田",
           "publisher": "广州百田",
-          "sourceText": "4月28首发上线，仅APP上线",
+          "sourceText": "《乱涂彩世界》4月28首发上线，仅APP上线",
           "icon": "feishu-assets/recvhFK21gMcbM-icon-1.png",
           "screenshots": [
             "feishu-assets/recvhFK21gMcbM-shot-1.png",
@@ -105,6 +107,7 @@
           "launchTime": "",
           "publicNode": "",
           "createdAt": "1776998364000",
+          "updatedAt": "1777305600000",
           "rank": 3
         },
         {
@@ -115,7 +118,7 @@
           "platform": "抖小",
           "developer": "波克上海",
           "publisher": "波克上海",
-          "sourceText": "仙尘小径，欧卡风二合Merge产品，偏女性向装修/改造题材；波克上海自研，海外版本名为《Merge Restyle》，研发并非小游戏研发组而是slot团队；国内于2月4日在抖音小程序首测，3月20日开启第二次测试，之后持续买量至今，消息称五一准备大推，日消耗预计拉到100万。海外已有跑通样本、国内也在持续验证，现阶段可作为波克切入二合赛道的重点关注盘。",
+          "sourceText": "《仙尘小径》欧卡风二合Merge产品，偏女性向装修/改造题材；波克上海自研，海外版本名为《Merge Restyle》，研发并非小游戏研发组而是slot团队；国内于2月4日在抖音小程序首测，3月20日开启第二次测试，之后持续买量至今，消息称五一准备大推，日消耗预计拉到100万。海外已有跑通样本、国内也在持续验证，现阶段可作为波克切入二合赛道的重点关注盘。",
           "icon": "feishu-assets/recvhXoEx5s6Pc-icon-1.png",
           "screenshots": [
             "feishu-assets/recvhXoEx5s6Pc-shot-1.jpg",
@@ -135,6 +138,7 @@
           "launchTime": "",
           "publicNode": "",
           "createdAt": "1777259240000",
+          "updatedAt": "1777219200000",
           "rank": 4
         },
         {
@@ -145,7 +149,7 @@
           "platform": "微小",
           "developer": "广州天纵",
           "publisher": "广州天纵",
-          "sourceText": "三国大冒险大概月流水3kw左右；\n数据：180天倍率30倍，付费7天留存55%，30天付费留存30%",
+          "sourceText": "《掌上谈兵》三国题材放置卡牌《三国大冒险》马甲包；原产品历史峰值月流水约3000万；4月20日新进微信小游戏畅销榜第6，4月24日冲上畅销榜第1并维持数日，当前买量强度很高，头条日耗接近600万、腾讯约130万，之前三国180天倍率约30倍、付费7日留存55%、30日付费留存30%，市场反馈天纵是在冲5000万政策，素材本身无明显新意，核心靠低出价提升竞争力放大投放。是典型成熟老框架靠强投放运营二次放大的商业盘，短期爆发力强，重点看榜单持续性和回收兑现。",
           "icon": "feishu-assets/rec27gFuTu5HvS-icon-1.png",
           "screenshots": [
             "feishu-assets/rec27gFuTu5HvS-shot-1.png"
@@ -158,13 +162,44 @@
           "releaseStatus": "可发布",
           "reason": "4月第4周微小新上畅销榜游戏，4月24登上了微信小游戏畅销榜榜一\n三国大冒险马甲包，，头条将近600w日耗，单价40，付费单价1400，首日roi1.5%，腾讯130w，单价7，付费单价1500，首日roi2.5%",
           "judgement": "",
-          "firstTestTime": "",
+          "firstTestTime": "2026-04-12",
           "finalTestTime": "",
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
           "createdAt": "1776997920000",
+          "updatedAt": "1776614400000",
           "rank": 5
+        },
+        {
+          "id": "recvhY34avBWMo",
+          "name": "城主别慌张",
+          "genre": "塔防",
+          "topic": "三国",
+          "platform": "微小",
+          "developer": "广州晓游",
+          "publisher": "广州乐玩",
+          "sourceText": "《城主别慌张》竖版三国题材一步两步like，25年11月底现在apk测过，12月16微小，当时叫冒险大闯关，26年1月这个版号用在第零世界那个靶心like产品测试，4月27用城主别慌张新版号上微小测试",
+          "icon": "feishu-assets/recvhY34avBWMo-icon-1.png",
+          "screenshots": [
+            "feishu-assets/recvhY34avBWMo-shot-1.png"
+          ],
+          "cover": "feishu-assets/recvhY34avBWMo-icon-1.png",
+          "status": "测试",
+          "month": "4月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "firstTestTime": "2025-10-31",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "1777268872000",
+          "updatedAt": "1777219200000",
+          "rank": 6
         },
         {
           "id": "recvhXvRea7KwR",
@@ -174,7 +209,7 @@
           "platform": "微小 / APP",
           "developer": "广州忆趣",
           "publisher": "广州狮子",
-          "sourceText": "竖版末日丧尸题材肉鸽塔防，广州忆趣研发、广州狮子游戏发行；\nAPP版25年10月多轮测过，26年2月10日安卓上线（APP是研发自己发，负责人叫伟峰，iOS还没上），4月10日狮子测微小，4月22日上微小畅销第98。现排46名\n\n产品底层是在纯蔚蓝like框架上做了降维处理，取消局内金币、合成和技能购买，只需要根据局内肉鸽的单卡技能堆叠就能够进阶卡牌，实际就是在僵尸Like基础上加了一些机制，美术上蹭了多IP角色形象，大概率难跑很大，数据了解中；",
+          "sourceText": "《出征吧！勇士》竖版末日丧尸题材肉鸽塔防，广州忆趣研发、广州狮子游戏发行；\nAPP版25年10月多轮测过，26年2月10日安卓上线（APP是研发自己发，负责人叫伟峰，iOS还没上），4月10日狮子测微小，4月22日上微小畅销第98。现排46名\n\n产品底层是在纯蔚蓝like框架上做了降维处理，取消局内金币、合成和技能购买，只需要根据局内肉鸽的单卡技能堆叠就能够进阶卡牌，实际就是在僵尸Like基础上加了一些机制，美术上蹭了多IP角色形象，大概率难跑很大，数据了解中；",
           "icon": "feishu-assets/recvhXvRea7KwR-icon-1.png",
           "screenshots": [
             "feishu-assets/recvhXvRea7KwR-shot-1.png"
@@ -193,7 +228,8 @@
           "launchTime": "",
           "publicNode": "",
           "createdAt": "1777260958000",
-          "rank": 6
+          "updatedAt": "1776787200000",
+          "rank": 7
         },
         {
           "id": "recvhXu0IjHtCD",
@@ -203,7 +239,7 @@
           "platform": "APP",
           "developer": "友谊时光",
           "publisher": "友谊时光",
-          "sourceText": "像素风足球俱乐部经营+轻竞技产品，友谊时光自研，一食无忧工作室发行；3月25日首测，仅在渠道APP小范围测试，未买量测，4月28日在TapTap、好游快爆开启二测。产品方向偏轻度化足球题材切入，现阶段先看二测反馈和后续是否开始买量。",
+          "sourceText": "《代号：足球》像素风足球俱乐部经营+轻竞技产品，友谊时光自研，一食无忧工作室发行；3月25日首测，仅在渠道APP小范围测试，未买量测，4月28日在TapTap、好游快爆开启二测。产品方向偏轻度化足球题材切入，现阶段先看二测反馈和后续是否开始买量。",
           "icon": "feishu-assets/recvhXu0IjHtCD-icon-1.png",
           "screenshots": [
             "feishu-assets/recvhXu0IjHtCD-shot-1.png",
@@ -223,7 +259,8 @@
           "launchTime": "",
           "publicNode": "",
           "createdAt": "1777260517000",
-          "rank": 7
+          "updatedAt": "1777305600000",
+          "rank": 8
         },
         {
           "id": "recvhGKIYmwdQv",
@@ -233,7 +270,7 @@
           "platform": "APP",
           "developer": "成都双倍",
           "publisher": "广州高图",
-          "sourceText": "西方魔幻暗黑风重度MMORPG，国内高图发行，成都双倍研发，3月11日国内首测；",
+          "sourceText": "《地牢猎手6》西方魔幻暗黑风重度MMORPG，国内高图发行，成都双倍研发，3月11日国内首测；",
           "icon": "feishu-assets/recvhGKIYmwdQv-icon-1.png",
           "screenshots": [
             "feishu-assets/recvhGKIYmwdQv-shot-1.png",
@@ -253,7 +290,68 @@
           "launchTime": "",
           "publicNode": "",
           "createdAt": "1777013305000",
-          "rank": 8
+          "updatedAt": "1777305600000",
+          "rank": 9
+        },
+        {
+          "id": "recvhY2vfk9sy6",
+          "name": "斗罗大陆：传承",
+          "genre": "放置RPG",
+          "topic": "斗罗IP",
+          "platform": "APP / 微小",
+          "developer": "37自研",
+          "publisher": "37网游",
+          "sourceText": "《斗罗大陆：传承》\n竖版斗罗IP放置RPG，37网游发行、37自研，制作人嘉伦，原灵魂序章主策划；4月21日APP和微小一起买量。像在灵魂序章开箱子商业化框架换个没有闪like再洗一波；",
+          "icon": "feishu-assets/recvhY2vfk9sy6-icon-1.png",
+          "screenshots": [
+            "feishu-assets/recvhY2vfk9sy6-shot-1.png"
+          ],
+          "cover": "feishu-assets/recvhY2vfk9sy6-icon-1.png",
+          "status": "测试",
+          "month": "4月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "firstTestTime": "2026-04-20",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "1777268738000",
+          "updatedAt": "1776700800000",
+          "rank": 10
+        },
+        {
+          "id": "recvhYbVXu4KPY",
+          "name": "斗破苍穹：萧炎传",
+          "genre": "放置RPG",
+          "topic": "斗破IP",
+          "platform": "微小",
+          "developer": "厦门延趣",
+          "publisher": "37网游",
+          "sourceText": "《斗破苍穹：萧炎传》37的斗破IP+没有闪like，微小先测试",
+          "icon": "feishu-assets/recvhYbVXu4KPY-icon-1.png",
+          "screenshots": [
+            "feishu-assets/recvhYbVXu4KPY-shot-1.png"
+          ],
+          "cover": "feishu-assets/recvhYbVXu4KPY-icon-1.png",
+          "status": "测试",
+          "month": "4月",
+          "focus": false,
+          "sourceUrl": "#小程序://斗破苍穹：萧炎传/yT3FeFr90zaAAYy",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "firstTestTime": "2026-04-22",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "1777270986000",
+          "updatedAt": "1776873600000",
+          "rank": 11
         },
         {
           "id": "recvhFK8tttfoa",
@@ -283,7 +381,36 @@
           "launchTime": "",
           "publicNode": "",
           "createdAt": "1776998389000",
-          "rank": 9
+          "updatedAt": "1777392000000",
+          "rank": 12
+        },
+        {
+          "id": "recvhYeFQkrPIW",
+          "name": "华夏千秋",
+          "genre": "模拟经营",
+          "topic": "古风",
+          "platform": "微小",
+          "developer": "广州火羽",
+          "publisher": "广州火羽",
+          "sourceText": "《华夏千秋》4月21微小上线测，APP上过了，国风武侠开放世界模拟经营。研发周期超三年，APP25年8月15上线，成绩不算特别出彩，估计是亏钱的，这类产品挑战远超宫斗+换装+数值，从内容生产线、线上问题治理、社交系统与生态、长期版本路线图都更重。",
+          "icon": "feishu-assets/recvhYeFQkrPIW-icon-1.png",
+          "screenshots": [],
+          "cover": "feishu-assets/recvhYeFQkrPIW-icon-1.png",
+          "status": "测试",
+          "month": "4月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "firstTestTime": "2026-04-20",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "1777271639000",
+          "updatedAt": "1776700800000",
+          "rank": 13
         },
         {
           "id": "recvhXvKELIEIa",
@@ -293,7 +420,7 @@
           "platform": "APP",
           "developer": "沐瞳广州",
           "publisher": "朝夕光年",
-          "sourceText": "二次元生活模拟+社交RP产品，朝夕光年发行、Lumi Studio开发，TapTap当前9.2分/73评，口碑整体偏正，强项在Q萌美术、换装和轻社交副游氛围，短板在性能、单人内容深度与后续商业化担忧；广州的团队在做",
+          "sourceText": "《集合！浆果镇》二次元生活模拟+社交RP产品，朝夕光年发行、Lumi Studio开发，TapTap当前9.2分/73评，口碑整体偏正，强项在Q萌美术、换装和轻社交副游氛围，短板在性能、单人内容深度与后续商业化担忧；广州的团队在做",
           "icon": "feishu-assets/recvhXvKELIEIa-icon-1.png",
           "screenshots": [
             "feishu-assets/recvhXvKELIEIa-shot-1.png",
@@ -313,7 +440,38 @@
           "launchTime": "",
           "publicNode": "",
           "createdAt": "1777260933000",
-          "rank": 10
+          "updatedAt": "1777392000000",
+          "rank": 14
+        },
+        {
+          "id": "recvhY3Yjhl8Xa",
+          "name": "灵动大世界",
+          "genre": "塔防",
+          "topic": "微恐",
+          "platform": "微小 / 抖小",
+          "developer": "广州元起",
+          "publisher": "广州波克",
+          "sourceText": "《灵动大世界》\n竖版三国题材Rogue卡牌，底层借鉴海外111%《进击的恶魔城》，广州波克发行；一测时间25年12月22日，二测2月6日，版本有改动，融入了骷髅元素；4月21，是又改版后的，抖小和微小一起开测了",
+          "icon": "feishu-assets/recvhY3Yjhl8Xa-icon-1.png",
+          "screenshots": [
+            "feishu-assets/recvhY3Yjhl8Xa-shot-1.png"
+          ],
+          "cover": "feishu-assets/recvhY3Yjhl8Xa-icon-1.png",
+          "status": "测试",
+          "month": "4月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "firstTestTime": "2025-12-24",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "1777269088000",
+          "updatedAt": "1776700800000",
+          "rank": 15
         },
         {
           "id": "recvhXx9iQVE4p",
@@ -323,7 +481,7 @@
           "platform": "APP",
           "developer": "杭州浮云",
           "publisher": "B站",
-          "sourceText": "三国题材休闲竞技卡牌，B站发行、杭州浮云研发；2025年9月预约首曝，10月30日首轮限量测试，2026年3月18日删档复测，4月20日iOS先上线，上线当天进入iOS畅销总榜第165名，现已滑落至190名左右，4月22日安卓开启不删档计费测试，尚未正式上线。iOS端已有初步付费承接，当前更像分步验证双端表现的观察盘，后续重点看安卓上线后的留存和商业化持续性",
+          "sourceText": "《三国：百将牌》三国题材休闲竞技卡牌，B站发行、杭州浮云研发；2025年9月预约首曝，10月30日首轮限量测试，2026年3月18日删档复测，4月20日iOS先上线，上线当天进入iOS畅销总榜第165名，现已滑落至190名左右，4月22日安卓开启不删档计费测试，尚未正式上线。iOS端已有初步付费承接，当前更像分步验证双端表现的观察盘，后续重点看安卓上线后的留存和商业化持续性",
           "icon": "feishu-assets/recvhXx9iQVE4p-icon-1.png",
           "screenshots": [
             "feishu-assets/recvhXx9iQVE4p-shot-1.png"
@@ -342,7 +500,8 @@
           "launchTime": "",
           "publicNode": "",
           "createdAt": "1777261266000",
-          "rank": 11
+          "updatedAt": "1776614400000",
+          "rank": 16
         },
         {
           "id": "rec27gFuTu5oXb",
@@ -352,7 +511,7 @@
           "platform": "APP",
           "developer": "北辰星光",
           "publisher": "广州星辉",
-          "sourceText": "三国题材名将Like，有仙气儿换皮，北辰研发，星辉定制",
+          "sourceText": "《三国：天命再临》三国题材名将Like，有仙气儿换皮，北辰研发，星辉定制",
           "icon": "feishu-assets/rec27gFuTu5oXb-icon-1.png",
           "screenshots": [
             "feishu-assets/rec27gFuTu5oXb-shot-1.png",
@@ -372,7 +531,39 @@
           "launchTime": "",
           "publicNode": "",
           "createdAt": "1776997920000",
-          "rank": 12
+          "updatedAt": "1776873600000",
+          "rank": 17
+        },
+        {
+          "id": "recvhYb5FCBq2b",
+          "name": "五虎守卫者",
+          "genre": "塔防",
+          "topic": "动物",
+          "platform": "APP",
+          "developer": "北京蛛趣",
+          "publisher": "play800",
+          "sourceText": "《五虎守卫者》动物三国塔防，原掌趣做小游戏团队出去成立的新公司，第一次APK测试",
+          "icon": "feishu-assets/recvhYb5FCBq2b-icon-1.png",
+          "screenshots": [
+            "feishu-assets/recvhYb5FCBq2b-shot-1.jpg",
+            "feishu-assets/recvhYb5FCBq2b-shot-2.png"
+          ],
+          "cover": "feishu-assets/recvhYb5FCBq2b-icon-1.png",
+          "status": "测试",
+          "month": "4月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "firstTestTime": "2026-04-20",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "1777270785000",
+          "updatedAt": "1776700800000",
+          "rank": 18
         },
         {
           "id": "rec27gFuTu5sLA",
@@ -382,7 +573,7 @@
           "platform": "APP",
           "developer": "深圳巽游",
           "publisher": "腾讯视频",
-          "sourceText": "进击荣誉迭代产品，仙侠题材塔防，用的蜀山的版号，先测，巽游给腾讯视频发渠道，广州八五后找巽游定制的进击荣誉Like",
+          "sourceText": "《仙逆:战天道》仙逆IP仙侠题材肉鸽塔防，进击荣誉迭代产品；广州八五后找巽游定制的，并给腾讯视频发渠道，产品当前用蜀山版号先测；整体是把进击荣誉成熟框架换成仙侠题材和仙逆IP包装的塔防盘，现阶段按常规观察项目看即可。",
           "icon": "feishu-assets/rec27gFuTu5sLA-icon-1.png",
           "screenshots": [
             "feishu-assets/rec27gFuTu5sLA-shot-1.png",
@@ -403,7 +594,68 @@
           "launchTime": "",
           "publicNode": "",
           "createdAt": "1776997920000",
-          "rank": 13
+          "updatedAt": "1776355200000",
+          "rank": 19
+        },
+        {
+          "id": "recvhY2tandn22",
+          "name": "新三国：荣耀再起",
+          "genre": "SLG",
+          "topic": "三国",
+          "platform": "APP",
+          "developer": "天上友嘉",
+          "publisher": "腾讯",
+          "sourceText": "《新三国：荣耀再起》三国SLG，腾讯发行，成都天上友嘉研发，4月21日在Tap等渠道开启限量删档测试；从测试物料看，主打“换将零损耗、数值非王道、山水助阵”等卖点，整体是偏降门槛、强调策略包装的三国SLG产品。",
+          "icon": "feishu-assets/recvhY2tandn22-icon-1.png",
+          "screenshots": [
+            "feishu-assets/recvhY2tandn22-shot-1.png"
+          ],
+          "cover": "feishu-assets/recvhY2tandn22-icon-1.png",
+          "status": "测试",
+          "month": "4月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "firstTestTime": "2026-04-20",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "1777268730000",
+          "updatedAt": "1776700800000",
+          "rank": 20
+        },
+        {
+          "id": "recvhY2v2AQUr4",
+          "name": "血脉：神器之战",
+          "genre": "放置RPG",
+          "topic": "斗破IP",
+          "platform": "APP",
+          "developer": "北京爱谱雷",
+          "publisher": "37手游",
+          "sourceText": "《血脉：神器之战》37手游找爱谱雷定制的没有闪like，4月21小程序先测",
+          "icon": "feishu-assets/recvhY2v2AQUr4-icon-1.png",
+          "screenshots": [
+            "feishu-assets/recvhY2v2AQUr4-shot-1.png"
+          ],
+          "cover": "feishu-assets/recvhY2v2AQUr4-icon-1.png",
+          "status": "测试",
+          "month": "4月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "firstTestTime": "2026-04-20",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "1777268737000",
+          "updatedAt": "1776700800000",
+          "rank": 21
         },
         {
           "id": "recvhFJYzbESt9",
@@ -413,7 +665,7 @@
           "platform": "APP",
           "developer": "苏州幻塔",
           "publisher": "北京完美",
-          "sourceText": "4月23首发，现ios榜单排23",
+          "sourceText": "《异环》4月23首发，现ios榜单排16",
           "icon": "feishu-assets/recvhFJYzbESt9-icon-1.png",
           "screenshots": [
             "feishu-assets/recvhFJYzbESt9-shot-1.png",
@@ -433,7 +685,38 @@
           "launchTime": "",
           "publicNode": "",
           "createdAt": "1776998351000",
-          "rank": 14
+          "updatedAt": "1776873600000",
+          "rank": 22
+        },
+        {
+          "id": "recvhYgtd2t7Sx",
+          "name": "英雄盟约",
+          "genre": "塔防",
+          "topic": "末日",
+          "platform": "抖小",
+          "developer": "君海系",
+          "publisher": "广州南艺",
+          "sourceText": "《英雄盟约》末日丧尸题材塔防，肉鸽塔防；广州南艺，君海系产品，研发暂未确认；4月25日起在先在抖小测试，当前仍处于短周期小范围买量验证阶段。题材和包装都偏成熟框架，现阶段更像常规测试盘，看后续是否持续放量和了解研发归属",
+          "icon": "feishu-assets/recvhYgtd2t7Sx-icon-1.png",
+          "screenshots": [
+            "feishu-assets/recvhYgtd2t7Sx-shot-1.png"
+          ],
+          "cover": "feishu-assets/recvhYgtd2t7Sx-icon-1.png",
+          "status": "测试",
+          "month": "4月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "firstTestTime": "2026-04-24",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "1777272067000",
+          "updatedAt": "1777046400000",
+          "rank": 23
         },
         {
           "id": "recvhXvKUQR4Dl",
@@ -443,7 +726,7 @@
           "platform": "微小",
           "developer": "广州天纵",
           "publisher": "广州天纵",
-          "sourceText": "新幻灵，磨了纪念，有做调整",
+          "sourceText": "《远古灵域》新幻灵，磨了几年，有做调整",
           "icon": "feishu-assets/recvhXvKUQR4Dl-icon-1.png",
           "screenshots": [
             "feishu-assets/recvhXvKUQR4Dl-shot-1.png"
@@ -462,7 +745,8 @@
           "launchTime": "",
           "publicNode": "",
           "createdAt": "1777260934000",
-          "rank": 15
+          "updatedAt": "1776873600000",
+          "rank": 24
         },
         {
           "id": "recvhT6Ir0OVyY",
@@ -472,7 +756,7 @@
           "platform": "微小",
           "developer": "杭州晗元",
           "publisher": "37网游",
-          "sourceText": "25年12月20用研发主体先在信息流apk测试，爆炸奇兵换皮",
+          "sourceText": "《爪爪大乱斗》25年12月20用研发主体先在信息流apk测试，爆炸奇兵换皮",
           "icon": "feishu-assets/recvhT6Ir0OVyY-icon-1.png",
           "screenshots": [
             "feishu-assets/recvhT6Ir0OVyY-shot-1.png"
@@ -491,7 +775,8 @@
           "launchTime": "",
           "publicNode": "",
           "createdAt": "1777195860000",
-          "rank": 16
+          "updatedAt": "1777046400000",
+          "rank": 25
         },
         {
           "id": "rec27gFuTu5BBW",
@@ -501,7 +786,7 @@
           "platform": "APP",
           "developer": "深圳那兹",
           "publisher": "深圳冰川",
-          "sourceText": "这塔有点难-4月22日APK测试-深圳那兹研发，深圳冰川买量测试",
+          "sourceText": "《这塔有点难》4月22日APK测试-深圳那兹研发，深圳冰川买量测试",
           "icon": "feishu-assets/rec27gFuTu5BBW-icon-1.png",
           "screenshots": [
             "feishu-assets/rec27gFuTu5BBW-shot-1.png"
@@ -520,11 +805,44 @@
           "launchTime": "",
           "publicNode": "",
           "createdAt": "1776997920000",
-          "rank": 17
+          "updatedAt": "1776787200000",
+          "rank": 26
+        },
+        {
+          "id": "recvhY2uOFwFyP",
+          "name": "最终的梦幻岛",
+          "genre": "模拟经营",
+          "topic": "童话风",
+          "platform": "APP",
+          "developer": "广州火羽",
+          "publisher": "广州火羽",
+          "sourceText": "《最终的梦幻岛》童话风模拟经营产品，广州火羽自研自发，4月20日APK首次信息流测试；玩法为农场经营+卡牌，并融入一定花园世界式包装，项目由火羽《盛世芳华》分支团队孵化，当前素材侧在同时测试“治愈种田”和“末日重建”两种包装方向。",
+          "icon": "feishu-assets/recvhY2uOFwFyP-icon-1.png",
+          "screenshots": [
+            "feishu-assets/recvhY2uOFwFyP-shot-1.png",
+            "feishu-assets/recvhY2uOFwFyP-shot-2.png",
+            "feishu-assets/recvhY2uOFwFyP-shot-3.png"
+          ],
+          "cover": "feishu-assets/recvhY2uOFwFyP-icon-1.png",
+          "status": "测试",
+          "month": "4月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "firstTestTime": "2026-04-19",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "1777268736000",
+          "updatedAt": "1776614400000",
+          "rank": 27
         }
       ],
-      "createdAt": "2026-04-27T05:02:29.241Z",
-      "updatedAt": "2026-04-27T05:02:29.241Z"
+      "createdAt": "2026-04-27T07:55:50.674Z",
+      "updatedAt": "2026-04-27T07:55:50.674Z"
     }
   ]
 }
