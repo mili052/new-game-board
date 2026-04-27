@@ -35,6 +35,9 @@ const C = {
   createdAt: "\u521b\u5efa\u65f6\u95f4",
   updatedAt: "\u66f4\u65b0\u65f6\u95f4",
   firstTestTime: "\u9996\u6d4b\u65f6\u95f4",
+  finalTestTime: "\u7ec8\u6d4b\u65f6\u95f4",
+  publicTestTime: "\u516c\u6d4b\u65f6\u95f4",
+  launchTime: "\u4e0a\u7ebf\u65f6\u95f4",
   testTime: "\u6d4b\u8bd5\u65f6\u95f4",
   publicNode: "\u516c\u5f00\u8282\u70b9",
   node: "\u8282\u70b9",
@@ -70,6 +73,9 @@ const FIELD_ALIASES = {
   judgement: [C.judgement],
   createdAt: [C.createdAt, C.updatedAt],
   firstTestTime: [C.firstTestTime],
+  finalTestTime: [C.finalTestTime],
+  publicTestTime: [C.publicTestTime],
+  launchTime: [C.launchTime],
   testTime: [C.testTime],
   publicNode: [C.publicNode, C.node]
 };
@@ -393,6 +399,9 @@ async function normalizeProduct(record, token) {
   const screenshotAttachments = normalizeAttachments(pick(fields, "screenshots"));
   const createdAtValue = pick(fields, "createdAt");
   const firstTestTimeValue = pick(fields, "firstTestTime");
+  const finalTestTimeValue = pick(fields, "finalTestTime");
+  const publicTestTimeValue = pick(fields, "publicTestTime");
+  const launchTimeValue = pick(fields, "launchTime");
   const testTimeValue = pick(fields, "testTime");
 
   const icon = iconAttachments[0]
@@ -429,6 +438,9 @@ async function normalizeProduct(record, token) {
     reason: toText(pick(fields, "reason")),
     judgement: toText(pick(fields, "judgement")),
     firstTestTime: normalizeDisplayDate(firstTestTimeValue),
+    finalTestTime: normalizeDisplayDate(finalTestTimeValue),
+    publicTestTime: normalizeDisplayDate(publicTestTimeValue),
+    launchTime: normalizeDisplayDate(launchTimeValue),
     publicNode: toText(pick(fields, "publicNode")) || toText(testTimeValue),
     createdAt: toText(createdAtValue) || new Date().toISOString()
   };
