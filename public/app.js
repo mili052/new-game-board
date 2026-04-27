@@ -128,8 +128,8 @@ function screenshotGallery(product, className = "screenshots") {
 function productCard(product, boardId) {
   const poster = product.cover || product.screenshots?.[0] || "";
   const tags = [product.genre, product.topic, product.platform].filter(Boolean);
-  const summary = product.reason || product.judgement || product.publicNode || "持续观察中。";
   const ranking = isRankingStatus(product.status);
+  const shot = product.screenshots?.[0] || "";
 
   return `
     <article class="product-card product-entry${ranking ? " status-featured" : ""}" data-open-product="${escapeHtml(product.id)}" data-open-board="${escapeHtml(boardId)}" tabindex="0">
@@ -138,27 +138,26 @@ function productCard(product, boardId) {
         <div class="cover-shell">${media(poster, product.name)}</div>
         <div>
           <h4 class="product-name">${escapeHtml(product.name)}</h4>
-          <div class="meta">${escapeHtml(tags.join(" / ") || "未分类")}</div>
+          <div class="meta">${escapeHtml(tags.join(" / ") || "???")}</div>
         </div>
       </div>
       <div class="badges">
         ${statusBadge(product.status)}
-        ${product.focus ? `<span class="badge focus">重点关注</span>` : ""}
+        ${product.focus ? `<span class="badge focus">????</span>` : ""}
       </div>
-      <div class="info">
-        <b>研发</b><div>${escapeHtml(product.developer || "待补充")}</div>
-        <b>发行</b><div>${escapeHtml(product.publisher || "待补充")}</div>
-        ${product.month ? `<b>月份</b><div>${escapeHtml(product.month)}</div>` : ""}
-        ${product.firstTestTime ? `<b>首测</b><div>${escapeHtml(product.firstTestTime)}</div>` : ""}
-        ${product.sourceUrl ? `<b>来源</b><div><a class="source-link" href="${escapeHtml(product.sourceUrl)}" target="_blank" rel="noreferrer">查看原文</a></div>` : ""}
+      <div class="info compact-info">
+        <b>??</b><div>${escapeHtml(product.developer || "???")}</div>
+        <b>??</b><div>${escapeHtml(product.publisher || "???")}</div>
+        ${product.month ? `<b>??</b><div>${escapeHtml(product.month)}</div>` : ""}
+        ${product.firstTestTime ? `<b>??</b><div>${escapeHtml(product.firstTestTime)}</div>` : ""}
       </div>
-      <p class="summary">${escapeHtml(summary)}</p>
-      ${product.reason ? `<div class="copybox compact"><span>关注理由</span><p>${escapeHtml(product.reason)}</p></div>` : ""}
-      ${screenshotGallery(product)}
+      <div class="card-footer">
+        ${product.focus ? `<span class="micro-note">????</span>` : `<span class="micro-note muted">??????</span>`}
+        ${shot ? `<a class="thumb-inline" href="${escapeHtml(shot)}" target="_blank" rel="noreferrer" aria-label="${escapeHtml(product.name)} ??"><img src="${escapeHtml(shot)}" alt="${escapeHtml(product.name)} ??"></a>` : ""}
+      </div>
     </article>
   `;
 }
-
 function filteredProducts(board) {
   const status = $("#statusFilter").value;
   const q = $("#searchInput").value.trim().toLowerCase();
