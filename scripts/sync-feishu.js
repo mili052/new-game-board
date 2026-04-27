@@ -34,6 +34,7 @@ const C = {
   judgement: "\u8d8b\u52bf\u5224\u65ad",
   createdAt: "\u521b\u5efa\u65f6\u95f4",
   updatedAt: "\u66f4\u65b0\u65f6\u95f4",
+  firstTestTime: "\u9996\u6d4b\u65f6\u95f4",
   testTime: "\u6d4b\u8bd5\u65f6\u95f4",
   publicNode: "\u516c\u5f00\u8282\u70b9",
   node: "\u8282\u70b9",
@@ -68,6 +69,7 @@ const FIELD_ALIASES = {
   reason: [C.reason],
   judgement: [C.judgement],
   createdAt: [C.createdAt, C.updatedAt],
+  firstTestTime: [C.firstTestTime],
   testTime: [C.testTime],
   publicNode: [C.publicNode, C.node]
 };
@@ -190,6 +192,15 @@ function normalizeMonth(monthValue, testTimeValue, createdAtValue) {
   const date = parseDateValue(testTimeValue) || parseDateValue(createdAtValue);
   if (!date) return "";
   return `${date.getMonth() + 1}${C.monthSuffix}`;
+}
+
+function normalizeDisplayDate(value) {
+  const date = parseDateValue(value);
+  if (!date) return "";
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const day = String(date.getDate()).padStart(2, "0");
+  return `${year}-${month}-${day}`;
 }
 
 function monthLabel(monthKey) {
@@ -381,6 +392,7 @@ async function normalizeProduct(record, token) {
   const iconAttachments = normalizeAttachments(pick(fields, "icon"));
   const screenshotAttachments = normalizeAttachments(pick(fields, "screenshots"));
   const createdAtValue = pick(fields, "createdAt");
+  const firstTestTimeValue = pick(fields, "firstTestTime");
   const testTimeValue = pick(fields, "testTime");
 
   const icon = iconAttachments[0]
@@ -416,6 +428,7 @@ async function normalizeProduct(record, token) {
     releaseStatus: toText(pick(fields, "releaseStatus")),
     reason: toText(pick(fields, "reason")),
     judgement: toText(pick(fields, "judgement")),
+    firstTestTime: normalizeDisplayDate(firstTestTimeValue),
     publicNode: toText(pick(fields, "publicNode")) || toText(testTimeValue),
     createdAt: toText(createdAtValue) || new Date().toISOString()
   };

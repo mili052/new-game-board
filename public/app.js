@@ -149,6 +149,7 @@ function productCard(product, boardId) {
         <b>研发</b><div>${escapeHtml(product.developer || "待补充")}</div>
         <b>发行</b><div>${escapeHtml(product.publisher || "待补充")}</div>
         ${product.month ? `<b>月份</b><div>${escapeHtml(product.month)}</div>` : ""}
+        ${product.firstTestTime ? `<b>首测</b><div>${escapeHtml(product.firstTestTime)}</div>` : ""}
         ${product.sourceUrl ? `<b>来源</b><div><a class="source-link" href="${escapeHtml(product.sourceUrl)}" target="_blank" rel="noreferrer">查看原文</a></div>` : ""}
       </div>
       <p class="summary">${escapeHtml(summary)}</p>
@@ -369,6 +370,7 @@ function renderProductPage() {
       <section class="detail-grid">
         <div class="detail-box"><span>研发</span><strong>${escapeHtml(product.developer || "待补充")}</strong></div>
         <div class="detail-box"><span>发行</span><strong>${escapeHtml(product.publisher || "待补充")}</strong></div>
+        <div class="detail-box"><span>首测时间</span><strong>${escapeHtml(product.firstTestTime || "待补充")}</strong></div>
         <div class="detail-box"><span>公开节点</span><strong>${escapeHtml(product.publicNode || "待补充")}</strong></div>
         <div class="detail-box"><span>所在看板</span><strong>${escapeHtml(board.title || board.period || "产品库")}</strong></div>
       </section>
