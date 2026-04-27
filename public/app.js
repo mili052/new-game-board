@@ -135,31 +135,27 @@ function productCard(product, boardId) {
   return `
     <article class="product-card product-entry${ranking ? " status-featured" : ""}" data-open-product="${escapeHtml(product.id)}" data-open-board="${escapeHtml(boardId)}" tabindex="0">
       ${ranking ? `<div class="status-ribbon">${escapeHtml(product.status)}</div>` : ""}
-      <div class="product-top">
+      <div class="product-top tap-card-top">
         <div class="cover-shell">${media(poster, product.name)}</div>
-        <div>
+        <div class="tap-card-head">
           <h4 class="product-name">${escapeHtml(product.name)}</h4>
           <div class="meta">${escapeHtml(tags.join(" / ") || "未分类")}</div>
+          <div class="badges inline-badges">
+            ${statusBadge(product.status)}
+            ${product.focus ? `<span class="badge focus">重点关注</span>` : ""}
+          </div>
         </div>
       </div>
-      <div class="badges">
-        ${statusBadge(product.status)}
-        ${product.focus ? `<span class="badge focus">重点关注</span>` : ""}
-      </div>
-      <div class="card-main">
-        <div class="card-note">
-          <p>${escapeHtml(note)}</p>
-        </div>
-        <div class="info compact-info info-panel">
-          <b>研发</b><div>${escapeHtml(product.developer || "待补充")}</div>
-          <b>发行</b><div>${escapeHtml(product.publisher || "待补充")}</div>
-          ${product.month ? `<b>月份</b><div>${escapeHtml(product.month)}</div>` : ""}
-          ${product.firstTestTime ? `<b>首测</b><div>${escapeHtml(product.firstTestTime)}</div>` : ""}
-        </div>
+      <p class="tap-summary">${escapeHtml(note)}</p>
+      <div class="tap-meta-grid">
+        <span>研发 ${escapeHtml(product.developer || "待补充")}</span>
+        <span>发行 ${escapeHtml(product.publisher || "待补充")}</span>
+        ${product.month ? `<span>月份 ${escapeHtml(product.month)}</span>` : ""}
+        ${product.firstTestTime ? `<span>首测 ${escapeHtml(product.firstTestTime)}</span>` : ""}
       </div>
       <div class="card-footer">
-        ${product.focus ? `<span class="micro-note">重点关注</span>` : `<span class="micro-note muted">点击查看详情</span>`}
-        ${shot ? `<a class="thumb-inline" href="${escapeHtml(shot)}" target="_blank" rel="noreferrer" aria-label="${escapeHtml(product.name)} 截图"><img src="${escapeHtml(shot)}" alt="${escapeHtml(product.name)} 截图"></a>` : ""}
+        <span class="micro-note muted">点击查看详情</span>
+        ${shot ? `<a class="thumb-inline large" href="${escapeHtml(shot)}" target="_blank" rel="noreferrer" aria-label="${escapeHtml(product.name)} 截图"><img src="${escapeHtml(shot)}" alt="${escapeHtml(product.name)} 截图"></a>` : ""}
       </div>
     </article>
   `;
