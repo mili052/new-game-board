@@ -371,8 +371,6 @@ function renderProductPage() {
         <div class="detail-box"><span>研发</span><strong>${escapeHtml(product.developer || "待补充")}</strong></div>
         <div class="detail-box"><span>发行</span><strong>${escapeHtml(product.publisher || "待补充")}</strong></div>
         <div class="detail-box"><span>首测时间</span><strong>${escapeHtml(product.firstTestTime || "待补充")}</strong></div>
-        <div class="detail-box"><span>终测时间</span><strong>${escapeHtml(product.finalTestTime || "待补充")}</strong></div>
-        <div class="detail-box"><span>公测时间</span><strong>${escapeHtml(product.publicTestTime || "待补充")}</strong></div>
         <div class="detail-box"><span>上线时间</span><strong>${escapeHtml(product.launchTime || "待补充")}</strong></div>
         <div class="detail-box"><span>公开节点</span><strong>${escapeHtml(product.publicNode || "待补充")}</strong></div>
         <div class="detail-box"><span>所在看板</span><strong>${escapeHtml(board.title || board.period || "产品库")}</strong></div>
