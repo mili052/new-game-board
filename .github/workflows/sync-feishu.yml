@@ -30,9 +30,7 @@ jobs:
           FEISHU_APP_SECRET: ${{ secrets.FEISHU_APP_SECRET }}
           FEISHU_BITABLE_APP_TOKEN: ${{ secrets.FEISHU_BITABLE_APP_TOKEN }}
           FEISHU_TABLE_ID: ${{ secrets.FEISHU_TABLE_ID }}
-          FEISHU_VIEW_ID: ${{ secrets.FEISHU_VIEW_ID }}
           FEISHU_PUBLISH_VALUE: ${{ secrets.FEISHU_PUBLISH_VALUE }}
-          FEISHU_SITE_TITLE: 新游产品库
         run: node scripts/sync-feishu.js
 
       - name: Commit changes
