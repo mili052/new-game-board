@@ -71,7 +71,8 @@ const FIELD_ALIASES = {
   releaseStatus: [C.releaseStatus],
   reason: [C.reason],
   judgement: [C.judgement],
-  createdAt: [C.createdAt, C.updatedAt],
+  createdAt: [C.createdAt],
+  updatedAt: [C.updatedAt],
   firstTestTime: [C.firstTestTime],
   finalTestTime: [C.finalTestTime],
   publicTestTime: [C.publicTestTime],
@@ -191,7 +192,12 @@ function parseDateValue(value) {
   return null;
 }
 
-function normalizeMonth(monthValue, testTimeValue, createdAtValue) {
+function normalizeMonth(monthValue, updatedAtValue, testTimeValue, createdAtValue) {
+  const updatedDate = parseDateValue(updatedAtValue);
+  if (updatedDate) {
+    return `${updatedDate.getMonth() + 1}${C.monthSuffix}`;
+  }
+
   const monthText = toText(monthValue);
   if (monthText) return monthText;
 
@@ -398,6 +404,7 @@ async function normalizeProduct(record, token) {
   const iconAttachments = normalizeAttachments(pick(fields, "icon"));
   const screenshotAttachments = normalizeAttachments(pick(fields, "screenshots"));
   const createdAtValue = pick(fields, "createdAt");
+  const updatedAtValue = pick(fields, "updatedAt");
   const firstTestTimeValue = pick(fields, "firstTestTime");
   const finalTestTimeValue = pick(fields, "finalTestTime");
   const publicTestTimeValue = pick(fields, "publicTestTime");
@@ -431,7 +438,7 @@ async function normalizeProduct(record, token) {
     screenshots,
     cover: icon || screenshots[0] || "",
     status: toText(pick(fields, "status")) || C.statusFallback,
-    month: normalizeMonth(pick(fields, "month"), testTimeValue, createdAtValue),
+    month: normalizeMonth(pick(fields, "month"), updatedAtValue, testTimeValue, createdAtValue),
     focus: toBool(pick(fields, "focus")),
     sourceUrl: toText(pick(fields, "sourceUrl")),
     releaseStatus: toText(pick(fields, "releaseStatus")),
@@ -442,7 +449,8 @@ async function normalizeProduct(record, token) {
     publicTestTime: normalizeDisplayDate(publicTestTimeValue),
     launchTime: normalizeDisplayDate(launchTimeValue),
     publicNode: toText(pick(fields, "publicNode")) || toText(testTimeValue),
-    createdAt: toText(createdAtValue) || new Date().toISOString()
+    createdAt: toText(createdAtValue) || new Date().toISOString(),
+    updatedAt: toText(updatedAtValue) || ""
   };
 }
 
