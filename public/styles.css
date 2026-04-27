@@ -219,9 +219,9 @@ input:focus, select:focus, textarea:focus { border-color: var(--blue); box-shado
 }
 .trend-card, .lead-card, .product-card {
   background: var(--panel);
-  border: 1px solid var(--line);
+  border: 1px solid rgba(205, 219, 238, .42);
   border-radius: 8px;
-  box-shadow: var(--shadow);
+  box-shadow: 0 10px 22px rgba(19, 41, 72, .05);
 }
 .trend-card { padding: 20px; }
 .trend-card b { display: block; margin-bottom: 8px; font-size: 18px; }
@@ -234,22 +234,20 @@ input:focus, select:focus, textarea:focus { border-color: var(--blue); box-shado
   background: linear-gradient(180deg, #fff 0, #fffaf4 100%);
 }
 .product-card {
-  background: linear-gradient(180deg, #fff 0, #fbfdff 100%);
+  background: #ffffff;
   min-height: 0;
 }
 .status-featured {
-  border-color: #ffcc8a;
-  background:
-    linear-gradient(180deg, rgba(255, 247, 236, .96) 0, rgba(255, 252, 247, .98) 100%),
-    #fff;
-  box-shadow: 0 22px 42px rgba(255, 166, 92, .14);
+  border-color: rgba(255, 188, 117, .55);
+  background: #fffdfa;
+  box-shadow: 0 12px 28px rgba(255, 166, 92, .08);
 }
 .product-entry { cursor: pointer; transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease; }
 .product-entry:hover,
 .product-entry:focus-visible {
   transform: translateY(-2px);
-  box-shadow: 0 22px 38px rgba(18, 38, 63, .12);
-  border-color: #c7d9f4;
+  box-shadow: 0 14px 28px rgba(18, 38, 63, .08);
+  border-color: rgba(132, 166, 210, .38);
   outline: none;
 }
 .status-featured .product-top {
@@ -287,9 +285,8 @@ input:focus, select:focus, textarea:focus { border-color: var(--blue); box-shado
   width: 72px;
   aspect-ratio: 1;
   border-radius: 20px;
-  background: linear-gradient(180deg, #edf3fb 0, #ffffff 100%);
-  border: 1px solid var(--line);
-  box-shadow: inset 0 1px 0 rgba(255,255,255,.8);
+  background: #f5f8fc;
+  border: 1px solid rgba(215, 225, 238, .72);
   overflow: hidden;
 }
 .cover {
@@ -297,8 +294,8 @@ input:focus, select:focus, textarea:focus { border-color: var(--blue); box-shado
   aspect-ratio: 1;
   border-radius: 20px;
   object-fit: cover;
-  background: linear-gradient(135deg, #dfe9f7, #fff3e8);
-  border: 1px solid rgba(0,0,0,.04);
+  background: #f3f7fb;
+  border: 1px solid rgba(0,0,0,.03);
 }
 .placeholder {
   display: grid;
@@ -327,10 +324,9 @@ input:focus, select:focus, textarea:focus { border-color: var(--blue); box-shado
 }
 .badge { padding: 5px 9px; border-radius: 999px; background: #eef5ff; color: var(--blue); font-size: 11px; font-weight: 900; }
 .badge.spotlight {
-  background: linear-gradient(135deg, #fff0d7 0%, #ffe0c2 100%);
+  background: #fff4e5;
   color: #b95a10;
-  border: 1px solid #ffc27a;
-  box-shadow: inset 0 1px 0 rgba(255,255,255,.7);
+  border: 1px solid rgba(255, 194, 122, .65);
 }
 .badge.focus { background: #fff4e6; color: #b96815; }
 .badge.subtle { background: #f3f7fb; color: var(--muted); }
@@ -362,8 +358,8 @@ input:focus, select:focus, textarea:focus { border-color: var(--blue); box-shado
   line-height: 1.45;
   padding: 8px 10px;
   border-radius: 10px;
-  background: #f8fbff;
-  border: 1px solid var(--line);
+  background: #f8fbfd;
+  border: 1px solid rgba(218, 228, 240, .75);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -399,7 +395,7 @@ input:focus, select:focus, textarea:focus { border-color: var(--blue); box-shado
   width: 92px;
   height: 52px;
   object-fit: cover;
-  border: 1px solid var(--line);
+  border: 1px solid rgba(220, 229, 240, .72);
   border-radius: 10px;
 }
 .screenshots { display: flex; gap: 8px; margin-top: 10px; overflow-x: auto; padding-bottom: 3px; }
