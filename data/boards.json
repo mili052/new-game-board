@@ -7,13 +7,43 @@
       "date": "2026-04-28",
       "summary": "4月收录的新游产品列表，支持持续录入、筛选和对外展示。",
       "metrics": [
-        "收录产品28款",
+        "收录产品30款",
         "测试 / 微小上榜 / IOS上榜 / 已上线 / 招募",
         "6个平台",
-        "重点产品3款"
+        "重点产品4款"
       ],
       "trends": [],
       "products": [
+        {
+          "id": "recvhYHad6BVe1",
+          "name": "防线守卫战",
+          "genre": "塔防",
+          "topic": "微恐",
+          "platform": "微小 / 抖小",
+          "developer": "广州火烈鸟",
+          "publisher": "广州水滴",
+          "sourceText": "肉鸽塔防，妖怪金手指Like，火烈鸟西西里工作室自研，用的广州水滴主体（火烈鸟的主体），\n4月23日先上抖音小测，微小是25号才上，抖小4月28日新游榜第7，当前抖小有起量迹象，但素材一般；\n\n国内微小抖小版本美术与我们海外跑金手指高度一致，\n目前火烈鸟说国内想自己调自己发，没说一定要给出去；",
+          "icon": "feishu-assets/recvhYHad6BVe1-icon-1.png",
+          "screenshots": [
+            "feishu-assets/recvhYHad6BVe1-shot-1.png"
+          ],
+          "cover": "feishu-assets/recvhYHad6BVe1-icon-1.png",
+          "status": "测试",
+          "month": "4月",
+          "focus": true,
+          "sourceUrl": "#小程序://防线守卫战/cXZs6OeuPJ7oSuj",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "firstTestTime": "2026-04-22",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "1777278428000",
+          "updatedAt": "1777305600000",
+          "rank": 1
+        },
         {
           "id": "rec27gFuTu5EEP",
           "name": "精英防守",
@@ -44,7 +74,7 @@
           "publicNode": "",
           "createdAt": "1776997920000",
           "updatedAt": "1776960000000",
-          "rank": 1
+          "rank": 2
         },
         {
           "id": "recvhXoEx5s6Pc",
@@ -75,7 +105,7 @@
           "publicNode": "",
           "createdAt": "1777259240000",
           "updatedAt": "1777219200000",
-          "rank": 2
+          "rank": 3
         },
         {
           "id": "rec27gFuTu5HvS",
@@ -105,7 +135,7 @@
           "publicNode": "",
           "createdAt": "1776997920000",
           "updatedAt": "1776614400000",
-          "rank": 3
+          "rank": 4
         },
         {
           "id": "recvhXuXUO8PS0",
@@ -137,7 +167,7 @@
           "publicNode": "",
           "createdAt": "1777260745000",
           "updatedAt": "1777392000000",
-          "rank": 4
+          "rank": 5
         },
         {
           "id": "recvhY34avBWMo",
@@ -167,7 +197,7 @@
           "publicNode": "",
           "createdAt": "1777268872000",
           "updatedAt": "1777219200000",
-          "rank": 5
+          "rank": 6
         },
         {
           "id": "recvhXvRea7KwR",
@@ -197,7 +227,7 @@
           "publicNode": "",
           "createdAt": "1777260958000",
           "updatedAt": "1776787200000",
-          "rank": 6
+          "rank": 7
         },
         {
           "id": "recvhXu0IjHtCD",
@@ -228,7 +258,7 @@
           "publicNode": "",
           "createdAt": "1777260517000",
           "updatedAt": "1777305600000",
-          "rank": 7
+          "rank": 8
         },
         {
           "id": "recvhGKIYmwdQv",
@@ -259,7 +289,7 @@
           "publicNode": "",
           "createdAt": "1777013305000",
           "updatedAt": "1777305600000",
-          "rank": 8
+          "rank": 9
         },
         {
           "id": "recvhY2vfk9sy6",
@@ -289,7 +319,7 @@
           "publicNode": "",
           "createdAt": "1777268738000",
           "updatedAt": "1776700800000",
-          "rank": 9
+          "rank": 10
         },
         {
           "id": "recvhYbVXu4KPY",
@@ -319,7 +349,7 @@
           "publicNode": "",
           "createdAt": "1777270986000",
           "updatedAt": "1776873600000",
-          "rank": 10
+          "rank": 11
         },
         {
           "id": "recvhFK8tttfoa",
@@ -350,7 +380,7 @@
           "publicNode": "",
           "createdAt": "1776998389000",
           "updatedAt": "1777392000000",
-          "rank": 11
+          "rank": 12
         },
         {
           "id": "recvhYeFQkrPIW",
@@ -378,7 +408,7 @@
           "publicNode": "",
           "createdAt": "1777271639000",
           "updatedAt": "1776700800000",
-          "rank": 12
+          "rank": 13
         },
         {
           "id": "recvhXvKELIEIa",
@@ -409,7 +439,7 @@
           "publicNode": "",
           "createdAt": "1777260933000",
           "updatedAt": "1777392000000",
-          "rank": 13
+          "rank": 14
         },
         {
           "id": "recvhY3Yjhl8Xa",
@@ -439,7 +469,7 @@
           "publicNode": "",
           "createdAt": "1777269088000",
           "updatedAt": "1776700800000",
-          "rank": 14
+          "rank": 15
         },
         {
           "id": "recvhFK21gMcbM",
@@ -471,7 +501,7 @@
           "publicNode": "",
           "createdAt": "1776998364000",
           "updatedAt": "1777305600000",
-          "rank": 15
+          "rank": 16
         },
         {
           "id": "recvhXx9iQVE4p",
@@ -501,7 +531,7 @@
           "publicNode": "",
           "createdAt": "1777261266000",
           "updatedAt": "1776614400000",
-          "rank": 16
+          "rank": 17
         },
         {
           "id": "rec27gFuTu5oXb",
@@ -532,7 +562,7 @@
           "publicNode": "",
           "createdAt": "1776997920000",
           "updatedAt": "1776873600000",
-          "rank": 17
+          "rank": 18
         },
         {
           "id": "recvhYb5FCBq2b",
@@ -563,7 +593,37 @@
           "publicNode": "",
           "createdAt": "1777270785000",
           "updatedAt": "1776700800000",
-          "rank": 18
+          "rank": 19
+        },
+        {
+          "id": "recvhYHtu6rARy",
+          "name": "仙萌暴走团",
+          "genre": "塔防 / SLG",
+          "topic": "Q版三国",
+          "platform": "微小",
+          "developer": "",
+          "publisher": "广州波克",
+          "sourceText": "塔防加slg，小兵打天下类，广州波克定制产品，研发暂时未知",
+          "icon": "feishu-assets/recvhYHtu6rARy-icon-1.png",
+          "screenshots": [
+            "feishu-assets/recvhYHtu6rARy-shot-1.png"
+          ],
+          "cover": "feishu-assets/recvhYHtu6rARy-icon-1.png",
+          "status": "测试",
+          "month": "4月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "firstTestTime": "2026-04-26",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "1777278503000",
+          "updatedAt": "1777219200000",
+          "rank": 20
         },
         {
           "id": "rec27gFuTu5sLA",
@@ -595,7 +655,7 @@
           "publicNode": "",
           "createdAt": "1776997920000",
           "updatedAt": "1776355200000",
-          "rank": 19
+          "rank": 21
         },
         {
           "id": "recvhY2tandn22",
@@ -625,7 +685,7 @@
           "publicNode": "",
           "createdAt": "1777268730000",
           "updatedAt": "1776700800000",
-          "rank": 20
+          "rank": 22
         },
         {
           "id": "recvhY2v2AQUr4",
@@ -655,7 +715,7 @@
           "publicNode": "",
           "createdAt": "1777268737000",
           "updatedAt": "1776700800000",
-          "rank": 21
+          "rank": 23
         },
         {
           "id": "recvhFJYzbESt9",
@@ -686,7 +746,7 @@
           "publicNode": "",
           "createdAt": "1776998351000",
           "updatedAt": "1776873600000",
-          "rank": 22
+          "rank": 24
         },
         {
           "id": "recvhYyOSn3Ogb",
@@ -717,7 +777,7 @@
           "publicNode": "",
           "createdAt": "1777276440000",
           "updatedAt": "1776873600000",
-          "rank": 23
+          "rank": 25
         },
         {
           "id": "recvhYgtd2t7Sx",
@@ -747,7 +807,7 @@
           "publicNode": "",
           "createdAt": "1777272067000",
           "updatedAt": "1777046400000",
-          "rank": 24
+          "rank": 26
         },
         {
           "id": "recvhXvKUQR4Dl",
@@ -777,7 +837,7 @@
           "publicNode": "",
           "createdAt": "1777260934000",
           "updatedAt": "1776873600000",
-          "rank": 25
+          "rank": 27
         },
         {
           "id": "recvhT6Ir0OVyY",
@@ -807,7 +867,7 @@
           "publicNode": "",
           "createdAt": "1777195860000",
           "updatedAt": "1777046400000",
-          "rank": 26
+          "rank": 28
         },
         {
           "id": "rec27gFuTu5BBW",
@@ -837,7 +897,7 @@
           "publicNode": "",
           "createdAt": "1776997920000",
           "updatedAt": "1776787200000",
-          "rank": 27
+          "rank": 29
         },
         {
           "id": "recvhY2uOFwFyP",
@@ -869,11 +929,11 @@
           "publicNode": "",
           "createdAt": "1777268736000",
           "updatedAt": "1776614400000",
-          "rank": 28
+          "rank": 30
         }
       ],
-      "createdAt": "2026-04-28T02:54:12.517Z",
-      "updatedAt": "2026-04-28T02:54:12.517Z"
+      "createdAt": "2026-04-28T06:09:26.257Z",
+      "updatedAt": "2026-04-28T06:09:26.257Z"
     }
   ]
 }
