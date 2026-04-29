@@ -9,6 +9,7 @@ const state = {
 
 const PUBLIC_GATE_PASSWORD = "mimi2026";
 const PUBLIC_GATE_STORAGE_KEY = "ngb-public-access";
+const PUBLIC_GATE_SESSION_KEY = "ngb-public-access-session";
 
 const $ = selector => document.querySelector(selector);
 
@@ -49,7 +50,13 @@ function uid(prefix) {
 }
 
 function hasPublicAccess() {
-  return localStorage.getItem(PUBLIC_GATE_STORAGE_KEY) === PUBLIC_GATE_PASSWORD;
+  try {
+    if (localStorage.getItem(PUBLIC_GATE_STORAGE_KEY) === PUBLIC_GATE_PASSWORD) return true;
+  } catch {}
+  try {
+    if (sessionStorage.getItem(PUBLIC_GATE_SESSION_KEY) === PUBLIC_GATE_PASSWORD) return true;
+  } catch {}
+  return false;
 }
 
 function unlockPublicAccess() {
@@ -78,21 +85,86 @@ function initPublicGate(onUnlock) {
   }
 
   lockPublicAccess();
+  enhancePublicGate(form, input);
   input.focus();
 
   form.addEventListener("submit", event => {
     event.preventDefault();
     if (normalizePassword(input.value) !== PUBLIC_GATE_PASSWORD) {
-      message.textContent = "密码不对，再试一下。";
+      message.textContent = "\u5bc6\u7801\u4e0d\u5bf9\uff0c\u518d\u8bd5\u4e00\u4e0b\u3002";
       input.select();
       return;
     }
 
-    localStorage.setItem(PUBLIC_GATE_STORAGE_KEY, PUBLIC_GATE_PASSWORD);
+    persistPublicAccess();
     message.textContent = "";
     unlockPublicAccess();
     onUnlock();
   });
+}
+
+function enhancePublicGate(form, input) {
+  let field = form.querySelector(".password-field");
+  let toggle = $("#publicGateToggle");
+  let remember = $("#publicGateRemember");
+
+  if (!field) {
+    field = document.createElement("div");
+    field.className = "password-field";
+    input.parentNode.insertBefore(field, input);
+    field.appendChild(input);
+  }
+
+  if (!toggle) {
+    toggle = document.createElement("button");
+    toggle.id = "publicGateToggle";
+    toggle.className = "password-toggle";
+    toggle.type = "button";
+    toggle.setAttribute("aria-label", "\u663e\u793a\u5bc6\u7801");
+    toggle.textContent = "\u{1F441}";
+    field.appendChild(toggle);
+  }
+
+  if (!remember) {
+    const rememberLabel = document.createElement("label");
+    rememberLabel.className = "remember-check";
+
+    remember = document.createElement("input");
+    remember.id = "publicGateRemember";
+    remember.type = "checkbox";
+    remember.checked = true;
+
+    const text = document.createElement("span");
+    text.textContent = "\u8bb0\u4f4f\u672c\u673a";
+
+    rememberLabel.appendChild(remember);
+    rememberLabel.appendChild(text);
+    form.insertBefore(rememberLabel, form.querySelector(".primary"));
+  }
+
+  toggle.addEventListener("click", () => {
+    const nextType = input.type === "password" ? "text" : "password";
+    input.type = nextType;
+    toggle.textContent = nextType === "password" ? "\u{1F441}" : "\u{1F648}";
+    toggle.setAttribute("aria-label", nextType === "password" ? "\u663e\u793a\u5bc6\u7801" : "\u9690\u85cf\u5bc6\u7801");
+    input.focus();
+  });
+}
+
+function persistPublicAccess() {
+  const remember = $("#publicGateRemember");
+
+  try {
+    if (!remember || remember.checked) {
+      localStorage.setItem(PUBLIC_GATE_STORAGE_KEY, PUBLIC_GATE_PASSWORD);
+    } else {
+      localStorage.removeItem(PUBLIC_GATE_STORAGE_KEY);
+    }
+  } catch {}
+
+  try {
+    sessionStorage.setItem(PUBLIC_GATE_SESSION_KEY, PUBLIC_GATE_PASSWORD);
+  } catch {}
 }
 
 function escapeHtml(value) {
