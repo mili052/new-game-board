@@ -7,10 +7,10 @@
       "date": "2026-04-29",
       "summary": "4月收录的新游产品列表，支持持续录入、筛选和对外展示。",
       "metrics": [
-        "收录产品32款",
+        "收录产品33款",
         "测试 / 微小上榜 / IOS上榜 / 招募",
         "7个平台",
-        "重点产品5款"
+        "重点产品6款"
       ],
       "trends": [],
       "products": [
@@ -77,6 +77,37 @@
           "rank": 2
         },
         {
+          "id": "recvi3SeHwLhOo",
+          "name": "逆转回合",
+          "genre": "卡牌",
+          "topic": "2D卡通",
+          "platform": "微小",
+          "developer": "厦门飞鱼",
+          "publisher": "厦门飞鱼",
+          "sourceText": "头条10w左右，单价50，付费单价大概在500左右。\n4月29微小排33，app和微小25年测过，目前还在不断调测整改中，",
+          "icon": "feishu-assets/recvi3SeHwLhOo-icon-1.png",
+          "screenshots": [
+            "feishu-assets/recvi3SeHwLhOo-shot-1.png",
+            "feishu-assets/recvi3SeHwLhOo-shot-2.png"
+          ],
+          "cover": "feishu-assets/recvi3SeHwLhOo-icon-1.png",
+          "status": "微小上榜",
+          "month": "4月",
+          "focus": true,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "firstTestTime": "2025-04-11",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "1777354950000",
+          "updatedAt": "1775404800000",
+          "rank": 3
+        },
+        {
           "id": "recvhXoEx5s6Pc",
           "name": "仙尘小径",
           "genre": "二合",
@@ -105,7 +136,7 @@
           "publicNode": "",
           "createdAt": "1777259240000",
           "updatedAt": "1777219200000",
-          "rank": 3
+          "rank": 4
         },
         {
           "id": "recvhZ4T7tfPh6",
@@ -133,7 +164,7 @@
           "publicNode": "",
           "createdAt": "1777284083000",
           "updatedAt": "1775491200000",
-          "rank": 4
+          "rank": 5
         },
         {
           "id": "rec27gFuTu5HvS",
@@ -163,7 +194,7 @@
           "publicNode": "",
           "createdAt": "1776997920000",
           "updatedAt": "1776614400000",
-          "rank": 5
+          "rank": 6
         },
         {
           "id": "recvhXuXUO8PS0",
@@ -195,7 +226,7 @@
           "publicNode": "",
           "createdAt": "1777260745000",
           "updatedAt": "1777392000000",
-          "rank": 6
+          "rank": 7
         },
         {
           "id": "recvhY34avBWMo",
@@ -225,7 +256,7 @@
           "publicNode": "",
           "createdAt": "1777268872000",
           "updatedAt": "1777219200000",
-          "rank": 7
+          "rank": 8
         },
         {
           "id": "recvhXvRea7KwR",
@@ -255,7 +286,7 @@
           "publicNode": "",
           "createdAt": "1777260958000",
           "updatedAt": "1776787200000",
-          "rank": 8
+          "rank": 9
         },
         {
           "id": "recvhXu0IjHtCD",
@@ -286,7 +317,7 @@
           "publicNode": "",
           "createdAt": "1777260517000",
           "updatedAt": "1777305600000",
-          "rank": 9
+          "rank": 10
         },
         {
           "id": "recvhGKIYmwdQv",
@@ -317,7 +348,7 @@
           "publicNode": "",
           "createdAt": "1777013305000",
           "updatedAt": "1777305600000",
-          "rank": 10
+          "rank": 11
         },
         {
           "id": "recvhY2vfk9sy6",
@@ -347,7 +378,7 @@
           "publicNode": "",
           "createdAt": "1777268738000",
           "updatedAt": "1776700800000",
-          "rank": 11
+          "rank": 12
         },
         {
           "id": "recvhYbVXu4KPY",
@@ -377,7 +408,7 @@
           "publicNode": "",
           "createdAt": "1777270986000",
           "updatedAt": "1776873600000",
-          "rank": 12
+          "rank": 13
         },
         {
           "id": "recvhFK8tttfoa",
@@ -408,7 +439,7 @@
           "publicNode": "",
           "createdAt": "1776998389000",
           "updatedAt": "1777392000000",
-          "rank": 13
+          "rank": 14
         },
         {
           "id": "recvhYeFQkrPIW",
@@ -436,7 +467,7 @@
           "publicNode": "",
           "createdAt": "1777271639000",
           "updatedAt": "1776700800000",
-          "rank": 14
+          "rank": 15
         },
         {
           "id": "recvhXvKELIEIa",
@@ -467,7 +498,7 @@
           "publicNode": "",
           "createdAt": "1777260933000",
           "updatedAt": "1777392000000",
-          "rank": 15
+          "rank": 16
         },
         {
           "id": "recvi3SeHwDNm5",
@@ -495,7 +526,7 @@
           "publicNode": "",
           "createdAt": "1777354950000",
           "updatedAt": "1775491200000",
-          "rank": 16
+          "rank": 17
         },
         {
           "id": "recvhY3Yjhl8Xa",
@@ -525,7 +556,7 @@
           "publicNode": "",
           "createdAt": "1777269088000",
           "updatedAt": "1776700800000",
-          "rank": 17
+          "rank": 18
         },
         {
           "id": "recvhFK21gMcbM",
@@ -557,7 +588,7 @@
           "publicNode": "",
           "createdAt": "1776998364000",
           "updatedAt": "1777305600000",
-          "rank": 18
+          "rank": 19
         },
         {
           "id": "recvhXx9iQVE4p",
@@ -587,7 +618,7 @@
           "publicNode": "",
           "createdAt": "1777261266000",
           "updatedAt": "1776614400000",
-          "rank": 19
+          "rank": 20
         },
         {
           "id": "rec27gFuTu5oXb",
@@ -618,7 +649,7 @@
           "publicNode": "",
           "createdAt": "1776997920000",
           "updatedAt": "1776873600000",
-          "rank": 20
+          "rank": 21
         },
         {
           "id": "recvhYb5FCBq2b",
@@ -649,7 +680,7 @@
           "publicNode": "",
           "createdAt": "1777270785000",
           "updatedAt": "1776700800000",
-          "rank": 21
+          "rank": 22
         },
         {
           "id": "recvhYHtu6rARy",
@@ -679,7 +710,7 @@
           "publicNode": "",
           "createdAt": "1777278503000",
           "updatedAt": "1777219200000",
-          "rank": 22
+          "rank": 23
         },
         {
           "id": "rec27gFuTu5sLA",
@@ -711,7 +742,7 @@
           "publicNode": "",
           "createdAt": "1776997920000",
           "updatedAt": "1776355200000",
-          "rank": 23
+          "rank": 24
         },
         {
           "id": "recvhY2tandn22",
@@ -741,7 +772,7 @@
           "publicNode": "",
           "createdAt": "1777268730000",
           "updatedAt": "1776700800000",
-          "rank": 24
+          "rank": 25
         },
         {
           "id": "recvhY2v2AQUr4",
@@ -771,7 +802,7 @@
           "publicNode": "",
           "createdAt": "1777268737000",
           "updatedAt": "1776700800000",
-          "rank": 25
+          "rank": 26
         },
         {
           "id": "recvhFJYzbESt9",
@@ -802,7 +833,7 @@
           "publicNode": "",
           "createdAt": "1776998351000",
           "updatedAt": "1776873600000",
-          "rank": 26
+          "rank": 27
         },
         {
           "id": "recvhYyOSn3Ogb",
@@ -833,7 +864,7 @@
           "publicNode": "",
           "createdAt": "1777276440000",
           "updatedAt": "1776873600000",
-          "rank": 27
+          "rank": 28
         },
         {
           "id": "recvhYgtd2t7Sx",
@@ -863,7 +894,7 @@
           "publicNode": "",
           "createdAt": "1777272067000",
           "updatedAt": "1777046400000",
-          "rank": 28
+          "rank": 29
         },
         {
           "id": "recvhXvKUQR4Dl",
@@ -893,7 +924,7 @@
           "publicNode": "",
           "createdAt": "1777260934000",
           "updatedAt": "1776873600000",
-          "rank": 29
+          "rank": 30
         },
         {
           "id": "recvhT6Ir0OVyY",
@@ -923,7 +954,7 @@
           "publicNode": "",
           "createdAt": "1777195860000",
           "updatedAt": "1777046400000",
-          "rank": 30
+          "rank": 31
         },
         {
           "id": "rec27gFuTu5BBW",
@@ -953,7 +984,7 @@
           "publicNode": "",
           "createdAt": "1776997920000",
           "updatedAt": "1776787200000",
-          "rank": 31
+          "rank": 32
         },
         {
           "id": "recvhY2uOFwFyP",
@@ -985,11 +1016,11 @@
           "publicNode": "",
           "createdAt": "1777268736000",
           "updatedAt": "1776614400000",
-          "rank": 32
+          "rank": 33
         }
       ],
-      "createdAt": "2026-04-29T02:53:48.957Z",
-      "updatedAt": "2026-04-29T02:53:48.957Z"
+      "createdAt": "2026-04-29T05:56:48.381Z",
+      "updatedAt": "2026-04-29T05:56:48.381Z"
     }
   ]
 }
