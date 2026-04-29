@@ -991,3 +991,41 @@ input:focus, select:focus, textarea:focus { border-color: var(--blue); box-shado
   .detail-grid { grid-template-columns: 1fr; }
   .detail-page-copy h2 { font-size: 26px; }
 }
+
+.password-field {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 10px;
+}
+
+.password-field input {
+  min-width: 0;
+}
+
+.password-toggle {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  background: rgba(255,255,255,0.95);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.password-toggle:hover {
+  background: rgba(248, 250, 252, 1);
+}
+
+.remember-check {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.remember-check input {
+  width: 16px;
+  height: 16px;
+}
