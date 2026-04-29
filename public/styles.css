@@ -30,6 +30,10 @@ body.gate-locked .modal {
   display: none;
 }
 
+body:not(.gate-locked) .public-gate {
+  display: none;
+}
+
 .public-gate {
   position: fixed;
   inset: 0;
