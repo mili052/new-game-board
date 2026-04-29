@@ -6,7 +6,19 @@
   <title>新游产品库</title>
   <link rel="stylesheet" href="./styles.css">
 </head>
-<body>
+<body class="gate-locked">
+  <div id="publicGate" class="public-gate">
+    <div class="public-gate-card">
+      <div class="public-gate-kicker">Access</div>
+      <h2>请输入访问密码</h2>
+      <p>输入正确密码后，才可以进入新游产品库。</p>
+      <form id="publicGateForm" class="public-gate-form">
+        <input id="publicGateInput" type="password" autocomplete="current-password" placeholder="访问密码">
+        <button class="primary" type="submit">进入产品库</button>
+      </form>
+      <p id="publicGateMessage" class="message"></p>
+    </div>
+  </div>
   <header class="topbar">
     <div class="brand-block">
       <div class="brand-eyebrow">New Game Library</div>
@@ -30,6 +42,10 @@
         <span>搜索</span>
         <input id="searchInput" type="search" placeholder="产品 / 赛道 / 发行">
       </label>
+      <div class="view-actions">
+        <span>视图</span>
+        <a id="reportLink" class="report-link" href="./report.html">周报模式</a>
+      </div>
     </section>
 
     <section id="productPage" class="product-page hidden"></section>

@@ -7,6 +7,9 @@ const state = {
   staticMode: false
 };
 
+const PUBLIC_GATE_PASSWORD = "mimi2026";
+const PUBLIC_GATE_STORAGE_KEY = "ngb-public-access";
+
 const $ = selector => document.querySelector(selector);
 
 function joinUrl(...parts) {
@@ -43,6 +46,52 @@ async function api(path, options = {}) {
 
 function uid(prefix) {
   return `${prefix}-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 7)}`;
+}
+
+function hasPublicAccess() {
+  return localStorage.getItem(PUBLIC_GATE_STORAGE_KEY) === PUBLIC_GATE_PASSWORD;
+}
+
+function unlockPublicAccess() {
+  document.body.classList.remove("gate-locked");
+}
+
+function lockPublicAccess() {
+  document.body.classList.add("gate-locked");
+}
+
+function initPublicGate(onUnlock) {
+  const form = $("#publicGateForm");
+  const input = $("#publicGateInput");
+  const message = $("#publicGateMessage");
+
+  if (!form || !input || !message) {
+    onUnlock();
+    return;
+  }
+
+  if (hasPublicAccess()) {
+    unlockPublicAccess();
+    onUnlock();
+    return;
+  }
+
+  lockPublicAccess();
+  input.focus();
+
+  form.addEventListener("submit", event => {
+    event.preventDefault();
+    if (input.value !== PUBLIC_GATE_PASSWORD) {
+      message.textContent = "密码不对，再试一下。";
+      input.select();
+      return;
+    }
+
+    localStorage.setItem(PUBLIC_GATE_STORAGE_KEY, PUBLIC_GATE_PASSWORD);
+    message.textContent = "";
+    unlockPublicAccess();
+    onUnlock();
+  });
 }
 
 function escapeHtml(value) {
@@ -784,6 +833,8 @@ function wireEvents() {
 }
 
 wireEvents();
-loadBoards().catch(error => {
-  $("#boardRoot").innerHTML = `<div class="empty">${escapeHtml(error.message)}</div>`;
+initPublicGate(() => {
+  loadBoards().catch(error => {
+    $("#boardRoot").innerHTML = `<div class="empty">${escapeHtml(error.message)}</div>`;
+  });
 });
