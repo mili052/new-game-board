@@ -295,8 +295,46 @@ async function getTenantAccessToken() {
   return data.tenant_access_token;
 }
 
+async function resolveBitableAppToken(token) {
+  const direct = process.env.FEISHU_BITABLE_APP_TOKEN;
+  if (direct) return direct;
+
+  const wikiToken = process.env.FEISHU_WIKI_TOKEN;
+  if (!wikiToken) {
+    throw new Error("Missing env: FEISHU_BITABLE_APP_TOKEN or FEISHU_WIKI_TOKEN");
+  }
+
+  const url = new URL("https://open.feishu.cn/open-apis/wiki/v2/spaces/get_node");
+  url.searchParams.set("token", wikiToken);
+
+  const response = await fetch(url, {
+    headers: {
+      Authorization: `Bearer ${token}`,
+      "Content-Type": "application/json; charset=utf-8"
+    }
+  });
+
+  const data = await response.json().catch(() => ({}));
+  if (!response.ok || data.code !== 0) {
+    throw new Error(`Failed to resolve wiki node: ${data.msg || response.statusText}`);
+  }
+
+  const node = data.data?.node || data.data || {};
+  const objType = node.obj_type || "";
+  const objToken = node.obj_token || "";
+  if (!objToken) {
+    throw new Error("Wiki node resolved but obj_token is empty");
+  }
+
+  if (objType && !String(objType).toLowerCase().includes("bitable")) {
+    console.warn(`Wiki node obj_type is ${objType}, continuing with obj_token as app token.`);
+  }
+
+  return objToken;
+}
+
 async function listRecords(token) {
-  const appToken = required("FEISHU_BITABLE_APP_TOKEN");
+  const appToken = await resolveBitableAppToken(token);
   const tableId = required("FEISHU_TABLE_ID");
   const viewId = process.env.FEISHU_VIEW_ID;
   const pageSize = Number(process.env.FEISHU_PAGE_SIZE || 200);

@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "dev": "node server.js",
-    "sync:feishu": "node scripts/sync-feishu.js"
+    "sync:feishu": "node scripts/sync-feishu.js",
+    "report:svg": "node scripts/generate-report-svg.js"
   }
 }

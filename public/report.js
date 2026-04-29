@@ -56,6 +56,7 @@ function initPublicGate(onUnlock) {
   const form = $("#publicGateForm");
   const input = $("#publicGateInput");
   const message = $("#publicGateMessage");
+  const normalizePassword = value => String(value || "").trim();
 
   if (!form || !input || !message) {
     onUnlock();
@@ -73,7 +74,7 @@ function initPublicGate(onUnlock) {
 
   form.addEventListener("submit", event => {
     event.preventDefault();
-    if (input.value !== PUBLIC_GATE_PASSWORD) {
+    if (normalizePassword(input.value) !== PUBLIC_GATE_PASSWORD) {
       message.textContent = "密码不对，再试一下。";
       input.select();
       return;
