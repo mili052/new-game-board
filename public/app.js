@@ -272,7 +272,7 @@ function productCard(product, boardId) {
       <div class="tap-meta-grid">
         <span>研发 ${escapeHtml(product.developer || "待补充")}</span>
         <span>发行 ${escapeHtml(product.publisher || "待补充")}</span>
-        ${product.month ? `<span>月份 ${escapeHtml(product.month)}</span>` : ""}
+        ${product.latestNodeTime ? `<span>\u6700\u65b0\u8282\u70b9 ${escapeHtml(product.latestNodeTime)}</span>` : (product.month ? `<span>\u5f52\u5c5e\u6708 ${escapeHtml(product.month)}</span>` : "")}
         ${product.firstTestTime ? `<span>首测 ${escapeHtml(product.firstTestTime)}</span>` : ""}
       </div>
       <div class="card-footer">

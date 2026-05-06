@@ -34,6 +34,7 @@ const C = {
   judgement: "\u8d8b\u52bf\u5224\u65ad",
   createdAt: "\u521b\u5efa\u65f6\u95f4",
   updatedAt: "\u66f4\u65b0\u65f6\u95f4",
+  latestNodeTime: "\u6700\u65b0\u8282\u70b9\u65f6\u95f4",
   firstTestTime: "\u9996\u6d4b\u65f6\u95f4",
   finalTestTime: "\u7ec8\u6d4b\u65f6\u95f4",
   publicTestTime: "\u516c\u6d4b\u65f6\u95f4",
@@ -73,6 +74,7 @@ const FIELD_ALIASES = {
   judgement: [C.judgement],
   createdAt: [C.createdAt],
   updatedAt: [C.updatedAt],
+  latestNodeTime: [C.latestNodeTime],
   firstTestTime: [C.firstTestTime],
   finalTestTime: [C.finalTestTime],
   publicTestTime: [C.publicTestTime],
@@ -192,7 +194,12 @@ function parseDateValue(value) {
   return null;
 }
 
-function normalizeMonth(monthValue, testTimeValue, createdAtValue, updatedAtValue) {
+function normalizeMonth(latestNodeTimeValue, monthValue, testTimeValue, createdAtValue, updatedAtValue) {
+  const latestNodeDate = parseDateValue(latestNodeTimeValue);
+  if (latestNodeDate) {
+    return `${latestNodeDate.getMonth() + 1}${C.monthSuffix}`;
+  }
+
   const monthText = toText(monthValue);
   if (monthText) return monthText;
 
@@ -441,6 +448,7 @@ async function normalizeProduct(record, token) {
   const screenshotAttachments = normalizeAttachments(pick(fields, "screenshots"));
   const createdAtValue = pick(fields, "createdAt");
   const updatedAtValue = pick(fields, "updatedAt");
+  const latestNodeTimeValue = pick(fields, "latestNodeTime");
   const firstTestTimeValue = pick(fields, "firstTestTime");
   const finalTestTimeValue = pick(fields, "finalTestTime");
   const publicTestTimeValue = pick(fields, "publicTestTime");
@@ -474,12 +482,13 @@ async function normalizeProduct(record, token) {
     screenshots,
     cover: icon || screenshots[0] || "",
     status: toText(pick(fields, "status")) || C.statusFallback,
-    month: normalizeMonth(pick(fields, "month"), testTimeValue, createdAtValue, updatedAtValue),
+    month: normalizeMonth(latestNodeTimeValue, pick(fields, "month"), testTimeValue, createdAtValue, updatedAtValue),
     focus: toBool(pick(fields, "focus")),
     sourceUrl: toText(pick(fields, "sourceUrl")),
     releaseStatus: toText(pick(fields, "releaseStatus")),
     reason: toText(pick(fields, "reason")),
     judgement: toText(pick(fields, "judgement")),
+    latestNodeTime: normalizeDisplayDate(latestNodeTimeValue),
     firstTestTime: normalizeDisplayDate(firstTestTimeValue),
     finalTestTime: normalizeDisplayDate(finalTestTimeValue),
     publicTestTime: normalizeDisplayDate(publicTestTimeValue),
