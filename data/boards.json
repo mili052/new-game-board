@@ -1,14 +1,150 @@
 {
   "boards": [
     {
+      "id": "5",
+      "title": "5月新游产品库",
+      "period": "5月",
+      "date": "2026-05-06",
+      "summary": "5月收录的新游产品列表，支持持续录入、筛选和对外展示。",
+      "metrics": [
+        "收录产品4款",
+        "测试 / 微小上榜",
+        "2个平台",
+        "重点产品0款"
+      ],
+      "trends": [],
+      "products": [
+        {
+          "id": "recviNLYQcDlf2",
+          "name": "防线出击",
+          "genre": "塔防",
+          "topic": "末日",
+          "platform": "微小 / APP",
+          "developer": "福州卡游",
+          "publisher": "深圳闲闲",
+          "sourceText": "竖版Q版末日题材肉鸽塔防，深圳闲闲定制，福州卡游研发，中心塔防表现形式，卡牌靶心Like底层，对比靶心增加了卡牌养成系统，在战斗中也增加了卡牌大招释放，类一步两步Like，该产品之前进行过APP测试，5月1上微小，仅一天跌出",
+          "icon": "feishu-assets/recviNLYQcDlf2-icon-1.png",
+          "screenshots": [
+            "feishu-assets/recviNLYQcDlf2-shot-1.png"
+          ],
+          "cover": "feishu-assets/recviNLYQcDlf2-icon-1.png",
+          "status": "微小上榜",
+          "month": "5月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "firstTestTime": "2025-11-20",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "1778033161000",
+          "updatedAt": "",
+          "rank": 1
+        },
+        {
+          "id": "recviNKLT9YjNE",
+          "name": "闪耀吧！噜咪",
+          "genre": "抓宠 / 模拟经营",
+          "topic": "手绘卡通风",
+          "platform": "APP",
+          "developer": "B站",
+          "publisher": "B站",
+          "sourceText": "《闪耀吧！噜咪》（海外名 Lumi Master），竖版手绘画风题材抓宠，B站发行、制作人背景暂未知；国内25年12月首曝并首测，26年5月8日删档测，海外26年4月后启动预注册/小范围 Soft Launch/Android CBT，整体像B站同步验证国内与全球化休闲DAU潜力的治愈抓宠项目；",
+          "icon": "feishu-assets/recviNKLT9YjNE-icon-1.png",
+          "screenshots": [
+            "feishu-assets/recviNKLT9YjNE-shot-1.png"
+          ],
+          "cover": "feishu-assets/recviNKLT9YjNE-icon-1.png",
+          "status": "测试",
+          "month": "5月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "firstTestTime": "2025-12-18",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "1778032873000",
+          "updatedAt": "",
+          "rank": 2
+        },
+        {
+          "id": "recviNNJRkMMtt",
+          "name": "星际猎人",
+          "genre": "SLG",
+          "topic": "星际",
+          "platform": "APP",
+          "developer": "网易",
+          "publisher": "网易",
+          "sourceText": "《星际猎人》SLG，网易的《无尽的拉格朗日》改名重买——26年1月先完成品牌和版号切换，去年12月到2月，在把搜打撤概念跑通；4月买量，等第二家园寻宝变成更完整短局入口后，正式做外部拉新测试。本质也在测试老科幻SLG能不能用更轻、更短爽、更泛用户的包装重新拉新。",
+          "icon": "feishu-assets/recviNNJRkMMtt-icon-1.png",
+          "screenshots": [],
+          "cover": "feishu-assets/recviNNJRkMMtt-icon-1.png",
+          "status": "测试",
+          "month": "5月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "firstTestTime": "2025-12-31",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "1778033580000",
+          "updatedAt": "",
+          "rank": 3
+        },
+        {
+          "id": "recviNOIwudTg3",
+          "name": "遗忘之海",
+          "genre": "开放世界",
+          "topic": "海洋",
+          "platform": "APP",
+          "developer": "网易 Joker 工作室",
+          "publisher": "网易",
+          "sourceText": "海洋奇遇开放世界 RPG，主打航海探索、海岛冒险、海战与角色扮演，偏海洋开放世界+奇幻冒险”方向；产品于 25 年 4 月首次曝光，5 月预约，6 月放出实机并完成首次小规模技术测试，26 年 2 月做过PC 端限量删档测试，4 月 29 日拿到版号，30 日就开了测试招募，预计 26 年 Q3 上线；整体看是网易继《燕云》《无限大》等开放世界布局后，在航海/海洋题材上的差异化项目，题材辨识度高，但后续重点要看开放世界内容密度、航海循环、海战爽感和移动端适配能不能撑住。",
+          "icon": "feishu-assets/recviNOIwudTg3-icon-1.png",
+          "screenshots": [
+            "feishu-assets/recviNOIwudTg3-shot-1.png"
+          ],
+          "cover": "feishu-assets/recviNOIwudTg3-icon-1.png",
+          "status": "测试",
+          "month": "5月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "firstTestTime": "2026-02-10",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "1778033813000",
+          "updatedAt": "",
+          "rank": 4
+        }
+      ],
+      "createdAt": "2026-05-06T02:49:52.548Z",
+      "updatedAt": "2026-05-06T02:49:52.548Z"
+    },
+    {
       "id": "4",
       "title": "4月新游产品库",
       "period": "4月",
-      "date": "2026-05-05",
+      "date": "2026-05-06",
       "summary": "4月收录的新游产品列表，支持持续录入、筛选和对外展示。",
       "metrics": [
         "收录产品45款",
-        "测试 / 微小上榜 / IOS上榜 / 待确认",
+        "测试 / 微小上榜 / IOS上榜",
         "7个平台",
         "重点产品7款"
       ],
@@ -264,13 +400,13 @@
           "platform": "微小",
           "developer": "广州晓游",
           "publisher": "广州乐玩",
-          "sourceText": "竖版三国题材一步两步like，25年11月底现在apk测过，12月16微小，当时叫冒险大闯关，26年1月这个版号用在第零世界那个靶心like产品测试，4月27用城主别慌张新版号上微小测试",
+          "sourceText": "26年五一跑出来的产品，之前测试过，五一放量，来到微小畅销榜前20，竖版三国题材一步两步like，25年11月底现在apk测过，12月16微小，当时叫冒险大闯关，26年1月这个版号用在第零世界那个靶心like产品测试，4月27用城主别慌张新版号上微小测试",
           "icon": "feishu-assets/recvhY34avBWMo-icon-1.png",
           "screenshots": [
             "feishu-assets/recvhY34avBWMo-shot-1.png"
           ],
           "cover": "feishu-assets/recvhY34avBWMo-icon-1.png",
-          "status": "测试",
+          "status": "微小上榜",
           "month": "4月",
           "focus": false,
           "sourceUrl": "",
@@ -416,11 +552,11 @@
           "platform": "APP",
           "developer": "广州小丑鱼",
           "publisher": "37手游",
-          "sourceText": "APP 4月29日-天龙八部荣耀版底层迭代",
+          "sourceText": "APP 4月29日信息流买量测，好游tap等5月8号测-天龙八部荣耀版底层迭代",
           "icon": "feishu-assets/recvif2IicOAF8-icon-1.png",
           "screenshots": [],
           "cover": "feishu-assets/recvif2IicOAF8-icon-1.png",
-          "status": "待确认",
+          "status": "测试",
           "month": "4月",
           "focus": false,
           "sourceUrl": "",
@@ -770,7 +906,7 @@
           "platform": "APP",
           "developer": "杭州浮云",
           "publisher": "B站",
-          "sourceText": "三国题材休闲竞技卡牌，B站发行、杭州浮云研发；2025年9月预约首曝，10月30日首轮限量测试，2026年3月18日删档复测，4月20日iOS先上线，上线当天进入iOS畅销总榜第165名，现已滑落至190名左右，4月22日安卓开启不删档计费测试，尚未正式上线。iOS端已有初步付费承接，当前更像分步验证双端表现的观察盘，后续重点看安卓上线后的留存和商业化持续性",
+          "sourceText": "三国题材休闲竞技卡牌，B站发行、杭州浮云研发；2025年9月预约首曝，10月30日首轮限量测试，2026年3月18日删档复测，4月20日iOS先上线，上线当天进入iOS畅销总榜第165名，现已滑落至190名左右，4月22日安卓开启不删档计费测试，5月5安卓上线。iOS端已有初步付费承接，当前更像分步验证双端表现的观察盘，后续重点看安卓上线后的留存和商业化持续性",
           "icon": "feishu-assets/recvhXx9iQVE4p-icon-1.png",
           "screenshots": [
             "feishu-assets/recvhXx9iQVE4p-shot-1.png"
@@ -1367,8 +1503,8 @@
           "rank": 45
         }
       ],
-      "createdAt": "2026-05-05T23:49:10.579Z",
-      "updatedAt": "2026-05-05T23:49:10.579Z"
+      "createdAt": "2026-05-06T02:49:52.548Z",
+      "updatedAt": "2026-05-06T02:49:52.548Z"
     }
   ]
 }
