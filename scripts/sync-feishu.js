@@ -192,16 +192,14 @@ function parseDateValue(value) {
   return null;
 }
 
-function normalizeMonth(monthValue, updatedAtValue, testTimeValue, createdAtValue) {
-  const updatedDate = parseDateValue(updatedAtValue);
-  if (updatedDate) {
-    return `${updatedDate.getMonth() + 1}${C.monthSuffix}`;
-  }
-
+function normalizeMonth(monthValue, testTimeValue, createdAtValue, updatedAtValue) {
   const monthText = toText(monthValue);
   if (monthText) return monthText;
 
-  const date = parseDateValue(testTimeValue) || parseDateValue(createdAtValue);
+  const date =
+    parseDateValue(testTimeValue) ||
+    parseDateValue(createdAtValue) ||
+    parseDateValue(updatedAtValue);
   if (!date) return "";
   return `${date.getMonth() + 1}${C.monthSuffix}`;
 }
@@ -476,7 +474,7 @@ async function normalizeProduct(record, token) {
     screenshots,
     cover: icon || screenshots[0] || "",
     status: toText(pick(fields, "status")) || C.statusFallback,
-    month: normalizeMonth(pick(fields, "month"), updatedAtValue, testTimeValue, createdAtValue),
+    month: normalizeMonth(pick(fields, "month"), testTimeValue, createdAtValue, updatedAtValue),
     focus: toBool(pick(fields, "focus")),
     sourceUrl: toText(pick(fields, "sourceUrl")),
     releaseStatus: toText(pick(fields, "releaseStatus")),
