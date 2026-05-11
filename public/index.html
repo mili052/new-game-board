@@ -29,7 +29,7 @@
   </header>
 
   <main class="shell">
-    <section class="filters" aria-label="筛选">
+    <section class="filters" id="libraryFilters" aria-label="筛选">
       <label>
         <span>时间</span>
         <select id="periodFilter"></select>
@@ -51,6 +51,25 @@
     <section id="productPage" class="product-page hidden"></section>
     <section id="boardRoot" class="board-root"></section>
   </main>
+
+  <nav class="mobile-bottom-nav" id="mobileBottomNav" aria-label="底部导航">
+    <button class="mobile-nav-item active" type="button" data-nav-target="home">
+      <span class="mobile-nav-icon">⌂</span>
+      <span class="mobile-nav-label">首页</span>
+    </button>
+    <button class="mobile-nav-item" type="button" data-nav-target="ranking">
+      <span class="mobile-nav-icon">★</span>
+      <span class="mobile-nav-label">上榜</span>
+    </button>
+    <button class="mobile-nav-item" type="button" data-nav-target="categories">
+      <span class="mobile-nav-icon">▦</span>
+      <span class="mobile-nav-label">品类</span>
+    </button>
+    <button class="mobile-nav-item" type="button" data-nav-target="search">
+      <span class="mobile-nav-icon">⌕</span>
+      <span class="mobile-nav-label">搜索</span>
+    </button>
+  </nav>
 
   <dialog id="loginDialog" class="modal">
     <form method="dialog" class="login-card" id="loginForm">
@@ -135,6 +154,6 @@
     </div>
   </aside>
 
-  <script src="./app.js?v=8"></script>
+  <script src="./app.js?v=9"></script>
 </body>
 </html>

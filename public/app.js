@@ -29,7 +29,9 @@ function basePath() {
 }
 
 async function loadStaticBoards() {
-  const response = await fetch(joinUrl(basePath(), "data", "boards.json"), { cache: "no-store" });
+  const dataUrl = new URL(joinUrl(basePath(), "data", "boards.json"), window.location.origin);
+  dataUrl.searchParams.set("v", String(Date.now()));
+  const response = await fetch(dataUrl.toString(), { cache: "no-store" });
   const data = await response.json().catch(() => ({}));
   if (!response.ok) throw new Error("静态数据加载失败");
   state.staticMode = true;
@@ -366,6 +368,28 @@ function clearDetailRoute(replace = false) {
   const nextUrl = `${url.pathname}${url.search}`;
   const method = replace ? "replaceState" : "pushState";
   window.history[method]({}, "", nextUrl);
+}
+
+function setMobileMode(detailOpen) {
+  document.body.classList.toggle("detail-open", Boolean(detailOpen));
+}
+
+function setMobileNavActive(target = "home") {
+  document.querySelectorAll(".mobile-nav-item").forEach(item => {
+    item.classList.toggle("active", item.dataset.navTarget === target);
+  });
+}
+
+function scrollToSection(target) {
+  const selectors = {
+    home: "#boardRoot .library-hero",
+    ranking: "#boardRoot .ranking-zone",
+    categories: "#boardRoot .category-stack",
+    search: "#libraryFilters"
+  };
+  const node = document.querySelector(selectors[target] || selectors.home);
+  if (node) node.scrollIntoView({ behavior: "smooth", block: "start" });
+  if (target === "search") $("#searchInput")?.focus();
 }
 
 function renderBoard() {
