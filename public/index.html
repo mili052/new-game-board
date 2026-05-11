@@ -10,18 +10,18 @@
   <link rel="manifest" href="./manifest.webmanifest?v=1">
   <link rel="icon" href="./icon-app.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./icon-app.svg">
-  <title>鏂版父浜у搧搴?/title>
+  <title>新游产品库</title>
   <link rel="stylesheet" href="./styles.css?v=11">
 </head>
 <body class="gate-locked">
   <div id="publicGate" class="public-gate">
     <div class="public-gate-card">
       <div class="public-gate-kicker">Access</div>
-      <h2>璇疯緭鍏ヨ闂瘑鐮?/h2>
-      <p>杈撳叆姝ｇ‘瀵嗙爜鍚庯紝鎵嶅彲浠ヨ繘鍏ユ柊娓镐骇鍝佸簱銆?/p>
+      <h2>请输入访问密码</h2>
+      <p>输入正确密码后，才可以进入新游产品库。</p>
       <form id="publicGateForm" class="public-gate-form">
-        <input id="publicGateInput" type="password" autocomplete="current-password" placeholder="璁块棶瀵嗙爜">
-        <button class="primary" type="submit">杩涘叆浜у搧搴?/button>
+        <input id="publicGateInput" type="password" autocomplete="current-password" placeholder="访问密码">
+        <button class="primary" type="submit">进入产品库</button>
       </form>
       <p id="publicGateMessage" class="message"></p>
     </div>
@@ -29,29 +29,29 @@
   <header class="topbar">
     <div class="brand-block">
       <div class="brand-eyebrow">New Game Library</div>
-      <h1>鏂版父浜у搧搴?/h1>
-      <p class="brand-sub">鎸佺画褰曞叆銆佺瓫閫夊拰鍏紑灞曠ず鐨勬柊娓歌祫鏂欏簱锛岄€傚悎杩借釜鏂板搧娴嬭瘯銆佷笂姒滃拰閲嶇偣瑙傚療浜у搧銆?/p>
+      <h1>新游产品库</h1>
+      <p class="brand-sub">持续录入、筛选和公开展示的新游资料库，适合追踪新品测试、上榜和重点观察产品。</p>
     </div>
-    <button class="icon-btn" id="adminButton" title="鍚庡彴缂栬緫" aria-label="鍚庡彴缂栬緫">鈿?/button>
+    <button class="icon-btn" id="adminButton" title="后台编辑" aria-label="后台编辑">⚙</button>
   </header>
 
   <main class="shell">
-    <section class="filters" id="libraryFilters" aria-label="绛涢€?>
+    <section class="filters" id="libraryFilters" aria-label="筛选">
       <label>
-        <span>鏃堕棿</span>
+        <span>时间</span>
         <select id="periodFilter"></select>
       </label>
       <label>
-        <span>鐘舵€?/span>
+        <span>状态</span>
         <select id="statusFilter"></select>
       </label>
       <label class="search">
-        <span>鎼滅储</span>
-        <input id="searchInput" type="search" placeholder="浜у搧 / 璧涢亾 / 鍙戣">
+        <span>搜索</span>
+        <input id="searchInput" type="search" placeholder="产品 / 赛道 / 发行">
       </label>
       <div class="view-actions">
-        <span>瑙嗗浘</span>
-        <a id="reportLink" class="report-link" href="./report.html">鍛ㄦ姤妯″紡</a>
+        <span>视图</span>
+        <a id="reportLink" class="report-link" href="./report.html">周报模式</a>
       </div>
     </section>
 
@@ -59,32 +59,32 @@
     <section id="boardRoot" class="board-root"></section>
   </main>
 
-  <nav class="mobile-bottom-nav" id="mobileBottomNav" aria-label="搴曢儴瀵艰埅">
+  <nav class="mobile-bottom-nav" id="mobileBottomNav" aria-label="底部导航">
     <button class="mobile-nav-item active" type="button" data-nav-target="home">
-      <span class="mobile-nav-icon">鈱?/span>
-      <span class="mobile-nav-label">棣栭〉</span>
+      <span class="mobile-nav-icon">⌂</span>
+      <span class="mobile-nav-label">首页</span>
     </button>
     <button class="mobile-nav-item" type="button" data-nav-target="ranking">
-      <span class="mobile-nav-icon">鈽?/span>
-      <span class="mobile-nav-label">涓婃</span>
+      <span class="mobile-nav-icon">★</span>
+      <span class="mobile-nav-label">上榜</span>
     </button>
     <button class="mobile-nav-item" type="button" data-nav-target="categories">
-      <span class="mobile-nav-icon">鈻?/span>
-      <span class="mobile-nav-label">鍝佺被</span>
+      <span class="mobile-nav-icon">▤</span>
+      <span class="mobile-nav-label">品类</span>
     </button>
     <button class="mobile-nav-item" type="button" data-nav-target="search">
-      <span class="mobile-nav-icon">鈱?/span>
-      <span class="mobile-nav-label">鎼滅储</span>
+      <span class="mobile-nav-icon">⌕</span>
+      <span class="mobile-nav-label">搜索</span>
     </button>
   </nav>
 
   <dialog id="loginDialog" class="modal">
     <form method="dialog" class="login-card" id="loginForm">
-      <h2>鍚庡彴鐧诲綍</h2>
-      <input id="passwordInput" type="password" autocomplete="current-password" placeholder="绠＄悊鍛樺瘑鐮?>
+      <h2>后台登录</h2>
+      <input id="passwordInput" type="password" autocomplete="current-password" placeholder="管理员密码">
       <div class="modal-actions">
-        <button class="ghost" value="cancel">鍙栨秷</button>
-        <button class="primary" id="loginSubmit" value="default">杩涘叆</button>
+        <button class="ghost" value="cancel">取消</button>
+        <button class="primary" id="loginSubmit" value="default">进入</button>
       </div>
       <p id="loginMessage" class="message"></p>
     </form>
@@ -94,75 +94,73 @@
     <div class="admin-head">
       <div>
         <span class="kicker">Admin</span>
-        <h2>缂栬緫鐪嬫澘</h2>
+        <h2>编辑看板</h2>
       </div>
-      <button class="icon-btn" id="closeAdmin" title="鍏抽棴" aria-label="鍏抽棴">脳</button>
+      <button class="icon-btn" id="closeAdmin" title="关闭" aria-label="关闭">✕</button>
     </div>
 
     <div class="admin-body">
       <section class="editor-block">
         <div class="inline-title">
-          <h3>鐪嬫澘</h3>
-          <button class="small" id="newBoardButton">鏂板缓</button>
+          <h3>看板</h3>
+          <button class="small" id="newBoardButton">新建</button>
         </div>
-        <label>閫夋嫨鐪嬫澘<select id="boardSelect"></select></label>
-        <label>鏍囬<input id="boardTitle"></label>
-        <label>鍛ㄦ湡<input id="boardPeriod" placeholder="2026骞?鏈堢3鍛?></label>
-        <label>鏃ユ湡<input id="boardDate" type="date"></label>
-        <label>鎽樿<textarea id="boardSummary" rows="4"></textarea></label>
-        <label>鎸囨爣<input id="boardMetrics" placeholder="鐢?/ 鍒嗛殧锛屼緥濡?鏀跺綍24娆?/ 鐣呴攢5娆?></label>
+        <label>选择看板<select id="boardSelect"></select></label>
+        <label>标题<input id="boardTitle"></label>
+        <label>周期<input id="boardPeriod" placeholder="2026年4月第3周"></label>
+        <label>日期<input id="boardDate" type="date"></label>
+        <label>摘要<textarea id="boardSummary" rows="4"></textarea></label>
+        <label>指标<input id="boardMetrics" placeholder="用 / 分隔，例如 收录24款 / 畅销5款"></label>
       </section>
 
       <section class="editor-block">
         <div class="inline-title">
-          <h3>AI 蹇€熷綍鍏?/h3>
-          <button class="small" id="aiParseButton" type="button">AI鏁寸悊</button>
+          <h3>AI 快速录入</h3>
+          <button class="small" id="aiParseButton" type="button">AI整理</button>
         </div>
-        <label>绮樿创鏂版父淇℃伅<textarea id="aiInput" rows="7" placeholder="鎶婂叕浼楀彿銆佺兢鑱娿€佸晢搴楅〉銆佽〃鏍奸噷鐨勬柊娓镐俊鎭洿鎺ョ矘璐村埌杩欓噷銆侫I 浼氱敓鎴愯崏绋匡紝鍙戝竷鍓嶄粛闇€浣犵‘璁ゃ€?></textarea></label>
-        <label class="file-label wide">鍏煎涓婁紶鎴浘 / 鍥剧墖<input id="aiImageInput" type="file" accept="image/*"></label>
+        <label>粘贴新游信息<textarea id="aiInput" rows="7" placeholder="把公众号、群聊、商店页、表格里的新游信息直接粘贴到这里。AI 会生成草稿，发布前仍需你确认。"></textarea></label>
+        <label class="file-label wide">兼容上传截图 / 图片<input id="aiImageInput" type="file" accept="image/*"></label>
         <div id="aiImagePreview" class="preview"></div>
         <p id="aiMessage" class="message neutral"></p>
       </section>
 
       <section class="editor-block">
         <div class="inline-title">
-          <h3>浜у搧</h3>
-          <button class="small" id="newProductButton">鏂板浜у搧</button>
+          <h3>产品</h3>
+          <button class="small" id="newProductButton">新增产品</button>
         </div>
-        <label>閫夋嫨浜у搧<select id="productSelect"></select></label>
+        <label>选择产品<select id="productSelect"></select></label>
         <div class="grid-2">
-          <label>鍚嶇О<input id="productName"></label>
-          <label>璧涢亾<input id="productGenre"></label>
-          <label>鐘舵€?input id="productStatus" placeholder="鐣呴攢 / 灏嗘祴 / 娴嬭瘯"></label>
-          <label>鎺掑簭<input id="productRank" type="number" min="0"></label>
+          <label>名称<input id="productName"></label>
+          <label>赛道<input id="productGenre"></label>
+          <label>状态<input id="productStatus" placeholder="畅销 / 将测 / 测试"></label>
+          <label>排序<input id="productRank" type="number" min="0"></label>
         </div>
         <div class="grid-2">
-          <label>鐮斿彂<input id="productDeveloper"></label>
-          <label>鍙戣<input id="productPublisher"></label>
+          <label>研发<input id="productDeveloper"></label>
+          <label>发行<input id="productPublisher"></label>
         </div>
-        <label>鍏紑鑺傜偣<input id="productNode"></label>
-        <label>瓒嬪娍鍒ゆ柇<textarea id="productJudgement" rows="3"></textarea></label>
-        <label class="checkline"><input id="productFocus" type="checkbox"> 閲嶇偣鍏虫敞</label>
+        <label>公开节点<input id="productNode"></label>
+        <label>趋势判断<textarea id="productJudgement" rows="3"></textarea></label>
+        <label class="checkline"><input id="productFocus" type="checkbox"> 重点关注</label>
 
         <div class="asset-row">
-          <label class="file-label">鍥炬爣 / 灏侀潰<input id="coverInput" type="file" accept="image/*"></label>
-          <button class="small danger" id="removeProductButton">鍒犻櫎浜у搧</button>
+          <label class="file-label">图标 / 封面<input id="coverInput" type="file" accept="image/*"></label>
+          <button class="small danger" id="removeProductButton">删除产品</button>
         </div>
         <div id="coverPreview" class="preview"></div>
 
-        <label class="file-label wide">杩藉姞娓告垙鎴浘<input id="screensInput" type="file" accept="image/*" multiple></label>
+        <label class="file-label wide">追加游戏截图<input id="screensInput" type="file" accept="image/*" multiple></label>
         <div id="screensPreview" class="screenshot-strip"></div>
       </section>
     </div>
 
     <div class="admin-actions">
-      <button class="danger ghost" id="deleteBoardButton">鍒犻櫎鐪嬫澘</button>
-      <button class="primary" id="saveButton">淇濆瓨鏇存柊</button>
+      <button class="danger ghost" id="deleteBoardButton">删除看板</button>
+      <button class="primary" id="saveButton">保存更新</button>
     </div>
   </aside>
 
   <script src="./app.js?v=11"></script>
 </body>
 </html>
-
-
