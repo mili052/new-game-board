@@ -165,6 +165,12 @@ function toBool(value) {
   return [C.yes, "true", "1", "yes", C.keyProduct].map(item => item.toLowerCase()).includes(text);
 }
 
+function normalizeStatusValue(value) {
+  return String(value || "")
+    .trim()
+    .replace(/\s+/g, "");
+}
+
 function parseDateValue(value) {
   if (value == null || value === "") return null;
 
@@ -596,10 +602,23 @@ async function main() {
     normalized.push(await normalizeProduct(record, token));
   }
 
-  const products = normalized.filter(item => !publishValue || item.releaseStatus === publishValue);
+  const normalizedPublishValue = normalizeStatusValue(publishValue);
+  const statusBuckets = normalized.reduce((acc, item) => {
+    const key = item.releaseStatus || "(empty)";
+    acc[key] = (acc[key] || 0) + 1;
+    return acc;
+  }, {});
+
+  const products = normalized.filter(item => {
+    if (!normalizedPublishValue) return true;
+    const releaseStatus = normalizeStatusValue(item.releaseStatus);
+    return releaseStatus === normalizedPublishValue || releaseStatus.includes(normalizedPublishValue);
+  });
   const boards = buildBoards(products);
 
   writeBoards(boards);
+  console.log(`Fetched ${normalized.length} records from Feishu.`);
+  console.log(`Release status buckets: ${JSON.stringify(statusBuckets, null, 2)}`);
   console.log(`Synced ${products.length} products from Feishu into ${boards.length} board(s).`);
 }
 
