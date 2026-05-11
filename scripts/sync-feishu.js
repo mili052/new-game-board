@@ -339,9 +339,45 @@ async function resolveBitableAppToken(token) {
   return objToken;
 }
 
+async function resolveTableId(token, appToken) {
+  const preferredTableName = process.env.FEISHU_TABLE_NAME || "游戏产品";
+  const fallbackTableId = process.env.FEISHU_TABLE_ID || "";
+
+  try {
+    const url = new URL(`https://open.feishu.cn/open-apis/bitable/v1/apps/${appToken}/tables`);
+    url.searchParams.set("page_size", "200");
+
+    const response = await fetch(url, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+        "Content-Type": "application/json; charset=utf-8"
+      }
+    });
+
+    const data = await response.json().catch(() => ({}));
+    if (!response.ok || data.code !== 0) {
+      throw new Error(data.msg || response.statusText);
+    }
+
+    const tables = data.data?.items || [];
+    const matched =
+      tables.find(item => String(item.name || "").trim() === preferredTableName) ||
+      tables.find(item => String(item.name || "").trim().includes(preferredTableName));
+
+    if (matched?.table_id) {
+      return matched.table_id;
+    }
+  } catch (error) {
+    console.warn(`Failed to resolve table by name "${preferredTableName}": ${error.message || error}`);
+  }
+
+  if (fallbackTableId) return fallbackTableId;
+  throw new Error("Missing env: FEISHU_TABLE_ID and no matching table name was found");
+}
+
 async function listRecords(token) {
   const appToken = await resolveBitableAppToken(token);
-  const tableId = required("FEISHU_TABLE_ID");
+  const tableId = await resolveTableId(token, appToken);
   const viewId = process.env.FEISHU_VIEW_ID;
   const pageSize = Number(process.env.FEISHU_PAGE_SIZE || 200);
 
