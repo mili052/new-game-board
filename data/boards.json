@@ -7,8 +7,8 @@
       "date": "2026-05-11",
       "summary": "5月收录的新游产品列表，支持持续录入、筛选和对外展示。",
       "metrics": [
-        "收录产品7款",
-        "微小上榜 / 测试",
+        "收录产品10款",
+        "微小上榜 / 测试 / 已上线",
         "4个平台",
         "重点产品0款"
       ],
@@ -39,7 +39,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:29:01.819Z",
+          "createdAt": "2026-05-11T05:36:50.264Z",
           "updatedAt": "",
           "rank": 1
         },
@@ -68,7 +68,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:29:05.596Z",
+          "createdAt": "2026-05-11T05:36:53.872Z",
           "updatedAt": "",
           "rank": 2
         },
@@ -80,7 +80,7 @@
           "platform": "微小",
           "developer": "广州晓游",
           "publisher": "广州乐玩",
-          "sourceText": "26年五一跑出来的产品，之前测试过，五一放量，来到微小畅销榜前20，竖版三国题材一步两步like，25年11月底现在apk测过，12月16微小，当时叫冒险大闯关，26年1月这个版号用在第零世界那个靶心like产品测试，4月27用城主别慌张新版号上微小测试",
+          "sourceText": "26年五一跑出来的产品，之前测试过，五一放量，来到微小畅销榜前20，竖版三国题材一步两步like，25年11月20先在apk测过当时叫城堡攻防战也用过冒险大闯关都测过（冒险后面用来测第零世界的小鸡了），12月16微小，，26年1月这个版号用在第零世界那个靶心like产品测试，4月27用城主别慌张新版号上微小测试",
           "icon": "feishu-assets/recvhY34avBWMo-icon-1.png",
           "screenshots": [
             "feishu-assets/recvhY34avBWMo-shot-1.png"
@@ -94,12 +94,12 @@
           "reason": "",
           "judgement": "",
           "latestNodeTime": "2026-05-03",
-          "firstTestTime": "2025-10-31",
+          "firstTestTime": "2025-11-19",
           "finalTestTime": "",
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:25:42.233Z",
+          "createdAt": "2026-05-11T05:34:15.023Z",
           "updatedAt": "",
           "rank": 3
         },
@@ -128,9 +128,67 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:27:42.441Z",
+          "createdAt": "2026-05-11T05:35:41.346Z",
           "updatedAt": "",
           "rank": 4
+        },
+        {
+          "id": "recvj5nCuVJbSn",
+          "name": "饥困荒野",
+          "genre": "生存",
+          "topic": "饥荒IP",
+          "platform": "APP",
+          "developer": "盛趣游戏",
+          "publisher": "腾讯发行",
+          "sourceText": "沙盒生存、多人联机、建造冒险、SOC，Klei 授权，基于《饥荒：联机版》改编；项目测试周期很长，从 20 年海外区域测试，到 23 年国内多轮测，再到 25 年焕新测试，26 年 5 月 14 日将再次测。产品本身 IP 吸量很强，快爆端预约已过百万、期待榜靠前，TapTap 侧也显示高预约与高关注。饥荒题材是很吸量的，这不是常规短 ROI 买量，可能是腾讯暑期档值得观察的 IP+沙盒生存盘，核心不在能不能吸量，而在移动端操作、多人联机稳定性、长期内容消耗和去抽卡后的商业化承接",
+          "icon": "feishu-assets/recvj5nCuVJbSn-icon-1.png",
+          "screenshots": [],
+          "cover": "feishu-assets/recvj5nCuVJbSn-icon-1.png",
+          "status": "测试",
+          "month": "5月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "latestNodeTime": "2026-05-13",
+          "firstTestTime": "2023-06-01",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "2026-05-11T05:36:55.232Z",
+          "updatedAt": "",
+          "rank": 5
+        },
+        {
+          "id": "recviP8rTud7ZD",
+          "name": "镭明闪击",
+          "genre": "塔防",
+          "topic": "轻科幻军事",
+          "platform": "APP",
+          "developer": "心光流美",
+          "publisher": "北京朝夕光年",
+          "sourceText": "轻科幻军事题材塔防RPG，心光流美研发，北京朝夕光年发行，海外3月26日上线港澳台地区（艾瑞尔发行），国内4月11日APP买量测试，游戏美术为3D写实风格，但操作重度，也是只能获取垂类塔防或战棋用户为主；5月15安卓上线",
+          "icon": "feishu-assets/recviP8rTud7ZD-icon-1.png",
+          "screenshots": [],
+          "cover": "feishu-assets/recviP8rTud7ZD-icon-1.png",
+          "status": "已上线",
+          "month": "5月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "latestNodeTime": "2026-05-14",
+          "firstTestTime": "2025-04-10",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "2026-05-11T05:36:40.027Z",
+          "updatedAt": "",
+          "rank": 6
         },
         {
           "id": "recviNKLT9YjNE",
@@ -159,9 +217,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:27:31.932Z",
+          "createdAt": "2026-05-11T05:35:26.451Z",
           "updatedAt": "",
-          "rank": 5
+          "rank": 7
         },
         {
           "id": "recvj0oxzAgqWW",
@@ -188,9 +246,38 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:29:02.877Z",
+          "createdAt": "2026-05-11T05:36:51.668Z",
           "updatedAt": "",
-          "rank": 6
+          "rank": 8
+        },
+        {
+          "id": "recviO54vXQ7x0",
+          "name": "遮天：帝路争锋",
+          "genre": "卡牌",
+          "topic": "遮天IP",
+          "platform": "APP / 微小",
+          "developer": "广州斑马",
+          "publisher": "广州斑马",
+          "sourceText": "竖版遮天IP放置卡牌，广州斑马自研（侠义的研发团队收过去做的），3月4日APP测试；微小是4月29开始买量测，5月13微小上线",
+          "icon": "feishu-assets/recviO54vXQ7x0-icon-1.png",
+          "screenshots": [],
+          "cover": "feishu-assets/recviO54vXQ7x0-icon-1.png",
+          "status": "已上线",
+          "month": "5月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "latestNodeTime": "2026-05-12",
+          "firstTestTime": "2026-03-03",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "2026-05-11T05:35:43.510Z",
+          "updatedAt": "",
+          "rank": 9
         },
         {
           "id": "recvj5mg67q3Ad",
@@ -217,13 +304,13 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:29:04.387Z",
+          "createdAt": "2026-05-11T05:36:52.868Z",
           "updatedAt": "",
-          "rank": 7
+          "rank": 10
         }
       ],
-      "createdAt": "2026-05-11T01:29:05.606Z",
-      "updatedAt": "2026-05-11T01:29:05.606Z"
+      "createdAt": "2026-05-11T05:37:00.060Z",
+      "updatedAt": "2026-05-11T05:37:00.060Z"
     },
     {
       "id": "4",
@@ -232,8 +319,8 @@
       "date": "2026-05-11",
       "summary": "4月收录的新游产品列表，支持持续录入、筛选和对外展示。",
       "metrics": [
-        "收录产品84款",
-        "微小上榜 / 测试 / IOS上榜",
+        "收录产品83款",
+        "微小上榜 / 测试 / IOS上榜 / 已上线",
         "7个平台",
         "重点产品7款"
       ],
@@ -266,7 +353,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:26:31.961Z",
+          "createdAt": "2026-05-11T05:34:45.079Z",
           "updatedAt": "",
           "rank": 1
         },
@@ -299,7 +386,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:23:18.886Z",
+          "createdAt": "2026-05-11T05:32:23.571Z",
           "updatedAt": "",
           "rank": 2
         },
@@ -328,7 +415,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:27:10.721Z",
+          "createdAt": "2026-05-11T05:35:14.972Z",
           "updatedAt": "",
           "rank": 3
         },
@@ -360,7 +447,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:26:44.222Z",
+          "createdAt": "2026-05-11T05:34:56.142Z",
           "updatedAt": "",
           "rank": 4
         },
@@ -392,7 +479,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:24:19.771Z",
+          "createdAt": "2026-05-11T05:33:10.430Z",
           "updatedAt": "",
           "rank": 5
         },
@@ -421,7 +508,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:26:36.476Z",
+          "createdAt": "2026-05-11T05:34:49.870Z",
           "updatedAt": "",
           "rank": 6
         },
@@ -452,7 +539,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:23:21.693Z",
+          "createdAt": "2026-05-11T05:32:27.500Z",
           "updatedAt": "",
           "rank": 7
         },
@@ -485,7 +572,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:24:47.148Z",
+          "createdAt": "2026-05-11T05:33:26.673Z",
           "updatedAt": "",
           "rank": 8
         },
@@ -514,7 +601,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:28:18.613Z",
+          "createdAt": "2026-05-11T05:36:14.019Z",
           "updatedAt": "",
           "rank": 9
         },
@@ -543,7 +630,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:27:43.939Z",
+          "createdAt": "2026-05-11T05:35:42.483Z",
           "updatedAt": "",
           "rank": 10
         },
@@ -572,7 +659,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:28:55.203Z",
+          "createdAt": "2026-05-11T05:36:44.562Z",
           "updatedAt": "",
           "rank": 11
         },
@@ -603,9 +690,38 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:25:08.674Z",
+          "createdAt": "2026-05-11T05:33:42.676Z",
           "updatedAt": "",
           "rank": 12
+        },
+        {
+          "id": "recvj5nHApnx7j",
+          "name": "楚新钓",
+          "genre": "模拟经营",
+          "topic": "恶搞IP",
+          "platform": "APP / 微小",
+          "developer": "迷你玩",
+          "publisher": "深圳大梦",
+          "sourceText": "APP4月30上线iOS，目前免费榜在爬升，畅销榜还没进",
+          "icon": "feishu-assets/recvj5nHApnx7j-icon-1.png",
+          "screenshots": [],
+          "cover": "feishu-assets/recvj5nHApnx7j-icon-1.png",
+          "status": "已上线",
+          "month": "4月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "latestNodeTime": "2026-04-29",
+          "firstTestTime": "2025-10-14",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "2026-05-11T05:36:58.740Z",
+          "updatedAt": "",
+          "rank": 13
         },
         {
           "id": "recviPcAg6INIW",
@@ -632,9 +748,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:28:57.658Z",
+          "createdAt": "2026-05-11T05:36:46.903Z",
           "updatedAt": "",
-          "rank": 13
+          "rank": 14
         },
         {
           "id": "recvhXu0IjHtCD",
@@ -664,9 +780,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:24:34.916Z",
+          "createdAt": "2026-05-11T05:33:16.501Z",
           "updatedAt": "",
-          "rank": 14
+          "rank": 15
         },
         {
           "id": "recvhGKIYmwdQv",
@@ -696,9 +812,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:24:13.140Z",
+          "createdAt": "2026-05-11T05:33:04.848Z",
           "updatedAt": "",
-          "rank": 15
+          "rank": 16
         },
         {
           "id": "recvhY2vfk9sy6",
@@ -727,9 +843,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:25:39.902Z",
+          "createdAt": "2026-05-11T05:34:12.405Z",
           "updatedAt": "",
-          "rank": 16
+          "rank": 17
         },
         {
           "id": "recvif2IicOAF8",
@@ -756,9 +872,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:27:26.289Z",
+          "createdAt": "2026-05-11T05:35:23.801Z",
           "updatedAt": "",
-          "rank": 17
+          "rank": 18
         },
         {
           "id": "recvhYbVXu4KPY",
@@ -787,9 +903,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:26:08.126Z",
+          "createdAt": "2026-05-11T05:34:29.336Z",
           "updatedAt": "",
-          "rank": 18
+          "rank": 19
         },
         {
           "id": "recviO54OAsZfV",
@@ -816,9 +932,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:27:46.892Z",
+          "createdAt": "2026-05-11T05:35:45.241Z",
           "updatedAt": "",
-          "rank": 19
+          "rank": 20
         },
         {
           "id": "recviNLYQcDlf2",
@@ -847,9 +963,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:27:34.551Z",
+          "createdAt": "2026-05-11T05:35:29.506Z",
           "updatedAt": "",
-          "rank": 20
+          "rank": 21
         },
         {
           "id": "recvi9VDcTtKT7",
@@ -876,9 +992,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:27:01.042Z",
+          "createdAt": "2026-05-11T05:35:05.740Z",
           "updatedAt": "",
-          "rank": 21
+          "rank": 22
         },
         {
           "id": "recviP2Ds81ezc",
@@ -907,9 +1023,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:28:32.120Z",
+          "createdAt": "2026-05-11T05:36:27.974Z",
           "updatedAt": "",
-          "rank": 22
+          "rank": 23
         },
         {
           "id": "recvhFK8tttfoa",
@@ -939,9 +1055,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:24:00.269Z",
+          "createdAt": "2026-05-11T05:32:56.981Z",
           "updatedAt": "",
-          "rank": 23
+          "rank": 24
         },
         {
           "id": "recviPdudRB74u",
@@ -968,9 +1084,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:28:58.705Z",
+          "createdAt": "2026-05-11T05:36:48.038Z",
           "updatedAt": "",
-          "rank": 24
+          "rank": 25
         },
         {
           "id": "recviOaCYE3eM9",
@@ -997,9 +1113,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:27:48.143Z",
+          "createdAt": "2026-05-11T05:35:46.373Z",
           "updatedAt": "",
-          "rank": 25
+          "rank": 26
         },
         {
           "id": "recviP8avRPicB",
@@ -1026,9 +1142,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:28:47.851Z",
+          "createdAt": "2026-05-11T05:36:37.979Z",
           "updatedAt": "",
-          "rank": 26
+          "rank": 27
         },
         {
           "id": "recvhYeFQkrPIW",
@@ -1055,9 +1171,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:26:09.676Z",
+          "createdAt": "2026-05-11T05:34:32.131Z",
           "updatedAt": "",
-          "rank": 27
+          "rank": 28
         },
         {
           "id": "recvi9VC9M1xwW",
@@ -1086,9 +1202,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:26:55.815Z",
+          "createdAt": "2026-05-11T05:35:01.834Z",
           "updatedAt": "",
-          "rank": 28
+          "rank": 29
         },
         {
           "id": "recviOIDjSpdF1",
@@ -1115,9 +1231,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:28:12.152Z",
+          "createdAt": "2026-05-11T05:36:07.729Z",
           "updatedAt": "",
-          "rank": 29
+          "rank": 30
         },
         {
           "id": "recviP6NCITwrv",
@@ -1144,9 +1260,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:28:42.659Z",
+          "createdAt": "2026-05-11T05:36:33.059Z",
           "updatedAt": "",
-          "rank": 30
+          "rank": 31
         },
         {
           "id": "recviOJqNrY2B4",
@@ -1173,9 +1289,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:28:16.209Z",
+          "createdAt": "2026-05-11T05:36:11.444Z",
           "updatedAt": "",
-          "rank": 31
+          "rank": 32
         },
         {
           "id": "recvhXvKELIEIa",
@@ -1205,9 +1321,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:24:54.628Z",
+          "createdAt": "2026-05-11T05:33:32.800Z",
           "updatedAt": "",
-          "rank": 32
+          "rank": 33
         },
         {
           "id": "recviOb4klmWDR",
@@ -1236,9 +1352,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:27:51.740Z",
+          "createdAt": "2026-05-11T05:35:50.542Z",
           "updatedAt": "",
-          "rank": 33
+          "rank": 34
         },
         {
           "id": "recvi3SeHwDNm5",
@@ -1265,36 +1381,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:26:38.726Z",
-          "updatedAt": "",
-          "rank": 34
-        },
-        {
-          "id": "recviP8rTud7ZD",
-          "name": "镭明闪击",
-          "genre": "塔防",
-          "topic": "轻科幻军事",
-          "platform": "APP",
-          "developer": "心光流美",
-          "publisher": "北京朝夕光年",
-          "sourceText": "轻科幻军事题材塔防RPG，心光流美研发，北京朝夕光年发行，海外3月26日上线港澳台地区（艾瑞尔发行），国内4月11日APP买量测试，游戏美术为3D写实风格，但操作重度，也是只能获取垂类塔防或战棋用户为主；",
-          "icon": "feishu-assets/recviP8rTud7ZD-icon-1.png",
-          "screenshots": [],
-          "cover": "feishu-assets/recviP8rTud7ZD-icon-1.png",
-          "status": "测试",
-          "month": "4月",
-          "focus": false,
-          "sourceUrl": "",
-          "releaseStatus": "可发布",
-          "reason": "",
-          "judgement": "",
-          "latestNodeTime": "2026-04-10",
-          "firstTestTime": "2025-04-10",
-          "finalTestTime": "",
-          "publicTestTime": "",
-          "launchTime": "",
-          "publicNode": "",
-          "createdAt": "2026-05-11T01:28:50.209Z",
+          "createdAt": "2026-05-11T05:34:51.726Z",
           "updatedAt": "",
           "rank": 35
         },
@@ -1325,7 +1412,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:25:49.410Z",
+          "createdAt": "2026-05-11T05:34:18.810Z",
           "updatedAt": "",
           "rank": 36
         },
@@ -1358,7 +1445,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:23:55.864Z",
+          "createdAt": "2026-05-11T05:32:51.010Z",
           "updatedAt": "",
           "rank": 37
         },
@@ -1387,7 +1474,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:28:51.293Z",
+          "createdAt": "2026-05-11T05:36:41.159Z",
           "updatedAt": "",
           "rank": 38
         },
@@ -1416,7 +1503,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:26:45.599Z",
+          "createdAt": "2026-05-11T05:34:57.769Z",
           "updatedAt": "",
           "rank": 39
         },
@@ -1445,7 +1532,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:27:49.313Z",
+          "createdAt": "2026-05-11T05:35:47.417Z",
           "updatedAt": "",
           "rank": 40
         },
@@ -1476,7 +1563,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:27:54.851Z",
+          "createdAt": "2026-05-11T05:35:53.464Z",
           "updatedAt": "",
           "rank": 41
         },
@@ -1505,7 +1592,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:28:38.802Z",
+          "createdAt": "2026-05-11T05:36:31.629Z",
           "updatedAt": "",
           "rank": 42
         },
@@ -1536,7 +1623,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:25:17.658Z",
+          "createdAt": "2026-05-11T05:33:51.672Z",
           "updatedAt": "",
           "rank": 43
         },
@@ -1568,7 +1655,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:23:01.508Z",
+          "createdAt": "2026-05-11T05:32:05.543Z",
           "updatedAt": "",
           "rank": 44
         },
@@ -1599,7 +1686,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:27:09.679Z",
+          "createdAt": "2026-05-11T05:35:13.750Z",
           "updatedAt": "",
           "rank": 45
         },
@@ -1628,7 +1715,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:29:00.426Z",
+          "createdAt": "2026-05-11T05:36:49.232Z",
           "updatedAt": "",
           "rank": 46
         },
@@ -1657,7 +1744,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:28:48.995Z",
+          "createdAt": "2026-05-11T05:36:38.984Z",
           "updatedAt": "",
           "rank": 47
         },
@@ -1686,7 +1773,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:27:19.224Z",
+          "createdAt": "2026-05-11T05:35:19.779Z",
           "updatedAt": "",
           "rank": 48
         },
@@ -1715,7 +1802,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:28:01.415Z",
+          "createdAt": "2026-05-11T05:35:57.366Z",
           "updatedAt": "",
           "rank": 49
         },
@@ -1744,7 +1831,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:28:11.051Z",
+          "createdAt": "2026-05-11T05:36:06.457Z",
           "updatedAt": "",
           "rank": 50
         },
@@ -1773,7 +1860,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:28:07.979Z",
+          "createdAt": "2026-05-11T05:36:04.020Z",
           "updatedAt": "",
           "rank": 51
         },
@@ -1804,7 +1891,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:28:06.224Z",
+          "createdAt": "2026-05-11T05:36:02.533Z",
           "updatedAt": "",
           "rank": 52
         },
@@ -1835,7 +1922,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:27:17.715Z",
+          "createdAt": "2026-05-11T05:35:18.568Z",
           "updatedAt": "",
           "rank": 53
         },
@@ -1866,7 +1953,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:28:21.311Z",
+          "createdAt": "2026-05-11T05:36:16.509Z",
           "updatedAt": "",
           "rank": 54
         },
@@ -1898,7 +1985,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:26:03.909Z",
+          "createdAt": "2026-05-11T05:34:26.652Z",
           "updatedAt": "",
           "rank": 55
         },
@@ -1927,7 +2014,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:28:09.180Z",
+          "createdAt": "2026-05-11T05:36:05.225Z",
           "updatedAt": "",
           "rank": 56
         },
@@ -1956,7 +2043,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:28:22.847Z",
+          "createdAt": "2026-05-11T05:36:17.696Z",
           "updatedAt": "",
           "rank": 57
         },
@@ -1987,7 +2074,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:26:34.957Z",
+          "createdAt": "2026-05-11T05:34:48.769Z",
           "updatedAt": "",
           "rank": 58
         },
@@ -2020,7 +2107,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:23:08.147Z",
+          "createdAt": "2026-05-11T05:32:11.654Z",
           "updatedAt": "",
           "rank": 59
         },
@@ -2051,7 +2138,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:26:59.427Z",
+          "createdAt": "2026-05-11T05:35:04.616Z",
           "updatedAt": "",
           "rank": 60
         },
@@ -2080,7 +2167,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:28:13.243Z",
+          "createdAt": "2026-05-11T05:36:08.924Z",
           "updatedAt": "",
           "rank": 61
         },
@@ -2111,7 +2198,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:25:25.988Z",
+          "createdAt": "2026-05-11T05:33:58.126Z",
           "updatedAt": "",
           "rank": 62
         },
@@ -2140,7 +2227,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:28:14.281Z",
+          "createdAt": "2026-05-11T05:36:09.977Z",
           "updatedAt": "",
           "rank": 63
         },
@@ -2169,7 +2256,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:27:35.509Z",
+          "createdAt": "2026-05-11T05:35:30.706Z",
           "updatedAt": "",
           "rank": 64
         },
@@ -2198,7 +2285,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:28:56.248Z",
+          "createdAt": "2026-05-11T05:36:45.615Z",
           "updatedAt": "",
           "rank": 65
         },
@@ -2229,7 +2316,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:25:36.326Z",
+          "createdAt": "2026-05-11T05:34:09.515Z",
           "updatedAt": "",
           "rank": 66
         },
@@ -2258,7 +2345,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:28:52.329Z",
+          "createdAt": "2026-05-11T05:36:42.155Z",
           "updatedAt": "",
           "rank": 67
         },
@@ -2289,7 +2376,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:27:38.512Z",
+          "createdAt": "2026-05-11T05:35:37.361Z",
           "updatedAt": "",
           "rank": 68
         },
@@ -2318,7 +2405,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:28:36.136Z",
+          "createdAt": "2026-05-11T05:36:29.396Z",
           "updatedAt": "",
           "rank": 69
         },
@@ -2349,7 +2436,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:27:04.241Z",
+          "createdAt": "2026-05-11T05:35:10.815Z",
           "updatedAt": "",
           "rank": 70
         },
@@ -2381,7 +2468,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:23:40.822Z",
+          "createdAt": "2026-05-11T05:32:41.537Z",
           "updatedAt": "",
           "rank": 71
         },
@@ -2413,7 +2500,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:26:26.887Z",
+          "createdAt": "2026-05-11T05:34:42.843Z",
           "updatedAt": "",
           "rank": 72
         },
@@ -2444,7 +2531,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:26:14.025Z",
+          "createdAt": "2026-05-11T05:34:36.534Z",
           "updatedAt": "",
           "rank": 73
         },
@@ -2475,7 +2562,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:24:58.868Z",
+          "createdAt": "2026-05-11T05:33:36.386Z",
           "updatedAt": "",
           "rank": 74
         },
@@ -2504,7 +2591,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:27:39.942Z",
+          "createdAt": "2026-05-11T05:35:39.375Z",
           "updatedAt": "",
           "rank": 75
         },
@@ -2535,38 +2622,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:22:57.714Z",
+          "createdAt": "2026-05-11T05:31:59.831Z",
           "updatedAt": "",
           "rank": 76
-        },
-        {
-          "id": "recviO54vXQ7x0",
-          "name": "遮天：帝路争锋",
-          "genre": "卡牌",
-          "topic": "遮天IP",
-          "platform": "APP / 微小",
-          "developer": "广州斑马",
-          "publisher": "广州斑马",
-          "sourceText": "竖版遮天IP放置卡牌，广州斑马自研（侠义的研发团队收过去做的），3月4日APP测试；微小是4月29开始买量测",
-          "icon": "feishu-assets/recviO54vXQ7x0-icon-1.png",
-          "screenshots": [],
-          "cover": "feishu-assets/recviO54vXQ7x0-icon-1.png",
-          "status": "测试",
-          "month": "4月",
-          "focus": false,
-          "sourceUrl": "",
-          "releaseStatus": "可发布",
-          "reason": "",
-          "judgement": "",
-          "latestNodeTime": "2026-04-28",
-          "firstTestTime": "2026-03-03",
-          "finalTestTime": "",
-          "publicTestTime": "",
-          "launchTime": "",
-          "publicNode": "",
-          "createdAt": "2026-05-11T01:27:45.126Z",
-          "updatedAt": "",
-          "rank": 77
         },
         {
           "id": "rec27gFuTu5BBW",
@@ -2595,9 +2653,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:23:11.186Z",
+          "createdAt": "2026-05-11T05:32:14.530Z",
           "updatedAt": "",
-          "rank": 78
+          "rank": 77
         },
         {
           "id": "recviOeFz6GU3P",
@@ -2624,9 +2682,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:28:02.755Z",
+          "createdAt": "2026-05-11T05:35:58.970Z",
           "updatedAt": "",
-          "rank": 79
+          "rank": 78
         },
         {
           "id": "recviP1Zwsxbw7",
@@ -2653,9 +2711,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:28:24.086Z",
+          "createdAt": "2026-05-11T05:36:19.102Z",
           "updatedAt": "",
-          "rank": 80
+          "rank": 79
         },
         {
           "id": "recviPaw5PHiNC",
@@ -2682,9 +2740,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:28:54.054Z",
+          "createdAt": "2026-05-11T05:36:43.236Z",
           "updatedAt": "",
-          "rank": 81
+          "rank": 80
         },
         {
           "id": "recvhY2uOFwFyP",
@@ -2715,9 +2773,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:25:31.756Z",
+          "createdAt": "2026-05-11T05:34:03.222Z",
           "updatedAt": "",
-          "rank": 82
+          "rank": 81
         },
         {
           "id": "recviP8OKYeEPb",
@@ -2744,9 +2802,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:28:50.209Z",
+          "createdAt": "2026-05-11T05:36:40.027Z",
           "updatedAt": "",
-          "rank": 83
+          "rank": 82
         },
         {
           "id": "recviOc9KRntHn",
@@ -2775,13 +2833,13 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:28:00.211Z",
+          "createdAt": "2026-05-11T05:35:56.222Z",
           "updatedAt": "",
-          "rank": 84
+          "rank": 83
         }
       ],
-      "createdAt": "2026-05-11T01:29:05.607Z",
-      "updatedAt": "2026-05-11T01:29:05.607Z"
+      "createdAt": "2026-05-11T05:37:00.061Z",
+      "updatedAt": "2026-05-11T05:37:00.061Z"
     },
     {
       "id": "3",
@@ -2822,7 +2880,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:28:45.882Z",
+          "createdAt": "2026-05-11T05:36:36.771Z",
           "updatedAt": "",
           "rank": 1
         },
@@ -2853,7 +2911,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:27:25.084Z",
+          "createdAt": "2026-05-11T05:35:22.483Z",
           "updatedAt": "",
           "rank": 2
         },
@@ -2882,7 +2940,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:28:37.558Z",
+          "createdAt": "2026-05-11T05:36:30.453Z",
           "updatedAt": "",
           "rank": 3
         },
@@ -2911,13 +2969,13 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-05-11T01:26:47.510Z",
+          "createdAt": "2026-05-11T05:34:58.849Z",
           "updatedAt": "",
           "rank": 4
         }
       ],
-      "createdAt": "2026-05-11T01:29:05.607Z",
-      "updatedAt": "2026-05-11T01:29:05.607Z"
+      "createdAt": "2026-05-11T05:37:00.061Z",
+      "updatedAt": "2026-05-11T05:37:00.061Z"
     }
   ]
 }
