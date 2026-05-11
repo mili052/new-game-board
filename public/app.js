@@ -500,6 +500,8 @@ function renderProductPage() {
   const root = $("#boardRoot");
   page.classList.remove("hidden");
   root.classList.add("hidden");
+  setMobileMode(true);
+  setMobileNavActive("home");
   document.title = `${product.name} - 新游产品库`;
 
   const poster = product.cover || product.screenshots?.[0] || "";
@@ -567,11 +569,13 @@ function renderApp() {
   const root = $("#boardRoot");
   syncReportLink();
   if (renderProductPage()) return;
+  setMobileMode(false);
   page.classList.add("hidden");
   page.innerHTML = "";
   root.classList.remove("hidden");
   document.title = "新游产品库";
   renderBoard();
+  setMobileNavActive("home");
 }
 
 function syncAdminAvailability() {
@@ -749,8 +753,23 @@ function wireEvents() {
 
   $("#periodFilter").addEventListener("change", renderApp);
   $("#statusFilter").addEventListener("change", renderApp);
-  $("#searchInput").addEventListener("input", renderApp);
+  $("#searchInput").addEventListener("input", () => {
+    renderApp();
+    setMobileNavActive("search");
+  });
   window.addEventListener("popstate", renderApp);
+
+  document.querySelectorAll(".mobile-nav-item").forEach(button => {
+    button.addEventListener("click", () => {
+      const target = button.dataset.navTarget || "home";
+      if (getRouteDetail()) {
+        clearDetailRoute(true);
+        renderApp();
+      }
+      setMobileNavActive(target);
+      scrollToSection(target);
+    });
+  });
 
   $("#boardRoot").addEventListener("click", event => {
     const card = event.target.closest("[data-open-product]");
