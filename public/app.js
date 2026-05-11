@@ -254,7 +254,11 @@ function productCard(product, boardId) {
   const tags = [product.genre, product.topic, product.platform].filter(Boolean);
   const ranking = isRankingStatus(product.status);
   const shot = product.screenshots?.[0] || "";
-  const note = product.sourceText || product.publicNode || product.judgement || "持续观察中。";
+  const note = product.sourceText || product.publicNode || product.judgement || "\u6301\u7eed\u89c2\u5bdf\u4e2d\u3002";
+  const primaryTime = product.latestNodeTime
+    ? `\u6700\u65b0\u8282\u70b9 ${escapeHtml(product.latestNodeTime)}`
+    : (product.month ? `\u5f52\u5c5e\u6708 ${escapeHtml(product.month)}` : "");
+  const secondaryTime = product.firstTestTime ? `\u9996\u6d4b ${escapeHtml(product.firstTestTime)}` : "";
 
   return `
     <article class="product-card product-entry${ranking ? " status-featured" : ""}" data-open-product="${escapeHtml(product.id)}" data-open-board="${escapeHtml(boardId)}" tabindex="0">
@@ -263,23 +267,27 @@ function productCard(product, boardId) {
         <div class="cover-shell">${media(poster, product.name)}</div>
         <div class="tap-card-head">
           <h4 class="product-name">${escapeHtml(product.name)}</h4>
-          <div class="meta">${escapeHtml(tags.join(" / ") || "未分类")}</div>
+          <div class="meta">${escapeHtml(tags.join(" / ") || "\u672a\u5206\u7c7b")}</div>
           <div class="badges inline-badges">
             ${statusBadge(product.status)}
-            ${product.focus ? `<span class="badge focus">重点关注</span>` : ""}
+            ${product.focus ? `<span class="badge focus">\u91cd\u70b9\u5173\u6ce8</span>` : ""}
           </div>
         </div>
       </div>
-      <p class="tap-summary">${escapeHtml(note)}</p>
-      <div class="tap-meta-grid">
-        <span>研发 ${escapeHtml(product.developer || "待补充")}</span>
-        <span>发行 ${escapeHtml(product.publisher || "待补充")}</span>
-        ${product.latestNodeTime ? `<span>\u6700\u65b0\u8282\u70b9 ${escapeHtml(product.latestNodeTime)}</span>` : (product.month ? `<span>\u5f52\u5c5e\u6708 ${escapeHtml(product.month)}</span>` : "")}
-        ${product.firstTestTime ? `<span>首测 ${escapeHtml(product.firstTestTime)}</span>` : ""}
-      </div>
-      <div class="card-footer">
-        <span class="micro-note muted">点击查看详情</span>
-        ${shot ? `<a class="thumb-inline large" href="${escapeHtml(shot)}" target="_blank" rel="noreferrer" aria-label="${escapeHtml(product.name)} 截图"><img src="${escapeHtml(shot)}" alt="${escapeHtml(product.name)} 截图"></a>` : ""}
+      <div class="feed-layout">
+        <div class="feed-main">
+          <p class="tap-summary">${escapeHtml(note)}</p>
+          <a class="feed-detail-link" href="/new-game-board/?board=${encodeURIComponent(boardId)}&product=${encodeURIComponent(product.id)}">\u70b9\u51fb\u67e5\u770b\u8be6\u60c5</a>
+        </div>
+        <div class="feed-side">
+          <div class="tap-meta-grid">
+            <span>\u7814\u53d1 ${escapeHtml(product.developer || "\u5f85\u8865\u5145")}</span>
+            <span>\u53d1\u884c ${escapeHtml(product.publisher || "\u5f85\u8865\u5145")}</span>
+            ${primaryTime ? `<span>${primaryTime}</span>` : ""}
+            ${secondaryTime ? `<span>${secondaryTime}</span>` : ""}
+          </div>
+          ${shot ? `<a class="feed-shot" href="${escapeHtml(shot)}" target="_blank" rel="noreferrer" aria-label="${escapeHtml(product.name)} \u622a\u56fe"><img src="${escapeHtml(shot)}" alt="${escapeHtml(product.name)} \u622a\u56fe"></a>` : ""}
+        </div>
       </div>
     </article>
   `;
@@ -950,6 +958,11 @@ function wireEvents() {
 
 wireEvents();
 initPublicGate(() => {
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register(joinUrl(basePath(), "sw.js")).catch(() => {});
+    }, { once: true });
+  }
   loadBoards().catch(error => {
     $("#boardRoot").innerHTML = `<div class="empty">${escapeHtml(error.message)}</div>`;
   });

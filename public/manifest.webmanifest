@@ -1,0 +1,24 @@
+{
+  "name": "新游产品库",
+  "short_name": "新游库",
+  "description": "面向移动端浏览的新游产品库。",
+  "start_url": "/new-game-board/?source=pwa",
+  "scope": "/new-game-board/",
+  "display": "standalone",
+  "background_color": "#eef4fb",
+  "theme_color": "#1d3f82",
+  "icons": [
+    {
+      "src": "/new-game-board/icon-app.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/new-game-board/icon-maskable.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}
