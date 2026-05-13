@@ -384,7 +384,6 @@ async function resolveTableId(token, appToken) {
 async function listRecords(token) {
   const appToken = await resolveBitableAppToken(token);
   const tableId = await resolveTableId(token, appToken);
-  const viewId = process.env.FEISHU_VIEW_ID;
   const pageSize = Number(process.env.FEISHU_PAGE_SIZE || 200);
 
   const items = [];
@@ -393,7 +392,6 @@ async function listRecords(token) {
   while (true) {
     const url = new URL(`https://open.feishu.cn/open-apis/bitable/v1/apps/${appToken}/tables/${tableId}/records`);
     url.searchParams.set("page_size", String(pageSize));
-    if (viewId) url.searchParams.set("view_id", viewId);
     if (pageToken) url.searchParams.set("page_token", pageToken);
 
     const response = await fetch(url, {
