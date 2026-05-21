@@ -1,6 +1,6 @@
 {
   "name": "新游产品库",
-  "short_name": "新游库",
+  "short_name": "新游产品库",
   "description": "面向移动端浏览的新游产品库。",
   "start_url": "/new-game-board/?source=pwa",
   "scope": "/new-game-board/",

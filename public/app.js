@@ -10,6 +10,7 @@ const state = {
 const PUBLIC_GATE_PASSWORD = "mimi2026";
 const PUBLIC_GATE_STORAGE_KEY = "ngb-public-access";
 const PUBLIC_GATE_SESSION_KEY = "ngb-public-access-session";
+const SITE_CACHE_PREFIX = "new-game-board";
 
 const $ = selector => document.querySelector(selector);
 
@@ -166,6 +167,26 @@ function persistPublicAccess() {
 
   try {
     sessionStorage.setItem(PUBLIC_GATE_SESSION_KEY, PUBLIC_GATE_PASSWORD);
+  } catch {}
+}
+
+async function clearLegacySiteCaches() {
+  try {
+    if ("serviceWorker" in navigator) {
+      const registrations = await navigator.serviceWorker.getRegistrations();
+      await Promise.all(registrations.map(registration => registration.unregister()));
+    }
+  } catch {}
+
+  try {
+    if ("caches" in window) {
+      const keys = await caches.keys();
+      await Promise.all(
+        keys
+          .filter(key => key.startsWith(SITE_CACHE_PREFIX))
+          .map(key => caches.delete(key))
+      );
+    }
   } catch {}
 }
 
@@ -958,12 +979,9 @@ function wireEvents() {
 
 wireEvents();
 initPublicGate(() => {
-  if ("serviceWorker" in navigator) {
-    window.addEventListener("load", () => {
-      navigator.serviceWorker.register(joinUrl(basePath(), "sw.js")).catch(() => {});
-    }, { once: true });
-  }
-  loadBoards().catch(error => {
-    $("#boardRoot").innerHTML = `<div class="empty">${escapeHtml(error.message)}</div>`;
+  clearLegacySiteCaches().finally(() => {
+    loadBoards().catch(error => {
+      $("#boardRoot").innerHTML = `<div class="empty">${escapeHtml(error.message)}</div>`;
+    });
   });
 });

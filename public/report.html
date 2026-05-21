@@ -4,14 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>新游周报</title>
-  <link rel="stylesheet" href="./styles.css?v=8">
+  <link rel="stylesheet" href="./styles.css?v=12">
 </head>
 <body class="report-body gate-locked">
   <div id="publicGate" class="public-gate">
     <div class="public-gate-card">
       <div class="public-gate-kicker">Access</div>
       <h2>请输入访问密码</h2>
-      <p>输入正确密码后，才可以进入周报页。</p>
+      <p>输入正确密码后，才可以进入新游周报页面。</p>
       <form id="publicGateForm" class="public-gate-form">
         <input id="publicGateInput" type="password" autocomplete="current-password" placeholder="访问密码">
         <button class="primary" type="submit">进入周报</button>
@@ -19,11 +19,12 @@
       <p id="publicGateMessage" class="message"></p>
     </div>
   </div>
+
   <header class="topbar report-topbar">
     <div class="brand-block">
       <div class="brand-eyebrow">Weekly Report</div>
       <h1>新游周报生成器</h1>
-      <p class="brand-sub">从飞书同步后的数据自动排版，生成适合预览和分享的周报页。</p>
+      <p class="brand-sub">从同步后的产品数据自动排版，生成适合预览和分享的周报页面。</p>
     </div>
     <div class="report-top-actions">
       <label class="report-select-wrap">
@@ -38,6 +39,6 @@
     <section id="reportRoot" class="report-root"></section>
   </main>
 
-  <script src="./report.js?v=8"></script>
+  <script src="./report.js?v=12"></script>
 </body>
 </html>
