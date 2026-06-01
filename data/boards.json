@@ -1,19 +1,269 @@
 {
   "boards": [
     {
+      "id": "6",
+      "title": "6月新游产品库",
+      "period": "6月",
+      "date": "2026-06-01",
+      "summary": "6月收录的新游产品列表，支持持续录入、筛选和对外展示。",
+      "metrics": [
+        "收录产品7款",
+        "测试 / 上线",
+        "3个平台",
+        "重点产品0款"
+      ],
+      "trends": [],
+      "products": [
+        {
+          "id": "recvlg1m2THO2K",
+          "name": "风之国世界",
+          "genre": "开放世界 / MMORPG",
+          "topic": "西方魔幻",
+          "platform": "APP / 抖小",
+          "developer": "深圳巽游",
+          "publisher": "苏州茉莉",
+          "sourceText": "横板西方魔幻开放世界，抖小5月28同时开测，6月3首发，联动了全职法师",
+          "icon": "feishu-assets/recvlg1m2THO2K-icon-1.png",
+          "screenshots": [],
+          "cover": "feishu-assets/recvlg1m2THO2K-icon-1.png",
+          "status": "上线",
+          "month": "6月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "latestNodeTime": "2026-06-02",
+          "firstTestTime": "2025-12-17",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "2026-06-01T05:30:52.401Z",
+          "updatedAt": "",
+          "rank": 1
+        },
+        {
+          "id": "recvlg4fMotiKM",
+          "name": "龙渊王座",
+          "genre": "MMORPG",
+          "topic": "西方魔幻",
+          "platform": "APP",
+          "developer": "盛和",
+          "publisher": "广州贪玩",
+          "sourceText": "暗黑魔幻题材重度 MMORPG，盛和体系内的产品",
+          "icon": "feishu-assets/recvlg4fMotiKM-icon-1.png",
+          "screenshots": [],
+          "cover": "feishu-assets/recvlg4fMotiKM-icon-1.png",
+          "status": "测试",
+          "month": "6月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "latestNodeTime": "2026-06-03",
+          "firstTestTime": "2026-06-03",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "2026-06-01T05:30:56.914Z",
+          "updatedAt": "",
+          "rank": 2
+        },
+        {
+          "id": "recvlg0cjGoqyu",
+          "name": "梦幻新诛仙：轻享",
+          "genre": "MMORPG",
+          "topic": "武侠",
+          "platform": "APP",
+          "developer": "完美",
+          "publisher": "完美",
+          "sourceText": "完美基于梦幻新诛仙IP 推出的轻量化赛季制回合 MMO 新包，主打横竖屏自由切换、30 分钟日常、永久 69 级、取消战宠打书等减负卖点；3月首测招募，4月删档测，6月3日计费测。整体不是全新 IP 立项，完美对存量梦诛回合 MMO 的轻量化再包装和新用户再获取尝试，",
+          "icon": "feishu-assets/recvlg0cjGoqyu-icon-1.png",
+          "screenshots": [],
+          "cover": "feishu-assets/recvlg0cjGoqyu-icon-1.png",
+          "status": "测试",
+          "month": "6月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "latestNodeTime": "2026-06-01",
+          "firstTestTime": "2026-02-27",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "2026-06-01T05:30:51.053Z",
+          "updatedAt": "",
+          "rank": 3
+        },
+        {
+          "id": "recvlg8euQwYN7",
+          "name": "天方夜谭",
+          "genre": "塔防",
+          "topic": "Q版卡通",
+          "platform": "微小",
+          "developer": "广州维举",
+          "publisher": "广州星嘉",
+          "sourceText": "蔚蓝like塔防，星嘉找维举定制产品",
+          "icon": "feishu-assets/recvlg8euQwYN7-icon-1.png",
+          "screenshots": [],
+          "cover": "feishu-assets/recvlg8euQwYN7-icon-1.png",
+          "status": "测试",
+          "month": "6月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "latestNodeTime": "2026-06-26",
+          "firstTestTime": "2025-11-12",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "2026-06-01T05:31:01.361Z",
+          "updatedAt": "",
+          "rank": 4
+        },
+        {
+          "id": "recviOUc7V7Ra7",
+          "name": "仙界大掌门",
+          "genre": "SLG",
+          "topic": "修仙",
+          "platform": "APP",
+          "developer": "广州森闲",
+          "publisher": "北京儒意",
+          "sourceText": "修仙SLG，北京儒意发行，广州森闲研发（原星嘉夜猫子工作室最强祖师团队，负责人程鑫，之前《至尊传奇》制作人）；修仙题材宗门养成模式，无尽冬日+last war结合，4月9日在信息流进行APP二测；6月11在tap等渠道三测",
+          "icon": "feishu-assets/recviOUc7V7Ra7-icon-1.png",
+          "screenshots": [],
+          "cover": "feishu-assets/recviOUc7V7Ra7-icon-1.png",
+          "status": "测试",
+          "month": "6月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "latestNodeTime": "2026-06-10",
+          "firstTestTime": "2026-01-14",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "2026-06-01T05:28:46.072Z",
+          "updatedAt": "",
+          "rank": 5
+        },
+        {
+          "id": "recvlfSb8LY3OD",
+          "name": "小岛日记",
+          "genre": "模拟经营",
+          "topic": "Q版",
+          "platform": "APP",
+          "developer": "武汉游兰",
+          "publisher": "深圳闲闲",
+          "sourceText": "治愈系竖屏模拟经营产品，玩法框架类我的休闲时光，主打小岛家园建设、装修收集、换装与轻经营循环，由武汉游兰及深圳闲闲投资相关研发团队开发，6月2日上线，整体看，产品吃的是“治愈生活 + 家园装修 + 轻社交/收集”的泛女性向休闲经营盘，首发关注度优于一般中腰部模拟经营，但框架差异化不强，后续关键看内容密度、装修目标感、长期留存和付费点能否撑起来",
+          "icon": "feishu-assets/recvlfSb8LY3OD-icon-1.png",
+          "screenshots": [],
+          "cover": "feishu-assets/recvlfSb8LY3OD-icon-1.png",
+          "status": "上线",
+          "month": "6月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "latestNodeTime": "2026-06-01",
+          "firstTestTime": "2025-07-13",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "2026-06-01T05:30:48.398Z",
+          "updatedAt": "",
+          "rank": 6
+        },
+        {
+          "id": "recvlg2EheBtQh",
+          "name": "真魂修仙",
+          "genre": "MMORPG",
+          "topic": "修仙",
+          "platform": "APP",
+          "developer": "游雁",
+          "publisher": "广州乐牛",
+          "sourceText": "烟雨的包，上硬核",
+          "icon": "feishu-assets/recvlg2EheBtQh-icon-1.png",
+          "screenshots": [],
+          "cover": "feishu-assets/recvlg2EheBtQh-icon-1.png",
+          "status": "上线",
+          "month": "6月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "latestNodeTime": "2026-06-03",
+          "firstTestTime": "2026-05-21",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "2026-06-01T05:30:55.782Z",
+          "updatedAt": "",
+          "rank": 7
+        }
+      ],
+      "createdAt": "2026-06-01T05:31:14.715Z",
+      "updatedAt": "2026-06-01T05:31:14.715Z"
+    },
+    {
       "id": "5",
       "title": "5月新游产品库",
       "period": "5月",
       "date": "2026-06-01",
       "summary": "5月收录的新游产品列表，支持持续录入、筛选和对外展示。",
       "metrics": [
-        "收录产品63款",
+        "收录产品81款",
         "微小上榜 / 测试 / IOS上榜 / 上线 / 招募",
-        "10个平台",
-        "重点产品3款"
+        "11个平台",
+        "重点产品5款"
       ],
       "trends": [],
       "products": [
+        {
+          "id": "recvlgg6mhLEBN",
+          "name": "动物连萌",
+          "genre": "塔防",
+          "topic": "卡通",
+          "platform": "抖小",
+          "developer": "上海波克",
+          "publisher": "上海波克",
+          "sourceText": "第一款占城like，波克开箱子赛道陈慧雍项目组下面开发的，新团队，目前抖小新游榜排第7",
+          "icon": "feishu-assets/recvlgg6mhLEBN-icon-1.png",
+          "screenshots": [],
+          "cover": "feishu-assets/recvlgg6mhLEBN-icon-1.png",
+          "status": "测试",
+          "month": "5月",
+          "focus": true,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "latestNodeTime": "2026-05-28",
+          "firstTestTime": "2026-05-28",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "2026-06-01T05:31:08.619Z",
+          "updatedAt": "",
+          "rank": 1
+        },
         {
           "id": "recvhXoEx5s6Pc",
           "name": "仙尘小径",
@@ -42,9 +292,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:13:41.007Z",
+          "createdAt": "2026-06-01T05:26:12.193Z",
           "updatedAt": "",
-          "rank": 1
+          "rank": 2
         },
         {
           "id": "recvhZ4T7tfPh6",
@@ -71,9 +321,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:14:41.139Z",
+          "createdAt": "2026-06-01T05:27:26.498Z",
           "updatedAt": "",
-          "rank": 2
+          "rank": 3
         },
         {
           "id": "recvkCjrEh9rPX",
@@ -100,9 +350,38 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:17:25.560Z",
+          "createdAt": "2026-06-01T05:30:43.268Z",
           "updatedAt": "",
-          "rank": 3
+          "rank": 4
+        },
+        {
+          "id": "recvlgiqd6KSOh",
+          "name": "逐鹿指尖",
+          "genre": "SLG",
+          "topic": "三国",
+          "platform": "APP",
+          "developer": "广州易娱",
+          "publisher": "广州易娱",
+          "sourceText": "易娱海外last asylum的国服本地化版，瘟疫医生改郎中，持续测试中，广州团队开发",
+          "icon": "feishu-assets/recvlgiqd6KSOh-icon-1.png",
+          "screenshots": [],
+          "cover": "feishu-assets/recvlgiqd6KSOh-icon-1.png",
+          "status": "测试",
+          "month": "5月",
+          "focus": true,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "latestNodeTime": "2026-05-27",
+          "firstTestTime": "2026-05-27",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "2026-06-01T05:31:13.495Z",
+          "updatedAt": "",
+          "rank": 5
         },
         {
           "id": "recvji5Wozcljl",
@@ -129,9 +408,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:16:25.409Z",
+          "createdAt": "2026-06-01T05:29:31.969Z",
           "updatedAt": "",
-          "rank": 4
+          "rank": 6
         },
         {
           "id": "recvkCjgsKCqhn",
@@ -142,9 +421,9 @@
           "developer": "厦门易灵",
           "publisher": "飞鱼",
           "sourceText": "竖版Q版动物题材肉鸽塔防，厦门易灵研发、飞鱼定制，2月4日信小首测、3月12日二测、5月17日小规模再测；把一步两步式外部养成框架和BA战斗做了结合；",
-          "icon": "",
+          "icon": "feishu-assets/recvkCjgsKCqhn-icon-1.png",
           "screenshots": [],
-          "cover": "",
+          "cover": "feishu-assets/recvkCjgsKCqhn-icon-1.png",
           "status": "测试",
           "month": "5月",
           "focus": false,
@@ -158,9 +437,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:17:24.549Z",
+          "createdAt": "2026-06-01T05:30:42.078Z",
           "updatedAt": "",
-          "rank": 5
+          "rank": 7
         },
         {
           "id": "recvjibPoX4Dcg",
@@ -187,9 +466,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:16:59.687Z",
+          "createdAt": "2026-06-01T05:30:10.829Z",
           "updatedAt": "",
-          "rank": 6
+          "rank": 8
         },
         {
           "id": "recvj0mjZow3mj",
@@ -216,9 +495,96 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:16:10.464Z",
+          "createdAt": "2026-06-01T05:29:14.751Z",
           "updatedAt": "",
-          "rank": 7
+          "rank": 9
+        },
+        {
+          "id": "recvlggqzVawC7",
+          "name": "笨兔历险记",
+          "genre": "二合",
+          "topic": "卡通",
+          "platform": "微小",
+          "developer": "北京必凡",
+          "publisher": "深圳必凡",
+          "sourceText": "24年测过的新模拟世界，因美术和桃源十分接近，被腾讯举报过，下架调整，美术调整，升级，预计暑期档当作新游重新上",
+          "icon": "feishu-assets/recvlggqzVawC7-icon-1.png",
+          "screenshots": [],
+          "cover": "feishu-assets/recvlggqzVawC7-icon-1.png",
+          "status": "测试",
+          "month": "5月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "latestNodeTime": "2026-05-31",
+          "firstTestTime": "2024-12-05",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "2026-06-01T05:31:09.685Z",
+          "updatedAt": "",
+          "rank": 10
+        },
+        {
+          "id": "recvlgdJ278Tbg",
+          "name": "碧空战纪",
+          "genre": "卡牌",
+          "topic": "写实",
+          "platform": "微小",
+          "developer": "广州泰逢",
+          "publisher": "9377",
+          "sourceText": "写实航海题材卡牌，类我的使命",
+          "icon": "feishu-assets/recvlgdJ278Tbg-icon-1.png",
+          "screenshots": [],
+          "cover": "feishu-assets/recvlgdJ278Tbg-icon-1.png",
+          "status": "测试",
+          "month": "5月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "latestNodeTime": "2026-05-26",
+          "firstTestTime": "2026-05-26",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "2026-06-01T05:31:06.204Z",
+          "updatedAt": "",
+          "rank": 11
+        },
+        {
+          "id": "recvlg8dRQlga5",
+          "name": "不休的勇士",
+          "genre": "放置RPG",
+          "topic": "Q版",
+          "platform": "微小",
+          "developer": "广州海狸",
+          "publisher": "广州贪玩",
+          "sourceText": "之前贪玩3月上过畅销的那款城堡盟军，换新包跑，游戏内未作大改变，不知道是不是要冲新政策",
+          "icon": "feishu-assets/recvlg8dRQlga5-icon-1.png",
+          "screenshots": [],
+          "cover": "feishu-assets/recvlg8dRQlga5-icon-1.png",
+          "status": "测试",
+          "month": "5月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "latestNodeTime": "2026-05-26",
+          "firstTestTime": "2026-02-06",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "2026-06-01T05:30:58.453Z",
+          "updatedAt": "",
+          "rank": 12
         },
         {
           "id": "recvj5mgFr0rT8",
@@ -245,9 +611,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:16:13.634Z",
+          "createdAt": "2026-06-01T05:29:18.394Z",
           "updatedAt": "",
-          "rank": 8
+          "rank": 13
         },
         {
           "id": "recvhY34avBWMo",
@@ -276,9 +642,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:14:17.303Z",
+          "createdAt": "2026-06-01T05:26:56.139Z",
           "updatedAt": "",
-          "rank": 9
+          "rank": 14
         },
         {
           "id": "recvjibPoXlzkw",
@@ -305,9 +671,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:16:40.748Z",
+          "createdAt": "2026-06-01T05:29:48.632Z",
           "updatedAt": "",
-          "rank": 10
+          "rank": 15
         },
         {
           "id": "recvjibPoX6h0Z",
@@ -334,9 +700,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:17:16.417Z",
+          "createdAt": "2026-06-01T05:30:30.196Z",
           "updatedAt": "",
-          "rank": 11
+          "rank": 16
         },
         {
           "id": "recvkC1oivwTwF",
@@ -363,9 +729,38 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:17:22.489Z",
+          "createdAt": "2026-06-01T05:30:37.718Z",
           "updatedAt": "",
-          "rank": 12
+          "rank": 17
+        },
+        {
+          "id": "recvlfSaO9Xkl1",
+          "name": "东煌纪",
+          "genre": "模拟经营 / 回合 / 卡牌",
+          "topic": "抓宠",
+          "platform": "APP",
+          "developer": "福建浩凡",
+          "publisher": "福建浩凡",
+          "sourceText": "捉宠题材的回合制卡牌，主打灵兽收集 + 回合制策略 + 家园经营 + PVP，04-27 APK 首测，5月29首发，5月31进入 iOS 畅销总榜约188名，美术与系统框架偏常规",
+          "icon": "feishu-assets/recvlfSaO9Xkl1-icon-1.png",
+          "screenshots": [],
+          "cover": "feishu-assets/recvlfSaO9Xkl1-icon-1.png",
+          "status": "IOS上榜",
+          "month": "5月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "latestNodeTime": "2026-05-30",
+          "firstTestTime": "2026-04-26",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "2026-06-01T05:30:47.124Z",
+          "updatedAt": "",
+          "rank": 18
         },
         {
           "id": "recvjibPoXjGkF",
@@ -392,9 +787,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:16:38.237Z",
+          "createdAt": "2026-06-01T05:29:46.041Z",
           "updatedAt": "",
-          "rank": 13
+          "rank": 19
         },
         {
           "id": "recvjibPoXN2EH",
@@ -423,9 +818,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:16:51.060Z",
+          "createdAt": "2026-06-01T05:30:01.637Z",
           "updatedAt": "",
-          "rank": 14
+          "rank": 20
         },
         {
           "id": "recviNWscR7hSv",
@@ -452,9 +847,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:15:19.766Z",
+          "createdAt": "2026-06-01T05:28:09.747Z",
           "updatedAt": "",
-          "rank": 15
+          "rank": 21
         },
         {
           "id": "recvjibPoXLVgs",
@@ -481,9 +876,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:17:01.992Z",
+          "createdAt": "2026-06-01T05:30:13.343Z",
           "updatedAt": "",
-          "rank": 16
+          "rank": 22
         },
         {
           "id": "recvjibPoX50Yu",
@@ -512,9 +907,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:17:04.301Z",
+          "createdAt": "2026-06-01T05:30:16.000Z",
           "updatedAt": "",
-          "rank": 17
+          "rank": 23
         },
         {
           "id": "recvjibPoXk6Nv",
@@ -543,9 +938,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:17:12.996Z",
+          "createdAt": "2026-06-01T05:30:26.522Z",
           "updatedAt": "",
-          "rank": 18
+          "rank": 24
         },
         {
           "id": "recvkBk9iOpurs",
@@ -572,9 +967,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:17:20.163Z",
+          "createdAt": "2026-06-01T05:30:34.349Z",
           "updatedAt": "",
-          "rank": 19
+          "rank": 25
         },
         {
           "id": "recvj5nCuVJbSn",
@@ -601,9 +996,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:16:14.629Z",
+          "createdAt": "2026-06-01T05:29:19.756Z",
           "updatedAt": "",
-          "rank": 20
+          "rank": 26
         },
         {
           "id": "recvkC1257VHI3",
@@ -630,9 +1025,38 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:17:21.285Z",
+          "createdAt": "2026-06-01T05:30:35.701Z",
           "updatedAt": "",
-          "rank": 21
+          "rank": 27
+        },
+        {
+          "id": "recvlgcJQFlbUL",
+          "name": "锦凰心策",
+          "genre": "放置RPG",
+          "topic": "古风",
+          "platform": "微小",
+          "developer": "广州小迈",
+          "publisher": "广州小迈",
+          "sourceText": "女性向开箱子like，常规关注",
+          "icon": "feishu-assets/recvlgcJQFlbUL-icon-1.png",
+          "screenshots": [],
+          "cover": "feishu-assets/recvlgcJQFlbUL-icon-1.png",
+          "status": "测试",
+          "month": "5月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "latestNodeTime": "2026-05-26",
+          "firstTestTime": "2026-05-26",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "2026-06-01T05:31:03.038Z",
+          "updatedAt": "",
+          "rank": 28
         },
         {
           "id": "recvjibPoX7qVZ",
@@ -642,11 +1066,11 @@
           "platform": "APP",
           "developer": "韩国Smilegate",
           "publisher": "腾讯",
-          "sourceText": "宇宙黑暗幻想Roguelite卡牌，腾讯发行，韩国Smilegate研发，3月11日限量删测，5月28首发",
+          "sourceText": "宇宙黑暗幻想Roguelite卡牌，腾讯发行，韩国Smilegate研发，3月11日限量删测，5月28首发ios上榜，现排31",
           "icon": "feishu-assets/recvjibPoX7qVZ-icon-1.png",
           "screenshots": [],
           "cover": "feishu-assets/recvjibPoX7qVZ-icon-1.png",
-          "status": "上线",
+          "status": "IOS上榜",
           "month": "5月",
           "focus": false,
           "sourceUrl": "",
@@ -659,9 +1083,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:17:07.978Z",
+          "createdAt": "2026-06-01T05:30:20.572Z",
           "updatedAt": "",
-          "rank": 22
+          "rank": 29
         },
         {
           "id": "recvjibPoXjUD7",
@@ -688,9 +1112,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:16:32.669Z",
+          "createdAt": "2026-06-01T05:29:39.704Z",
           "updatedAt": "",
-          "rank": 23
+          "rank": 30
         },
         {
           "id": "recviP8rTud7ZD",
@@ -717,9 +1141,38 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:16:00.395Z",
+          "createdAt": "2026-06-01T05:29:03.166Z",
           "updatedAt": "",
-          "rank": 24
+          "rank": 31
+        },
+        {
+          "id": "recvlghmpmdNTs",
+          "name": "乱炖英雄",
+          "genre": "自走棋",
+          "topic": "西方魔幻",
+          "platform": "APP",
+          "developer": "上海巨人",
+          "publisher": "上海巨人",
+          "sourceText": "巨人自研的自走棋，之前叫口袋斗蛐蛐，在tap测，乱炖是第一次在信息流买量测",
+          "icon": "feishu-assets/recvlghmpmdNTs-icon-1.png",
+          "screenshots": [],
+          "cover": "feishu-assets/recvlghmpmdNTs-icon-1.png",
+          "status": "测试",
+          "month": "5月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "latestNodeTime": "2026-05-26",
+          "firstTestTime": "2025-01-07",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "2026-06-01T05:31:11.218Z",
+          "updatedAt": "",
+          "rank": 32
         },
         {
           "id": "recvjibPoXjWKk",
@@ -748,9 +1201,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:16:43.009Z",
+          "createdAt": "2026-06-01T05:29:51.204Z",
           "updatedAt": "",
-          "rank": 25
+          "rank": 33
         },
         {
           "id": "recvjibPoXHym1",
@@ -779,9 +1232,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:16:55.658Z",
+          "createdAt": "2026-06-01T05:30:06.820Z",
           "updatedAt": "",
-          "rank": 26
+          "rank": 34
         },
         {
           "id": "recvjibPoX94XH",
@@ -808,9 +1261,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:16:57.153Z",
+          "createdAt": "2026-06-01T05:30:08.286Z",
           "updatedAt": "",
-          "rank": 27
+          "rank": 35
         },
         {
           "id": "recvjibPoXHt58",
@@ -839,9 +1292,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:16:31.198Z",
+          "createdAt": "2026-06-01T05:29:38.465Z",
           "updatedAt": "",
-          "rank": 28
+          "rank": 36
         },
         {
           "id": "recvjhbCvxAJsy",
@@ -868,9 +1321,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:16:17.359Z",
+          "createdAt": "2026-06-01T05:29:22.396Z",
           "updatedAt": "",
-          "rank": 29
+          "rank": 37
         },
         {
           "id": "recvjibPoXy59R",
@@ -880,26 +1333,26 @@
           "platform": "APP",
           "developer": "游卡",
           "publisher": "游卡",
-          "sourceText": "3D 西幻写实 TRPG（/游卡自研自发）（大世界探索表现 + 回合卡牌战斗）1/10 APK 信息流测，包装更“内容向”，但战斗仍是回合卡牌，容易出现预期落差",
+          "sourceText": "3D 西幻写实 TRPG（游卡自研自发）（大世界探索表现 + 回合卡牌战斗）1/10 APK 信息流测，5月28上线。包装更内容向，战斗是回合卡牌，6月1上iOS畅销榜排193",
           "icon": "feishu-assets/recvjibPoXy59R-icon-1.png",
           "screenshots": [],
           "cover": "feishu-assets/recvjibPoXy59R-icon-1.png",
-          "status": "上线",
+          "status": "IOS上榜",
           "month": "5月",
           "focus": false,
           "sourceUrl": "",
           "releaseStatus": "可发布",
           "reason": "",
           "judgement": "",
-          "latestNodeTime": "2026-05-28",
+          "latestNodeTime": "2026-05-31",
           "firstTestTime": "2026-01-06",
           "finalTestTime": "",
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:17:14.077Z",
+          "createdAt": "2026-06-01T05:30:27.867Z",
           "updatedAt": "",
-          "rank": 30
+          "rank": 38
         },
         {
           "id": "recvjibPoXF5Vl",
@@ -926,9 +1379,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:16:48.371Z",
+          "createdAt": "2026-06-01T05:29:58.424Z",
           "updatedAt": "",
-          "rank": 31
+          "rank": 39
         },
         {
           "id": "recvjibPoXSsVx",
@@ -955,9 +1408,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:17:17.901Z",
+          "createdAt": "2026-06-01T05:30:31.496Z",
           "updatedAt": "",
-          "rank": 32
+          "rank": 40
         },
         {
           "id": "rec27gFuTu5oXb",
@@ -987,9 +1440,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:13:00.931Z",
+          "createdAt": "2026-06-01T05:25:22.590Z",
           "updatedAt": "",
-          "rank": 33
+          "rank": 41
         },
         {
           "id": "recviNKLT9YjNE",
@@ -1018,9 +1471,38 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:15:11.619Z",
+          "createdAt": "2026-06-01T05:28:01.012Z",
           "updatedAt": "",
-          "rank": 34
+          "rank": 42
+        },
+        {
+          "id": "recvlgfv4O6Kwi",
+          "name": "时光胡同",
+          "genre": "二合",
+          "topic": "怀旧",
+          "platform": "微小",
+          "developer": "杭州卡日曲",
+          "publisher": "杭州卡日曲",
+          "sourceText": "复古二合，卡日曲自研自发",
+          "icon": "feishu-assets/recvlgfv4O6Kwi-icon-1.png",
+          "screenshots": [],
+          "cover": "feishu-assets/recvlgfv4O6Kwi-icon-1.png",
+          "status": "测试",
+          "month": "5月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "latestNodeTime": "2026-05-24",
+          "firstTestTime": "2026-05-24",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "2026-06-01T05:31:07.465Z",
+          "updatedAt": "",
+          "rank": 43
         },
         {
           "id": "recviOHPUosePa",
@@ -1047,9 +1529,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:15:39.163Z",
+          "createdAt": "2026-06-01T05:28:35.748Z",
           "updatedAt": "",
-          "rank": 35
+          "rank": 44
         },
         {
           "id": "recvjibPoXNJI7",
@@ -1076,9 +1558,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:17:10.516Z",
+          "createdAt": "2026-06-01T05:30:23.584Z",
           "updatedAt": "",
-          "rank": 36
+          "rank": 45
         },
         {
           "id": "recvji4WA0kig3",
@@ -1105,9 +1587,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:16:24.527Z",
+          "createdAt": "2026-06-01T05:29:30.890Z",
           "updatedAt": "",
-          "rank": 37
+          "rank": 46
         },
         {
           "id": "recvj0oxzAgqWW",
@@ -1134,9 +1616,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:16:11.439Z",
+          "createdAt": "2026-06-01T05:29:16.034Z",
           "updatedAt": "",
-          "rank": 38
+          "rank": 47
         },
         {
           "id": "recvjibPoXLSdO",
@@ -1163,9 +1645,69 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:17:18.983Z",
+          "createdAt": "2026-06-01T05:30:32.849Z",
           "updatedAt": "",
-          "rank": 39
+          "rank": 48
+        },
+        {
+          "id": "recviOGCJlZAeI",
+          "name": "王国大作战：前线",
+          "genre": "塔防",
+          "topic": "Q版卡通",
+          "platform": "APP / 微小",
+          "developer": "深圳冰川",
+          "publisher": "深圳冰川",
+          "sourceText": "竖版肉鸽塔防，冰川自研自发，3月18日买Tap预约，次留50%+，Tap显示26年Q2正式上线，4月14日用版号信息流测，小程序5月27首测；产品已有一定数据基础，后续看正式放量结果。",
+          "icon": "feishu-assets/recviOGCJlZAeI-icon-1.png",
+          "screenshots": [
+            "feishu-assets/recviOGCJlZAeI-shot-1.png"
+          ],
+          "cover": "feishu-assets/recviOGCJlZAeI-icon-1.png",
+          "status": "测试",
+          "month": "5月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "latestNodeTime": "2026-05-26",
+          "firstTestTime": "2026-03-17",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "2026-06-01T05:28:31.300Z",
+          "updatedAt": "",
+          "rank": 49
+        },
+        {
+          "id": "recvlfSbsT8b2K",
+          "name": "望月",
+          "genre": "开放世界",
+          "topic": "二次元",
+          "platform": "APP",
+          "developer": "广州诗悦",
+          "publisher": "广州诗悦",
+          "sourceText": "线下测试招募，诗悦重点项目",
+          "icon": "feishu-assets/recvlfSbsT8b2K-icon-1.png",
+          "screenshots": [],
+          "cover": "feishu-assets/recvlfSbsT8b2K-icon-1.png",
+          "status": "测试",
+          "month": "5月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "latestNodeTime": "2026-05-29",
+          "firstTestTime": "2026-05-30",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "2026-06-01T05:30:49.769Z",
+          "updatedAt": "",
+          "rank": 50
         },
         {
           "id": "recvhXvKUQR4Dl",
@@ -1194,9 +1736,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:13:57.217Z",
+          "createdAt": "2026-06-01T05:26:33.757Z",
           "updatedAt": "",
-          "rank": 40
+          "rank": 51
         },
         {
           "id": "recvjibPoXVUJQ",
@@ -1223,9 +1765,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:16:35.776Z",
+          "createdAt": "2026-06-01T05:29:43.605Z",
           "updatedAt": "",
-          "rank": 41
+          "rank": 52
         },
         {
           "id": "recvkC2u8BbVo9",
@@ -1252,9 +1794,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:17:24.549Z",
+          "createdAt": "2026-06-01T05:30:40.232Z",
           "updatedAt": "",
-          "rank": 42
+          "rank": 53
         },
         {
           "id": "recvjibPoXs3y8",
@@ -1264,11 +1806,11 @@
           "platform": "APP",
           "developer": "友谊时光",
           "publisher": "友谊时光",
-          "sourceText": "现代都市幻想题材女性向恋爱剧情/换装RPG，友谊时光自研自发、苏州沁游主体发行，TapTap预约约36万、关注约37万，5月27日首发；核心看人设剧情、卡面供给和女性向付费承接能否支撑长线。",
+          "sourceText": "现代都市幻想题材女性向恋爱剧情/换装RPG，友谊时光自研自发、苏州沁游主体发行，TapTap预约约36万、关注约37万，5月27日首发；截止6月1畅销总榜排159",
           "icon": "feishu-assets/recvjibPoXs3y8-icon-1.png",
           "screenshots": [],
           "cover": "feishu-assets/recvjibPoXs3y8-icon-1.png",
-          "status": "上线",
+          "status": "IOS上榜",
           "month": "5月",
           "focus": false,
           "sourceUrl": "",
@@ -1281,9 +1823,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:17:09.048Z",
+          "createdAt": "2026-06-01T05:30:22.176Z",
           "updatedAt": "",
-          "rank": 43
+          "rank": 54
         },
         {
           "id": "recvjibPoXQpxS",
@@ -1310,9 +1852,38 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:16:36.852Z",
+          "createdAt": "2026-06-01T05:29:44.762Z",
           "updatedAt": "",
-          "rank": 44
+          "rank": 55
+        },
+        {
+          "id": "recvlgi5ve3sRa",
+          "name": "修行那些年",
+          "genre": "模拟经营",
+          "topic": "修仙",
+          "platform": "APP",
+          "developer": "厦门泡游",
+          "publisher": "创酷",
+          "sourceText": "修仙官斗，创酷在测apk，极品芝麻官底层",
+          "icon": "feishu-assets/recvlgi5ve3sRa-icon-1.png",
+          "screenshots": [],
+          "cover": "feishu-assets/recvlgi5ve3sRa-icon-1.png",
+          "status": "测试",
+          "month": "5月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "latestNodeTime": "2026-05-27",
+          "firstTestTime": "2026-05-27",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "2026-06-01T05:31:12.326Z",
+          "updatedAt": "",
+          "rank": 56
         },
         {
           "id": "recvjibPoXbVfR",
@@ -1339,9 +1910,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:16:52.176Z",
+          "createdAt": "2026-06-01T05:30:02.928Z",
           "updatedAt": "",
-          "rank": 45
+          "rank": 57
         },
         {
           "id": "recvjibPoXBzm8",
@@ -1351,11 +1922,40 @@
           "platform": "APP",
           "developer": "香港初心",
           "publisher": "咪咕",
-          "sourceText": "横版模拟经营，咪咕投资团队、现在放在香港初心这个主体下面，研发原广州歆爱出来，23年11月测过素材，开发周期约2年，当前定于4月10日APP渠道测，5月26国内上线，首发联动了奶龙",
+          "sourceText": "横版模拟经营，咪咕投资团队、现在放在香港初心这个主体下面，研发原广州歆爱出来，23年11月测过素材，开发周期约2年，当前定于4月10日APP渠道测，5月26国内上线，首发联动了奶龙，27上了iOS畅销总榜排188，5月29跌出",
           "icon": "feishu-assets/recvjibPoXBzm8-icon-1.png",
           "screenshots": [],
           "cover": "feishu-assets/recvjibPoXBzm8-icon-1.png",
-          "status": "上线",
+          "status": "IOS上榜",
+          "month": "5月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "latestNodeTime": "2026-05-26",
+          "firstTestTime": "2023-11-14",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "2026-06-01T05:30:19.105Z",
+          "updatedAt": "",
+          "rank": 58
+        },
+        {
+          "id": "recvlgdwhfKvxQ",
+          "name": "妖灵打工团",
+          "genre": "塔防",
+          "topic": "微恐",
+          "platform": "微小 / APP",
+          "developer": "游卡",
+          "publisher": "游卡",
+          "sourceText": "微恐版 蔚蓝+妖怪金手指，25/10/17 微小首测，26/1/26 二测 5月26app首测",
+          "icon": "feishu-assets/recvlgdwhfKvxQ-icon-1.png",
+          "screenshots": [],
+          "cover": "feishu-assets/recvlgdwhfKvxQ-icon-1.png",
+          "status": "测试",
           "month": "5月",
           "focus": false,
           "sourceUrl": "",
@@ -1363,14 +1963,14 @@
           "reason": "",
           "judgement": "",
           "latestNodeTime": "2026-05-25",
-          "firstTestTime": "2023-11-14",
+          "firstTestTime": "2025-10-16",
           "finalTestTime": "",
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:17:06.863Z",
+          "createdAt": "2026-06-01T05:31:04.307Z",
           "updatedAt": "",
-          "rank": 46
+          "rank": 59
         },
         {
           "id": "recviNOIwudTg3",
@@ -1399,9 +1999,38 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:15:17.588Z",
+          "createdAt": "2026-06-01T05:28:07.365Z",
           "updatedAt": "",
-          "rank": 47
+          "rank": 60
+        },
+        {
+          "id": "recvlgiO8RJNQZ",
+          "name": "异界修真",
+          "genre": "卡牌",
+          "topic": "微恐",
+          "platform": "APP / 抖小",
+          "developer": "武汉像素",
+          "publisher": "广州大蓝",
+          "sourceText": "道士2，抖小APP都在测试",
+          "icon": "feishu-assets/recvlgiO8RJNQZ-icon-1.png",
+          "screenshots": [],
+          "cover": "feishu-assets/recvlgiO8RJNQZ-icon-1.png",
+          "status": "测试",
+          "month": "5月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "latestNodeTime": "2026-05-27",
+          "firstTestTime": "2026-05-27",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "2026-06-01T05:31:14.707Z",
+          "updatedAt": "",
+          "rank": 61
         },
         {
           "id": "recvjibPoXXyVB",
@@ -1428,9 +2057,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:17:00.667Z",
+          "createdAt": "2026-06-01T05:30:12.105Z",
           "updatedAt": "",
-          "rank": 48
+          "rank": 62
         },
         {
           "id": "recvjibPoX8ijs",
@@ -1457,9 +2086,38 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:17:15.363Z",
+          "createdAt": "2026-06-01T05:30:29.014Z",
           "updatedAt": "",
-          "rank": 49
+          "rank": 63
+        },
+        {
+          "id": "recvkGuwItQhAT",
+          "name": "战火勋章: 抢滩",
+          "genre": "SLG",
+          "topic": "写实",
+          "platform": "APP",
+          "developer": "莉莉丝",
+          "publisher": "莉莉丝",
+          "sourceText": "写实题材SLG，莉莉丝自研自发，5月30在信息流apk第一次测试",
+          "icon": "feishu-assets/recvkGuwItQhAT-icon-1.png",
+          "screenshots": [],
+          "cover": "feishu-assets/recvkGuwItQhAT-icon-1.png",
+          "status": "测试",
+          "month": "5月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "latestNodeTime": "2026-05-29",
+          "firstTestTime": "2026-05-29",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "2026-06-01T05:30:44.629Z",
+          "updatedAt": "",
+          "rank": 64
         },
         {
           "id": "recviO54vXQ7x0",
@@ -1486,9 +2144,38 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:15:21.744Z",
+          "createdAt": "2026-06-01T05:28:12.209Z",
           "updatedAt": "",
-          "rank": 50
+          "rank": 65
+        },
+        {
+          "id": "recvlg2E4AemZn",
+          "name": "甄嬛传",
+          "genre": "模拟经营",
+          "topic": "甄嬛IP",
+          "platform": "APP",
+          "developer": "阿里虎鲸文娱",
+          "publisher": "深圳雷霆",
+          "sourceText": "虎鲸文娱投资团队，研发在苏州，雷霆代理发行，5月22在抖音测了一波app，反馈90%用户是来自于时尚百货城的用户，预计八九月份上线",
+          "icon": "feishu-assets/recvlg2E4AemZn-icon-1.png",
+          "screenshots": [],
+          "cover": "feishu-assets/recvlg2E4AemZn-icon-1.png",
+          "status": "测试",
+          "month": "5月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "latestNodeTime": "2026-05-21",
+          "firstTestTime": "2026-05-21",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "2026-06-01T05:30:54.377Z",
+          "updatedAt": "",
+          "rank": 66
         },
         {
           "id": "recvjibPoXOjuU",
@@ -1515,9 +2202,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:16:28.503Z",
+          "createdAt": "2026-06-01T05:29:36.099Z",
           "updatedAt": "",
-          "rank": 51
+          "rank": 67
         },
         {
           "id": "recvjibPoXfoeN",
@@ -1544,9 +2231,38 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:16:58.628Z",
+          "createdAt": "2026-06-01T05:30:09.680Z",
           "updatedAt": "",
-          "rank": 52
+          "rank": 68
+        },
+        {
+          "id": "recvlg8eflRTME",
+          "name": "主公砰砰砰",
+          "genre": "模拟经营 / 卡牌",
+          "topic": "Q版三国",
+          "platform": "微小",
+          "developer": "",
+          "publisher": "智明星通",
+          "sourceText": "",
+          "icon": "feishu-assets/recvlg8eflRTME-icon-1.png",
+          "screenshots": [],
+          "cover": "feishu-assets/recvlg8eflRTME-icon-1.png",
+          "status": "测试",
+          "month": "5月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "latestNodeTime": "2026-05-25",
+          "firstTestTime": "2026-05-25",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "2026-06-01T05:30:59.811Z",
+          "updatedAt": "",
+          "rank": 69
         },
         {
           "id": "recvji3TFY49Lt",
@@ -1575,9 +2291,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:16:23.365Z",
+          "createdAt": "2026-06-01T05:29:29.630Z",
           "updatedAt": "",
-          "rank": 53
+          "rank": 70
         },
         {
           "id": "recvjibPoXzOqG",
@@ -1606,9 +2322,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:16:47.301Z",
+          "createdAt": "2026-06-01T05:29:56.397Z",
           "updatedAt": "",
-          "rank": 54
+          "rank": 71
         },
         {
           "id": "recvjibPoXjgjW",
@@ -1635,9 +2351,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:16:34.632Z",
+          "createdAt": "2026-06-01T05:29:42.235Z",
           "updatedAt": "",
-          "rank": 55
+          "rank": 72
         },
         {
           "id": "recvjibPoXk9Gj",
@@ -1664,9 +2380,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:16:53.239Z",
+          "createdAt": "2026-06-01T05:30:04.263Z",
           "updatedAt": "",
-          "rank": 56
+          "rank": 73
         },
         {
           "id": "recvjibPoXklFL",
@@ -1693,9 +2409,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:16:33.634Z",
+          "createdAt": "2026-06-01T05:29:40.902Z",
           "updatedAt": "",
-          "rank": 57
+          "rank": 74
         },
         {
           "id": "recvjibOjeEgzi",
@@ -1722,9 +2438,42 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:16:27.610Z",
+          "createdAt": "2026-06-01T05:29:34.990Z",
           "updatedAt": "",
-          "rank": 58
+          "rank": 75
+        },
+        {
+          "id": "recvhY2uOFwFyP",
+          "name": "最终的梦幻岛",
+          "genre": "模拟经营",
+          "topic": "童话风",
+          "platform": "APP",
+          "developer": "广州火羽",
+          "publisher": "广州火羽",
+          "sourceText": "童话风模拟经营产品，广州火羽自研自发，4月20日APK首次信息流测试；6月1tap等渠道开放测试，定档7月1首发，玩法为农场经营+卡牌，并融入一定花园世界式包装，项目由火羽《盛世芳华》分支团队孵化，买量素材侧在同时测试治愈种田和末日重建”两种包装方向。",
+          "icon": "feishu-assets/recvhY2uOFwFyP-icon-1.png",
+          "screenshots": [
+            "feishu-assets/recvhY2uOFwFyP-shot-1.png",
+            "feishu-assets/recvhY2uOFwFyP-shot-2.png",
+            "feishu-assets/recvhY2uOFwFyP-shot-3.png"
+          ],
+          "cover": "feishu-assets/recvhY2uOFwFyP-icon-1.png",
+          "status": "测试",
+          "month": "5月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "latestNodeTime": "2026-05-31",
+          "firstTestTime": "2026-04-19",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "2026-06-01T05:26:47.994Z",
+          "updatedAt": "",
+          "rank": 76
         },
         {
           "id": "recvkC1LMVM8Y5",
@@ -1751,9 +2500,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:17:23.527Z",
+          "createdAt": "2026-06-01T05:30:38.968Z",
           "updatedAt": "",
-          "rank": 59
+          "rank": 77
         },
         {
           "id": "recvjibPoXHibt",
@@ -1780,9 +2529,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:16:44.418Z",
+          "createdAt": "2026-06-01T05:29:52.596Z",
           "updatedAt": "",
-          "rank": 60
+          "rank": 78
         },
         {
           "id": "recvj5mg67q3Ad",
@@ -1809,9 +2558,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:16:12.672Z",
+          "createdAt": "2026-06-01T05:29:17.203Z",
           "updatedAt": "",
-          "rank": 61
+          "rank": 79
         },
         {
           "id": "recvjibPoXNKyq",
@@ -1838,9 +2587,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:16:39.696Z",
+          "createdAt": "2026-06-01T05:29:47.269Z",
           "updatedAt": "",
-          "rank": 62
+          "rank": 80
         },
         {
           "id": "recvji6MTMP0w5",
@@ -1867,13 +2616,13 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:16:26.533Z",
+          "createdAt": "2026-06-01T05:29:33.743Z",
           "updatedAt": "",
-          "rank": 63
+          "rank": 81
         }
       ],
-      "createdAt": "2026-06-01T00:17:25.568Z",
-      "updatedAt": "2026-06-01T00:17:25.568Z"
+      "createdAt": "2026-06-01T05:31:14.716Z",
+      "updatedAt": "2026-06-01T05:31:14.716Z"
     },
     {
       "id": "4",
@@ -1882,7 +2631,7 @@
       "date": "2026-06-01",
       "summary": "4月收录的新游产品列表，支持持续录入、筛选和对外展示。",
       "metrics": [
-        "收录产品80款",
+        "收录产品77款",
         "微小上榜 / 测试 / IOS上榜 / 上线",
         "6个平台",
         "重点产品5款"
@@ -1916,7 +2665,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:14:37.303Z",
+          "createdAt": "2026-06-01T05:27:22.038Z",
           "updatedAt": "",
           "rank": 1
         },
@@ -1949,7 +2698,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:13:14.874Z",
+          "createdAt": "2026-06-01T05:25:38.839Z",
           "updatedAt": "",
           "rank": 2
         },
@@ -1978,7 +2727,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:15:02.336Z",
+          "createdAt": "2026-06-01T05:27:48.760Z",
           "updatedAt": "",
           "rank": 3
         },
@@ -2010,7 +2759,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:14:45.553Z",
+          "createdAt": "2026-06-01T05:27:31.578Z",
           "updatedAt": "",
           "rank": 4
         },
@@ -2041,7 +2790,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:13:17.825Z",
+          "createdAt": "2026-06-01T05:25:42.307Z",
           "updatedAt": "",
           "rank": 5
         },
@@ -2074,7 +2823,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:13:51.461Z",
+          "createdAt": "2026-06-01T05:26:26.822Z",
           "updatedAt": "",
           "rank": 6
         },
@@ -2103,7 +2852,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:15:44.157Z",
+          "createdAt": "2026-06-01T05:28:42.147Z",
           "updatedAt": "",
           "rank": 7
         },
@@ -2132,7 +2881,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:15:20.790Z",
+          "createdAt": "2026-06-01T05:28:10.920Z",
           "updatedAt": "",
           "rank": 8
         },
@@ -2161,7 +2910,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:16:04.598Z",
+          "createdAt": "2026-06-01T05:29:08.647Z",
           "updatedAt": "",
           "rank": 9
         },
@@ -2192,7 +2941,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:14:00.517Z",
+          "createdAt": "2026-06-01T05:26:37.050Z",
           "updatedAt": "",
           "rank": 10
         },
@@ -2221,7 +2970,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:16:16.259Z",
+          "createdAt": "2026-06-01T05:29:21.233Z",
           "updatedAt": "",
           "rank": 11
         },
@@ -2250,7 +2999,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:16:07.360Z",
+          "createdAt": "2026-06-01T05:29:11.075Z",
           "updatedAt": "",
           "rank": 12
         },
@@ -2282,7 +3031,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:13:44.921Z",
+          "createdAt": "2026-06-01T05:26:17.827Z",
           "updatedAt": "",
           "rank": 13
         },
@@ -2314,7 +3063,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:13:37.490Z",
+          "createdAt": "2026-06-01T05:26:07.853Z",
           "updatedAt": "",
           "rank": 14
         },
@@ -2345,7 +3094,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:14:14.943Z",
+          "createdAt": "2026-06-01T05:26:53.133Z",
           "updatedAt": "",
           "rank": 15
         },
@@ -2374,7 +3123,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:15:09.231Z",
+          "createdAt": "2026-06-01T05:27:57.605Z",
           "updatedAt": "",
           "rank": 16
         },
@@ -2405,7 +3154,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:14:26.597Z",
+          "createdAt": "2026-06-01T05:27:07.121Z",
           "updatedAt": "",
           "rank": 17
         },
@@ -2434,7 +3183,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:15:22.959Z",
+          "createdAt": "2026-06-01T05:28:13.499Z",
           "updatedAt": "",
           "rank": 18
         },
@@ -2465,7 +3214,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:15:13.899Z",
+          "createdAt": "2026-06-01T05:28:03.584Z",
           "updatedAt": "",
           "rank": 19
         },
@@ -2494,7 +3243,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:14:54.355Z",
+          "createdAt": "2026-06-01T05:27:41.743Z",
           "updatedAt": "",
           "rank": 20
         },
@@ -2525,7 +3274,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:15:51.086Z",
+          "createdAt": "2026-06-01T05:28:52.776Z",
           "updatedAt": "",
           "rank": 21
         },
@@ -2557,7 +3306,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:13:33.599Z",
+          "createdAt": "2026-06-01T05:26:02.956Z",
           "updatedAt": "",
           "rank": 22
         },
@@ -2586,7 +3335,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:16:08.273Z",
+          "createdAt": "2026-06-01T05:29:12.302Z",
           "updatedAt": "",
           "rank": 23
         },
@@ -2615,7 +3364,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:15:23.980Z",
+          "createdAt": "2026-06-01T05:28:14.635Z",
           "updatedAt": "",
           "rank": 24
         },
@@ -2644,7 +3393,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:15:58.372Z",
+          "createdAt": "2026-06-01T05:29:00.117Z",
           "updatedAt": "",
           "rank": 25
         },
@@ -2673,7 +3422,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:14:27.689Z",
+          "createdAt": "2026-06-01T05:27:08.268Z",
           "updatedAt": "",
           "rank": 26
         },
@@ -2704,7 +3453,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:14:50.610Z",
+          "createdAt": "2026-06-01T05:27:37.893Z",
           "updatedAt": "",
           "rank": 27
         },
@@ -2733,7 +3482,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:15:40.120Z",
+          "createdAt": "2026-06-01T05:28:36.818Z",
           "updatedAt": "",
           "rank": 28
         },
@@ -2762,7 +3511,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:15:55.861Z",
+          "createdAt": "2026-06-01T05:28:57.720Z",
           "updatedAt": "",
           "rank": 29
         },
@@ -2791,7 +3540,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:15:43.248Z",
+          "createdAt": "2026-06-01T05:28:40.508Z",
           "updatedAt": "",
           "rank": 30
         },
@@ -2823,7 +3572,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:13:54.916Z",
+          "createdAt": "2026-06-01T05:26:30.808Z",
           "updatedAt": "",
           "rank": 31
         },
@@ -2854,7 +3603,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:15:27.117Z",
+          "createdAt": "2026-06-01T05:28:19.341Z",
           "updatedAt": "",
           "rank": 32
         },
@@ -2883,7 +3632,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:14:42.423Z",
+          "createdAt": "2026-06-01T05:27:27.804Z",
           "updatedAt": "",
           "rank": 33
         },
@@ -2914,7 +3663,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:14:19.988Z",
+          "createdAt": "2026-06-01T05:26:58.755Z",
           "updatedAt": "",
           "rank": 34
         },
@@ -2947,7 +3696,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:13:29.254Z",
+          "createdAt": "2026-06-01T05:25:57.589Z",
           "updatedAt": "",
           "rank": 35
         },
@@ -2976,7 +3725,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:16:01.621Z",
+          "createdAt": "2026-06-01T05:29:04.451Z",
           "updatedAt": "",
           "rank": 36
         },
@@ -3005,7 +3754,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:14:46.789Z",
+          "createdAt": "2026-06-01T05:27:33.045Z",
           "updatedAt": "",
           "rank": 37
         },
@@ -3034,7 +3783,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:15:24.959Z",
+          "createdAt": "2026-06-01T05:28:15.917Z",
           "updatedAt": "",
           "rank": 38
         },
@@ -3065,7 +3814,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:15:29.239Z",
+          "createdAt": "2026-06-01T05:28:22.410Z",
           "updatedAt": "",
           "rank": 39
         },
@@ -3094,7 +3843,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:15:54.520Z",
+          "createdAt": "2026-06-01T05:28:56.320Z",
           "updatedAt": "",
           "rank": 40
         },
@@ -3125,7 +3874,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:14:03.609Z",
+          "createdAt": "2026-06-01T05:26:40.095Z",
           "updatedAt": "",
           "rank": 41
         },
@@ -3156,7 +3905,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:15:01.328Z",
+          "createdAt": "2026-06-01T05:27:47.634Z",
           "updatedAt": "",
           "rank": 42
         },
@@ -3185,7 +3934,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:16:09.388Z",
+          "createdAt": "2026-06-01T05:29:13.651Z",
           "updatedAt": "",
           "rank": 43
         },
@@ -3214,7 +3963,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:15:59.466Z",
+          "createdAt": "2026-06-01T05:29:02.034Z",
           "updatedAt": "",
           "rank": 44
         },
@@ -3243,7 +3992,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:15:05.669Z",
+          "createdAt": "2026-06-01T05:27:53.728Z",
           "updatedAt": "",
           "rank": 45
         },
@@ -3272,7 +4021,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:15:32.575Z",
+          "createdAt": "2026-06-01T05:28:26.679Z",
           "updatedAt": "",
           "rank": 46
         },
@@ -3301,40 +4050,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:15:36.907Z",
+          "createdAt": "2026-06-01T05:28:33.047Z",
           "updatedAt": "",
           "rank": 47
-        },
-        {
-          "id": "recviOGCJlZAeI",
-          "name": "王国大作战：前线",
-          "genre": "塔防",
-          "topic": "Q版卡通",
-          "platform": "APP",
-          "developer": "深圳冰川",
-          "publisher": "深圳冰川",
-          "sourceText": "竖版肉鸽塔防，冰川自研自发，3月18日买Tap预约，次留50%+，Tap显示26年Q2正式上线，4月14日用版号正式信息流测试；产品已有一定数据基础，后续看正式放量结果。",
-          "icon": "feishu-assets/recviOGCJlZAeI-icon-1.png",
-          "screenshots": [
-            "feishu-assets/recviOGCJlZAeI-shot-1.png"
-          ],
-          "cover": "feishu-assets/recviOGCJlZAeI-icon-1.png",
-          "status": "测试",
-          "month": "4月",
-          "focus": false,
-          "sourceUrl": "",
-          "releaseStatus": "可发布",
-          "reason": "",
-          "judgement": "",
-          "latestNodeTime": "2026-04-13",
-          "firstTestTime": "2026-03-17",
-          "finalTestTime": "",
-          "publicTestTime": "",
-          "launchTime": "",
-          "publicNode": "",
-          "createdAt": "2026-06-01T00:15:35.816Z",
-          "updatedAt": "",
-          "rank": 48
         },
         {
           "id": "recvia6VzXrOER",
@@ -3363,9 +4081,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:15:04.615Z",
+          "createdAt": "2026-06-01T05:27:52.578Z",
           "updatedAt": "",
-          "rank": 49
+          "rank": 48
         },
         {
           "id": "recvji2XHvctWs",
@@ -3392,9 +4110,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:16:20.383Z",
+          "createdAt": "2026-06-01T05:29:25.968Z",
           "updatedAt": "",
-          "rank": 50
+          "rank": 49
         },
         {
           "id": "recviORlI0ZFv7",
@@ -3423,9 +4141,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:15:46.287Z",
+          "createdAt": "2026-06-01T05:28:44.605Z",
           "updatedAt": "",
-          "rank": 51
+          "rank": 50
         },
         {
           "id": "recvjhhIjbsHPo",
@@ -3454,9 +4172,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:16:19.381Z",
+          "createdAt": "2026-06-01T05:29:24.785Z",
           "updatedAt": "",
-          "rank": 52
+          "rank": 51
         },
         {
           "id": "recvhYb5FCBq2b",
@@ -3486,9 +4204,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:14:24.194Z",
+          "createdAt": "2026-06-01T05:27:04.420Z",
           "updatedAt": "",
-          "rank": 53
+          "rank": 52
         },
         {
           "id": "recviOGDlEsufc",
@@ -3515,38 +4233,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:15:38.003Z",
+          "createdAt": "2026-06-01T05:28:34.461Z",
           "updatedAt": "",
-          "rank": 54
-        },
-        {
-          "id": "recviOUc7V7Ra7",
-          "name": "仙界大掌门",
-          "genre": "SLG",
-          "topic": "修仙",
-          "platform": "APP",
-          "developer": "广州森闲",
-          "publisher": "北京儒意",
-          "sourceText": "修仙SLG，北京儒意发行，广州森闲研发（原星嘉夜猫子工作室最强祖师团队，负责人程鑫，之前《至尊传奇》制作人）；修仙题材宗门养成模式，无尽冬日+last war结合，4月9日在信息流进行APP二测；",
-          "icon": "feishu-assets/recviOUc7V7Ra7-icon-1.png",
-          "screenshots": [],
-          "cover": "feishu-assets/recviOUc7V7Ra7-icon-1.png",
-          "status": "测试",
-          "month": "4月",
-          "focus": false,
-          "sourceUrl": "",
-          "releaseStatus": "可发布",
-          "reason": "",
-          "judgement": "",
-          "latestNodeTime": "2026-04-08",
-          "firstTestTime": "2026-01-14",
-          "finalTestTime": "",
-          "publicTestTime": "",
-          "launchTime": "",
-          "publicNode": "",
-          "createdAt": "2026-06-01T00:15:47.405Z",
-          "updatedAt": "",
-          "rank": 55
+          "rank": 53
         },
         {
           "id": "recvhYHtu6rARy",
@@ -3575,9 +4264,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:14:40.084Z",
+          "createdAt": "2026-06-01T05:27:25.361Z",
           "updatedAt": "",
-          "rank": 56
+          "rank": 54
         },
         {
           "id": "rec27gFuTu5sLA",
@@ -3608,9 +4297,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:13:07.261Z",
+          "createdAt": "2026-06-01T05:25:27.568Z",
           "updatedAt": "",
-          "rank": 57
+          "rank": 55
         },
         {
           "id": "recvji3MCmZ3AB",
@@ -3637,9 +4326,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:16:21.336Z",
+          "createdAt": "2026-06-01T05:29:27.187Z",
           "updatedAt": "",
-          "rank": 58
+          "rank": 56
         },
         {
           "id": "recvi9VCMJ9TcZ",
@@ -3668,9 +4357,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:14:53.399Z",
+          "createdAt": "2026-06-01T05:27:40.535Z",
           "updatedAt": "",
-          "rank": 59
+          "rank": 57
         },
         {
           "id": "recviOIDIygN4B",
@@ -3697,9 +4386,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:15:41.070Z",
+          "createdAt": "2026-06-01T05:28:38.127Z",
           "updatedAt": "",
-          "rank": 60
+          "rank": 58
         },
         {
           "id": "recvhY2tandn22",
@@ -3728,9 +4417,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:14:05.932Z",
+          "createdAt": "2026-06-01T05:26:42.731Z",
           "updatedAt": "",
-          "rank": 61
+          "rank": 59
         },
         {
           "id": "recviOJqzveHLO",
@@ -3757,9 +4446,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:15:42.158Z",
+          "createdAt": "2026-06-01T05:28:39.427Z",
           "updatedAt": "",
-          "rank": 62
+          "rank": 60
         },
         {
           "id": "recviNNJRkMMtt",
@@ -3786,9 +4475,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:15:14.844Z",
+          "createdAt": "2026-06-01T05:28:04.685Z",
           "updatedAt": "",
-          "rank": 63
+          "rank": 61
         },
         {
           "id": "recviPcv0WjnNj",
@@ -3815,9 +4504,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:16:05.571Z",
+          "createdAt": "2026-06-01T05:29:09.734Z",
           "updatedAt": "",
-          "rank": 64
+          "rank": 62
         },
         {
           "id": "recvhY2v2AQUr4",
@@ -3846,9 +4535,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:14:12.744Z",
+          "createdAt": "2026-06-01T05:26:50.747Z",
           "updatedAt": "",
-          "rank": 65
+          "rank": 63
         },
         {
           "id": "recviPavJrLqyu",
@@ -3875,9 +4564,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:16:02.618Z",
+          "createdAt": "2026-06-01T05:29:05.579Z",
           "updatedAt": "",
-          "rank": 66
+          "rank": 64
         },
         {
           "id": "recviP3nWYK4B4",
@@ -3904,9 +4593,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:15:52.509Z",
+          "createdAt": "2026-06-01T05:28:54.063Z",
           "updatedAt": "",
-          "rank": 67
+          "rank": 65
         },
         {
           "id": "recvia3eKUce4i",
@@ -3935,9 +4624,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:14:57.393Z",
+          "createdAt": "2026-06-01T05:27:44.765Z",
           "updatedAt": "",
-          "rank": 68
+          "rank": 66
         },
         {
           "id": "recvhFJYzbESt9",
@@ -3967,9 +4656,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:13:23.059Z",
+          "createdAt": "2026-06-01T05:25:49.511Z",
           "updatedAt": "",
-          "rank": 69
+          "rank": 67
         },
         {
           "id": "recvhYyOSn3Ogb",
@@ -3999,9 +4688,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:14:35.023Z",
+          "createdAt": "2026-06-01T05:27:19.089Z",
           "updatedAt": "",
-          "rank": 70
+          "rank": 68
         },
         {
           "id": "recvhYgtd2t7Sx",
@@ -4030,9 +4719,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:14:30.566Z",
+          "createdAt": "2026-06-01T05:27:11.528Z",
           "updatedAt": "",
-          "rank": 71
+          "rank": 69
         },
         {
           "id": "recviNOIP1emZt",
@@ -4059,9 +4748,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:15:18.569Z",
+          "createdAt": "2026-06-01T05:28:08.475Z",
           "updatedAt": "",
-          "rank": 72
+          "rank": 70
         },
         {
           "id": "recvhT6Ir0OVyY",
@@ -4090,9 +4779,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:12:56.727Z",
+          "createdAt": "2026-06-01T05:25:18.263Z",
           "updatedAt": "",
-          "rank": 73
+          "rank": 71
         },
         {
           "id": "rec27gFuTu5BBW",
@@ -4121,9 +4810,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:13:09.865Z",
+          "createdAt": "2026-06-01T05:25:32.889Z",
           "updatedAt": "",
-          "rank": 74
+          "rank": 72
         },
         {
           "id": "recviOeFz6GU3P",
@@ -4150,9 +4839,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:15:33.728Z",
+          "createdAt": "2026-06-01T05:28:28.040Z",
           "updatedAt": "",
-          "rank": 75
+          "rank": 73
         },
         {
           "id": "recviP1Zwsxbw7",
@@ -4179,9 +4868,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:15:48.590Z",
+          "createdAt": "2026-06-01T05:28:47.205Z",
           "updatedAt": "",
-          "rank": 76
+          "rank": 74
         },
         {
           "id": "recviPaw5PHiNC",
@@ -4208,42 +4897,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:16:03.654Z",
+          "createdAt": "2026-06-01T05:29:07.154Z",
           "updatedAt": "",
-          "rank": 77
-        },
-        {
-          "id": "recvhY2uOFwFyP",
-          "name": "最终的梦幻岛",
-          "genre": "模拟经营",
-          "topic": "童话风",
-          "platform": "APP",
-          "developer": "广州火羽",
-          "publisher": "广州火羽",
-          "sourceText": "童话风模拟经营产品，广州火羽自研自发，4月20日APK首次信息流测试；玩法为农场经营+卡牌，并融入一定花园世界式包装，项目由火羽《盛世芳华》分支团队孵化，当前素材侧在同时测试“治愈种田”和“末日重建”两种包装方向。",
-          "icon": "feishu-assets/recvhY2uOFwFyP-icon-1.png",
-          "screenshots": [
-            "feishu-assets/recvhY2uOFwFyP-shot-1.png",
-            "feishu-assets/recvhY2uOFwFyP-shot-2.png",
-            "feishu-assets/recvhY2uOFwFyP-shot-3.png"
-          ],
-          "cover": "feishu-assets/recvhY2uOFwFyP-icon-1.png",
-          "status": "测试",
-          "month": "4月",
-          "focus": false,
-          "sourceUrl": "",
-          "releaseStatus": "可发布",
-          "reason": "",
-          "judgement": "",
-          "latestNodeTime": "2026-04-19",
-          "firstTestTime": "2026-04-19",
-          "finalTestTime": "",
-          "publicTestTime": "",
-          "launchTime": "",
-          "publicNode": "",
-          "createdAt": "2026-06-01T00:14:10.168Z",
-          "updatedAt": "",
-          "rank": 78
+          "rank": 75
         },
         {
           "id": "recviP8OKYeEPb",
@@ -4270,9 +4926,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:16:00.395Z",
+          "createdAt": "2026-06-01T05:29:03.167Z",
           "updatedAt": "",
-          "rank": 79
+          "rank": 76
         },
         {
           "id": "recviOc9KRntHn",
@@ -4301,13 +4957,13 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:15:31.269Z",
+          "createdAt": "2026-06-01T05:28:25.511Z",
           "updatedAt": "",
-          "rank": 80
+          "rank": 77
         }
       ],
-      "createdAt": "2026-06-01T00:17:25.569Z",
-      "updatedAt": "2026-06-01T00:17:25.569Z"
+      "createdAt": "2026-06-01T05:31:14.717Z",
+      "updatedAt": "2026-06-01T05:31:14.717Z"
     },
     {
       "id": "3",
@@ -4348,7 +5004,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:15:57.178Z",
+          "createdAt": "2026-06-01T05:28:58.834Z",
           "updatedAt": "",
           "rank": 1
         },
@@ -4379,7 +5035,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:15:08.139Z",
+          "createdAt": "2026-06-01T05:27:56.469Z",
           "updatedAt": "",
           "rank": 2
         },
@@ -4408,7 +5064,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:15:53.519Z",
+          "createdAt": "2026-06-01T05:28:55.163Z",
           "updatedAt": "",
           "rank": 3
         },
@@ -4437,13 +5093,13 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:14:47.777Z",
+          "createdAt": "2026-06-01T05:27:34.666Z",
           "updatedAt": "",
           "rank": 4
         }
       ],
-      "createdAt": "2026-06-01T00:17:25.569Z",
-      "updatedAt": "2026-06-01T00:17:25.569Z"
+      "createdAt": "2026-06-01T05:31:14.717Z",
+      "updatedAt": "2026-06-01T05:31:14.717Z"
     },
     {
       "id": "2",
@@ -4484,13 +5140,13 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-06-01T00:17:05.423Z",
+          "createdAt": "2026-06-01T05:30:17.223Z",
           "updatedAt": "",
           "rank": 1
         }
       ],
-      "createdAt": "2026-06-01T00:17:25.569Z",
-      "updatedAt": "2026-06-01T00:17:25.569Z"
+      "createdAt": "2026-06-01T05:31:14.717Z",
+      "updatedAt": "2026-06-01T05:31:14.717Z"
     }
   ]
 }
