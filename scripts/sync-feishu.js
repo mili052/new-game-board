@@ -85,6 +85,13 @@ const FIELD_ALIASES = {
 };
 
 const assetCache = new Map();
+const DISPLAY_TIME_ZONE = "Asia/Shanghai";
+const shanghaiDateFormatter = new Intl.DateTimeFormat("en-CA", {
+  timeZone: DISPLAY_TIME_ZONE,
+  year: "numeric",
+  month: "2-digit",
+  day: "2-digit"
+});
 
 function required(name) {
   const value = process.env[name];
@@ -201,10 +208,25 @@ function parseDateValue(value) {
   return null;
 }
 
+function getDatePartsInShanghai(value) {
+  const date = value instanceof Date ? value : parseDateValue(value);
+  if (!date || Number.isNaN(date.getTime())) return null;
+
+  const parts = shanghaiDateFormatter.formatToParts(date);
+  const map = Object.fromEntries(parts.filter(part => part.type !== "literal").map(part => [part.type, part.value]));
+  if (!map.year || !map.month || !map.day) return null;
+
+  return {
+    year: map.year,
+    month: map.month,
+    day: map.day
+  };
+}
+
 function normalizeMonth(latestNodeTimeValue, monthValue, testTimeValue, createdAtValue, updatedAtValue) {
-  const latestNodeDate = parseDateValue(latestNodeTimeValue);
-  if (latestNodeDate) {
-    return `${latestNodeDate.getMonth() + 1}${C.monthSuffix}`;
+  const latestNodeParts = getDatePartsInShanghai(latestNodeTimeValue);
+  if (latestNodeParts) {
+    return `${Number(latestNodeParts.month)}${C.monthSuffix}`;
   }
 
   const monthText = toText(monthValue);
@@ -214,17 +236,29 @@ function normalizeMonth(latestNodeTimeValue, monthValue, testTimeValue, createdA
     parseDateValue(testTimeValue) ||
     parseDateValue(createdAtValue) ||
     parseDateValue(updatedAtValue);
-  if (!date) return "";
-  return `${date.getMonth() + 1}${C.monthSuffix}`;
+  const parts = getDatePartsInShanghai(date);
+  if (!parts) return "";
+  return `${Number(parts.month)}${C.monthSuffix}`;
 }
 
 function normalizeDisplayDate(value) {
-  const date = parseDateValue(value);
-  if (!date) return "";
-  const year = date.getFullYear();
-  const month = String(date.getMonth() + 1).padStart(2, "0");
-  const day = String(date.getDate()).padStart(2, "0");
-  return `${year}-${month}-${day}`;
+  const parts = getDatePartsInShanghai(value);
+  if (!parts) return "";
+  return `${parts.year}-${parts.month}-${parts.day}`;
+}
+
+function normalizeAssetVersion(...values) {
+  for (const value of values) {
+    const text = toText(value);
+    if (!text) continue;
+    return text.replace(/[^0-9a-zA-Z]+/g, "");
+  }
+  return String(Date.now());
+}
+
+function withAssetVersion(assetPath, version) {
+  if (!assetPath) return "";
+  return `${assetPath}?v=${encodeURIComponent(version)}`;
 }
 
 function monthLabel(monthKey) {
@@ -495,8 +529,14 @@ async function normalizeProduct(record, token) {
   const publicTestTimeValue = pick(fields, "publicTestTime");
   const launchTimeValue = pick(fields, "launchTime");
   const testTimeValue = pick(fields, "testTime");
+  const assetVersion = normalizeAssetVersion(
+    latestNodeTimeValue,
+    updatedAtValue,
+    createdAtValue,
+    record.record_id
+  );
 
-  const icon = iconAttachments[0]
+  const iconAsset = iconAttachments[0]
     ? await downloadAttachment(iconAttachments[0], token, `${record.record_id}-icon-1`)
     : "";
 
@@ -507,8 +547,10 @@ async function normalizeProduct(record, token) {
       token,
       `${record.record_id}-shot-${index + 1}`
     );
-    if (asset) screenshots.push(asset);
+    if (asset) screenshots.push(withAssetVersion(asset, assetVersion));
   }
+
+  const icon = withAssetVersion(iconAsset, assetVersion);
 
   return {
     id: record.record_id,
