@@ -419,6 +419,7 @@ async function listRecords(token) {
   const appToken = await resolveBitableAppToken(token);
   const tableId = await resolveTableId(token, appToken);
   const pageSize = Number(process.env.FEISHU_PAGE_SIZE || 200);
+  const viewId = String(process.env.FEISHU_VIEW_ID || "").trim();
 
   const items = [];
   let pageToken = "";
@@ -426,6 +427,7 @@ async function listRecords(token) {
   while (true) {
     const url = new URL(`https://open.feishu.cn/open-apis/bitable/v1/apps/${appToken}/tables/${tableId}/records`);
     url.searchParams.set("page_size", String(pageSize));
+    if (viewId) url.searchParams.set("view_id", viewId);
     if (pageToken) url.searchParams.set("page_token", pageToken);
 
     const response = await fetch(url, {
@@ -489,10 +491,15 @@ async function downloadAttachment(attachment, token, stem) {
 
   let finalUrl = "";
 
-  if (attachment.sourceUrl && attachment.sourceUrl.includes("batch_get_tmp_download_url")) {
-    finalUrl = await resolveTempDownloadUrl(attachment.sourceUrl, token);
-  } else if (/^https?:\/\//i.test(attachment.sourceUrl || "")) {
-    finalUrl = attachment.sourceUrl;
+  try {
+    if (attachment.sourceUrl && attachment.sourceUrl.includes("batch_get_tmp_download_url")) {
+      finalUrl = await resolveTempDownloadUrl(attachment.sourceUrl, token);
+    } else if (/^https?:\/\//i.test(attachment.sourceUrl || "")) {
+      finalUrl = attachment.sourceUrl;
+    }
+  } catch (error) {
+    console.warn(`Attachment temp url skipped for ${stem}: ${error.message || error}`);
+    return "";
   }
 
   if (!finalUrl) return "";
