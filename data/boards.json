@@ -7,7 +7,7 @@
       "date": "2026-07-27",
       "summary": "7月收录的新游产品列表，支持持续录入、筛选和对外展示。",
       "metrics": [
-        "收录产品110款",
+        "收录产品117款",
         "IOS/微小同时上榜 / 招募 / 上线 / IOS上榜 / 微小上榜 / 测试",
         "8个平台",
         "重点产品1款"
@@ -39,7 +39,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:19:25.438Z",
+          "createdAt": "2026-07-27T09:05:37.386Z",
           "updatedAt": "",
           "rank": 1
         },
@@ -68,7 +68,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:19:58.476Z",
+          "createdAt": "2026-07-27T09:06:22.957Z",
           "updatedAt": "",
           "rank": 2
         },
@@ -97,7 +97,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:19:47.751Z",
+          "createdAt": "2026-07-27T09:06:07.772Z",
           "updatedAt": "",
           "rank": 3
         },
@@ -126,7 +126,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:10:30.190Z",
+          "createdAt": "2026-07-27T08:54:30.227Z",
           "updatedAt": "",
           "rank": 4
         },
@@ -155,9 +155,38 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:19:07.872Z",
+          "createdAt": "2026-07-27T09:05:13.124Z",
           "updatedAt": "",
           "rank": 5
+        },
+        {
+          "id": "recvqxIHozMDHc",
+          "name": "超级英雄抽卡模拟器",
+          "genre": "卡牌",
+          "topic": "卡通",
+          "platform": "微小",
+          "developer": "厦门魔兔",
+          "publisher": "厦门魔兔",
+          "sourceText": "蹭漫威IP的放置卡牌",
+          "icon": "feishu-assets/recvqxIHozMDHc-icon-1.png?v=1784822400000",
+          "screenshots": [],
+          "cover": "feishu-assets/recvqxIHozMDHc-icon-1.png?v=1784822400000",
+          "status": "测试",
+          "month": "7月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "latestNodeTime": "2026-07-24",
+          "firstTestTime": "2026-07-24",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "2026-07-27T09:06:51.127Z",
+          "updatedAt": "",
+          "rank": 6
         },
         {
           "id": "recvogZwUwltHg",
@@ -184,9 +213,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:12:35.060Z",
+          "createdAt": "2026-07-27T08:56:29.112Z",
           "updatedAt": "",
-          "rank": 6
+          "rank": 7
         },
         {
           "id": "recvpdNr07rc3B",
@@ -213,9 +242,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:13:54.995Z",
+          "createdAt": "2026-07-27T08:58:03.982Z",
           "updatedAt": "",
-          "rank": 7
+          "rank": 8
         },
         {
           "id": "recvq9Th1CBxO4",
@@ -242,9 +271,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:14:33.022Z",
+          "createdAt": "2026-07-27T08:58:50.532Z",
           "updatedAt": "",
-          "rank": 8
+          "rank": 9
         },
         {
           "id": "recvpeHfWrJzv7",
@@ -271,9 +300,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:19:31.230Z",
+          "createdAt": "2026-07-27T09:05:44.859Z",
           "updatedAt": "",
-          "rank": 9
+          "rank": 10
         },
         {
           "id": "recvkC1oivwTwF",
@@ -300,9 +329,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:18.932Z",
+          "createdAt": "2026-07-27T09:02:34.637Z",
           "updatedAt": "",
-          "rank": 10
+          "rank": 11
         },
         {
           "id": "recvqxAusfUncJ",
@@ -329,9 +358,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:14:36.463Z",
+          "createdAt": "2026-07-27T08:58:54.400Z",
           "updatedAt": "",
-          "rank": 11
+          "rank": 12
         },
         {
           "id": "recvqxp7eQU6VY",
@@ -358,9 +387,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:20:05.177Z",
+          "createdAt": "2026-07-27T09:06:32.747Z",
           "updatedAt": "",
-          "rank": 12
+          "rank": 13
         },
         {
           "id": "recvhY2vfk9sy6",
@@ -389,9 +418,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:13:07.023Z",
+          "createdAt": "2026-07-27T08:57:00.535Z",
           "updatedAt": "",
-          "rank": 13
+          "rank": 14
         },
         {
           "id": "recvqxvVQ3pvvt",
@@ -418,9 +447,38 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:20:09.837Z",
+          "createdAt": "2026-07-27T09:06:40.246Z",
           "updatedAt": "",
-          "rank": 14
+          "rank": 15
+        },
+        {
+          "id": "recvif2IicOAF8",
+          "name": "斗破：莫欺少年穷",
+          "genre": "MMORPG",
+          "topic": "斗破IP",
+          "platform": "APP / 微小",
+          "developer": "广州小丑鱼",
+          "publisher": "37手游",
+          "sourceText": "APP 4月29日信息流买量测，好游tap等5月8号测-天龙八部荣耀版底层迭代，6月8上微小测试，7月25上微小畅销榜排85，次日跌出",
+          "icon": "feishu-assets/recvif2IicOAF8-icon-1.png?v=1784908800000",
+          "screenshots": [],
+          "cover": "feishu-assets/recvif2IicOAF8-icon-1.png?v=1784908800000",
+          "status": "微小上榜",
+          "month": "7月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "latestNodeTime": "2026-07-25",
+          "firstTestTime": "2026-04-29",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "2026-07-27T08:57:16.680Z",
+          "updatedAt": "",
+          "rank": 16
         },
         {
           "id": "recvjibPoXjGkF",
@@ -447,9 +505,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:10:43.277Z",
+          "createdAt": "2026-07-27T08:54:43.282Z",
           "updatedAt": "",
-          "rank": 15
+          "rank": 17
         },
         {
           "id": "recvhYbVXu4KPY",
@@ -478,9 +536,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:15:22.674Z",
+          "createdAt": "2026-07-27T08:59:56.316Z",
           "updatedAt": "",
-          "rank": 16
+          "rank": 18
         },
         {
           "id": "recvpqJ1A67TOL",
@@ -509,9 +567,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:19:44.346Z",
+          "createdAt": "2026-07-27T09:06:02.614Z",
           "updatedAt": "",
-          "rank": 17
+          "rank": 19
         },
         {
           "id": "recvpSCZsmI5ht",
@@ -538,9 +596,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:11:02.594Z",
+          "createdAt": "2026-07-27T08:55:01.845Z",
           "updatedAt": "",
-          "rank": 18
+          "rank": 20
         },
         {
           "id": "recvpj3gNCNfEM",
@@ -569,9 +627,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:19:39.738Z",
+          "createdAt": "2026-07-27T09:05:56.087Z",
           "updatedAt": "",
-          "rank": 19
+          "rank": 21
         },
         {
           "id": "recvqxuYnx8jpI",
@@ -598,9 +656,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:20:08.882Z",
+          "createdAt": "2026-07-27T09:06:38.731Z",
           "updatedAt": "",
-          "rank": 20
+          "rank": 22
         },
         {
           "id": "recvhFK8tttfoa",
@@ -630,9 +688,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:14:48.652Z",
+          "createdAt": "2026-07-27T08:59:08.982Z",
           "updatedAt": "",
-          "rank": 21
+          "rank": 23
         },
         {
           "id": "recviPdudRB74u",
@@ -659,9 +717,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:16:24.685Z",
+          "createdAt": "2026-07-27T09:01:22.220Z",
           "updatedAt": "",
-          "rank": 22
+          "rank": 24
         },
         {
           "id": "recvqxw0ng5LYB",
@@ -688,9 +746,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:20:11.184Z",
+          "createdAt": "2026-07-27T09:06:42.517Z",
           "updatedAt": "",
-          "rank": 23
+          "rank": 25
         },
         {
           "id": "recvozsCuckKHH",
@@ -717,9 +775,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:10:25.280Z",
+          "createdAt": "2026-07-27T08:54:25.225Z",
           "updatedAt": "",
-          "rank": 24
+          "rank": 26
         },
         {
           "id": "recvoQ86BdSlsY",
@@ -746,9 +804,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:10:26.996Z",
+          "createdAt": "2026-07-27T08:54:26.771Z",
           "updatedAt": "",
-          "rank": 25
+          "rank": 27
         },
         {
           "id": "recvpSKLgEOe36",
@@ -775,9 +833,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:19:49.842Z",
+          "createdAt": "2026-07-27T09:06:11.068Z",
           "updatedAt": "",
-          "rank": 26
+          "rank": 28
         },
         {
           "id": "recvpTiJT9prOb",
@@ -804,9 +862,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:19:56.502Z",
+          "createdAt": "2026-07-27T09:06:20.088Z",
           "updatedAt": "",
-          "rank": 27
+          "rank": 29
         },
         {
           "id": "recvpeCBVhA5mW",
@@ -833,9 +891,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:19:27.923Z",
+          "createdAt": "2026-07-27T09:05:40.326Z",
           "updatedAt": "",
-          "rank": 28
+          "rank": 30
         },
         {
           "id": "recvqxDnNPrNQq",
@@ -862,9 +920,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:20:14.390Z",
+          "createdAt": "2026-07-27T09:06:46.852Z",
           "updatedAt": "",
-          "rank": 29
+          "rank": 31
         },
         {
           "id": "recvpSI4Ej41NJ",
@@ -891,9 +949,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:14:31.992Z",
+          "createdAt": "2026-07-27T08:58:49.245Z",
           "updatedAt": "",
-          "rank": 30
+          "rank": 32
         },
         {
           "id": "recvhXvKELIEIa",
@@ -923,9 +981,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:15:07.331Z",
+          "createdAt": "2026-07-27T08:59:36.262Z",
           "updatedAt": "",
-          "rank": 31
+          "rank": 33
         },
         {
           "id": "recvozrj7NR5sn",
@@ -952,9 +1010,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:19:05.398Z",
+          "createdAt": "2026-07-27T09:05:09.024Z",
           "updatedAt": "",
-          "rank": 32
+          "rank": 34
         },
         {
           "id": "recvoh15hIvdwc",
@@ -981,9 +1039,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:12:43.659Z",
+          "createdAt": "2026-07-27T08:56:31.669Z",
           "updatedAt": "",
-          "rank": 33
+          "rank": 35
         },
         {
           "id": "recvpl1mYFavhb",
@@ -1012,9 +1070,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:19:42.090Z",
+          "createdAt": "2026-07-27T09:05:59.444Z",
           "updatedAt": "",
-          "rank": 34
+          "rank": 36
         },
         {
           "id": "recvqxHvcGMt58",
@@ -1041,9 +1099,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:20:16.605Z",
+          "createdAt": "2026-07-27T09:06:49.817Z",
           "updatedAt": "",
-          "rank": 35
+          "rank": 37
         },
         {
           "id": "recvqxCy0YIAOL",
@@ -1070,9 +1128,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:20:13.174Z",
+          "createdAt": "2026-07-27T09:06:45.221Z",
           "updatedAt": "",
-          "rank": 36
+          "rank": 38
         },
         {
           "id": "recvpeL3pwRp9K",
@@ -1099,9 +1157,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:19:33.705Z",
+          "createdAt": "2026-07-27T09:05:47.879Z",
           "updatedAt": "",
-          "rank": 37
+          "rank": 39
         },
         {
           "id": "recvoK4MocsDYL",
@@ -1128,9 +1186,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:19:21.175Z",
+          "createdAt": "2026-07-27T09:05:31.407Z",
           "updatedAt": "",
-          "rank": 38
+          "rank": 40
         },
         {
           "id": "recvqxqACTc2CN",
@@ -1157,9 +1215,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:20:06.203Z",
+          "createdAt": "2026-07-27T09:06:34.866Z",
           "updatedAt": "",
-          "rank": 39
+          "rank": 41
         },
         {
           "id": "recvozXS9ymk1D",
@@ -1186,9 +1244,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:19:13.357Z",
+          "createdAt": "2026-07-27T09:05:21.400Z",
           "updatedAt": "",
-          "rank": 40
+          "rank": 42
         },
         {
           "id": "recvoA2gwRldiC",
@@ -1217,9 +1275,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:19:17.040Z",
+          "createdAt": "2026-07-27T09:05:25.640Z",
           "updatedAt": "",
-          "rank": 41
+          "rank": 43
         },
         {
           "id": "recvoh2P6ITmP2",
@@ -1250,9 +1308,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:19:02.410Z",
+          "createdAt": "2026-07-27T09:05:05.816Z",
           "updatedAt": "",
-          "rank": 42
+          "rank": 44
         },
         {
           "id": "recvq9Opz2rhEf",
@@ -1279,9 +1337,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:10:32.119Z",
+          "createdAt": "2026-07-27T08:54:31.568Z",
           "updatedAt": "",
-          "rank": 43
+          "rank": 45
         },
         {
           "id": "recvqxyu4wnVBH",
@@ -1308,9 +1366,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:20:12.140Z",
+          "createdAt": "2026-07-27T09:06:43.874Z",
           "updatedAt": "",
-          "rank": 44
+          "rank": 46
         },
         {
           "id": "recvpZHSj98fZJ",
@@ -1337,9 +1395,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:20:00.710Z",
+          "createdAt": "2026-07-27T09:06:26.330Z",
           "updatedAt": "",
-          "rank": 45
+          "rank": 47
         },
         {
           "id": "recvqxn0vJPMlM",
@@ -1366,9 +1424,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:20:03.999Z",
+          "createdAt": "2026-07-27T09:06:30.850Z",
           "updatedAt": "",
-          "rank": 46
+          "rank": 48
         },
         {
           "id": "recvoA0Xys44x0",
@@ -1395,9 +1453,38 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:19:14.273Z",
+          "createdAt": "2026-07-27T09:05:22.628Z",
           "updatedAt": "",
-          "rank": 47
+          "rank": 49
+        },
+        {
+          "id": "recvqydz2zvSFQ",
+          "name": "秦时明月卡牌版",
+          "genre": "卡牌",
+          "topic": "IP",
+          "platform": "微小",
+          "developer": "上海骏梦",
+          "publisher": "上海骏梦",
+          "sourceText": "竖版 IP 放置卡牌，上海骏梦自研自发。3月16日上线，复古回合制，单卡升星提供全局百分比加成；7月27上微小畅销榜，排100",
+          "icon": "feishu-assets/recvqydz2zvSFQ-icon-1.png?v=1785081600000",
+          "screenshots": [],
+          "cover": "feishu-assets/recvqydz2zvSFQ-icon-1.png?v=1785081600000",
+          "status": "微小上榜",
+          "month": "7月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "latestNodeTime": "2026-07-27",
+          "firstTestTime": "2026-03-15",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "2026-07-27T08:58:55.511Z",
+          "updatedAt": "",
+          "rank": 50
         },
         {
           "id": "recvlggqzVawC7",
@@ -1424,9 +1511,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:36.459Z",
+          "createdAt": "2026-07-27T09:02:59.143Z",
           "updatedAt": "",
-          "rank": 48
+          "rank": 51
         },
         {
           "id": "recvpSAP2wLLYY",
@@ -1453,9 +1540,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:19:48.741Z",
+          "createdAt": "2026-07-27T09:06:09.648Z",
           "updatedAt": "",
-          "rank": 49
+          "rank": 52
         },
         {
           "id": "recvozxIjJsAss",
@@ -1482,9 +1569,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:19:06.784Z",
+          "createdAt": "2026-07-27T09:05:10.641Z",
           "updatedAt": "",
-          "rank": 50
+          "rank": 53
         },
         {
           "id": "recvpeId5vS8Kx",
@@ -1511,9 +1598,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:19:32.331Z",
+          "createdAt": "2026-07-27T09:05:46.259Z",
           "updatedAt": "",
-          "rank": 51
+          "rank": 54
         },
         {
           "id": "recvoQ8IiwjrWU",
@@ -1540,9 +1627,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:13:52.696Z",
+          "createdAt": "2026-07-27T08:58:01.024Z",
           "updatedAt": "",
-          "rank": 52
+          "rank": 55
         },
         {
           "id": "recvqxrxvRX2AI",
@@ -1569,9 +1656,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:11:03.903Z",
+          "createdAt": "2026-07-27T08:55:03.824Z",
           "updatedAt": "",
-          "rank": 53
+          "rank": 56
         },
         {
           "id": "recvpTeJnPlrkg",
@@ -1598,9 +1685,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:19:54.537Z",
+          "createdAt": "2026-07-27T09:06:17.293Z",
           "updatedAt": "",
-          "rank": 54
+          "rank": 57
         },
         {
           "id": "recvpdQZ9AwyD3",
@@ -1627,9 +1714,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:19:24.314Z",
+          "createdAt": "2026-07-27T09:05:36.035Z",
           "updatedAt": "",
-          "rank": 55
+          "rank": 58
         },
         {
           "id": "recvmFNlTmBT2I",
@@ -1656,9 +1743,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:18:20.331Z",
+          "createdAt": "2026-07-27T09:04:01.932Z",
           "updatedAt": "",
-          "rank": 56
+          "rank": 59
         },
         {
           "id": "recvoRvg3FoILr",
@@ -1685,9 +1772,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:13:53.803Z",
+          "createdAt": "2026-07-27T08:58:02.362Z",
           "updatedAt": "",
-          "rank": 57
+          "rank": 60
         },
         {
           "id": "recvmFHnK7XIRe",
@@ -1714,9 +1801,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:18:14.693Z",
+          "createdAt": "2026-07-27T09:03:54.650Z",
           "updatedAt": "",
-          "rank": 58
+          "rank": 61
         },
         {
           "id": "recvoixwhndSFL",
@@ -1743,9 +1830,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:19:03.869Z",
+          "createdAt": "2026-07-27T09:05:07.540Z",
           "updatedAt": "",
-          "rank": 59
+          "rank": 62
         },
         {
           "id": "recvozXN6eeYJ9",
@@ -1772,9 +1859,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:19:12.416Z",
+          "createdAt": "2026-07-27T09:05:20.144Z",
           "updatedAt": "",
-          "rank": 60
+          "rank": 63
         },
         {
           "id": "recvo5mCnlGrGJ",
@@ -1801,9 +1888,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:18:40.232Z",
+          "createdAt": "2026-07-27T09:04:30.731Z",
           "updatedAt": "",
-          "rank": 61
+          "rank": 64
         },
         {
           "id": "recvpSLDI9ZeLR",
@@ -1830,9 +1917,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:19:50.823Z",
+          "createdAt": "2026-07-27T09:06:12.856Z",
           "updatedAt": "",
-          "rank": 62
+          "rank": 65
         },
         {
           "id": "recviNKLT9YjNE",
@@ -1861,9 +1948,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:13:20.751Z",
+          "createdAt": "2026-07-27T08:57:20.386Z",
           "updatedAt": "",
-          "rank": 63
+          "rank": 66
         },
         {
           "id": "recvpeE4iVL8fK",
@@ -1890,9 +1977,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:19:29.026Z",
+          "createdAt": "2026-07-27T09:05:42.188Z",
           "updatedAt": "",
-          "rank": 64
+          "rank": 67
         },
         {
           "id": "recvneTvpLQZX5",
@@ -1919,9 +2006,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:12:29.231Z",
+          "createdAt": "2026-07-27T08:56:24.065Z",
           "updatedAt": "",
-          "rank": 65
+          "rank": 68
         },
         {
           "id": "recvpTkWjtKsgF",
@@ -1948,9 +2035,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:19:57.544Z",
+          "createdAt": "2026-07-27T09:06:21.533Z",
           "updatedAt": "",
-          "rank": 66
+          "rank": 69
         },
         {
           "id": "recvozSGWJLyac",
@@ -1977,9 +2064,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:19:10.116Z",
+          "createdAt": "2026-07-27T09:05:16.189Z",
           "updatedAt": "",
-          "rank": 67
+          "rank": 70
         },
         {
           "id": "recviOHPUosePa",
@@ -2006,9 +2093,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:12:00.928Z",
+          "createdAt": "2026-07-27T08:55:56.367Z",
           "updatedAt": "",
-          "rank": 68
+          "rank": 71
         },
         {
           "id": "recvpdSgbE3FOT",
@@ -2035,9 +2122,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:10:59.733Z",
+          "createdAt": "2026-07-27T08:54:58.556Z",
           "updatedAt": "",
-          "rank": 69
+          "rank": 72
         },
         {
           "id": "recvqfCDL71Qpw",
@@ -2047,7 +2134,7 @@
           "platform": "APP",
           "developer": "深圳游戏光年",
           "publisher": "37网游",
-          "sourceText": "",
+          "sourceText": "22年立项的产品，37网游在立项时就将该项目代理下来了。一开始想做个动森like，",
           "icon": "feishu-assets/recvqfCDL71Qpw-icon-1.png?v=1784736000000",
           "screenshots": [],
           "cover": "feishu-assets/recvqfCDL71Qpw-icon-1.png?v=1784736000000",
@@ -2064,9 +2151,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:20:02.855Z",
+          "createdAt": "2026-07-27T09:06:29.340Z",
           "updatedAt": "",
-          "rank": 70
+          "rank": 73
         },
         {
           "id": "recvpv72tLS38j",
@@ -2093,9 +2180,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:19:46.464Z",
+          "createdAt": "2026-07-27T09:06:05.921Z",
           "updatedAt": "",
-          "rank": 71
+          "rank": 74
         },
         {
           "id": "recvlg8euQwYN7",
@@ -2122,9 +2209,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:30.028Z",
+          "createdAt": "2026-07-27T09:02:49.459Z",
           "updatedAt": "",
-          "rank": 72
+          "rank": 75
         },
         {
           "id": "recviOGCJlZAeI",
@@ -2153,9 +2240,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:13:25.412Z",
+          "createdAt": "2026-07-27T08:57:27.148Z",
           "updatedAt": "",
-          "rank": 73
+          "rank": 76
         },
         {
           "id": "recvq9USsYQT5D",
@@ -2182,9 +2269,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:14:35.374Z",
+          "createdAt": "2026-07-27T08:58:53.074Z",
           "updatedAt": "",
-          "rank": 74
+          "rank": 77
         },
         {
           "id": "recvpTdTYJaeCB",
@@ -2211,9 +2298,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:19:53.592Z",
+          "createdAt": "2026-07-27T09:06:15.889Z",
           "updatedAt": "",
-          "rank": 75
+          "rank": 78
         },
         {
           "id": "recvo5li9519hV",
@@ -2240,9 +2327,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:13:47.252Z",
+          "createdAt": "2026-07-27T08:57:53.053Z",
           "updatedAt": "",
-          "rank": 76
+          "rank": 79
         },
         {
           "id": "recvpfem17tnqx",
@@ -2269,9 +2356,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:19:35.678Z",
+          "createdAt": "2026-07-27T09:05:50.681Z",
           "updatedAt": "",
-          "rank": 77
+          "rank": 80
         },
         {
           "id": "recvo6yhYawECC",
@@ -2298,9 +2385,38 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:10:56.571Z",
+          "createdAt": "2026-07-27T08:54:54.754Z",
           "updatedAt": "",
-          "rank": 78
+          "rank": 81
+        },
+        {
+          "id": "recvqy7jsGFWRH",
+          "name": "下方了",
+          "genre": "塔防",
+          "topic": "微恐",
+          "platform": "微小",
+          "developer": "深圳玄星",
+          "publisher": "飞鱼（深圳）",
+          "sourceText": "微恐题材肉鸽塔防，厦门飞鱼发行，猛鬼宿舍元素融合了一步两步底层，在战斗中金币数量会随着时间而递增（有猛鬼“床”的概念，肉鸽选项可强化床的等级，使得每秒获取的金币数量翻倍），金币可以开启魔盒获得随机元素属性百分比或技能强化，更加放大战斗中数值的系数，使得割草爽感更足，前期游戏还蹭了《神秘复苏》剧情用作噱头，应该也有不错的吸量表现，",
+          "icon": "feishu-assets/recvqy7jsGFWRH-icon-1.png?v=1784649600000",
+          "screenshots": [],
+          "cover": "feishu-assets/recvqy7jsGFWRH-icon-1.png?v=1784649600000",
+          "status": "测试",
+          "month": "7月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "latestNodeTime": "2026-07-22",
+          "firstTestTime": "2025-12-17",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "2026-07-27T09:06:52.945Z",
+          "updatedAt": "",
+          "rank": 82
         },
         {
           "id": "recviOUc7V7Ra7",
@@ -2327,9 +2443,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:10:39.990Z",
+          "createdAt": "2026-07-27T08:54:40.178Z",
           "updatedAt": "",
-          "rank": 79
+          "rank": 83
         },
         {
           "id": "recvq9QhCS2QAQ",
@@ -2356,9 +2472,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:10:33.398Z",
+          "createdAt": "2026-07-27T08:54:32.988Z",
           "updatedAt": "",
-          "rank": 80
+          "rank": 84
         },
         {
           "id": "recvozUQJtCCZC",
@@ -2385,9 +2501,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:19:11.160Z",
+          "createdAt": "2026-07-27T09:05:18.541Z",
           "updatedAt": "",
-          "rank": 81
+          "rank": 85
         },
         {
           "id": "rec27gFuTu5sLA",
@@ -2418,9 +2534,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:12:56.678Z",
+          "createdAt": "2026-07-27T08:56:46.795Z",
           "updatedAt": "",
-          "rank": 82
+          "rank": 86
         },
         {
           "id": "recvpeEUnK2zTw",
@@ -2447,9 +2563,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:19:29.991Z",
+          "createdAt": "2026-07-27T09:05:43.524Z",
           "updatedAt": "",
-          "rank": 83
+          "rank": 87
         },
         {
           "id": "recvpfejybyTqQ",
@@ -2476,9 +2592,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:19:34.621Z",
+          "createdAt": "2026-07-27T09:05:49.245Z",
           "updatedAt": "",
-          "rank": 84
+          "rank": 88
         },
         {
           "id": "recvqxuthTsZ6G",
@@ -2505,9 +2621,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:20:07.904Z",
+          "createdAt": "2026-07-27T09:06:37.350Z",
           "updatedAt": "",
-          "rank": 85
+          "rank": 89
         },
         {
           "id": "recvpSDgfxEOtZ",
@@ -2534,9 +2650,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:14:30.890Z",
+          "createdAt": "2026-07-27T08:58:48.071Z",
           "updatedAt": "",
-          "rank": 86
+          "rank": 90
         },
         {
           "id": "recvpZHRcBgJ1A",
@@ -2563,9 +2679,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:19:59.598Z",
+          "createdAt": "2026-07-27T09:06:24.916Z",
           "updatedAt": "",
-          "rank": 87
+          "rank": 91
         },
         {
           "id": "recvhY2tandn22",
@@ -2594,9 +2710,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:15:10.824Z",
+          "createdAt": "2026-07-27T08:59:39.388Z",
           "updatedAt": "",
-          "rank": 88
+          "rank": 92
         },
         {
           "id": "recvoA6IHRT9u8",
@@ -2606,10 +2722,10 @@
           "platform": "微小",
           "developer": "厦门魔兔",
           "publisher": "厦门魔兔",
-          "sourceText": "地府题材的商战官斗模拟经营，仅测试两天",
-          "icon": "feishu-assets/recvoA6IHRT9u8-icon-1.png?v=1783094400000",
+          "sourceText": "地府题材的商战官斗模拟经营，7月10测试周期仅两天，7月27二测",
+          "icon": "feishu-assets/recvoA6IHRT9u8-icon-1.png?v=1785081600000",
           "screenshots": [],
-          "cover": "feishu-assets/recvoA6IHRT9u8-icon-1.png?v=1783094400000",
+          "cover": "feishu-assets/recvoA6IHRT9u8-icon-1.png?v=1785081600000",
           "status": "测试",
           "month": "7月",
           "focus": false,
@@ -2617,15 +2733,15 @@
           "releaseStatus": "可发布",
           "reason": "",
           "judgement": "",
-          "latestNodeTime": "2026-07-04",
+          "latestNodeTime": "2026-07-27",
           "firstTestTime": "2026-07-04",
           "finalTestTime": "",
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:19:18.052Z",
+          "createdAt": "2026-07-27T09:05:27.035Z",
           "updatedAt": "",
-          "rank": 89
+          "rank": 93
         },
         {
           "id": "recvpfiQO8aKd3",
@@ -2652,9 +2768,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:19:36.730Z",
+          "createdAt": "2026-07-27T09:05:52.003Z",
           "updatedAt": "",
-          "rank": 90
+          "rank": 94
         },
         {
           "id": "recvq9UTKGXggX",
@@ -2681,9 +2797,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:20:01.689Z",
+          "createdAt": "2026-07-27T09:06:27.899Z",
           "updatedAt": "",
-          "rank": 91
+          "rank": 95
         },
         {
           "id": "recvpeEuVkM2mv",
@@ -2710,9 +2826,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:13:56.004Z",
+          "createdAt": "2026-07-27T08:58:05.104Z",
           "updatedAt": "",
-          "rank": 92
+          "rank": 96
         },
         {
           "id": "recviNOIwudTg3",
@@ -2741,9 +2857,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:11:57.826Z",
+          "createdAt": "2026-07-27T08:55:52.879Z",
           "updatedAt": "",
-          "rank": 93
+          "rank": 97
         },
         {
           "id": "recvpeBt7ACikY",
@@ -2770,9 +2886,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:19:26.485Z",
+          "createdAt": "2026-07-27T09:05:38.867Z",
           "updatedAt": "",
-          "rank": 94
+          "rank": 98
         },
         {
           "id": "recvpTcMTC8fBg",
@@ -2799,9 +2915,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:19:52.565Z",
+          "createdAt": "2026-07-27T09:06:14.543Z",
           "updatedAt": "",
-          "rank": 95
+          "rank": 99
         },
         {
           "id": "recvoh2ON0OTUg",
@@ -2828,9 +2944,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:13:51.649Z",
+          "createdAt": "2026-07-27T08:57:59.352Z",
           "updatedAt": "",
-          "rank": 96
+          "rank": 100
         },
         {
           "id": "recvoQ8vF193Y8",
@@ -2857,9 +2973,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:10:28.983Z",
+          "createdAt": "2026-07-27T08:54:28.763Z",
           "updatedAt": "",
-          "rank": 97
+          "rank": 101
         },
         {
           "id": "recvpTeKRfCdAo",
@@ -2886,9 +3002,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:19:55.533Z",
+          "createdAt": "2026-07-27T09:06:18.645Z",
           "updatedAt": "",
-          "rank": 98
+          "rank": 102
         },
         {
           "id": "recvozCQzpcnWb",
@@ -2915,9 +3031,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:19:09.150Z",
+          "createdAt": "2026-07-27T09:05:14.758Z",
           "updatedAt": "",
-          "rank": 99
+          "rank": 103
         },
         {
           "id": "recvjibPoXOjuU",
@@ -2944,9 +3060,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:10:23.088Z",
+          "createdAt": "2026-07-27T08:54:23.485Z",
           "updatedAt": "",
-          "rank": 100
+          "rank": 104
         },
         {
           "id": "recvoQ5kvUf8EO",
@@ -2956,10 +3072,10 @@
           "platform": "APP",
           "developer": "杭州茉娱",
           "publisher": "深圳冰川",
-          "sourceText": "横版猫咪题材小鸡Like变种，冰川50+计划测试次留过50产品，该次为第三次测试",
-          "icon": "feishu-assets/recvoQ5kvUf8EO-icon-1.png?v=1783440000000",
+          "sourceText": "横版猫咪题材小鸡Like变种，次留过50产品，7月27四测",
+          "icon": "feishu-assets/recvoQ5kvUf8EO-icon-1.png?v=1785081600000",
           "screenshots": [],
-          "cover": "feishu-assets/recvoQ5kvUf8EO-icon-1.png?v=1783440000000",
+          "cover": "feishu-assets/recvoQ5kvUf8EO-icon-1.png?v=1785081600000",
           "status": "测试",
           "month": "7月",
           "focus": false,
@@ -2967,15 +3083,15 @@
           "releaseStatus": "可发布",
           "reason": "",
           "judgement": "",
-          "latestNodeTime": "2026-07-08",
+          "latestNodeTime": "2026-07-27",
           "firstTestTime": "2026-09-10",
           "finalTestTime": "",
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:19:23.208Z",
+          "createdAt": "2026-07-27T09:05:34.157Z",
           "updatedAt": "",
-          "rank": 101
+          "rank": 105
         },
         {
           "id": "recvq9THh34zfQ",
@@ -3002,9 +3118,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:14:34.024Z",
+          "createdAt": "2026-07-27T08:58:51.679Z",
           "updatedAt": "",
-          "rank": 102
+          "rank": 106
         },
         {
           "id": "recvoK5JvbEmGL",
@@ -3031,9 +3147,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:19:22.245Z",
+          "createdAt": "2026-07-27T09:05:32.753Z",
           "updatedAt": "",
-          "rank": 103
+          "rank": 107
         },
         {
           "id": "recvpex368Czqc",
@@ -3060,9 +3176,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:11:01.201Z",
+          "createdAt": "2026-07-27T08:54:59.924Z",
           "updatedAt": "",
-          "rank": 104
+          "rank": 108
         },
         {
           "id": "recvqxFFcqn7nZ",
@@ -3089,9 +3205,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:20:15.676Z",
+          "createdAt": "2026-07-27T09:06:48.580Z",
           "updatedAt": "",
-          "rank": 105
+          "rank": 109
         },
         {
           "id": "recvlsmla6hibU",
@@ -3118,9 +3234,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:59.886Z",
+          "createdAt": "2026-07-27T09:03:33.293Z",
           "updatedAt": "",
-          "rank": 106
+          "rank": 110
         },
         {
           "id": "recvozy9yJmh8A",
@@ -3147,9 +3263,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:10:58.441Z",
+          "createdAt": "2026-07-27T08:54:57.106Z",
           "updatedAt": "",
-          "rank": 107
+          "rank": 111
         },
         {
           "id": "recvlsmklGjVw5",
@@ -3176,9 +3292,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:56.513Z",
+          "createdAt": "2026-07-27T09:03:27.628Z",
           "updatedAt": "",
-          "rank": 108
+          "rank": 112
         },
         {
           "id": "recvhY2uOFwFyP",
@@ -3209,9 +3325,38 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:10:38.793Z",
+          "createdAt": "2026-07-27T08:54:38.670Z",
           "updatedAt": "",
-          "rank": 109
+          "rank": 113
+        },
+        {
+          "id": "recvqy93SbJmzl",
+          "name": "Family Tales",
+          "genre": "二合",
+          "topic": "欧卡",
+          "platform": "APP",
+          "developer": "点点",
+          "publisher": "点点",
+          "sourceText": "Family Tales: Merge & Design-点点，二合新品。家居装修赛道的，玩法跟tasty travel一样，只是把室外装修改成了室内装修",
+          "icon": "feishu-assets/recvqy93SbJmzl-icon-1.png?v=1783699200000",
+          "screenshots": [],
+          "cover": "feishu-assets/recvqy93SbJmzl-icon-1.png?v=1783699200000",
+          "status": "测试",
+          "month": "7月",
+          "focus": false,
+          "sourceUrl": "https://play.google.com/store/apps/details?id=com.designingcozyhome.global&hl=en",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "latestNodeTime": "2026-07-11",
+          "firstTestTime": "2026-07-11",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "2026-07-27T09:06:54.711Z",
+          "updatedAt": "",
+          "rank": 114
         },
         {
           "id": "recvoA6Z1uaKDf",
@@ -3238,13 +3383,71 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:19:19.108Z",
+          "createdAt": "2026-07-27T09:05:28.551Z",
           "updatedAt": "",
-          "rank": 110
+          "rank": 115
+        },
+        {
+          "id": "recvqyaTgCLSiZ",
+          "name": "Shelter Days: Survival",
+          "genre": "SLG",
+          "topic": "卡通",
+          "platform": "APP",
+          "developer": "未知",
+          "publisher": "37games",
+          "sourceText": "瘟疫的换皮，改成丧尸，在T1国家测试",
+          "icon": "feishu-assets/recvqyaTgCLSiZ-icon-1.png?v=1784131200000",
+          "screenshots": [],
+          "cover": "feishu-assets/recvqyaTgCLSiZ-icon-1.png?v=1784131200000",
+          "status": "测试",
+          "month": "7月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "latestNodeTime": "2026-07-16",
+          "firstTestTime": "2026-07-16",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "2026-07-27T09:06:57.440Z",
+          "updatedAt": "",
+          "rank": 116
+        },
+        {
+          "id": "recvqy9aX7QSZu",
+          "name": "Top Museum",
+          "genre": "SLG",
+          "topic": "博物馆",
+          "platform": "APP",
+          "developer": "IGG",
+          "publisher": "IGG",
+          "sourceText": "博物馆SLG，战斗和角色挺捞的，直男视角女性向，目前在海外测试",
+          "icon": "feishu-assets/recvqy9aX7QSZu-icon-1.png?v=1784563200000",
+          "screenshots": [],
+          "cover": "feishu-assets/recvqy9aX7QSZu-icon-1.png?v=1784563200000",
+          "status": "测试",
+          "month": "7月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "latestNodeTime": "2026-07-21",
+          "firstTestTime": "2026-07-21",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "2026-07-27T09:06:56.153Z",
+          "updatedAt": "",
+          "rank": 117
         }
       ],
-      "createdAt": "2026-07-27T05:20:16.607Z",
-      "updatedAt": "2026-07-27T05:20:16.607Z"
+      "createdAt": "2026-07-27T09:06:58.699Z",
+      "updatedAt": "2026-07-27T09:06:58.699Z"
     },
     {
       "id": "6",
@@ -3253,7 +3456,7 @@
       "date": "2026-07-27",
       "summary": "6月收录的新游产品列表，支持持续录入、筛选和对外展示。",
       "metrics": [
-        "收录产品89款",
+        "收录产品88款",
         "上线 / IOS上榜 / 微小上榜 / 测试",
         "8个平台",
         "重点产品2款"
@@ -3285,7 +3488,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:12:15.094Z",
+          "createdAt": "2026-07-27T08:56:10.466Z",
           "updatedAt": "",
           "rank": 1
         },
@@ -3314,7 +3517,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:13:39.183Z",
+          "createdAt": "2026-07-27T08:57:43.441Z",
           "updatedAt": "",
           "rank": 2
         },
@@ -3343,7 +3546,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:18:38.945Z",
+          "createdAt": "2026-07-27T09:04:29.460Z",
           "updatedAt": "",
           "rank": 3
         },
@@ -3374,7 +3577,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:18:35.647Z",
+          "createdAt": "2026-07-27T09:04:24.947Z",
           "updatedAt": "",
           "rank": 4
         },
@@ -3403,7 +3606,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:13:48.491Z",
+          "createdAt": "2026-07-27T08:57:55.322Z",
           "updatedAt": "",
           "rank": 5
         },
@@ -3432,7 +3635,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:18:13.698Z",
+          "createdAt": "2026-07-27T09:03:53.002Z",
           "updatedAt": "",
           "rank": 6
         },
@@ -3461,7 +3664,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:12:19.535Z",
+          "createdAt": "2026-07-27T08:56:15.378Z",
           "updatedAt": "",
           "rank": 7
         },
@@ -3490,7 +3693,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:13:40.412Z",
+          "createdAt": "2026-07-27T08:57:44.899Z",
           "updatedAt": "",
           "rank": 8
         },
@@ -3519,7 +3722,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:13:50.570Z",
+          "createdAt": "2026-07-27T08:57:57.912Z",
           "updatedAt": "",
           "rank": 9
         },
@@ -3548,7 +3751,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:13:49.462Z",
+          "createdAt": "2026-07-27T08:57:56.476Z",
           "updatedAt": "",
           "rank": 10
         },
@@ -3577,7 +3780,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:13:46.065Z",
+          "createdAt": "2026-07-27T08:57:51.778Z",
           "updatedAt": "",
           "rank": 11
         },
@@ -3606,7 +3809,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:13:44.540Z",
+          "createdAt": "2026-07-27T08:57:49.944Z",
           "updatedAt": "",
           "rank": 12
         },
@@ -3635,7 +3838,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:55.423Z",
+          "createdAt": "2026-07-27T09:03:26.217Z",
           "updatedAt": "",
           "rank": 13
         },
@@ -3664,7 +3867,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:18:10.404Z",
+          "createdAt": "2026-07-27T09:03:49.057Z",
           "updatedAt": "",
           "rank": 14
         },
@@ -3693,7 +3896,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:18:00.886Z",
+          "createdAt": "2026-07-27T09:03:34.584Z",
           "updatedAt": "",
           "rank": 15
         },
@@ -3725,38 +3928,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:12:27.309Z",
+          "createdAt": "2026-07-27T08:56:22.646Z",
           "updatedAt": "",
           "rank": 16
-        },
-        {
-          "id": "recvif2IicOAF8",
-          "name": "斗破：莫欺少年穷",
-          "genre": "MMORPG",
-          "topic": "斗破IP",
-          "platform": "APP / 微小",
-          "developer": "广州小丑鱼",
-          "publisher": "37手游",
-          "sourceText": "APP 4月29日信息流买量测，好游tap等5月8号测-天龙八部荣耀版底层迭代，6月8上微小测试",
-          "icon": "feishu-assets/recvif2IicOAF8-icon-1.png?v=1780848000000",
-          "screenshots": [],
-          "cover": "feishu-assets/recvif2IicOAF8-icon-1.png?v=1780848000000",
-          "status": "测试",
-          "month": "6月",
-          "focus": false,
-          "sourceUrl": "",
-          "releaseStatus": "可发布",
-          "reason": "",
-          "judgement": "",
-          "latestNodeTime": "2026-06-08",
-          "firstTestTime": "2026-04-29",
-          "finalTestTime": "",
-          "publicTestTime": "",
-          "launchTime": "",
-          "publicNode": "",
-          "createdAt": "2026-07-27T05:15:36.966Z",
-          "updatedAt": "",
-          "rank": 17
         },
         {
           "id": "recvlg1m2THO2K",
@@ -3783,9 +3957,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:10:52.260Z",
+          "createdAt": "2026-07-27T08:54:52.317Z",
           "updatedAt": "",
-          "rank": 18
+          "rank": 17
         },
         {
           "id": "recvlrzY9cUckf",
@@ -3812,9 +3986,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:47.784Z",
+          "createdAt": "2026-07-27T09:03:15.477Z",
           "updatedAt": "",
-          "rank": 19
+          "rank": 18
         },
         {
           "id": "recvjibPoXLVgs",
@@ -3841,9 +4015,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:07.322Z",
+          "createdAt": "2026-07-27T09:02:18.351Z",
           "updatedAt": "",
-          "rank": 20
+          "rank": 19
         },
         {
           "id": "recvnf25zr3yvB",
@@ -3870,9 +4044,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:13:43.479Z",
+          "createdAt": "2026-07-27T08:57:48.548Z",
           "updatedAt": "",
-          "rank": 21
+          "rank": 20
         },
         {
           "id": "recvo5xzwOiCeo",
@@ -3899,9 +4073,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:18:55.373Z",
+          "createdAt": "2026-07-27T09:04:55.842Z",
           "updatedAt": "",
-          "rank": 22
+          "rank": 21
         },
         {
           "id": "recvlsmkXIgTml",
@@ -3928,9 +4102,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:58.871Z",
+          "createdAt": "2026-07-27T09:03:31.885Z",
           "updatedAt": "",
-          "rank": 23
+          "rank": 22
         },
         {
           "id": "recvnf1gSRZChJ",
@@ -3957,9 +4131,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:13:42.431Z",
+          "createdAt": "2026-07-27T08:57:47.422Z",
           "updatedAt": "",
-          "rank": 24
+          "rank": 23
         },
         {
           "id": "recvlsmn6bbMCi",
@@ -3986,9 +4160,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:18:08.157Z",
+          "createdAt": "2026-07-27T09:03:45.334Z",
           "updatedAt": "",
-          "rank": 25
+          "rank": 24
         },
         {
           "id": "recvo5xh7xOF1U",
@@ -4015,9 +4189,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:18:54.099Z",
+          "createdAt": "2026-07-27T09:04:54.543Z",
           "updatedAt": "",
-          "rank": 26
+          "rank": 25
         },
         {
           "id": "recviOIDjSpdF1",
@@ -4044,9 +4218,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:12:02.085Z",
+          "createdAt": "2026-07-27T08:55:57.808Z",
           "updatedAt": "",
-          "rank": 27
+          "rank": 26
         },
         {
           "id": "recvlsmmMxDcBP",
@@ -4073,9 +4247,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:18:07.144Z",
+          "createdAt": "2026-07-27T09:03:44.014Z",
           "updatedAt": "",
-          "rank": 28
+          "rank": 27
         },
         {
           "id": "recvnf2bK0JIjz",
@@ -4102,9 +4276,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:18:26.657Z",
+          "createdAt": "2026-07-27T09:04:10.346Z",
           "updatedAt": "",
-          "rank": 29
+          "rank": 28
         },
         {
           "id": "recvo5s3Zs8xTH",
@@ -4131,9 +4305,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:18:45.517Z",
+          "createdAt": "2026-07-27T09:04:39.384Z",
           "updatedAt": "",
-          "rank": 30
+          "rank": 29
         },
         {
           "id": "recvo5uIRMzuyo",
@@ -4160,9 +4334,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:18:49.795Z",
+          "createdAt": "2026-07-27T09:04:46.523Z",
           "updatedAt": "",
-          "rank": 31
+          "rank": 30
         },
         {
           "id": "recvo5q2LGq1b6",
@@ -4189,9 +4363,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:18:42.772Z",
+          "createdAt": "2026-07-27T09:04:35.184Z",
           "updatedAt": "",
-          "rank": 32
+          "rank": 31
         },
         {
           "id": "recvlg4fMotiKM",
@@ -4218,9 +4392,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:26.358Z",
+          "createdAt": "2026-07-27T09:02:45.229Z",
           "updatedAt": "",
-          "rank": 33
+          "rank": 32
         },
         {
           "id": "recvlsmk1aarv2",
@@ -4247,9 +4421,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:13:35.523Z",
+          "createdAt": "2026-07-27T08:57:39.392Z",
           "updatedAt": "",
-          "rank": 34
+          "rank": 33
         },
         {
           "id": "recvlg0cjGoqyu",
@@ -4276,9 +4450,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:24.286Z",
+          "createdAt": "2026-07-27T09:02:42.360Z",
           "updatedAt": "",
-          "rank": 35
+          "rank": 34
         },
         {
           "id": "recvo5vOOhfywg",
@@ -4305,9 +4479,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:18:50.842Z",
+          "createdAt": "2026-07-27T09:04:47.798Z",
           "updatedAt": "",
-          "rank": 36
+          "rank": 35
         },
         {
           "id": "recvmc7BoeUpK2",
@@ -4334,9 +4508,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:18:12.662Z",
+          "createdAt": "2026-07-27T09:03:51.608Z",
           "updatedAt": "",
-          "rank": 37
+          "rank": 36
         },
         {
           "id": "recvnfvWmwf6au",
@@ -4363,9 +4537,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:18:27.574Z",
+          "createdAt": "2026-07-27T09:04:11.909Z",
           "updatedAt": "",
-          "rank": 38
+          "rank": 37
         },
         {
           "id": "recvlsmmBfqAjc",
@@ -4392,9 +4566,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:18:06.189Z",
+          "createdAt": "2026-07-27T09:03:42.587Z",
           "updatedAt": "",
-          "rank": 39
+          "rank": 38
         },
         {
           "id": "recvjibPoXy59R",
@@ -4421,9 +4595,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:12:10.655Z",
+          "createdAt": "2026-07-27T08:56:06.018Z",
           "updatedAt": "",
-          "rank": 40
+          "rank": 39
         },
         {
           "id": "recvmFNsgX3sga",
@@ -4450,9 +4624,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:18:21.787Z",
+          "createdAt": "2026-07-27T09:04:03.613Z",
           "updatedAt": "",
-          "rank": 41
+          "rank": 40
         },
         {
           "id": "recvmFMjHkQI2c",
@@ -4479,9 +4653,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:18:17.999Z",
+          "createdAt": "2026-07-27T09:03:59.239Z",
           "updatedAt": "",
-          "rank": 42
+          "rank": 41
         },
         {
           "id": "rec27gFuTu5oXb",
@@ -4511,9 +4685,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:11:08.539Z",
+          "createdAt": "2026-07-27T08:55:07.945Z",
           "updatedAt": "",
-          "rank": 43
+          "rank": 42
         },
         {
           "id": "recvnfy0w4sjdR",
@@ -4540,9 +4714,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:18:29.968Z",
+          "createdAt": "2026-07-27T09:04:17.260Z",
           "updatedAt": "",
-          "rank": 44
+          "rank": 43
         },
         {
           "id": "recvneXPqEWGSt",
@@ -4569,9 +4743,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:18:25.293Z",
+          "createdAt": "2026-07-27T09:04:08.611Z",
           "updatedAt": "",
-          "rank": 45
+          "rank": 44
         },
         {
           "id": "recvmFLyf5kSt3",
@@ -4598,9 +4772,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:13:38.005Z",
+          "createdAt": "2026-07-27T08:57:42.039Z",
           "updatedAt": "",
-          "rank": 46
+          "rank": 45
         },
         {
           "id": "recvnBVq3S8lnK",
@@ -4627,9 +4801,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:18:36.859Z",
+          "createdAt": "2026-07-27T09:04:26.344Z",
           "updatedAt": "",
-          "rank": 47
+          "rank": 46
         },
         {
           "id": "recvo5wXN30mGX",
@@ -4656,9 +4830,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:18:53.068Z",
+          "createdAt": "2026-07-27T09:04:53.073Z",
           "updatedAt": "",
-          "rank": 48
+          "rank": 47
         },
         {
           "id": "recvlslgH4e3lC",
@@ -4685,9 +4859,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:54.255Z",
+          "createdAt": "2026-07-27T09:03:24.344Z",
           "updatedAt": "",
-          "rank": 49
+          "rank": 48
         },
         {
           "id": "recvneyZMq33Qm",
@@ -4714,9 +4888,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:18:23.891Z",
+          "createdAt": "2026-07-27T09:04:06.671Z",
           "updatedAt": "",
-          "rank": 50
+          "rank": 49
         },
         {
           "id": "recvnfyiZELajt",
@@ -4743,9 +4917,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:18:31.387Z",
+          "createdAt": "2026-07-27T09:04:19.361Z",
           "updatedAt": "",
-          "rank": 51
+          "rank": 50
         },
         {
           "id": "recvneXioPzePe",
@@ -4772,9 +4946,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:12:30.614Z",
+          "createdAt": "2026-07-27T08:56:25.310Z",
           "updatedAt": "",
-          "rank": 52
+          "rank": 51
         },
         {
           "id": "recvnBNw2Hlm9n",
@@ -4801,9 +4975,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:12:32.432Z",
+          "createdAt": "2026-07-27T08:56:27.290Z",
           "updatedAt": "",
-          "rank": 53
+          "rank": 52
         },
         {
           "id": "recvneEGgJuf5K",
@@ -4830,9 +5004,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:12:21.061Z",
+          "createdAt": "2026-07-27T08:56:17.302Z",
           "updatedAt": "",
-          "rank": 54
+          "rank": 53
         },
         {
           "id": "recvo5rqHHGa3j",
@@ -4859,9 +5033,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:18:43.984Z",
+          "createdAt": "2026-07-27T09:04:37.283Z",
           "updatedAt": "",
-          "rank": 55
+          "rank": 54
         },
         {
           "id": "recvo5vSHpVIjR",
@@ -4888,9 +5062,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:18:51.953Z",
+          "createdAt": "2026-07-27T09:04:49.972Z",
           "updatedAt": "",
-          "rank": 56
+          "rank": 55
         },
         {
           "id": "recvnqvqiTWocW",
@@ -4917,9 +5091,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:18:33.437Z",
+          "createdAt": "2026-07-27T09:04:22.193Z",
           "updatedAt": "",
-          "rank": 57
+          "rank": 56
         },
         {
           "id": "recvmFLJOhHgQu",
@@ -4946,9 +5120,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:18:16.819Z",
+          "createdAt": "2026-07-27T09:03:57.808Z",
           "updatedAt": "",
-          "rank": 58
+          "rank": 57
         },
         {
           "id": "recvmFKWX5lp8w",
@@ -4975,9 +5149,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:18:15.799Z",
+          "createdAt": "2026-07-27T09:03:56.558Z",
           "updatedAt": "",
-          "rank": 59
+          "rank": 58
         },
         {
           "id": "recvlslfZOgAVs",
@@ -5004,9 +5178,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:52.244Z",
+          "createdAt": "2026-07-27T09:03:21.612Z",
           "updatedAt": "",
-          "rank": 60
+          "rank": 59
         },
         {
           "id": "recvmFvyv0a5jK",
@@ -5033,9 +5207,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:13:36.806Z",
+          "createdAt": "2026-07-27T08:57:40.675Z",
           "updatedAt": "",
-          "rank": 61
+          "rank": 60
         },
         {
           "id": "recvlfSb8LY3OD",
@@ -5062,9 +5236,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:10:50.964Z",
+          "createdAt": "2026-07-27T08:54:50.951Z",
           "updatedAt": "",
-          "rank": 62
+          "rank": 61
         },
         {
           "id": "recvmRjufm0ehX",
@@ -5091,9 +5265,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:18:22.918Z",
+          "createdAt": "2026-07-27T09:04:04.979Z",
           "updatedAt": "",
-          "rank": 63
+          "rank": 62
         },
         {
           "id": "recvo5t26iPIID",
@@ -5120,9 +5294,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:18:47.771Z",
+          "createdAt": "2026-07-27T09:04:43.418Z",
           "updatedAt": "",
-          "rank": 64
+          "rank": 63
         },
         {
           "id": "recvo5pLB3Uavu",
@@ -5149,9 +5323,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:18:41.502Z",
+          "createdAt": "2026-07-27T09:04:32.746Z",
           "updatedAt": "",
-          "rank": 65
+          "rank": 64
         },
         {
           "id": "recvnf1g0Yq6mM",
@@ -5178,9 +5352,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:13:41.391Z",
+          "createdAt": "2026-07-27T08:57:46.030Z",
           "updatedAt": "",
-          "rank": 66
+          "rank": 65
         },
         {
           "id": "recvjibPoXs3y8",
@@ -5207,9 +5381,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:13:32.366Z",
+          "createdAt": "2026-07-27T08:57:35.760Z",
           "updatedAt": "",
-          "rank": 67
+          "rank": 66
         },
         {
           "id": "recvo5stn6xER3",
@@ -5236,9 +5410,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:18:46.482Z",
+          "createdAt": "2026-07-27T09:04:41.544Z",
           "updatedAt": "",
-          "rank": 68
+          "rank": 67
         },
         {
           "id": "recvmFNWvr4aEe",
@@ -5265,9 +5439,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:12:17.998Z",
+          "createdAt": "2026-07-27T08:56:14.147Z",
           "updatedAt": "",
-          "rank": 69
+          "rank": 68
         },
         {
           "id": "recvlslhg46RnY",
@@ -5294,9 +5468,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:12:16.802Z",
+          "createdAt": "2026-07-27T08:56:12.058Z",
           "updatedAt": "",
-          "rank": 70
+          "rank": 69
         },
         {
           "id": "recvlsmmnfQr7P",
@@ -5323,9 +5497,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:18:05.130Z",
+          "createdAt": "2026-07-27T09:03:41.192Z",
           "updatedAt": "",
-          "rank": 71
+          "rank": 70
         },
         {
           "id": "recvmFN1Hw5k5A",
@@ -5352,9 +5526,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:18:19.385Z",
+          "createdAt": "2026-07-27T09:04:00.622Z",
           "updatedAt": "",
-          "rank": 72
+          "rank": 71
         },
         {
           "id": "recvlsmlSBmmm4",
@@ -5381,9 +5555,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:18:02.927Z",
+          "createdAt": "2026-07-27T09:03:37.576Z",
           "updatedAt": "",
-          "rank": 73
+          "rank": 72
         },
         {
           "id": "recvlsmlEpQBH6",
@@ -5410,9 +5584,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:18:01.832Z",
+          "createdAt": "2026-07-27T09:03:35.961Z",
           "updatedAt": "",
-          "rank": 74
+          "rank": 73
         },
         {
           "id": "recvlrzVVl75is",
@@ -5439,9 +5613,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:13:34.525Z",
+          "createdAt": "2026-07-27T08:57:38.137Z",
           "updatedAt": "",
-          "rank": 75
+          "rank": 74
         },
         {
           "id": "recvlg2EheBtQh",
@@ -5468,9 +5642,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:10:54.662Z",
+          "createdAt": "2026-07-27T08:54:53.526Z",
           "updatedAt": "",
-          "rank": 76
+          "rank": 75
         },
         {
           "id": "recvo5u2xyn6Hm",
@@ -5497,9 +5671,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:18:48.825Z",
+          "createdAt": "2026-07-27T09:04:44.797Z",
           "updatedAt": "",
-          "rank": 77
+          "rank": 76
         },
         {
           "id": "recvnC1zWpY9IS",
@@ -5526,9 +5700,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:18:37.818Z",
+          "createdAt": "2026-07-27T09:04:27.817Z",
           "updatedAt": "",
-          "rank": 78
+          "rank": 77
         },
         {
           "id": "recvlxelvsk3Ia",
@@ -5555,9 +5729,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:18:11.625Z",
+          "createdAt": "2026-07-27T09:03:50.310Z",
           "updatedAt": "",
-          "rank": 79
+          "rank": 78
         },
         {
           "id": "recvlsmnhMcniD",
@@ -5584,9 +5758,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:18:09.257Z",
+          "createdAt": "2026-07-27T09:03:47.524Z",
           "updatedAt": "",
-          "rank": 80
+          "rank": 79
         },
         {
           "id": "recvlslglAT1FU",
@@ -5613,9 +5787,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:53.298Z",
+          "createdAt": "2026-07-27T09:03:22.983Z",
           "updatedAt": "",
-          "rank": 81
+          "rank": 80
         },
         {
           "id": "recvlsmm87PJTH",
@@ -5642,9 +5816,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:18:03.998Z",
+          "createdAt": "2026-07-27T09:03:39.293Z",
           "updatedAt": "",
-          "rank": 82
+          "rank": 81
         },
         {
           "id": "recvlrAPkLDg1d",
@@ -5671,9 +5845,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:49.166Z",
+          "createdAt": "2026-07-27T09:03:17.059Z",
           "updatedAt": "",
-          "rank": 83
+          "rank": 82
         },
         {
           "id": "recvj5mg67q3Ad",
@@ -5700,9 +5874,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:16:28.298Z",
+          "createdAt": "2026-07-27T09:01:27.093Z",
           "updatedAt": "",
-          "rank": 84
+          "rank": 83
         },
         {
           "id": "recvlsmkI02J3R",
@@ -5729,9 +5903,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:57.901Z",
+          "createdAt": "2026-07-27T09:03:29.707Z",
           "updatedAt": "",
-          "rank": 85
+          "rank": 84
         },
         {
           "id": "recvoA7DV02efY",
@@ -5758,9 +5932,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:19:20.073Z",
+          "createdAt": "2026-07-27T09:05:29.912Z",
           "updatedAt": "",
-          "rank": 86
+          "rank": 85
         },
         {
           "id": "recvnfBFn3GM4Q",
@@ -5787,9 +5961,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:18:32.354Z",
+          "createdAt": "2026-07-27T09:04:20.897Z",
           "updatedAt": "",
-          "rank": 87
+          "rank": 86
         },
         {
           "id": "recvlslfnDJKSw",
@@ -5816,9 +5990,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:50.237Z",
+          "createdAt": "2026-07-27T09:03:18.593Z",
           "updatedAt": "",
-          "rank": 88
+          "rank": 87
         },
         {
           "id": "recvlslfGKOBRy",
@@ -5845,13 +6019,13 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:51.199Z",
+          "createdAt": "2026-07-27T09:03:20.120Z",
           "updatedAt": "",
-          "rank": 89
+          "rank": 88
         }
       ],
-      "createdAt": "2026-07-27T05:20:16.608Z",
-      "updatedAt": "2026-07-27T05:20:16.608Z"
+      "createdAt": "2026-07-27T09:06:58.700Z",
+      "updatedAt": "2026-07-27T09:06:58.700Z"
     },
     {
       "id": "5",
@@ -5860,7 +6034,7 @@
       "date": "2026-07-27",
       "summary": "5月收录的新游产品列表，支持持续录入、筛选和对外展示。",
       "metrics": [
-        "收录产品75款",
+        "收录产品76款",
         "上线 / IOS上榜 / 微小上榜 / 测试",
         "11个平台",
         "重点产品5款"
@@ -5892,7 +6066,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:35.384Z",
+          "createdAt": "2026-07-27T09:02:57.919Z",
           "updatedAt": "",
           "rank": 1
         },
@@ -5924,7 +6098,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:14:52.525Z",
+          "createdAt": "2026-07-27T08:59:12.889Z",
           "updatedAt": "",
           "rank": 2
         },
@@ -5953,7 +6127,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:13:10.577Z",
+          "createdAt": "2026-07-27T08:57:04.976Z",
           "updatedAt": "",
           "rank": 3
         },
@@ -5982,7 +6156,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:13:33.393Z",
+          "createdAt": "2026-07-27T08:57:36.977Z",
           "updatedAt": "",
           "rank": 4
         },
@@ -6011,7 +6185,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:39.444Z",
+          "createdAt": "2026-07-27T09:03:03.600Z",
           "updatedAt": "",
           "rank": 5
         },
@@ -6040,7 +6214,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:16:39.249Z",
+          "createdAt": "2026-07-27T09:01:42.034Z",
           "updatedAt": "",
           "rank": 6
         },
@@ -6069,7 +6243,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:21.131Z",
+          "createdAt": "2026-07-27T09:02:37.737Z",
           "updatedAt": "",
           "rank": 7
         },
@@ -6098,7 +6272,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:05.158Z",
+          "createdAt": "2026-07-27T09:02:14.854Z",
           "updatedAt": "",
           "rank": 8
         },
@@ -6127,7 +6301,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:13:26.431Z",
+          "createdAt": "2026-07-27T08:57:28.302Z",
           "updatedAt": "",
           "rank": 9
         },
@@ -6156,7 +6330,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:33.423Z",
+          "createdAt": "2026-07-27T09:02:55.215Z",
           "updatedAt": "",
           "rank": 10
         },
@@ -6185,7 +6359,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:27.568Z",
+          "createdAt": "2026-07-27T09:02:46.799Z",
           "updatedAt": "",
           "rank": 11
         },
@@ -6214,7 +6388,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:13:27.421Z",
+          "createdAt": "2026-07-27T08:57:29.470Z",
           "updatedAt": "",
           "rank": 12
         },
@@ -6245,7 +6419,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:13:09.570Z",
+          "createdAt": "2026-07-27T08:57:03.490Z",
           "updatedAt": "",
           "rank": 13
         },
@@ -6274,7 +6448,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:10:44.887Z",
+          "createdAt": "2026-07-27T08:54:44.719Z",
           "updatedAt": "",
           "rank": 14
         },
@@ -6303,7 +6477,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:13.705Z",
+          "createdAt": "2026-07-27T09:02:27.926Z",
           "updatedAt": "",
           "rank": 15
         },
@@ -6332,7 +6506,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:12:13.333Z",
+          "createdAt": "2026-07-27T08:56:08.478Z",
           "updatedAt": "",
           "rank": 16
         },
@@ -6363,7 +6537,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:16:58.217Z",
+          "createdAt": "2026-07-27T09:02:06.278Z",
           "updatedAt": "",
           "rank": 17
         },
@@ -6392,7 +6566,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:15:40.189Z",
+          "createdAt": "2026-07-27T09:00:22.255Z",
           "updatedAt": "",
           "rank": 18
         },
@@ -6423,7 +6597,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:13:22.978Z",
+          "createdAt": "2026-07-27T08:57:23.115Z",
           "updatedAt": "",
           "rank": 19
         },
@@ -6454,7 +6628,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:09.927Z",
+          "createdAt": "2026-07-27T09:02:23.130Z",
           "updatedAt": "",
           "rank": 20
         },
@@ -6485,7 +6659,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:12.636Z",
+          "createdAt": "2026-07-27T09:02:26.470Z",
           "updatedAt": "",
           "rank": 21
         },
@@ -6514,7 +6688,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:10:49.293Z",
+          "createdAt": "2026-07-27T08:54:48.968Z",
           "updatedAt": "",
           "rank": 22
         },
@@ -6543,7 +6717,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:16:29.696Z",
+          "createdAt": "2026-07-27T09:01:28.422Z",
           "updatedAt": "",
           "rank": 23
         },
@@ -6572,7 +6746,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:17.205Z",
+          "createdAt": "2026-07-27T09:02:32.814Z",
           "updatedAt": "",
           "rank": 24
         },
@@ -6601,7 +6775,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:31.156Z",
+          "createdAt": "2026-07-27T09:02:51.439Z",
           "updatedAt": "",
           "rank": 25
         },
@@ -6630,7 +6804,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:12:08.858Z",
+          "createdAt": "2026-07-27T08:56:04.555Z",
           "updatedAt": "",
           "rank": 26
         },
@@ -6659,7 +6833,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:41.558Z",
+          "createdAt": "2026-07-27T09:03:06.505Z",
           "updatedAt": "",
           "rank": 27
         },
@@ -6688,7 +6862,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:16:45.246Z",
+          "createdAt": "2026-07-27T09:01:49.370Z",
           "updatedAt": "",
           "rank": 28
         },
@@ -6717,7 +6891,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:12:03.227Z",
+          "createdAt": "2026-07-27T08:55:59.103Z",
           "updatedAt": "",
           "rank": 29
         },
@@ -6746,7 +6920,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:46.785Z",
+          "createdAt": "2026-07-27T09:03:14.160Z",
           "updatedAt": "",
           "rank": 30
         },
@@ -6775,7 +6949,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:37.444Z",
+          "createdAt": "2026-07-27T09:03:00.775Z",
           "updatedAt": "",
           "rank": 31
         },
@@ -6804,7 +6978,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:44.581Z",
+          "createdAt": "2026-07-27T09:03:11.358Z",
           "updatedAt": "",
           "rank": 32
         },
@@ -6835,7 +7009,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:16:51.187Z",
+          "createdAt": "2026-07-27T09:01:57.093Z",
           "updatedAt": "",
           "rank": 33
         },
@@ -6866,7 +7040,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:02.946Z",
+          "createdAt": "2026-07-27T09:02:12.064Z",
           "updatedAt": "",
           "rank": 34
         },
@@ -6895,7 +7069,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:13:31.226Z",
+          "createdAt": "2026-07-27T08:57:34.245Z",
           "updatedAt": "",
           "rank": 35
         },
@@ -6926,7 +7100,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:16:44.048Z",
+          "createdAt": "2026-07-27T09:01:47.562Z",
           "updatedAt": "",
           "rank": 36
         },
@@ -6955,7 +7129,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:16:30.858Z",
+          "createdAt": "2026-07-27T09:01:30.033Z",
           "updatedAt": "",
           "rank": 37
         },
@@ -6984,7 +7158,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:13:29.987Z",
+          "createdAt": "2026-07-27T08:57:32.408Z",
           "updatedAt": "",
           "rank": 38
         },
@@ -7013,7 +7187,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:14.721Z",
+          "createdAt": "2026-07-27T09:02:29.367Z",
           "updatedAt": "",
           "rank": 39
         },
@@ -7042,7 +7216,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:42.646Z",
+          "createdAt": "2026-07-27T09:03:07.878Z",
           "updatedAt": "",
           "rank": 40
         },
@@ -7071,7 +7245,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:34.422Z",
+          "createdAt": "2026-07-27T09:02:56.667Z",
           "updatedAt": "",
           "rank": 41
         },
@@ -7100,7 +7274,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:10:46.180Z",
+          "createdAt": "2026-07-27T08:54:46.021Z",
           "updatedAt": "",
           "rank": 42
         },
@@ -7129,7 +7303,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:16:38.318Z",
+          "createdAt": "2026-07-27T09:01:40.763Z",
           "updatedAt": "",
           "rank": 43
         },
@@ -7158,7 +7332,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:16:27.221Z",
+          "createdAt": "2026-07-27T09:01:25.705Z",
           "updatedAt": "",
           "rank": 44
         },
@@ -7187,7 +7361,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:15.896Z",
+          "createdAt": "2026-07-27T09:02:31.079Z",
           "updatedAt": "",
           "rank": 45
         },
@@ -7216,7 +7390,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:23.332Z",
+          "createdAt": "2026-07-27T09:02:40.638Z",
           "updatedAt": "",
           "rank": 46
         },
@@ -7247,7 +7421,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:13:01.452Z",
+          "createdAt": "2026-07-27T08:56:53.560Z",
           "updatedAt": "",
           "rank": 47
         },
@@ -7276,7 +7450,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:16:47.751Z",
+          "createdAt": "2026-07-27T09:01:52.200Z",
           "updatedAt": "",
           "rank": 48
         },
@@ -7305,7 +7479,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:20.008Z",
+          "createdAt": "2026-07-27T09:02:36.134Z",
           "updatedAt": "",
           "rank": 49
         },
@@ -7334,7 +7508,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:10:41.815Z",
+          "createdAt": "2026-07-27T08:54:41.865Z",
           "updatedAt": "",
           "rank": 50
         },
@@ -7363,7 +7537,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:38.384Z",
+          "createdAt": "2026-07-27T09:03:02.039Z",
           "updatedAt": "",
           "rank": 51
         },
@@ -7392,7 +7566,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:16:59.342Z",
+          "createdAt": "2026-07-27T09:02:07.737Z",
           "updatedAt": "",
           "rank": 52
         },
@@ -7421,7 +7595,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:12:07.339Z",
+          "createdAt": "2026-07-27T08:56:03.336Z",
           "updatedAt": "",
           "rank": 53
         },
@@ -7450,7 +7624,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:32.148Z",
+          "createdAt": "2026-07-27T09:02:53.193Z",
           "updatedAt": "",
           "rank": 54
         },
@@ -7479,7 +7653,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:40.466Z",
+          "createdAt": "2026-07-27T09:03:04.923Z",
           "updatedAt": "",
           "rank": 55
         },
@@ -7508,7 +7682,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:06.207Z",
+          "createdAt": "2026-07-27T09:02:16.550Z",
           "updatedAt": "",
           "rank": 56
         },
@@ -7537,7 +7711,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:10:47.545Z",
+          "createdAt": "2026-07-27T08:54:47.431Z",
           "updatedAt": "",
           "rank": 57
         },
@@ -7566,7 +7740,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:22.125Z",
+          "createdAt": "2026-07-27T09:02:39.239Z",
           "updatedAt": "",
           "rank": 58
         },
@@ -7595,9 +7769,38 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:15:39.108Z",
+          "createdAt": "2026-07-27T09:00:20.367Z",
           "updatedAt": "",
           "rank": 59
+        },
+        {
+          "id": "recvqybsrh8Lt1",
+          "name": "召唤大冒险",
+          "genre": "塔防",
+          "topic": "卡通",
+          "platform": "微小 / 抖小",
+          "developer": "北京攸乐",
+          "publisher": "北京攸乐",
+          "sourceText": "路径放置塔防（可操作角色）测了很久",
+          "icon": "feishu-assets/recvqybsrh8Lt1-icon-1.png?v=1780156800000",
+          "screenshots": [],
+          "cover": "feishu-assets/recvqybsrh8Lt1-icon-1.png?v=1780156800000",
+          "status": "测试",
+          "month": "5月",
+          "focus": false,
+          "sourceUrl": "",
+          "releaseStatus": "可发布",
+          "reason": "",
+          "judgement": "",
+          "latestNodeTime": "2026-05-31",
+          "firstTestTime": "2026-03-30",
+          "finalTestTime": "",
+          "publicTestTime": "",
+          "launchTime": "",
+          "publicNode": "",
+          "createdAt": "2026-07-27T09:06:58.697Z",
+          "updatedAt": "",
+          "rank": 60
         },
         {
           "id": "recviO54vXQ7x0",
@@ -7624,9 +7827,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:11:59.024Z",
+          "createdAt": "2026-07-27T08:55:54.173Z",
           "updatedAt": "",
-          "rank": 60
+          "rank": 61
         },
         {
           "id": "recvlg2E4AemZn",
@@ -7653,9 +7856,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:25.270Z",
+          "createdAt": "2026-07-27T09:02:43.736Z",
           "updatedAt": "",
-          "rank": 61
+          "rank": 62
         },
         {
           "id": "recvjibPoXfoeN",
@@ -7682,9 +7885,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:04.140Z",
+          "createdAt": "2026-07-27T09:02:13.504Z",
           "updatedAt": "",
-          "rank": 62
+          "rank": 63
         },
         {
           "id": "recvlgHSgf50sV",
@@ -7711,9 +7914,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:43.614Z",
+          "createdAt": "2026-07-27T09:03:09.640Z",
           "updatedAt": "",
-          "rank": 63
+          "rank": 64
         },
         {
           "id": "recvlg8eflRTME",
@@ -7740,9 +7943,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:28.898Z",
+          "createdAt": "2026-07-27T09:02:48.185Z",
           "updatedAt": "",
-          "rank": 64
+          "rank": 65
         },
         {
           "id": "recvji3TFY49Lt",
@@ -7771,9 +7974,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:16:37.207Z",
+          "createdAt": "2026-07-27T09:01:39.317Z",
           "updatedAt": "",
-          "rank": 65
+          "rank": 66
         },
         {
           "id": "recvjibPoXzOqG",
@@ -7802,9 +8005,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:16:55.180Z",
+          "createdAt": "2026-07-27T09:02:02.720Z",
           "updatedAt": "",
-          "rank": 66
+          "rank": 67
         },
         {
           "id": "recvjibPoXjgjW",
@@ -7831,9 +8034,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:12:04.568Z",
+          "createdAt": "2026-07-27T08:56:00.331Z",
           "updatedAt": "",
-          "rank": 67
+          "rank": 68
         },
         {
           "id": "recvjibPoXk9Gj",
@@ -7860,9 +8063,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:00.331Z",
+          "createdAt": "2026-07-27T09:02:09.147Z",
           "updatedAt": "",
-          "rank": 68
+          "rank": 69
         },
         {
           "id": "recvjibPoXklFL",
@@ -7889,9 +8092,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:16:46.198Z",
+          "createdAt": "2026-07-27T09:01:50.726Z",
           "updatedAt": "",
-          "rank": 69
+          "rank": 70
         },
         {
           "id": "recvjibOjeEgzi",
@@ -7918,9 +8121,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:16:41.669Z",
+          "createdAt": "2026-07-27T09:01:44.721Z",
           "updatedAt": "",
-          "rank": 70
+          "rank": 71
         },
         {
           "id": "recvkC1LMVM8Y5",
@@ -7947,9 +8150,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:12:11.863Z",
+          "createdAt": "2026-07-27T08:56:07.225Z",
           "updatedAt": "",
-          "rank": 71
+          "rank": 72
         },
         {
           "id": "recvjibPoXHibt",
@@ -7976,9 +8179,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:16:52.425Z",
+          "createdAt": "2026-07-27T09:01:59.171Z",
           "updatedAt": "",
-          "rank": 72
+          "rank": 73
         },
         {
           "id": "recvlgIAYoQJjs",
@@ -8005,9 +8208,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:17:45.763Z",
+          "createdAt": "2026-07-27T09:03:12.705Z",
           "updatedAt": "",
-          "rank": 73
+          "rank": 74
         },
         {
           "id": "recvjibPoXNKyq",
@@ -8034,9 +8237,9 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:16:48.993Z",
+          "createdAt": "2026-07-27T09:01:53.804Z",
           "updatedAt": "",
-          "rank": 74
+          "rank": 75
         },
         {
           "id": "recvji6MTMP0w5",
@@ -8063,13 +8266,13 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:16:40.408Z",
+          "createdAt": "2026-07-27T09:01:43.325Z",
           "updatedAt": "",
-          "rank": 75
+          "rank": 76
         }
       ],
-      "createdAt": "2026-07-27T05:20:16.608Z",
-      "updatedAt": "2026-07-27T05:20:16.608Z"
+      "createdAt": "2026-07-27T09:06:58.700Z",
+      "updatedAt": "2026-07-27T09:06:58.700Z"
     },
     {
       "id": "4",
@@ -8112,7 +8315,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:15:33.056Z",
+          "createdAt": "2026-07-27T09:00:13.547Z",
           "updatedAt": "",
           "rank": 1
         },
@@ -8145,7 +8348,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:14:43.636Z",
+          "createdAt": "2026-07-27T08:59:03.429Z",
           "updatedAt": "",
           "rank": 2
         },
@@ -8174,7 +8377,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:13:17.783Z",
+          "createdAt": "2026-07-27T08:57:14.662Z",
           "updatedAt": "",
           "rank": 3
         },
@@ -8206,7 +8409,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:13:15.506Z",
+          "createdAt": "2026-07-27T08:57:11.212Z",
           "updatedAt": "",
           "rank": 4
         },
@@ -8237,7 +8440,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:12:59.027Z",
+          "createdAt": "2026-07-27T08:56:49.878Z",
           "updatedAt": "",
           "rank": 5
         },
@@ -8270,7 +8473,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:15:03.436Z",
+          "createdAt": "2026-07-27T08:59:30.675Z",
           "updatedAt": "",
           "rank": 6
         },
@@ -8299,7 +8502,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:16:01.884Z",
+          "createdAt": "2026-07-27T09:00:51.007Z",
           "updatedAt": "",
           "rank": 7
         },
@@ -8328,7 +8531,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:15:41.305Z",
+          "createdAt": "2026-07-27T09:00:23.826Z",
           "updatedAt": "",
           "rank": 8
         },
@@ -8357,7 +8560,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:16:21.358Z",
+          "createdAt": "2026-07-27T09:01:17.775Z",
           "updatedAt": "",
           "rank": 9
         },
@@ -8388,7 +8591,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:13:04.799Z",
+          "createdAt": "2026-07-27T08:56:57.983Z",
           "updatedAt": "",
           "rank": 10
         },
@@ -8417,7 +8620,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:16:23.577Z",
+          "createdAt": "2026-07-27T09:01:20.818Z",
           "updatedAt": "",
           "rank": 11
         },
@@ -8449,7 +8652,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:14:56.709Z",
+          "createdAt": "2026-07-27T08:59:19.255Z",
           "updatedAt": "",
           "rank": 12
         },
@@ -8478,7 +8681,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:15:42.431Z",
+          "createdAt": "2026-07-27T09:00:25.623Z",
           "updatedAt": "",
           "rank": 13
         },
@@ -8507,7 +8710,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:11:37.419Z",
+          "createdAt": "2026-07-27T08:55:33.765Z",
           "updatedAt": "",
           "rank": 14
         },
@@ -8538,7 +8741,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:16:08.637Z",
+          "createdAt": "2026-07-27T09:00:59.671Z",
           "updatedAt": "",
           "rank": 15
         },
@@ -8567,7 +8770,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:15:43.529Z",
+          "createdAt": "2026-07-27T09:00:27.083Z",
           "updatedAt": "",
           "rank": 16
         },
@@ -8596,7 +8799,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:16:15.642Z",
+          "createdAt": "2026-07-27T09:01:10.229Z",
           "updatedAt": "",
           "rank": 17
         },
@@ -8625,7 +8828,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:15:23.866Z",
+          "createdAt": "2026-07-27T08:59:58.159Z",
           "updatedAt": "",
           "rank": 18
         },
@@ -8654,7 +8857,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:18:28.749Z",
+          "createdAt": "2026-07-27T09:04:15.563Z",
           "updatedAt": "",
           "rank": 19
         },
@@ -8685,7 +8888,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:11:32.898Z",
+          "createdAt": "2026-07-27T08:55:29.546Z",
           "updatedAt": "",
           "rank": 20
         },
@@ -8714,7 +8917,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:16:13.232Z",
+          "createdAt": "2026-07-27T09:01:07.269Z",
           "updatedAt": "",
           "rank": 21
         },
@@ -8743,7 +8946,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:16:00.759Z",
+          "createdAt": "2026-07-27T09:00:49.465Z",
           "updatedAt": "",
           "rank": 22
         },
@@ -8774,7 +8977,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:15:47.076Z",
+          "createdAt": "2026-07-27T09:00:31.906Z",
           "updatedAt": "",
           "rank": 23
         },
@@ -8803,7 +9006,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:13:12.038Z",
+          "createdAt": "2026-07-27T08:57:06.900Z",
           "updatedAt": "",
           "rank": 24
         },
@@ -8834,7 +9037,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:15:16.043Z",
+          "createdAt": "2026-07-27T08:59:46.043Z",
           "updatedAt": "",
           "rank": 25
         },
@@ -8865,7 +9068,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:11:54.232Z",
+          "createdAt": "2026-07-27T08:55:48.991Z",
           "updatedAt": "",
           "rank": 26
         },
@@ -8898,7 +9101,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:11:24.372Z",
+          "createdAt": "2026-07-27T08:55:20.950Z",
           "updatedAt": "",
           "rank": 27
         },
@@ -8927,7 +9130,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:16:17.965Z",
+          "createdAt": "2026-07-27T09:01:13.255Z",
           "updatedAt": "",
           "rank": 28
         },
@@ -8956,7 +9159,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:13:16.697Z",
+          "createdAt": "2026-07-27T08:57:13.399Z",
           "updatedAt": "",
           "rank": 29
         },
@@ -8985,7 +9188,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:15:44.528Z",
+          "createdAt": "2026-07-27T09:00:28.475Z",
           "updatedAt": "",
           "rank": 30
         },
@@ -9016,7 +9219,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:15:49.431Z",
+          "createdAt": "2026-07-27T09:00:35.078Z",
           "updatedAt": "",
           "rank": 31
         },
@@ -9045,7 +9248,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:16:12.081Z",
+          "createdAt": "2026-07-27T09:01:04.907Z",
           "updatedAt": "",
           "rank": 32
         },
@@ -9076,7 +9279,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:11:28.844Z",
+          "createdAt": "2026-07-27T08:55:24.310Z",
           "updatedAt": "",
           "rank": 33
         },
@@ -9107,7 +9310,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:11:43.848Z",
+          "createdAt": "2026-07-27T08:55:40.587Z",
           "updatedAt": "",
           "rank": 34
         },
@@ -9136,7 +9339,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:11:29.996Z",
+          "createdAt": "2026-07-27T08:55:25.472Z",
           "updatedAt": "",
           "rank": 35
         },
@@ -9165,7 +9368,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:16:25.994Z",
+          "createdAt": "2026-07-27T09:01:24.185Z",
           "updatedAt": "",
           "rank": 36
         },
@@ -9194,7 +9397,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:16:16.674Z",
+          "createdAt": "2026-07-27T09:01:11.797Z",
           "updatedAt": "",
           "rank": 37
         },
@@ -9223,7 +9426,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:11:50.376Z",
+          "createdAt": "2026-07-27T08:55:45.860Z",
           "updatedAt": "",
           "rank": 38
         },
@@ -9252,7 +9455,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:15:53.189Z",
+          "createdAt": "2026-07-27T09:00:39.543Z",
           "updatedAt": "",
           "rank": 39
         },
@@ -9281,7 +9484,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:15:55.600Z",
+          "createdAt": "2026-07-27T09:00:43.314Z",
           "updatedAt": "",
           "rank": 40
         },
@@ -9312,7 +9515,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:11:48.872Z",
+          "createdAt": "2026-07-27T08:55:44.535Z",
           "updatedAt": "",
           "rank": 41
         },
@@ -9341,7 +9544,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:16:34.021Z",
+          "createdAt": "2026-07-27T09:01:34.835Z",
           "updatedAt": "",
           "rank": 42
         },
@@ -9372,7 +9575,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:16:04.187Z",
+          "createdAt": "2026-07-27T09:00:53.898Z",
           "updatedAt": "",
           "rank": 43
         },
@@ -9403,7 +9606,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:16:32.986Z",
+          "createdAt": "2026-07-27T09:01:33.025Z",
           "updatedAt": "",
           "rank": 44
         },
@@ -9435,7 +9638,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:15:20.363Z",
+          "createdAt": "2026-07-27T08:59:53.152Z",
           "updatedAt": "",
           "rank": 45
         },
@@ -9464,7 +9667,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:15:56.648Z",
+          "createdAt": "2026-07-27T09:00:45.027Z",
           "updatedAt": "",
           "rank": 46
         },
@@ -9495,7 +9698,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:15:35.984Z",
+          "createdAt": "2026-07-27T09:00:17.495Z",
           "updatedAt": "",
           "rank": 47
         },
@@ -9524,7 +9727,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:16:35.228Z",
+          "createdAt": "2026-07-27T09:01:36.255Z",
           "updatedAt": "",
           "rank": 48
         },
@@ -9555,7 +9758,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:11:36.237Z",
+          "createdAt": "2026-07-27T08:55:32.296Z",
           "updatedAt": "",
           "rank": 49
         },
@@ -9584,7 +9787,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:15:57.816Z",
+          "createdAt": "2026-07-27T09:00:46.374Z",
           "updatedAt": "",
           "rank": 50
         },
@@ -9613,7 +9816,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:15:59.295Z",
+          "createdAt": "2026-07-27T09:00:48.090Z",
           "updatedAt": "",
           "rank": 51
         },
@@ -9642,7 +9845,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:15:37.997Z",
+          "createdAt": "2026-07-27T09:00:19.057Z",
           "updatedAt": "",
           "rank": 52
         },
@@ -9671,7 +9874,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:16:22.304Z",
+          "createdAt": "2026-07-27T09:01:19.135Z",
           "updatedAt": "",
           "rank": 53
         },
@@ -9702,7 +9905,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:15:13.725Z",
+          "createdAt": "2026-07-27T08:59:43.172Z",
           "updatedAt": "",
           "rank": 54
         },
@@ -9731,7 +9934,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:16:18.982Z",
+          "createdAt": "2026-07-27T09:01:14.671Z",
           "updatedAt": "",
           "rank": 55
         },
@@ -9760,7 +9963,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:16:09.903Z",
+          "createdAt": "2026-07-27T09:01:01.923Z",
           "updatedAt": "",
           "rank": 56
         },
@@ -9791,7 +9994,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:11:40.730Z",
+          "createdAt": "2026-07-27T08:55:37.437Z",
           "updatedAt": "",
           "rank": 57
         },
@@ -9823,7 +10026,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:11:15.396Z",
+          "createdAt": "2026-07-27T08:55:14.011Z",
           "updatedAt": "",
           "rank": 58
         },
@@ -9855,7 +10058,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:15:30.765Z",
+          "createdAt": "2026-07-27T09:00:09.615Z",
           "updatedAt": "",
           "rank": 59
         },
@@ -9886,7 +10089,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:15:26.799Z",
+          "createdAt": "2026-07-27T09:00:03.265Z",
           "updatedAt": "",
           "rank": 60
         },
@@ -9917,7 +10120,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:12:51.971Z",
+          "createdAt": "2026-07-27T08:56:39.795Z",
           "updatedAt": "",
           "rank": 61
         },
@@ -9948,7 +10151,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:14:39.289Z",
+          "createdAt": "2026-07-27T08:58:58.045Z",
           "updatedAt": "",
           "rank": 62
         },
@@ -9977,7 +10180,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:15:54.507Z",
+          "createdAt": "2026-07-27T09:00:41.719Z",
           "updatedAt": "",
           "rank": 63
         },
@@ -10006,7 +10209,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:16:05.204Z",
+          "createdAt": "2026-07-27T09:00:55.467Z",
           "updatedAt": "",
           "rank": 64
         },
@@ -10035,7 +10238,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:16:20.198Z",
+          "createdAt": "2026-07-27T09:01:16.119Z",
           "updatedAt": "",
           "rank": 65
         },
@@ -10064,7 +10267,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:16:16.674Z",
+          "createdAt": "2026-07-27T09:01:11.797Z",
           "updatedAt": "",
           "rank": 66
         },
@@ -10095,13 +10298,13 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:15:52.059Z",
+          "createdAt": "2026-07-27T09:00:38.050Z",
           "updatedAt": "",
           "rank": 67
         }
       ],
-      "createdAt": "2026-07-27T05:20:16.609Z",
-      "updatedAt": "2026-07-27T05:20:16.609Z"
+      "createdAt": "2026-07-27T09:06:58.701Z",
+      "updatedAt": "2026-07-27T09:06:58.701Z"
     },
     {
       "id": "3",
@@ -10142,7 +10345,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:14:28.738Z",
+          "createdAt": "2026-07-27T08:58:45.094Z",
           "updatedAt": "",
           "rank": 1
         },
@@ -10171,7 +10374,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:14:26.609Z",
+          "createdAt": "2026-07-27T08:58:42.417Z",
           "updatedAt": "",
           "rank": 2
         },
@@ -10200,7 +10403,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:14:25.604Z",
+          "createdAt": "2026-07-27T08:58:41.273Z",
           "updatedAt": "",
           "rank": 3
         },
@@ -10229,7 +10432,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:16:14.621Z",
+          "createdAt": "2026-07-27T09:01:08.958Z",
           "updatedAt": "",
           "rank": 4
         },
@@ -10258,7 +10461,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:12:49.979Z",
+          "createdAt": "2026-07-27T08:56:37.446Z",
           "updatedAt": "",
           "rank": 5
         },
@@ -10287,7 +10490,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:12:48.916Z",
+          "createdAt": "2026-07-27T08:56:36.213Z",
           "updatedAt": "",
           "rank": 6
         },
@@ -10316,7 +10519,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:16:11.066Z",
+          "createdAt": "2026-07-27T09:01:03.465Z",
           "updatedAt": "",
           "rank": 7
         },
@@ -10345,13 +10548,13 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:14:27.707Z",
+          "createdAt": "2026-07-27T08:58:43.735Z",
           "updatedAt": "",
           "rank": 8
         }
       ],
-      "createdAt": "2026-07-27T05:20:16.609Z",
-      "updatedAt": "2026-07-27T05:20:16.609Z"
+      "createdAt": "2026-07-27T09:06:58.702Z",
+      "updatedAt": "2026-07-27T09:06:58.702Z"
     },
     {
       "id": "2",
@@ -10392,7 +10595,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:12:46.671Z",
+          "createdAt": "2026-07-27T08:56:33.367Z",
           "updatedAt": "",
           "rank": 1
         },
@@ -10421,7 +10624,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:14:19.780Z",
+          "createdAt": "2026-07-27T08:58:34.142Z",
           "updatedAt": "",
           "rank": 2
         },
@@ -10450,7 +10653,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:13:28.507Z",
+          "createdAt": "2026-07-27T08:57:31.011Z",
           "updatedAt": "",
           "rank": 3
         },
@@ -10479,7 +10682,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:14:11.729Z",
+          "createdAt": "2026-07-27T08:58:23.269Z",
           "updatedAt": "",
           "rank": 4
         },
@@ -10508,7 +10711,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:14:21.776Z",
+          "createdAt": "2026-07-27T08:58:36.795Z",
           "updatedAt": "",
           "rank": 5
         },
@@ -10537,7 +10740,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:14:17.336Z",
+          "createdAt": "2026-07-27T08:58:31.526Z",
           "updatedAt": "",
           "rank": 6
         },
@@ -10566,7 +10769,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:14:10.436Z",
+          "createdAt": "2026-07-27T08:58:21.982Z",
           "updatedAt": "",
           "rank": 7
         },
@@ -10595,7 +10798,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:12:05.712Z",
+          "createdAt": "2026-07-27T08:56:02.154Z",
           "updatedAt": "",
           "rank": 8
         },
@@ -10624,7 +10827,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:14:20.717Z",
+          "createdAt": "2026-07-27T08:58:35.442Z",
           "updatedAt": "",
           "rank": 9
         },
@@ -10653,7 +10856,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:14:18.566Z",
+          "createdAt": "2026-07-27T08:58:32.992Z",
           "updatedAt": "",
           "rank": 10
         },
@@ -10682,7 +10885,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:14:22.825Z",
+          "createdAt": "2026-07-27T08:58:38.559Z",
           "updatedAt": "",
           "rank": 11
         },
@@ -10711,7 +10914,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:14:16.206Z",
+          "createdAt": "2026-07-27T08:58:29.894Z",
           "updatedAt": "",
           "rank": 12
         },
@@ -10740,7 +10943,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:14:23.838Z",
+          "createdAt": "2026-07-27T08:58:39.857Z",
           "updatedAt": "",
           "rank": 13
         },
@@ -10769,7 +10972,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:12:47.659Z",
+          "createdAt": "2026-07-27T08:56:34.540Z",
           "updatedAt": "",
           "rank": 14
         },
@@ -10800,7 +11003,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:14:14.897Z",
+          "createdAt": "2026-07-27T08:58:27.151Z",
           "updatedAt": "",
           "rank": 15
         },
@@ -10829,13 +11032,13 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:14:12.767Z",
+          "createdAt": "2026-07-27T08:58:24.395Z",
           "updatedAt": "",
           "rank": 16
         }
       ],
-      "createdAt": "2026-07-27T05:20:16.609Z",
-      "updatedAt": "2026-07-27T05:20:16.609Z"
+      "createdAt": "2026-07-27T09:06:58.702Z",
+      "updatedAt": "2026-07-27T09:06:58.702Z"
     },
     {
       "id": "1",
@@ -10876,7 +11079,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:19:45.330Z",
+          "createdAt": "2026-07-27T09:06:04.060Z",
           "updatedAt": "",
           "rank": 1
         },
@@ -10905,7 +11108,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:14:06.746Z",
+          "createdAt": "2026-07-27T08:58:16.907Z",
           "updatedAt": "",
           "rank": 2
         },
@@ -10934,7 +11137,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:14:07.846Z",
+          "createdAt": "2026-07-27T08:58:18.213Z",
           "updatedAt": "",
           "rank": 3
         },
@@ -10963,7 +11166,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:14:00.467Z",
+          "createdAt": "2026-07-27T08:58:10.009Z",
           "updatedAt": "",
           "rank": 4
         },
@@ -10992,7 +11195,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:13:57.047Z",
+          "createdAt": "2026-07-27T08:58:06.397Z",
           "updatedAt": "",
           "rank": 5
         },
@@ -11021,7 +11224,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:14:05.792Z",
+          "createdAt": "2026-07-27T08:58:15.481Z",
           "updatedAt": "",
           "rank": 6
         },
@@ -11050,7 +11253,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:13:59.192Z",
+          "createdAt": "2026-07-27T08:58:08.696Z",
           "updatedAt": "",
           "rank": 7
         },
@@ -11079,7 +11282,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:14:09.351Z",
+          "createdAt": "2026-07-27T08:58:19.699Z",
           "updatedAt": "",
           "rank": 8
         },
@@ -11108,7 +11311,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:13:58.106Z",
+          "createdAt": "2026-07-27T08:58:07.539Z",
           "updatedAt": "",
           "rank": 9
         },
@@ -11137,7 +11340,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:14:29.725Z",
+          "createdAt": "2026-07-27T08:58:46.257Z",
           "updatedAt": "",
           "rank": 10
         },
@@ -11166,7 +11369,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:14:02.099Z",
+          "createdAt": "2026-07-27T08:58:11.552Z",
           "updatedAt": "",
           "rank": 11
         },
@@ -11195,7 +11398,7 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:14:03.044Z",
+          "createdAt": "2026-07-27T08:58:12.747Z",
           "updatedAt": "",
           "rank": 12
         },
@@ -11224,13 +11427,13 @@
           "publicTestTime": "",
           "launchTime": "",
           "publicNode": "",
-          "createdAt": "2026-07-27T05:14:04.686Z",
+          "createdAt": "2026-07-27T08:58:14.084Z",
           "updatedAt": "",
           "rank": 13
         }
       ],
-      "createdAt": "2026-07-27T05:20:16.609Z",
-      "updatedAt": "2026-07-27T05:20:16.609Z"
+      "createdAt": "2026-07-27T09:06:58.702Z",
+      "updatedAt": "2026-07-27T09:06:58.702Z"
     }
   ]
 }
