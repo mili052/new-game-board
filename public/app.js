@@ -4,7 +4,8 @@ const state = {
   selectedProductId: "",
   token: localStorage.getItem("ngbToken") || "",
   aiImageUrl: "",
-  staticMode: false
+  staticMode: false,
+  radarFilter: ""
 };
 
 const PUBLIC_GATE_PASSWORD = "mimi2026";
@@ -432,19 +433,30 @@ function renderBoard() {
   const now = new Date();
   const dateText = now.toISOString().slice(0, 10);
   const allPublished = products.filter(product => !product.releaseStatus || product.releaseStatus === "可发布");
-  const ranking = allPublished.filter(product => isRankingStatus(product.status));
-  const testing = allPublished.filter(product => /测试|招募|首测|二测/.test(String(product.status || "")));
-  const focus = allPublished.filter(product => product.focus);
-  const latest = [...allPublished].sort((a, b) => String(b.latestNodeTime || b.createdAt || "").localeCompare(String(a.latestNodeTime || a.createdAt || "")));
+  const radarFilter = state.radarFilter;
+  const visibleProducts = radarFilter === "重点"
+    ? allPublished.filter(product => product.focus)
+    : radarFilter === "上榜"
+      ? allPublished.filter(product => isRankingStatus(product.status))
+      : radarFilter === "上线"
+        ? allPublished.filter(product => /上线|公测/.test(product.status || ""))
+        : radarFilter
+          ? allPublished.filter(product => [product.status, product.platform, product.genre, product.topic].some(value => String(value || "").toLowerCase().includes(radarFilter.toLowerCase())))
+          : allPublished;
+  const scopedProducts = visibleProducts;
+  const ranking = scopedProducts.filter(product => isRankingStatus(product.status));
+  const testing = scopedProducts.filter(product => /测试|招募|首测|二测/.test(String(product.status || "")));
+  const focus = scopedProducts.filter(product => product.focus);
+  const latest = [...scopedProducts].sort((a, b) => String(b.latestNodeTime || b.createdAt || "").localeCompare(String(a.latestNodeTime || a.createdAt || "")));
   const recent = latest.slice(0, 10);
   const week = allPublished.filter(product => String(product.latestNodeTime || "").slice(0, 7) === dateText.slice(0, 7));
-  const categories = [...new Set(allPublished.map(primaryCategory))].slice(0, 8);
+  const categories = [...new Set(scopedProducts.map(primaryCategory))].slice(0, 8);
   const metric = (icon, label, value, delta, tone = "blue") => `<article class="radar-stat"><span class="stat-icon ${tone}">${icon}</span><div><span>${label}</span><strong>${value}</strong><small>${delta}</small></div></article>`;
   const item = product => `<button class="radar-product-row" data-open-product="${escapeHtml(product.id)}" data-open-board="${escapeHtml(product.boardId)}"><span class="mini-cover">${media(product.cover || product.icon || product.screenshots?.[0], product.name, "mini-cover-img")}</span><span class="row-copy"><b>${escapeHtml(product.name)}</b><small>${escapeHtml(primaryCategory(product))} · ${escapeHtml(product.platform || "")}</small></span><span class="row-status ${isRankingStatus(product.status) ? "hot" : ""}">${escapeHtml(product.status || "观察中")}</span></button>`;
   const dateDisplay = value => escapeHtml(value || "待补充");
   const timeline = recent.slice(0, 5).map((product, index) => `<button class="timeline-item" data-open-product="${escapeHtml(product.id)}" data-open-board="${escapeHtml(product.boardId)}"><time>${dateDisplay((product.latestNodeTime || product.createdAt || "").slice(5, 10).replace("-", ".") || `近期${index + 1}`)}</time><span class="timeline-dot"></span><span><b>${escapeHtml(product.name)}</b><small>${escapeHtml(product.status || "持续观察")} · ${escapeHtml(primaryCategory(product))}</small></span></button>`).join("");
   const focusCards = [...focus, ...ranking, ...testing].filter((product, index, list) => list.findIndex(item => item.id === product.id) === index).slice(0, 4).map(product => `<article class="focus-product" data-open-product="${escapeHtml(product.id)}" data-open-board="${escapeHtml(product.boardId)}"><div class="focus-poster">${media(product.cover || product.icon || product.screenshots?.[0], product.name, "focus-poster-img")}</div><div class="focus-body"><div class="focus-title"><b>${escapeHtml(product.name)}</b>${statusBadge(product.status)}</div><small>${escapeHtml(primaryCategory(product))} · ${escapeHtml(product.developer || "研发待补充")}</small><p>${escapeHtml(product.sourceText || product.reason || product.judgement || "持续观察中。")}</p><div class="focus-foot">${escapeHtml(product.latestNodeTime || product.month || "待补充")} <span>查看详情 →</span></div></div></article>`).join("");
-  const chart = categories.map(category => { const count = allPublished.filter(product => primaryCategory(product) === category).length; return `<div class="bar-row"><span>${escapeHtml(category)}</span><i><b style="width:${Math.min(100, count * 8 + 12)}%"></b></i><strong>${count}</strong></div>`; }).join("");
+  const chart = categories.map(category => { const count = scopedProducts.filter(product => primaryCategory(product) === category).length; return `<div class="bar-row"><span>${escapeHtml(category)}</span><i><b style="width:${Math.min(100, count * 8 + 12)}%"></b></i><strong>${count}</strong></div>`; }).join("");
   const alerts = ranking.slice(0, 3).map(product => `<div class="alert-row"><span class="alert-dot">!</span><p><b>${escapeHtml(product.name)}</b><small>${escapeHtml(product.status)} · 最新节点 ${escapeHtml(product.latestNodeTime || "待补充")}</small></p></div>`).join("") || `<div class="empty">暂无异常变化</div>`;
   root.innerHTML = `<div class="radar-dashboard"><section class="radar-stats">${metric("▤", "本月新收录", monthProducts.length, "较上月 ↑ 18%", "blue")}${metric("✓", "本周测试", monthProducts.filter(product => /测试/.test(product.status || "")).length, "较上周 ↑ 12%", "green")}${metric("↗", "新进榜", monthProducts.filter(product => isRankingStatus(product.status)).length, "较上周 ↑ 28%", "indigo")}${metric("◈", "即将上线", monthProducts.filter(product => /上线|公测/.test(product.status || "")).length, "较上周 ↓ 5%", "purple")}${metric("★", "重点关注", monthProducts.filter(product => product.focus).length, "较上周 ↑ 15%", "orange")}${metric("+", "今日新增", allPublished.filter(product => String(product.latestNodeTime || "") === dateText).length, "较昨日 ↑ 20%", "cyan")}</section><div class="radar-grid radar-grid-top"><section class="radar-panel timeline-panel"><div class="radar-panel-head"><div><span class="panel-kicker">RECENT MOVES</span><h2>今日 / 本周新游时间轴</h2></div><span class="panel-count">${recent.length} 条</span></div><div class="timeline">${timeline}</div></section><section class="radar-panel chart-panel"><div class="radar-panel-head"><div><span class="panel-kicker">ON CHART</span><h2>新进榜产品</h2></div><button class="text-action" data-radar-nav="ranking">查看全部 →</button></div><div class="ranking-list">${ranking.slice(0, 6).map(item).join("") || `<div class="empty">暂无上榜产品</div>`}</div></section></div><div class="radar-grid radar-grid-middle"><section class="radar-panel focus-panel"><div class="radar-panel-head"><div><span class="panel-kicker">THIS WEEK</span><h2>本周重点新游</h2></div><button class="text-action" data-radar-nav="focus">查看全部 →</button></div><div class="focus-grid">${focusCards}</div></section><div class="radar-side-stack"><section class="radar-panel supply-panel"><div class="radar-panel-head"><div><span class="panel-kicker">SUPPLY</span><h2>品类供给变化</h2></div><small>当前产品数</small></div>${chart}</section><section class="radar-panel alert-panel"><div class="radar-panel-head"><div><span class="panel-kicker">SIGNALS</span><h2>异常变化 / 数据异动</h2></div></div>${alerts}</section></div></div><div class="radar-grid radar-grid-bottom"><section class="radar-panel recent-panel"><div class="radar-panel-head"><div><span class="panel-kicker">LATEST INPUT</span><h2>最近录入</h2></div><span class="panel-count">最新 10 条</span></div><div class="recent-strip">${recent.map(item).join("")}</div></section><section class="radar-panel observe-panel"><div class="radar-panel-head"><div><span class="panel-kicker">WATCHLIST</span><h2>重点观察清单</h2></div></div>${focus.slice(0, 5).map(product => `<button class="observe-row" data-open-product="${escapeHtml(product.id)}" data-open-board="${escapeHtml(product.boardId)}"><b>${escapeHtml(product.name)}</b><span>${escapeHtml(product.reason || product.judgement || "持续观察中")}</span><em>${escapeHtml(product.latestNodeTime || "待补充")}</em></button>`).join("") || `<div class="empty">暂无重点观察产品</div>`}</section></div></div>`;
   $("#radarUpdatedAt").textContent = dateText;
@@ -731,10 +743,9 @@ function wireEvents() {
   document.querySelectorAll("[data-radar-nav]").forEach(button => {
     button.addEventListener("click", () => {
       const target = button.dataset.radarNav;
+      state.radarFilter = button.dataset.radarFilter || (target === "ranking" ? "上榜" : target === "focus" ? "重点" : target === "launch" ? "上线" : "");
       document.querySelectorAll("[data-radar-nav]").forEach(item => item.classList.toggle("active", item === button));
-      if (target === "ranking") $("#statusFilter").value = [...new Set(state.boards.flatMap(board => (board.products || []).map(product => product.status)))].find(status => isRankingStatus(status)) || "";
-      else if (target === "focus") $("#statusFilter").value = "";
-      else $("#statusFilter").value = "";
+      $("#statusFilter").value = "";
       renderApp();
     });
   });
@@ -752,6 +763,13 @@ function wireEvents() {
   });
 
   $("#boardRoot").addEventListener("click", event => {
+    const radarButton = event.target.closest("[data-radar-nav]");
+    if (radarButton) {
+      state.radarFilter = radarButton.dataset.radarFilter || (radarButton.dataset.radarNav === "ranking" ? "上榜" : radarButton.dataset.radarNav === "focus" ? "重点" : radarButton.dataset.radarNav === "launch" ? "上线" : "");
+      document.querySelectorAll("[data-radar-nav]").forEach(item => item.classList.toggle("active", item === radarButton));
+      renderApp();
+      return;
+    }
     const card = event.target.closest("[data-open-product]");
     if (!card) return;
     setDetailRoute(card.dataset.openBoard, card.dataset.openProduct);
