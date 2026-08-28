@@ -43,6 +43,7 @@ body:not(.gate-locked) .shell { width: auto; max-width: none; margin-left: 260px
 .date-chip input { width:122px; border:0; padding:0; font-size:12px; }
 .updated-chip b { color:var(--ink); }
 .radar-filters { grid-template-columns: 170px 150px 1fr 160px; padding:10px; margin-top:4px; }
+.radar-filters { grid-template-columns: 170px 150px minmax(0, 1fr); }
 .radar-dashboard { display:grid; gap:16px; }
 .radar-stats { display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); gap:12px; }
 .radar-stat, .radar-panel { border:1px solid #e4ebf4; border-radius:12px; background:#fff; box-shadow:0 8px 22px rgba(26,56,93,.05); }
