@@ -11,7 +11,7 @@
   <link rel="icon" href="./icon-app.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./icon-app.svg">
   <title>新游产品库</title>
-  <link rel="stylesheet" href="./styles.css?v=12">
+  <link rel="stylesheet" href="./styles.css?v=15">
 </head>
 <body class="gate-locked">
   <div id="publicGate" class="public-gate">
@@ -26,17 +26,29 @@
       <p id="publicGateMessage" class="message"></p>
     </div>
   </div>
-  <header class="topbar">
-    <div class="brand-block">
-      <div class="brand-eyebrow">New Game Library</div>
-      <h1>新游产品库</h1>
-      <p class="brand-sub">持续录入、筛选和公开展示的新游资料库，适合追踪新品测试、上榜和重点观察产品。</p>
-    </div>
-    <button class="icon-btn" id="adminButton" title="后台编辑" aria-label="后台编辑">⚙</button>
+  <aside class="radar-sidebar">
+    <div class="radar-brand"><span class="radar-mark">◎</span><span>新游产品雷达</span></div>
+    <nav class="radar-nav" aria-label="主导航">
+      <button class="radar-nav-item active" data-radar-nav="overview">⌂ <span>首页总览</span></button>
+      <button class="radar-nav-item radar-nav-parent" data-radar-toggle="ranking">▥ <span>新进榜</span><b>⌃</b></button>
+      <div class="radar-subnav" data-radar-group="ranking"><button data-radar-nav="ranking">微信小游戏</button><button data-radar-nav="ranking">抖音小游戏</button><button data-radar-nav="ranking">iOS</button><button data-radar-nav="ranking">TapTap</button></div>
+      <button class="radar-nav-item radar-nav-parent" data-radar-toggle="testing">◉ <span>测试新游</span><b>⌃</b></button>
+      <div class="radar-subnav" data-radar-group="testing"><button data-radar-nav="testing">本周测试</button><button data-radar-nav="testing">招募中</button><button data-radar-nav="testing">首测</button><button data-radar-nav="testing">二测+</button></div>
+      <button class="radar-nav-item" data-radar-nav="launch">↗ <span>即将上线</span></button>
+      <button class="radar-nav-item" data-radar-nav="focus">★ <span>重点观察</span></button>
+      <button class="radar-nav-item radar-nav-parent" data-radar-toggle="library">▤ <span>产品库</span><b>⌃</b></button>
+      <div class="radar-subnav" data-radar-group="library"><button data-radar-nav="library">全部产品</button><button data-radar-nav="library">塔防</button><button data-radar-nav="library">SLG</button><button data-radar-nav="library">二合</button><button data-radar-nav="library">模拟经营</button><button data-radar-nav="library">卡牌</button><button data-radar-nav="library">女性向</button></div>
+      <button class="radar-nav-item" data-radar-nav="market">◔ <span>市场观察</span></button>
+    </nav>
+    <div class="radar-sidebar-foot">数据源：飞书产品库<br><span>仅展示已发布内容</span></div>
+  </aside>
+  <header class="topbar radar-topbar">
+    <div class="brand-block"><div class="brand-eyebrow">PRODUCT RADAR</div><h1>新游产品雷达</h1><p class="brand-sub">更直观地查看测试、上榜、上线与重点观察产品</p></div>
+    <div class="radar-top-actions"><label class="date-chip">日期 <input id="radarDate" type="date"></label><span class="updated-chip">数据更新：<b id="radarUpdatedAt">--</b></span><button class="icon-btn" id="adminButton" title="后台编辑" aria-label="后台编辑">⚙</button></div>
   </header>
 
   <main class="shell">
-    <section class="filters" id="libraryFilters" aria-label="筛选">
+    <section class="filters radar-filters" id="libraryFilters" aria-label="筛选">
       <label>
         <span>时间</span>
         <select id="periodFilter"></select>
@@ -50,9 +62,10 @@
         <input id="searchInput" type="search" placeholder="产品 / 赛道 / 发行">
       </label>
       <div class="view-actions">
-        <span>视图</span>
+        <span>数据筛选</span>
         <a id="reportLink" class="report-link" href="./report.html">周报模式</a>
         <a class="report-link" href="./evaluator.html">AI评测台</a>
+        <a class="report-link" href="./rank-radar.html">榜单雷达</a>
       </div>
     </section>
 
@@ -162,6 +175,6 @@
     </div>
   </aside>
 
-  <script src="./app.js?v=12"></script>
+  <script src="./app.js?v=15"></script>
 </body>
 </html>
