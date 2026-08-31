@@ -6,7 +6,8 @@ const state = {
   aiImageUrl: "",
   staticMode: false,
   radarFilter: "",
-  rankingExpanded: false
+  rankingExpanded: false,
+  ipExpanded: false
 };
 
 const PUBLIC_GATE_PASSWORD = "mimi2026";
@@ -540,6 +541,19 @@ function renderBoard() {
   const week = allPublished.filter(product => String(product.latestNodeTime || "").slice(0, 7) === dateText.slice(0, 7));
   const categories = [...new Set(scopedProducts.map(primaryCategory))].slice(0, 8);
   const monthLabel = latestBoard.period || latestBoard.title?.replace(/新游产品库$/, "") || "当前月份";
+  const previousBoard = state.boards[state.boards.findIndex(board => board.id === latestBoard.id) + 1];
+  const previousProducts = previousBoard?.products || [];
+  const categoryCount = products => products.reduce((counts, product) => { const category = primaryCategory(product); counts[category] = (counts[category] || 0) + 1; return counts; }, {});
+  const currentCategoryCount = categoryCount(monthProducts);
+  const previousCategoryCount = categoryCount(previousProducts);
+  const categoryNames = Object.keys(currentCategoryCount).sort((a, b) => currentCategoryCount[b] - currentCategoryCount[a]);
+  const categoryChart = categoryNames.map(category => { const count = currentCategoryCount[category]; const previous = previousCategoryCount[category] || 0; const change = count - previous; const ratio = monthProducts.length ? Math.round(count / monthProducts.length * 100) : 0; return `<div class="bar-row"><span>${escapeHtml(category)}</span><i><b style="width:${Math.max(5, ratio)}%"></b></i><strong>${count}</strong><em>${ratio}% ${change > 0 ? `↑${change}` : change < 0 ? `↓${Math.abs(change)}` : "-"}</em></div>`; }).join("");
+  const topicCount = {};
+  monthProducts.forEach(product => splitTags(String(product.topic || "").replace(/[、，,]/g, "/")).forEach(topic => { topicCount[topic] = (topicCount[topic] || 0) + 1; }));
+  const topicNames = Object.keys(topicCount).sort((a, b) => topicCount[b] - topicCount[a]).slice(0, 12);
+  const topicList = topicNames.map(topic => { const representative = monthProducts.find(product => splitTags(String(product.topic || "").replace(/[、，,]/g, "/")).includes(topic)); return `<button class="topic-row" type="button" data-open-product="${escapeHtml(representative?.id || "")}" data-open-board="${escapeHtml(latestBoard.id)}"><span class="topic-cover">${representative ? media(representative.cover || representative.icon, representative.name, "topic-icon") : ""}</span><b>${escapeHtml(topic)}</b><strong>${topicCount[topic]}</strong></button>`; }).join("");
+  const ipProducts = monthProducts.filter(product => [product.topic, product.genre, product.sourceText, product.judgement].some(value => /IP|联动|授权|改编/i.test(String(value || "")))).sort(byNodeDate);
+  const ipList = ipProducts.slice(0, state.ipExpanded ? ipProducts.length : 6).map(product => `<button class="ip-row" type="button" data-open-product="${escapeHtml(product.id)}" data-open-board="${escapeHtml(latestBoard.id)}"><span class="mini-cover">${media(product.cover || product.icon, product.name, "mini-cover-img")}</span><span><b>${escapeHtml(product.name)}</b><small>${escapeHtml(product.topic || "IP产品")} · ${escapeHtml(primaryCategory(product))}</small></span><span><small>${escapeHtml(product.developer || "研发待补充")} / ${escapeHtml(product.publisher || "发行待补充")}</small><em>${escapeHtml(product.latestNodeTime || "待补充")}</em></span></button>`).join("");
   const metric = (icon, label, value, _delta, tone = "blue") => `<article class="radar-stat"><span class="stat-icon ${tone}">${icon}</span><div><span>${label}</span><strong>${value}</strong></div></article>`;
   const item = product => `<button class="radar-product-row" data-open-product="${escapeHtml(product.id)}" data-open-board="${escapeHtml(product.boardId)}"><span class="mini-cover">${media(product.cover || product.icon || product.screenshots?.[0], product.name, "mini-cover-img")}</span><span class="row-copy"><b>${escapeHtml(product.name)}</b><small>${escapeHtml(primaryCategory(product))} · ${escapeHtml(product.platform || "")}</small></span><span class="row-status ${isRankingStatus(product.status) ? "hot" : ""}">${escapeHtml(product.status || "观察中")}</span></button>`;
   const dateDisplay = value => escapeHtml(value || "待补充");
@@ -571,6 +585,28 @@ function renderBoard() {
     focusPanel.querySelector(".testing-list").innerHTML = testingCards || `<div class="empty">当前月份暂无测试新游</div>`;
     middleGrid.replaceChildren(focusPanel, supplyPanel);
     bottomGrid.append(alertPanel);
+  }
+  if (supplyPanel) {
+    supplyPanel.querySelector("h2").textContent = "本月市场新游品类统计";
+    supplyPanel.querySelector(".panel-kicker").textContent = "MARKET MIX";
+    supplyPanel.querySelector(".radar-panel-head small").textContent = `${monthProducts.length} 款本月新增`;
+    supplyPanel.querySelectorAll(".bar-row").forEach(row => row.remove());
+    supplyPanel.insertAdjacentHTML("beforeend", categoryChart || `<div class="empty">暂无品类数据</div>`);
+  }
+  const observePanel = root.querySelector(".observe-panel");
+  if (observePanel) {
+    observePanel.querySelector("h2").textContent = "本月新游题材";
+    observePanel.querySelector(".panel-kicker").textContent = "TOPICS";
+    observePanel.querySelector(".panel-head")?.remove();
+    observePanel.querySelectorAll(".observe-row").forEach(row => row.remove());
+    observePanel.insertAdjacentHTML("beforeend", topicList || `<div class="empty">暂无题材数据</div>`);
+  }
+  if (alertPanel) {
+    alertPanel.querySelector("h2").textContent = "IP产品记录";
+    alertPanel.querySelector(".panel-kicker").textContent = "IP PRODUCTS";
+    alertPanel.querySelectorAll(".alert-row, .empty").forEach(row => row.remove());
+    alertPanel.querySelector(".radar-panel-head").insertAdjacentHTML("beforeend", `<button class="text-action" type="button" data-ip-action="toggle">${state.ipExpanded ? "收起" : "查看全部 →"}</button>`);
+    alertPanel.insertAdjacentHTML("beforeend", ipList || `<div class="empty">本月暂无 IP 产品</div>`);
   }
   $("#radarUpdatedAt").textContent = dateText;
   $("#radarDate").value = dateText;
@@ -884,6 +920,12 @@ function wireEvents() {
   $("#boardRoot").addEventListener("click", event => {
     if (event.target.closest(".focus-panel h2")) {
       setTestingRoute();
+      renderApp();
+      return;
+    }
+    const ipAction = event.target.closest("[data-ip-action]");
+    if (ipAction) {
+      state.ipExpanded = !state.ipExpanded;
       renderApp();
       return;
     }
