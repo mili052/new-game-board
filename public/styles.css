@@ -2494,6 +2494,8 @@ textarea:focus {
 .radar-grid-middle { grid-template-columns: 1fr 1.35fr; }
 .radar-grid-bottom { grid-template-columns: 1.35fr 1fr 1.2fr; }
 .testing-list { display:grid; grid-template-columns:1fr 1fr; gap:0 18px; }
+.testing-preview-list { display:grid; }
+.testing-preview-list .testing-row { min-height:47px; }
 .testing-row { display:grid; grid-template-columns:34px minmax(0,1fr) auto auto; gap:8px; align-items:center; min-width:0; min-height:52px; padding:6px 0; border:0; border-bottom:1px solid #edf1f6; background:transparent; color:var(--ink); text-align:left; cursor:pointer; }
 .testing-row:hover { background:#f7faff; }
 .testing-row .mini-cover { width:34px; height:34px; }

@@ -532,7 +532,7 @@ function renderBoard() {
           : allPublished;
   const scopedProducts = visibleProducts;
   const ranking = scopedProducts.filter(product => isRankingStatus(product.status)).sort(byNodeDate);
-  const testing = scopedProducts.filter(product => /测试|招募|首测|二测/.test(String(product.status || "")));
+  const testing = scopedProducts.filter(product => /测试|招募|首测|二测/.test(String(product.status || ""))).sort(byNodeDate);
   const focus = scopedProducts.filter(product => product.focus);
   const latest = [...scopedProducts].sort((a, b) => String(b.latestNodeTime || b.createdAt || "").localeCompare(String(a.latestNodeTime || a.createdAt || "")));
   const recent = latest.slice(0, 10);
@@ -554,6 +554,15 @@ function renderBoard() {
   const supplyPanel = sideStack?.querySelector(".supply-panel");
   const alertPanel = sideStack?.querySelector(".alert-panel");
   const bottomGrid = root.querySelector(".radar-grid-bottom");
+  const chartPanel = root.querySelector(".chart-panel");
+  if (chartPanel) {
+    chartPanel.querySelector(".panel-kicker").textContent = "TESTING";
+    chartPanel.querySelector("h2").textContent = `${monthLabel}测试新游`;
+    chartPanel.querySelector(".text-action").dataset.radarNav = "testing";
+    chartPanel.querySelector(".text-action").dataset.radarAction = "show-testing";
+    chartPanel.querySelector(".ranking-list").className = "testing-preview-list";
+    chartPanel.querySelector(".testing-preview-list").innerHTML = testingCards ? testingCards.split("</button>").slice(0, 6).map(item => item ? `${item}</button>` : "").join("") : `<div class="empty">当前月份暂无测试新游</div>`;
+  }
   if (focusPanel && middleGrid && supplyPanel && alertPanel && bottomGrid) {
     focusPanel.querySelector(".panel-kicker").textContent = "TESTING";
     focusPanel.querySelector("h2").textContent = "测试新游";
@@ -874,7 +883,7 @@ function wireEvents() {
   });
 
   $("#boardRoot").addEventListener("click", event => {
-    if (event.target.closest(".focus-panel h2")) {
+    if (event.target.closest(".focus-panel h2, .chart-panel h2")) {
       setTestingRoute();
       renderApp();
       return;
