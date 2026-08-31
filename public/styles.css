@@ -2587,3 +2587,15 @@ textarea:focus {
 .ip-row b { font-size:11px; }
 .ip-row small, .ip-row em { color:var(--muted); font-size:9px; font-style:normal; }
 .ip-row em { margin-top:2px; }
+/* Quiet B2B visual system: neutral surfaces, restrained iconography, readable data. */
+.radar-sidebar { box-shadow:none; border-right-color:#e7ebf1; }
+.radar-brand { background:#0b2853; border-radius:0 0 8px 8px; margin:-8px -6px 18px; padding:13px 12px; }
+.radar-subnav .platform-icon { display:block; width:15px; height:15px; padding:0; background:transparent; object-fit:contain; border-radius:0; }
+.radar-subnav button:hover .platform-icon { transform:none; }
+.radar-stat { border-radius:8px; box-shadow:none; background:#fff; }
+.radar-stat .stat-icon { flex-basis:18px; width:18px; height:18px; padding:0; border-radius:0; background:transparent !important; color:#7288a7; font-size:14px; }
+.radar-stat strong { font-variant-numeric:tabular-nums; }
+.radar-stat small { display:block; margin-top:4px; color:#4b9b7d; font-size:10px; font-weight:700; }
+.radar-panel-head { border-bottom-color:#e8edf3; }
+.radar-panel, .testing-toolbar, .testing-metrics span { box-shadow:none; }
+.radar-product-row, .testing-row, .observe-row, .topic-row, .ip-row { border-bottom-color:#edf0f4; }
