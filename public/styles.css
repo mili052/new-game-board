@@ -2550,3 +2550,24 @@ textarea:focus {
 .stage-tag { padding:4px 7px; border-radius:999px; background:#eef4ff; color:#3579da; font-size:10px; font-style:normal; font-weight:900; white-space:nowrap; }
 .stage-tag.recruit { background:#e9f8f2; color:#129b73; }
 @media (max-width: 760px) { .testing-toolbar { grid-template-columns:1fr 1fr; } .testing-search { grid-column:1 / -1; } .testing-timeline { padding-left:64px; } .testing-timeline::before { left:39px; } .testing-date-node { left:-64px; width:52px; font-size:11px; } .testing-date-products { grid-template-columns:1fr; padding-left:10px; } .testing-detail-row { grid-template-columns:34px minmax(0,1fr) auto; } .testing-detail-row > span:nth-child(3) { display:none; } }
+/* Data-workbench treatment: reduce ornamental dashboard signals. */
+.brand-eyebrow, .panel-kicker { display:none; }
+.radar-topbar { padding-top:16px; }
+.brand-block h1 { font-size:26px; letter-spacing:0; }
+.brand-sub { margin-top:4px; font-size:13px; }
+.radar-dashboard { gap:8px; }
+.radar-stats { gap:6px; }
+.radar-stat, .radar-panel { border-color:#e5eaf1; border-radius:8px; box-shadow:none; }
+.radar-stat { min-height:66px; padding:10px 12px; }
+.radar-stat strong { margin:2px 0 0; font-size:24px; }
+.radar-stat small { display:none; }
+.stat-icon { flex-basis:30px; width:30px; height:30px; border-radius:7px; font-size:17px; }
+.stat-icon.blue { background:#edf4ff; color:#2e72df; } .stat-icon.green { background:#eaf8f2; color:#159a70; } .stat-icon.indigo { background:#f0efff; color:#615fe0; } .stat-icon.purple { background:#f2effb; color:#7762bf; } .stat-icon.orange { background:#fff3e4; color:#d77a16; } .stat-icon.cyan { background:#eaf8fa; color:#208c9c; }
+.radar-panel { padding:11px 12px; }
+.radar-panel-head { align-items:center; min-height:26px; margin-bottom:6px; border-bottom:1px solid #edf1f5; }
+.radar-panel-head h2 { margin:0; font-size:15px; font-weight:800; }
+.text-action { padding:3px 0; color:#2771d9; font-size:11px; }
+.row-status, .badge, .stage-tag { border-radius:4px; }
+.radar-product-row, .testing-row { min-height:42px; }
+.timeline-item { min-height:40px; }
+.focus-product:hover { transform:none; box-shadow:none; background:#f7faff; }
