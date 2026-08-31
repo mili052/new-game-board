@@ -515,7 +515,8 @@ function renderBoard() {
   if (!products.length) { root.innerHTML = `<div class="empty">还没有可展示的产品。</div>`; return; }
   const latestBoard = boards[0] || state.boards[0] || { products: [] };
   const monthProducts = latestBoard.products || [];
-  const monthRanking = monthProducts.filter(product => isRankingStatus(product.status));
+  const byNodeDate = (a, b) => String(b.latestNodeTime || b.createdAt || "").localeCompare(String(a.latestNodeTime || a.createdAt || ""));
+  const monthRanking = monthProducts.filter(product => isRankingStatus(product.status)).sort(byNodeDate);
   const now = new Date();
   const dateText = now.toISOString().slice(0, 10);
   const allPublished = products.filter(product => !product.releaseStatus || product.releaseStatus === "可发布");
@@ -530,7 +531,7 @@ function renderBoard() {
           ? allPublished.filter(product => [product.status, product.platform, product.genre, product.topic].some(value => String(value || "").toLowerCase().includes(radarFilter.toLowerCase())))
           : allPublished;
   const scopedProducts = visibleProducts;
-  const ranking = scopedProducts.filter(product => isRankingStatus(product.status));
+  const ranking = scopedProducts.filter(product => isRankingStatus(product.status)).sort(byNodeDate);
   const testing = scopedProducts.filter(product => /测试|招募|首测|二测/.test(String(product.status || "")));
   const focus = scopedProducts.filter(product => product.focus);
   const latest = [...scopedProducts].sort((a, b) => String(b.latestNodeTime || b.createdAt || "").localeCompare(String(a.latestNodeTime || a.createdAt || "")));
