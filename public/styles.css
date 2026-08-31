@@ -2587,6 +2587,25 @@ textarea:focus {
 .ip-row b { font-size:11px; }
 .ip-row small, .ip-row em { color:var(--muted); font-size:9px; font-style:normal; }
 .ip-row em { margin-top:2px; }
+.radar-grid-middle, .radar-grid-bottom { align-items:stretch; }
+.radar-grid-middle > .radar-panel, .radar-grid-bottom > .radar-panel { min-height:0; height:100%; }
+.radar-grid-bottom { grid-template-columns:36fr 27fr 37fr; }
+.recent-panel, .observe-panel, .alert-panel, .supply-panel, .focus-panel { display:flex; flex-direction:column; }
+.recent-strip, .testing-list, .topic-list, .ip-list { flex:1; }
+.recent-strip { display:grid; grid-template-columns:1fr; gap:0; align-content:start; }
+.recent-strip .radar-product-row { grid-template-columns:32px minmax(0,1fr) auto auto; min-height:54px; padding:8px 0; }
+.recent-strip .mini-cover { width:32px; height:32px; }
+.recent-strip .row-status { display:block; }
+.row-date { color:#778ba5; font-size:10px; font-variant-numeric:tabular-nums; white-space:nowrap; }
+.observe-panel .topic-row { grid-template-columns:90px minmax(50px,1fr) 24px 44px; min-height:33px; gap:8px; padding:5px 0; border-bottom:1px solid #edf1f6; }
+.observe-panel .topic-row i { display:block; height:6px; overflow:hidden; border-radius:3px; background:#edf2f7; }
+.observe-panel .topic-row i span { display:block; height:100%; border-radius:3px; background:#6b91d8; }
+.observe-panel .topic-row b { overflow:hidden; font-size:11px; text-overflow:ellipsis; white-space:nowrap; }
+.observe-panel .topic-row strong { color:#203b68; font-size:12px; text-align:right; }
+.observe-panel .topic-row em { color:#7b8fa9; font-size:10px; font-style:normal; white-space:nowrap; }
+.alert-panel .ip-row { min-height:52px; padding:7px 0; }
+.alert-panel .ip-row .mini-cover { width:32px; height:32px; }
+@media (max-width: 760px) { .radar-grid-bottom { grid-template-columns:1fr; } .recent-strip .radar-product-row { grid-template-columns:32px minmax(0,1fr) auto; } .recent-strip .row-date { display:none; } }
 .ranking-timeline { position:relative; padding:4px 0 12px 82px; }
 .ranking-timeline::before { position:absolute; top:0; bottom:0; left:53px; width:1px; background:#dbe5f2; content:""; }
 .ranking-date-group { position:relative; margin-bottom:12px; }
