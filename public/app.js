@@ -347,7 +347,8 @@ function renderFilters() {
   periodFilter.innerHTML = `<option value="all">全部时间</option>` + state.boards
     .map(board => `<option value="${escapeHtml(board.id)}">${escapeHtml(board.period || board.title)}</option>`)
     .join("");
-  periodFilter.value = state.boards.some(board => board.id === currentPeriod) ? currentPeriod : "all";
+  const defaultPeriod = state.boards.find(board => board.period === "8月")?.id || state.boards[0]?.id || "all";
+  periodFilter.value = state.boards.some(board => board.id === currentPeriod) ? currentPeriod : defaultPeriod;
 
   const statuses = [...new Set(state.boards.flatMap(board => (board.products || []).map(product => product.status).filter(Boolean)))];
   statusFilter.innerHTML = `<option value="">全部状态</option>` + statuses
