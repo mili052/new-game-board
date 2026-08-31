@@ -2467,3 +2467,27 @@ textarea:focus {
     white-space: nowrap;
   }
 }
+/* Dense radar layout: prioritize scan speed over decorative whitespace. */
+.radar-dashboard { gap: 10px; }
+.radar-stats { gap: 8px; }
+.radar-stat { min-height: 82px; padding: 11px 12px; gap: 9px; }
+.stat-icon { flex-basis: 34px; width: 34px; height: 34px; font-size: 19px; border-radius: 9px; }
+.radar-grid { gap: 10px; }
+.radar-panel { padding: 12px; border-radius: 10px; }
+.radar-panel-head { margin-bottom: 8px; }
+.radar-panel-head h2 { font-size: 16px; }
+.timeline-item { min-height: 43px; }
+.radar-product-row { min-height: 44px; padding: 4px 0; }
+.mini-cover { width: 34px; height: 34px; }
+.focus-grid { gap: 7px; }
+.focus-product { display: grid; grid-template-columns: 54px minmax(0, 1fr); align-items: start; }
+.focus-poster { width: 46px; height: 46px; margin: 7px 0 0 7px; border-radius: 9px; }
+.focus-body { min-width: 0; padding: 7px 7px 7px 2px; }
+.focus-title b { font-size: 12px; }
+.focus-body > small, .focus-body p, .focus-foot { font-size: 9px; }
+.focus-body p { margin: 4px 0; line-height: 1.35; -webkit-line-clamp: 2; }
+.focus-foot span { display: none; }
+.text-action { min-height: 28px; }
+@media (max-width: 760px) {
+  .focus-grid { grid-template-columns: 1fr; }
+}
