@@ -2635,3 +2635,27 @@ textarea:focus {
 .radar-panel-head { border-bottom-color:#e8edf3; }
 .radar-panel, .testing-toolbar, .testing-metrics span { box-shadow:none; }
 .radar-product-row, .testing-row, .observe-row, .topic-row, .ip-row { border-bottom-color:#edf0f4; }
+
+/* Compact product density: larger artwork, fixed columns, natural flow. */
+.testing-list { align-content:start; align-items:start; gap:0 18px; }
+.testing-row { grid-template-columns:44px minmax(0,1fr) 48px 44px; min-height:66px; padding:9px 0; gap:9px; }
+.testing-row .mini-cover { width:44px; height:44px; border-radius:8px; }
+.testing-copy b { font-size:13px; font-weight:800; }
+.testing-copy small, .testing-row time { font-size:12px; }
+.testing-row .row-status { max-width:64px; }
+
+.ranking-date-products { grid-template-columns:repeat(2, minmax(0, 520px)); justify-content:start; gap:0 18px; max-width:1060px; }
+.ranking-detail-row { grid-template-columns:48px minmax(0,1fr) 74px 48px 48px; min-height:72px; padding:8px 8px; gap:10px; }
+.ranking-detail-row .mini-cover { width:48px; height:48px; border-radius:8px; }
+.ranking-detail-copy b { font-size:13px; font-weight:800; }
+.ranking-detail-copy small, .ranking-detail-row > span:nth-child(3), .rank-current, .rank-high { font-size:11px; }
+@media (max-width: 1120px) {
+  .ranking-date-products { grid-template-columns:repeat(2, minmax(0, 1fr)); max-width:none; }
+}
+@media (max-width: 760px) {
+  .testing-row { grid-template-columns:44px minmax(0,1fr) 44px; min-height:66px; }
+  .testing-row time { grid-column:3; grid-row:1; }
+  .testing-row .row-status { grid-column:2; grid-row:2; justify-self:start; }
+  .ranking-detail-row { grid-template-columns:48px minmax(0,1fr) 48px; min-height:72px; }
+  .ranking-detail-row > span:nth-child(3), .rank-high { display:none; }
+}
