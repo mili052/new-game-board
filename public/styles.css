@@ -2505,3 +2505,18 @@ textarea:focus {
 .testing-row .row-status { max-width:58px; overflow:hidden; text-overflow:ellipsis; }
 .row-status.recruit { background:#e9f8f2; color:#129b73; }
 @media (max-width: 760px) { .radar-grid-middle, .radar-grid-bottom { grid-template-columns:1fr; } .testing-list { grid-template-columns:1fr; } }
+.radar-brand { color:#fff; background:#062553; margin:-8px -6px 18px; padding:14px 12px; border-radius:8px 8px 0 0; font-size:17px; }
+.radar-mark { width:30px; height:30px; background:transparent; border-radius:0; }
+.radar-mark svg, .nav-icon svg { width:100%; height:100%; fill:none; stroke:currentColor; stroke-width:1.9; stroke-linecap:round; stroke-linejoin:round; }
+.radar-nav-item { min-height:38px; gap:11px; padding:8px 10px; color:#102d58; font-size:14px; }
+.radar-nav-item:hover, .radar-nav-item.active { color:#2169dd; background:#edf4ff; }
+.nav-icon { display:grid; place-items:center; flex:0 0 18px; width:18px; height:18px; color:#0e315e; }
+.radar-nav-item.active .nav-icon { color:#2876ea; }
+.radar-nav-item b { color:#6b80a0; font-size:11px; }
+.radar-subnav { padding-left:30px; }
+.radar-subnav button { min-height:29px; gap:10px; padding:5px 8px; color:#284462; font-size:13px; }
+.platform-icon, .nav-dot, .tag-icon { display:grid; place-items:center; flex:0 0 15px; width:15px; height:15px; font-style:normal; font-size:9px; font-weight:900; line-height:1; }
+.platform-icon { border-radius:4px; color:#fff; }
+.platform-icon.wechat { background:#20bc69; } .platform-icon.douyin { background:#111827; } .platform-icon.ios { background:#299af2; } .platform-icon.taptap { background:#17bbd1; }
+.nav-dot { width:8px; height:8px; margin:0 4px; border-radius:50%; background:#b7c3d5; }
+.tag-icon { color:#7a8eaa; font-size:16px; font-weight:400; }
