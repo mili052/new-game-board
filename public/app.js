@@ -556,12 +556,10 @@ function renderBoard() {
   const bottomGrid = root.querySelector(".radar-grid-bottom");
   const chartPanel = root.querySelector(".chart-panel");
   if (chartPanel) {
-    chartPanel.querySelector(".panel-kicker").textContent = "TESTING";
-    chartPanel.querySelector("h2").textContent = `${monthLabel}测试新游`;
-    chartPanel.querySelector(".text-action").dataset.radarNav = "testing";
-    chartPanel.querySelector(".text-action").dataset.radarAction = "show-testing";
-    chartPanel.querySelector(".ranking-list").className = "testing-preview-list";
-    chartPanel.querySelector(".testing-preview-list").innerHTML = testingCards ? testingCards.split("</button>").slice(0, 6).map(item => item ? `${item}</button>` : "").join("") : `<div class="empty">当前月份暂无测试新游</div>`;
+    chartPanel.querySelector(".panel-kicker").textContent = "ON CHART";
+    chartPanel.querySelector("h2").textContent = `${monthLabel}畅销榜新游`;
+    chartPanel.querySelector(".text-action").dataset.radarNav = "ranking";
+    delete chartPanel.querySelector(".text-action").dataset.radarAction;
   }
   if (focusPanel && middleGrid && supplyPanel && alertPanel && bottomGrid) {
     focusPanel.querySelector(".panel-kicker").textContent = "TESTING";
@@ -883,7 +881,7 @@ function wireEvents() {
   });
 
   $("#boardRoot").addEventListener("click", event => {
-    if (event.target.closest(".focus-panel h2, .chart-panel h2")) {
+    if (event.target.closest(".focus-panel h2")) {
       setTestingRoute();
       renderApp();
       return;
