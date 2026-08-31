@@ -487,6 +487,62 @@ function renderTestingPage() {
   return true;
 }
 
+function rankingDate(product) {
+  return String(product.firstRankTime || product.firstChartTime || product.firstRankingTime || product.latestNodeTime || product.createdAt || "").slice(0, 10);
+}
+
+function setRankingRoute(replace = false) {
+  const url = new URL(window.location.href);
+  url.searchParams.delete("board");
+  url.searchParams.delete("product");
+  url.searchParams.set("view", "ranking");
+  const method = replace ? "replaceState" : "pushState";
+  window.history[method]({}, "", `${url.pathname}${url.search}`);
+}
+
+function clearRankingRoute(replace = false) {
+  const url = new URL(window.location.href);
+  url.searchParams.delete("view");
+  const method = replace ? "replaceState" : "pushState";
+  window.history[method]({}, "", `${url.pathname}${url.search}`);
+}
+
+function renderRankingPage() {
+  if (getRouteView() !== "ranking") return false;
+  const page = $("#productPage");
+  const root = $("#boardRoot");
+  const boards = state.boards || [];
+  const board = boards.find(item => item.id === (page.dataset.rankingBoard || boards[0]?.id)) || boards[0];
+  if (!board) return false;
+  page.dataset.rankingBoard = board.id;
+  page.classList.remove("hidden");
+  root.classList.add("hidden");
+  setMobileMode(false);
+  setMobileNavActive("ranking");
+  document.title = "畅销榜新游 - 新游产品雷达";
+
+  const allRanking = (board.products || []).filter(product => isRankingStatus(product.status));
+  const platform = page.dataset.rankingPlatform || "";
+  const genre = page.dataset.rankingGenre || "";
+  const query = page.dataset.rankingQuery || "";
+  const genres = [...new Set(allRanking.map(primaryCategory).filter(Boolean))].sort();
+  const filtered = allRanking.filter(product => {
+    const text = [product.name, product.genre, product.topic, product.developer, product.publisher, product.platform].join(" ").toLowerCase();
+    return (!query || text.includes(query.toLowerCase())) && (!platform || String(product.platform || "").toLowerCase().includes(platform.toLowerCase())) && (!genre || primaryCategory(product) === genre);
+  }).sort((a, b) => rankingDate(b).localeCompare(rankingDate(a)));
+  const groups = new Map();
+  filtered.forEach(product => { const date = rankingDate(product) || "待补日期"; if (!groups.has(date)) groups.set(date, []); groups.get(date).push(product); });
+  const timeline = [...groups.entries()].map(([date, products]) => `<section class="ranking-date-group"><div class="ranking-date-node"><time>${escapeHtml(date.slice(5).replace("-", "."))}</time><span></span></div><div class="ranking-date-products">${products.map(product => `<button class="ranking-detail-row" type="button" data-open-product="${escapeHtml(product.id)}" data-open-board="${escapeHtml(board.id)}"><span class="mini-cover">${media(product.cover || product.icon || product.screenshots?.[0], product.name, "mini-cover-img")}</span><span class="ranking-detail-copy"><b>${escapeHtml(product.name)}</b><small>${escapeHtml(primaryCategory(product))} · ${escapeHtml(product.developer || "研发待补充")} / ${escapeHtml(product.publisher || "发行待补充")}</small></span><span>${escapeHtml(product.platform || "平台待补充")}</span><span class="rank-current">#${escapeHtml(product.rank || "—")}</span><span class="rank-high">#${escapeHtml(product.highestRank || product.maxRank || product.rank || "—")}</span></button>`).join("")}</div></section>`).join("");
+  page.innerHTML = `<section class="testing-page ranking-page"><div class="testing-page-head"><button class="ghost ranking-back" type="button">← 返回首页</button><div><span class="panel-kicker">RANKING LIBRARY</span><h2>${escapeHtml(board.period || board.title || "当前月份")}畅销榜新游</h2><p>按首次进榜日期整理当前月份全部畅销榜新游</p></div></div><div class="testing-toolbar ranking-toolbar"><label>月份<select id="rankingMonthFilter">${boards.map(item => `<option value="${escapeHtml(item.id)}" ${item.id === board.id ? "selected" : ""}>${escapeHtml(item.period || item.title)}</option>`).join("")}</select></label><label>平台<select id="rankingPlatformFilter"><option value="">全部平台</option><option value="微小" ${platform === "微小" ? "selected" : ""}>微信小游戏</option><option value="抖小" ${platform === "抖小" ? "selected" : ""}>抖音小游戏</option><option value="IOS" ${platform === "IOS" ? "selected" : ""}>iOS</option><option value="TapTap" ${platform === "TapTap" ? "selected" : ""}>TapTap</option></select></label><label>品类<select id="rankingGenreFilter"><option value="">全部品类</option>${genres.map(item => `<option value="${escapeHtml(item)}" ${item === genre ? "selected" : ""}>${escapeHtml(item)}</option>`).join("")}</select></label><label class="testing-search">搜索<input id="rankingSearchInput" type="search" value="${escapeHtml(query)}" placeholder="产品 / 研发 / 发行"></label></div><div class="testing-metrics"><span>本月上榜<strong>${filtered.length}</strong></span><span>微信小游戏<strong>${filtered.filter(product => String(product.platform || "").includes("微小")).length}</strong></span><span>抖音小游戏<strong>${filtered.filter(product => String(product.platform || "").includes("抖小")).length}</strong></span><span>iOS<strong>${filtered.filter(product => String(product.platform || "").toLowerCase().includes("ios")).length}</strong></span><span>其他平台<strong>${filtered.filter(product => !/微小|抖小|ios/i.test(String(product.platform || ""))).length}</strong></span></div><div class="ranking-timeline">${timeline || `<div class="empty">当前筛选条件下暂无畅销榜新游</div>`}</div></section>`;
+  page.querySelectorAll("[data-open-product]").forEach(button => button.addEventListener("click", () => { setDetailRoute(button.dataset.openBoard, button.dataset.openProduct); renderApp(); }));
+  $(".ranking-back").addEventListener("click", () => { clearRankingRoute(); renderApp(); });
+  $("#rankingMonthFilter").addEventListener("change", event => { page.dataset.rankingBoard = event.target.value; renderRankingPage(); });
+  $("#rankingPlatformFilter").addEventListener("change", event => { page.dataset.rankingPlatform = event.target.value; renderRankingPage(); });
+  $("#rankingGenreFilter").addEventListener("change", event => { page.dataset.rankingGenre = event.target.value; renderRankingPage(); });
+  $("#rankingSearchInput").addEventListener("input", event => { page.dataset.rankingQuery = event.target.value; renderRankingPage(); });
+  return true;
+}
+
 function setMobileMode(detailOpen) {
   document.body.classList.toggle("detail-open", Boolean(detailOpen));
 }
@@ -574,7 +630,7 @@ function renderBoard() {
     chartPanel.querySelector(".panel-kicker").textContent = "ON CHART";
     chartPanel.querySelector("h2").textContent = `${monthLabel}畅销榜新游`;
     chartPanel.querySelector(".text-action").dataset.radarNav = "ranking";
-    delete chartPanel.querySelector(".text-action").dataset.radarAction;
+    chartPanel.querySelector(".text-action").dataset.radarAction = "show-ranking-page";
   }
   if (focusPanel && middleGrid && supplyPanel && alertPanel && bottomGrid) {
     focusPanel.querySelector(".panel-kicker").textContent = "TESTING";
@@ -693,6 +749,7 @@ function renderApp() {
   syncReportLink();
   if (renderProductPage()) return;
   if (renderTestingPage()) return;
+  if (renderRankingPage()) return;
   setMobileMode(false);
   page.classList.add("hidden");
   page.innerHTML = "";
@@ -918,6 +975,11 @@ function wireEvents() {
   });
 
   $("#boardRoot").addEventListener("click", event => {
+    if (event.target.closest(".chart-panel h2")) {
+      setRankingRoute();
+      renderApp();
+      return;
+    }
     if (event.target.closest(".focus-panel h2")) {
       setTestingRoute();
       renderApp();
@@ -931,6 +993,11 @@ function wireEvents() {
     }
     const radarButton = event.target.closest("[data-radar-nav]");
     if (radarButton) {
+      if (radarButton.dataset.radarAction === "show-ranking-page") {
+        setRankingRoute();
+        renderApp();
+        return;
+      }
       if (radarButton.dataset.radarAction === "show-testing") {
         setTestingRoute();
         renderApp();

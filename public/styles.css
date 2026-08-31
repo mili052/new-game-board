@@ -2587,6 +2587,23 @@ textarea:focus {
 .ip-row b { font-size:11px; }
 .ip-row small, .ip-row em { color:var(--muted); font-size:9px; font-style:normal; }
 .ip-row em { margin-top:2px; }
+.ranking-timeline { position:relative; padding:4px 0 12px 82px; }
+.ranking-timeline::before { position:absolute; top:0; bottom:0; left:53px; width:1px; background:#dbe5f2; content:""; }
+.ranking-date-group { position:relative; margin-bottom:12px; }
+.ranking-date-node { position:absolute; left:-82px; top:8px; display:flex; align-items:center; gap:12px; width:70px; color:#d47b16; font-size:13px; font-weight:900; }
+.ranking-date-node span { position:absolute; right:-12px; width:9px; height:9px; border:3px solid #fff; border-radius:50%; background:#e38b20; box-shadow:0 0 0 3px #fff3df; }
+.ranking-date-products { display:grid; grid-template-columns:1fr 1fr; gap:0 18px; padding:2px 0 8px 18px; }
+.ranking-detail-row { display:grid; grid-template-columns:36px minmax(0,1fr) 74px 42px 42px; gap:8px; align-items:center; min-width:0; min-height:58px; padding:7px 8px; border:0; border-bottom:1px solid #edf1f6; background:transparent; color:var(--ink); text-align:left; cursor:pointer; }
+.ranking-detail-row:hover { border-radius:7px; background:#fff9f1; }
+.ranking-detail-row .mini-cover { width:36px; height:36px; border-radius:8px; }
+.ranking-detail-copy { min-width:0; }
+.ranking-detail-copy b, .ranking-detail-copy small { display:block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.ranking-detail-copy b { font-size:12px; }
+.ranking-detail-copy small, .ranking-detail-row > span:nth-child(3), .rank-current, .rank-high { color:var(--muted); font-size:10px; }
+.ranking-detail-row > span:nth-child(3) { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.rank-current { color:#d97816; font-weight:900; }
+.rank-high { color:#52739e; font-weight:800; }
+@media (max-width: 760px) { .ranking-timeline { padding-left:64px; } .ranking-timeline::before { left:39px; } .ranking-date-node { left:-64px; width:52px; font-size:11px; } .ranking-date-products { grid-template-columns:1fr; padding-left:10px; } .ranking-detail-row { grid-template-columns:34px minmax(0,1fr) 42px; } .ranking-detail-row > span:nth-child(3), .rank-high { display:none; } }
 /* Quiet B2B visual system: neutral surfaces, restrained iconography, readable data. */
 .radar-sidebar { box-shadow:none; border-right-color:#e7ebf1; }
 .radar-brand { background:#0b2853; border-radius:0 0 8px 8px; margin:-8px -6px 18px; padding:13px 12px; }
