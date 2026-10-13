@@ -588,12 +588,31 @@ function renderBoard() {
   const products = boards.flatMap(board => (board.products || []).map(product => ({ ...product, boardId: board.id })));
   if (!products.length) { root.innerHTML = `<div class="empty">还没有可展示的产品。</div>`; return; }
   const latestBoard = boards[0] || state.boards[0] || { products: [] };
-  const monthProducts = latestBoard.products || [];
+  const query = $("#searchInput")?.value.trim().toLowerCase() || "";
+  const selectedStatus = $("#statusFilter")?.value || "";
+  const matchesDashboardFilters = product => {
+    if (product.releaseStatus && product.releaseStatus !== "可发布") return false;
+    if (selectedStatus && product.status !== selectedStatus) return false;
+    if (!query) return true;
+    return [
+      product.name,
+      product.genre,
+      product.topic,
+      product.platform,
+      product.developer,
+      product.publisher,
+      product.publicNode,
+      product.reason,
+      product.judgement,
+      product.status
+    ].some(value => String(value || "").toLowerCase().includes(query));
+  };
+  const monthProducts = (latestBoard.products || []).filter(matchesDashboardFilters);
   const byNodeDate = (a, b) => String(b.latestNodeTime || b.createdAt || "").localeCompare(String(a.latestNodeTime || a.createdAt || ""));
   const monthRanking = monthProducts.filter(product => isRankingStatus(product.status)).sort(byNodeDate);
   const now = new Date();
   const dateText = now.toISOString().slice(0, 10);
-  const allPublished = products.filter(product => !product.releaseStatus || product.releaseStatus === "可发布");
+  const allPublished = products.filter(matchesDashboardFilters);
   const radarFilter = state.radarFilter;
   const visibleProducts = radarFilter === "重点"
     ? allPublished.filter(product => product.focus)
@@ -614,7 +633,7 @@ function renderBoard() {
   const categories = [...new Set(scopedProducts.map(primaryCategory))].slice(0, 8);
   const monthLabel = latestBoard.period || latestBoard.title?.replace(/新游产品库$/, "") || "当前月份";
   const previousBoard = state.boards[state.boards.findIndex(board => board.id === latestBoard.id) + 1];
-  const previousProducts = previousBoard?.products || [];
+  const previousProducts = (previousBoard?.products || []).filter(matchesDashboardFilters);
   const categoryCount = products => products.reduce((counts, product) => { const category = primaryCategory(product); counts[category] = (counts[category] || 0) + 1; return counts; }, {});
   const currentCategoryCount = categoryCount(monthProducts);
   const previousCategoryCount = categoryCount(previousProducts);
