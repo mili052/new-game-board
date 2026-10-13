@@ -443,17 +443,21 @@ function renderTestingPage() {
   const root = $("#boardRoot");
   const boards = state.boards || [];
   const currentBoardId = page.dataset.testingBoard || boards[0]?.id || "";
-  const board = boards.find(item => item.id === currentBoardId) || boards[0];
-  if (!board) return false;
+  const allTime = currentBoardId === "all";
+  const board = allTime ? null : (boards.find(item => item.id === currentBoardId) || boards[0]);
+  if (!allTime && !board) return false;
 
-  page.dataset.testingBoard = board.id;
+  page.dataset.testingBoard = allTime ? "all" : board.id;
   page.classList.remove("hidden");
   root.classList.add("hidden");
   setMobileMode(false);
   setMobileNavActive("ranking");
   document.title = "测试新游 - 新游产品雷达";
 
-  const allTesting = (board.products || []).filter(product => /测试|招募|首测|二测|三测|付费|不限量/.test(String(product.status || "")));
+  const sourceProducts = allTime
+    ? boards.flatMap(item => (item.products || []).map(product => ({ ...product, boardId: item.id })))
+    : (board.products || []).map(product => ({ ...product, boardId: board.id }));
+  const allTesting = sourceProducts.filter(product => /测试|招募|首测|二测|三测|付费|不限量/.test(String(product.status || "")));
   const stages = ["全部阶段", "招募", "首测", "二测", "三测+", "付费测试", "不限量测试"];
   const genres = [...new Set(allTesting.map(primaryCategory).filter(Boolean))].sort();
   const platforms = [...new Set(allTesting.map(product => product.platform).filter(Boolean))].sort();
@@ -471,9 +475,10 @@ function renderTestingPage() {
     if (!grouped.has(date)) grouped.set(date, []);
     grouped.get(date).push(product);
   });
-  const dateGroups = [...grouped.entries()].map(([date, products]) => `<section class="testing-date-group"><div class="testing-date-node"><time>${escapeHtml(date.slice(5).replace("-", "."))}</time><span></span></div><div class="testing-date-products">${products.map(product => `<button class="testing-detail-row" type="button" data-open-product="${escapeHtml(product.id)}" data-open-board="${escapeHtml(board.id)}"><span class="mini-cover">${media(product.cover || product.icon || product.screenshots?.[0], product.name, "mini-cover-img")}</span><span class="testing-detail-copy"><b>${escapeHtml(product.name)}</b><small>${escapeHtml(primaryCategory(product))} · ${escapeHtml(product.developer || "研发待补充")} / ${escapeHtml(product.publisher || "发行待补充")}</small></span><span>${escapeHtml(product.platform || "平台待补充")}</span><em class="stage-tag ${testingStage(product) === "招募" ? "recruit" : ""}">${testingStage(product)}</em></button>`).join("")}</div></section>`).join("");
+  const dateGroups = [...grouped.entries()].map(([date, products]) => `<section class="testing-date-group"><div class="testing-date-node"><time>${escapeHtml(date.slice(5).replace("-", "."))}</time><span></span></div><div class="testing-date-products">${products.map(product => `<button class="testing-detail-row" type="button" data-open-product="${escapeHtml(product.id)}" data-open-board="${escapeHtml(product.boardId)}"><span class="mini-cover">${media(product.cover || product.icon || product.screenshots?.[0], product.name, "mini-cover-img")}</span><span class="testing-detail-copy"><b>${escapeHtml(product.name)}</b><small>${escapeHtml(primaryCategory(product))} · ${escapeHtml(product.developer || "研发待补充")} / ${escapeHtml(product.publisher || "发行待补充")}</small></span><span>${escapeHtml(product.platform || "平台待补充")}</span><em class="stage-tag ${testingStage(product) === "招募" ? "recruit" : ""}">${testingStage(product)}</em></button>`).join("")}</div></section>`).join("");
   const countStage = value => allTesting.filter(product => !value || testingStage(product) === value).length;
-  page.innerHTML = `<section class="testing-page"><div class="testing-page-head"><button class="ghost testing-back" type="button">← 返回首页</button><div><span class="panel-kicker">TESTING LIBRARY</span><h2>${escapeHtml(board.period || board.title || "当前月份")}测试新游</h2><p>按测试节点整理当前月份全部测试产品</p></div></div><div class="testing-toolbar"><label>月份<select id="testingMonthFilter">${boards.map(item => `<option value="${escapeHtml(item.id)}" ${item.id === board.id ? "selected" : ""}>${escapeHtml(item.period || item.title)}</option>`).join("")}</select></label><label>测试阶段<select id="testingStageFilter"><option value="">全部阶段</option>${stages.slice(1).map(item => `<option value="${item}" ${item === stage ? "selected" : ""}>${item}</option>`).join("")}</select></label><label>品类<select id="testingGenreFilter"><option value="">全部品类</option>${genres.map(item => `<option value="${escapeHtml(item)}" ${item === genre ? "selected" : ""}>${escapeHtml(item)}</option>`).join("")}</select></label><label>平台<select id="testingPlatformFilter"><option value="">全部平台</option>${platforms.map(item => `<option value="${escapeHtml(item)}" ${item === platform ? "selected" : ""}>${escapeHtml(item)}</option>`).join("")}</select></label><label class="testing-search">搜索<input id="testingSearchInput" type="search" value="${escapeHtml(query)}" placeholder="产品 / 研发 / 发行"></label></div><div class="testing-metrics"><span>本月测试<strong>${filtered.length}</strong></span><span>首测<strong>${countStage("首测")}</strong></span><span>二测<strong>${countStage("二测")}</strong></span><span>招募<strong>${countStage("招募")}</strong></span><span>付费测试<strong>${countStage("付费测试")}</strong></span></div><div class="testing-timeline">${dateGroups || `<div class="empty">当前筛选条件下暂无测试产品</div>`}</div></section>`;
+  const periodLabel = allTime ? "全部时间" : (board.period || board.title || "当前月份");
+  page.innerHTML = `<section class="testing-page"><div class="testing-page-head"><button class="ghost testing-back" type="button">← 返回首页</button><div><span class="panel-kicker">TESTING LIBRARY</span><h2>${escapeHtml(periodLabel)}测试新游</h2><p>按测试节点整理${allTime ? "全部时间" : "当前月份"}测试产品</p></div></div><div class="testing-toolbar"><label>月份<select id="testingMonthFilter"><option value="all" ${allTime ? "selected" : ""}>全部时间</option>${boards.map(item => `<option value="${escapeHtml(item.id)}" ${!allTime && item.id === board.id ? "selected" : ""}>${escapeHtml(item.period || item.title)}</option>`).join("")}</select></label><label>测试阶段<select id="testingStageFilter"><option value="">全部阶段</option>${stages.slice(1).map(item => `<option value="${item}" ${item === stage ? "selected" : ""}>${item}</option>`).join("")}</select></label><label>品类<select id="testingGenreFilter"><option value="">全部品类</option>${genres.map(item => `<option value="${escapeHtml(item)}" ${item === genre ? "selected" : ""}>${escapeHtml(item)}</option>`).join("")}</select></label><label>平台<select id="testingPlatformFilter"><option value="">全部平台</option>${platforms.map(item => `<option value="${escapeHtml(item)}" ${item === platform ? "selected" : ""}>${escapeHtml(item)}</option>`).join("")}</select></label><label class="testing-search">搜索<input id="testingSearchInput" type="search" value="${escapeHtml(query)}" placeholder="产品 / 研发 / 发行"></label></div><div class="testing-metrics"><span>${allTime ? "全部测试" : "本月测试"}<strong>${filtered.length}</strong></span><span>首测<strong>${countStage("首测")}</strong></span><span>二测<strong>${countStage("二测")}</strong></span><span>招募<strong>${countStage("招募")}</strong></span><span>付费测试<strong>${countStage("付费测试")}</strong></span></div><div class="testing-timeline">${dateGroups || `<div class="empty">当前筛选条件下暂无测试产品</div>`}</div></section>`;
   page.querySelectorAll("[data-open-product]").forEach(button => button.addEventListener("click", () => {
     setDetailRoute(button.dataset.openBoard, button.dataset.openProduct);
     renderApp();
