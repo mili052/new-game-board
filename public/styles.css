@@ -2725,14 +2725,14 @@ textarea:focus {
 
 .testing-panel-wide { margin-top:20px; }
 .testing-panel-wide .testing-list { display:grid; grid-template-columns:repeat(4, minmax(0, 1fr)); align-content:start; gap:12px; }
-.testing-panel-wide .testing-row { display:grid; grid-template-columns:44px minmax(0, 1fr) auto; grid-template-rows:minmax(20px, auto) minmax(20px, auto); min-height:82px; padding:10px; gap:2px 9px; border:1px solid #e7edf5; border-radius:10px; background:#fff; }
+.testing-panel-wide .testing-row { display:grid; grid-template-columns:60px minmax(0, 1fr) auto; grid-template-rows:minmax(26px, auto) minmax(26px, auto); min-height:96px; padding:12px; gap:3px 11px; border:1px solid #e7edf5; border-radius:10px; background:#fff; }
 .testing-panel-wide .testing-row:hover { border-color:#cbdcf2; background:#f8fbff; }
-.testing-panel-wide .testing-row .mini-cover { grid-row:1 / span 2; width:44px; height:44px; align-self:center; }
-.testing-panel-wide .testing-copy { display:grid; min-width:0; align-content:center; gap:3px; }
-.testing-panel-wide .testing-copy b { font-size:13px; }
-.testing-panel-wide .testing-copy small { font-size:11px; }
-.testing-panel-wide .testing-row time { grid-column:3; grid-row:1; align-self:center; color:#7388a4; font-size:11px; }
-.testing-panel-wide .testing-row .row-status { grid-column:3; grid-row:2; justify-self:end; align-self:center; max-width:64px; padding:3px 6px; font-size:10px; }
+.testing-panel-wide .testing-row .mini-cover { grid-row:1 / span 2; width:60px; height:60px; align-self:center; border-radius:8px; }
+.testing-panel-wide .testing-copy { display:grid; min-width:0; align-content:center; gap:5px; }
+.testing-panel-wide .testing-copy b { font-size:14px; line-height:1.2; }
+.testing-panel-wide .testing-copy small { font-size:11px; line-height:1.35; }
+.testing-panel-wide .testing-row time { grid-column:3; grid-row:1; align-self:start; color:#7388a4; font-size:11px; line-height:1.4; }
+.testing-panel-wide .testing-row .row-status { grid-column:3; grid-row:2; justify-self:end; align-self:end; max-width:64px; padding:3px 6px; font-size:10px; }
 
 @media (max-width: 1320px) {
   .testing-panel-wide .testing-list { grid-template-columns:repeat(4, minmax(0, 1fr)); gap:10px; }
