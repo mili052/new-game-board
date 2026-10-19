@@ -703,7 +703,10 @@ function renderBoard() {
     focusPanel.querySelector(".text-action").dataset.radarAction = "show-testing";
     focusPanel.querySelector(".focus-grid").className = "testing-list";
     focusPanel.querySelector(".testing-list").innerHTML = testingCards || `<div class="empty">当前月份暂无测试新游</div>`;
-    middleGrid.replaceChildren(focusPanel, supplyPanel);
+    focusPanel.classList.add("testing-panel-wide");
+    middleGrid.classList.add("radar-overview-row");
+    middleGrid.replaceChildren(supplyPanel);
+    middleGrid.after(focusPanel);
     bottomGrid.append(alertPanel);
   }
   if (supplyPanel) {
