@@ -644,10 +644,20 @@ function renderBoard() {
   const previousCategoryCount = categoryCount(previousProducts);
   const categoryNames = Object.keys(currentCategoryCount).sort((a, b) => currentCategoryCount[b] - currentCategoryCount[a]);
   const pieColors = ["#3b82f6", "#14b8a6", "#f59e0b", "#8b5cf6", "#ec4899", "#0ea5e9", "#84cc16", "#f97316", "#64748b", "#06b6d4", "#a855f7", "#22c55e"];
+  const leadingCategories = categoryNames.slice(0, 8);
+  const remainingCategories = categoryNames.slice(8);
+  const pieCategories = remainingCategories.length
+    ? [...leadingCategories, "其他"]
+    : leadingCategories;
   let pieCursor = 0;
-  const categorySlices = categoryNames.map((category, index) => {
-    const count = currentCategoryCount[category];
-    const previous = previousCategoryCount[category] || 0;
+  const categorySlices = pieCategories.map((category, index) => {
+    const isOther = category === "其他";
+    const count = isOther
+      ? remainingCategories.reduce((total, name) => total + currentCategoryCount[name], 0)
+      : currentCategoryCount[category];
+    const previous = isOther
+      ? remainingCategories.reduce((total, name) => total + (previousCategoryCount[name] || 0), 0)
+      : (previousCategoryCount[category] || 0);
     const share = monthProducts.length ? count / monthProducts.length * 100 : 0;
     const ratio = Math.round(share);
     const start = pieCursor;
