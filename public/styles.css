@@ -2754,3 +2754,74 @@ textarea:focus {
   .testing-panel-wide { margin-top:12px; }
   .testing-panel-wide .testing-list { grid-template-columns:1fr; gap:8px; }
 }
+
+/* Ranking intelligence page: large game records with a clear market-reading hierarchy. */
+.ranking-page { display:grid; gap:20px; padding:2px 0 28px; }
+.ranking-page-header { display:flex; align-items:flex-start; justify-content:space-between; gap:24px; padding:2px 0 0; }
+.ranking-heading { display:flex; align-items:flex-start; gap:14px; min-width:0; }
+.ranking-heading .ghost { flex:0 0 auto; margin-top:4px; min-height:36px; padding:0 12px; border-radius:8px; }
+.ranking-eyebrow { display:block; margin-bottom:5px; color:#5b83b9; font-size:10px; font-weight:900; letter-spacing:.1em; }
+.ranking-heading h2 { margin:0; color:#102d58; font-size:26px; line-height:1.2; }
+.ranking-heading p { margin:6px 0 0; color:#6f8198; font-size:13px; }
+.ranking-summary { display:flex; flex:0 0 auto; gap:8px; }
+.ranking-summary span { display:grid; min-width:88px; gap:4px; padding:10px 13px; border:1px solid #e2e9f2; border-radius:10px; background:#fff; }
+.ranking-summary small { color:#7588a1; font-size:10px; font-weight:700; white-space:nowrap; }
+.ranking-summary b { color:#132f59; font-size:22px; line-height:1; font-variant-numeric:tabular-nums; }
+.ranking-summary span:first-child b { color:#df7d16; }
+
+.ranking-filter-panel { display:grid; grid-template-columns:140px 155px 155px minmax(220px, 1fr); gap:10px; padding:12px 14px; border:1px solid #e2e9f2; border-radius:12px; background:#fff; }
+.ranking-filter-panel label { display:grid; gap:5px; color:#74879f; font-size:10px; font-weight:900; }
+.ranking-filter-panel select,
+.ranking-filter-panel input { width:100%; min-height:36px; padding:0 10px; border:1px solid #dfe7f1; border-radius:8px; background:#fbfdff; color:#18365f; font:inherit; font-size:12px; }
+.ranking-search { min-width:0; }
+
+.ranking-page .ranking-timeline { position:static; display:grid; gap:22px; padding:0; }
+.ranking-page .ranking-timeline::before { display:none; }
+.ranking-page .ranking-date-group { margin:0; }
+.ranking-page .ranking-date-header { display:flex; align-items:center; gap:10px; margin:0 0 10px; padding:0 0 8px; border-bottom:1px solid #e7edf4; }
+.ranking-page .ranking-date-header time { color:#d87916; font-size:16px; font-weight:900; font-variant-numeric:tabular-nums; }
+.ranking-page .ranking-date-header span { color:#8191a6; font-size:11px; font-weight:700; }
+.ranking-page .ranking-date-products { display:grid; grid-template-columns:repeat(2, minmax(0, 1fr)); gap:14px; max-width:none; padding:0; }
+.ranking-page .ranking-detail-row { display:grid; grid-template-columns:68px minmax(0, 1fr) auto; align-items:center; min-height:116px; gap:14px; padding:18px; border:1px solid #e2e9f2; border-radius:12px; background:#fff; color:#15345f; text-align:left; }
+.ranking-page .ranking-detail-row:hover { border-color:#bad0ed; background:#fbfdff; box-shadow:0 8px 20px rgba(36,79,133,.08); }
+.ranking-page .ranking-detail-row .mini-cover { width:68px; height:68px; border-radius:10px; box-shadow:0 2px 7px rgba(24,54,95,.12); }
+.ranking-page .ranking-detail-copy { display:grid; min-width:0; gap:6px; align-content:center; }
+.ranking-page .ranking-detail-copy b { overflow:hidden; color:#102e58; font-size:17px; font-weight:900; line-height:1.15; text-overflow:ellipsis; white-space:nowrap; }
+.ranking-page .ranking-detail-copy small { justify-self:start; padding:3px 6px; border-radius:4px; background:#eef4ff; color:#3974c4; font-size:10px; font-weight:800; }
+.ranking-page .ranking-detail-copy em { overflow:hidden; color:#71849c; font-size:11px; font-style:normal; line-height:1.35; text-overflow:ellipsis; white-space:nowrap; }
+.ranking-card-ranks { display:grid; grid-template-columns:repeat(2, minmax(48px, auto)); grid-template-rows:auto auto; justify-content:end; gap:9px 12px; min-width:144px; }
+.ranking-platform { grid-column:1 / -1; justify-self:end; padding:4px 7px; border-radius:4px; background:#f0f5fc; color:#4e6f97; font-size:10px; font-style:normal; font-weight:900; white-space:nowrap; }
+.ranking-platform[data-platform="微小"] { background:#eaf8f0; color:#17855a; }
+.ranking-platform[data-platform="IOS"] { background:#edf4ff; color:#3476cc; }
+.ranking-card-ranks > span { display:grid; gap:3px; justify-items:end; }
+.ranking-card-ranks small { color:#8a9aae; font-size:10px; font-weight:700; }
+.ranking-page .rank-current,
+.ranking-page .rank-high { font-size:21px; line-height:1; font-variant-numeric:tabular-nums; white-space:nowrap; }
+.ranking-page .rank-current { color:#e07916; font-weight:900; }
+.ranking-page .rank-high { color:#193c69; font-weight:800; }
+
+@media (max-width: 1100px) {
+  .ranking-page-header { align-items:stretch; flex-direction:column; }
+  .ranking-summary { align-self:flex-start; }
+  .ranking-page .ranking-date-products { grid-template-columns:1fr; }
+}
+@media (max-width: 860px) {
+  .ranking-filter-panel { grid-template-columns:1fr 1fr; }
+  .ranking-search { grid-column:1 / -1; }
+}
+@media (max-width: 620px) {
+  .ranking-page { gap:14px; }
+  .ranking-heading { gap:10px; }
+  .ranking-heading h2 { font-size:22px; }
+  .ranking-heading p { font-size:12px; }
+  .ranking-summary { width:100%; }
+  .ranking-summary span { flex:1; min-width:0; }
+  .ranking-filter-panel { gap:8px; padding:10px; }
+  .ranking-page .ranking-detail-row { grid-template-columns:64px minmax(0, 1fr); min-height:112px; padding:14px; gap:12px; }
+  .ranking-page .ranking-detail-row .mini-cover { width:64px; height:64px; }
+  .ranking-card-ranks { grid-column:1 / -1; grid-template-columns:auto auto 1fr; grid-template-rows:auto; justify-content:start; align-items:center; min-width:0; }
+  .ranking-platform { grid-column:auto; justify-self:start; }
+  .ranking-card-ranks > span { display:flex; align-items:baseline; gap:4px; justify-items:start; }
+  .ranking-page .rank-current,
+  .ranking-page .rank-high { font-size:17px; }
+}
