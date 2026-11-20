@@ -419,7 +419,10 @@ async function listRecords(token) {
   const appToken = await resolveBitableAppToken(token);
   const tableId = await resolveTableId(token, appToken);
   const pageSize = Number(process.env.FEISHU_PAGE_SIZE || 200);
-  const viewId = String(process.env.FEISHU_VIEW_ID || "").trim();
+  // The web library must mirror the complete table. A filtered Feishu view can
+  // silently return only a small subset and overwrite the published archive.
+  const useView = String(process.env.FEISHU_USE_VIEW || "").toLowerCase() === "true";
+  const viewId = useView ? String(process.env.FEISHU_VIEW_ID || "").trim() : "";
 
   const items = [];
   let pageToken = "";
@@ -637,6 +640,46 @@ function writeBoards(boards) {
   fs.writeFileSync(dataFile, `${JSON.stringify({ boards }, null, 2)}\n`, "utf8");
 }
 
+function readExistingProducts() {
+  if (!fs.existsSync(dataFile)) return [];
+
+  try {
+    const data = JSON.parse(fs.readFileSync(dataFile, "utf8"));
+    return (data.boards || []).flatMap(board => board.products || []);
+  } catch (error) {
+    console.warn(`Failed to read existing boards for sync protection: ${error.message || error}`);
+    return [];
+  }
+}
+
+function hasValue(value) {
+  if (Array.isArray(value)) return value.length > 0;
+  return value !== "" && value != null;
+}
+
+function mergeProduct(existing, incoming) {
+  const merged = { ...existing };
+  for (const [key, value] of Object.entries(incoming)) {
+    if (key === "focus" || hasValue(value)) merged[key] = value;
+  }
+  return merged;
+}
+
+function mergePartialProducts(existingProducts, incomingProducts) {
+  const incomingById = new Map(incomingProducts.map(product => [product.id, product]));
+  const existingIds = new Set(existingProducts.map(product => product.id));
+  const merged = existingProducts.map(product => {
+    const incoming = incomingById.get(product.id);
+    return incoming ? mergeProduct(product, incoming) : product;
+  });
+
+  for (const product of incomingProducts) {
+    if (!existingIds.has(product.id)) merged.push(product);
+  }
+
+  return merged;
+}
+
 async function main() {
   ensureAssetDir();
 
@@ -656,11 +699,20 @@ async function main() {
     return acc;
   }, {});
 
-  const products = normalized.filter(item => {
+  const incomingProducts = normalized.filter(item => {
     if (!normalizedPublishValue) return true;
     const releaseStatus = normalizeStatusValue(item.releaseStatus);
     return releaseStatus === normalizedPublishValue || releaseStatus.includes(normalizedPublishValue);
   });
+  const existingProducts = readExistingProducts();
+  const suspiciousShrink = existingProducts.length >= 50 && incomingProducts.length < existingProducts.length * 0.7;
+  const products = suspiciousShrink
+    ? mergePartialProducts(existingProducts, incomingProducts)
+    : incomingProducts;
+
+  if (suspiciousShrink) {
+    console.warn(`Sync protection enabled: fetched ${incomingProducts.length} publishable products, existing archive has ${existingProducts.length}. Merging instead of replacing.`);
+  }
   const boards = buildBoards(products);
 
   writeBoards(boards);
